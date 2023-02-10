@@ -176,5 +176,39 @@ namespace NTSF.GUI
             OpenChildForm(new FormNhapKho());
 
         }
+
+        private void dropmenuTonkho_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormTonKho());
+        }
+
+
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ctCirclePictureBox4_MouseHover(object sender, EventArgs e)
+        {
+
+                this.ctCirclePictureBox4.Image = global::NTSF.Properties.Resources.Xmark;
+        }
+
+        private void ctCirclePictureBox4_MouseLeave(object sender, EventArgs e)
+        {
+            this.ctCirclePictureBox4.Image = null;
+        }
+
+        private void ctCirclePictureBox5_MouseHover(object sender, EventArgs e)
+        {
+            this.ctCirclePictureBox5.Image = global::NTSF.Properties.Resources.minius;
+        }
+
+        private void ctCirclePictureBox5_MouseLeave(object sender, EventArgs e)
+        {
+            this.ctCirclePictureBox5.Image = null;
+
+        }
     }
 }

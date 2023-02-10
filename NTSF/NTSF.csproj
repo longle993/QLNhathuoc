@@ -114,6 +114,12 @@
     <Compile Include="GUI\FormKho.Designer.cs">
       <DependentUpon>FormKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormListHangbanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormListHangbanhang.Designer.cs">
+      <DependentUpon>FormListHangbanhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,18 @@
     <Compile Include="GUI\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormTaoPhieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTaoPhieu.Designer.cs">
+      <DependentUpon>FormTaoPhieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormThanhToan.Designer.cs">
+      <DependentUpon>FormThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormTongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +161,12 @@
     </Compile>
     <Compile Include="GUI\FormNhapKho.Designer.cs">
       <DependentUpon>FormNhapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormTonKho.Designer.cs">
+      <DependentUpon>FormTonKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,6 +191,9 @@
     <EmbeddedResource Include="GUI\FormKho.resx">
       <DependentUpon>FormKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormListHangbanhang.resx">
+      <DependentUpon>FormListHangbanhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,11 +203,20 @@
     <EmbeddedResource Include="GUI\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTaoPhieu.resx">
+      <DependentUpon>FormTaoPhieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormThanhToan.resx">
+      <DependentUpon>FormThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTongQuan.resx">
       <DependentUpon>FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormNhapKho.resx">
       <DependentUpon>FormNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormTonKho.resx">
+      <DependentUpon>FormTonKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -211,6 +247,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Calendar.png" />
+    <Content Include="Resources\minius.png" />
+    <None Include="Resources\Xmark.png" />
     <None Include="Resources\LoginBackgr.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

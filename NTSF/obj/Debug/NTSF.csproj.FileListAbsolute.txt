@@ -21,3 +21,7 @@ D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.exe
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.pdb
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormLogin.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.csproj.AssemblyReference.cache
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormTonKho.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormThanhToan.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormListHangbanhang.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormTaoPhieu.resources

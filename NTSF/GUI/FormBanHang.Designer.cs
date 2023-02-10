@@ -29,34 +29,44 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.panelTTTT = new System.Windows.Forms.Panel();
+            this.panelDSHH = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // label1
+            // panelTTTT
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(358, 215);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Bán hàng";
+            this.panelTTTT.BackColor = System.Drawing.Color.White;
+            this.panelTTTT.Location = new System.Drawing.Point(1032, 16);
+            this.panelTTTT.Name = "panelTTTT";
+            this.panelTTTT.Size = new System.Drawing.Size(663, 969);
+            this.panelTTTT.TabIndex = 0;
+            // 
+            // panelDSHH
+            // 
+            this.panelDSHH.BackColor = System.Drawing.Color.White;
+            this.panelDSHH.Location = new System.Drawing.Point(41, 16);
+            this.panelDSHH.Name = "panelDSHH";
+            this.panelDSHH.Size = new System.Drawing.Size(950, 411);
+            this.panelDSHH.TabIndex = 1;
             // 
             // FormBanHang
             // 
+            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1722, 929);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelDSHH);
+            this.Controls.Add(this.panelTTTT);
             this.Name = "FormBanHang";
             this.Text = "FormBanHang";
-            this.Load += new System.EventHandler(this.FormBanHang_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelTTTT;
+        private System.Windows.Forms.Panel panelDSHH;
     }
 }
