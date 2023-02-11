@@ -58,7 +58,6 @@ namespace NTSF.GUI
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnTimKiemHoadon = new FontAwesome.Sharp.IconButton();
             this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
             this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
             this.txtTKHDHoadon = new HotelManagement.CTControls.CTTextBox();
@@ -72,6 +71,7 @@ namespace NTSF.GUI
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnTimKiemHoadon = new FontAwesome.Sharp.IconButton();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
@@ -127,35 +127,11 @@ namespace NTSF.GUI
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel2.ShadowShift = 3;
-            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel2.Size = new System.Drawing.Size(141, 40);
+            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel2.Size = new System.Drawing.Size(141, 43);
             this.advancedPanel2.StartColor = System.Drawing.Color.White;
             this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 56;
-            // 
-            // btnTimKiemHoadon
-            // 
-            this.btnTimKiemHoadon.AutoSize = true;
-            this.btnTimKiemHoadon.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemHoadon.FlatAppearance.BorderSize = 0;
-            this.btnTimKiemHoadon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemHoadon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemHoadon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiemHoadon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemHoadon.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnTimKiemHoadon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTimKiemHoadon.IconSize = 30;
-            this.btnTimKiemHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemHoadon.Location = new System.Drawing.Point(0, 0);
-            this.btnTimKiemHoadon.Name = "btnTimKiemHoadon";
-            this.btnTimKiemHoadon.Size = new System.Drawing.Size(133, 36);
-            this.btnTimKiemHoadon.TabIndex = 58;
-            this.btnTimKiemHoadon.Text = "TÌM KIẾM";
-            this.btnTimKiemHoadon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiemHoadon.UseVisualStyleBackColor = false;
             // 
             // ctDatePicker1
             // 
@@ -353,9 +329,29 @@ namespace NTSF.GUI
             this.label5.TabIndex = 52;
             this.label5.Text = "Danh sách hoá đơn";
             // 
+            // btnTimKiemHoadon
+            // 
+            this.btnTimKiemHoadon.AutoSize = true;
+            this.btnTimKiemHoadon.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiemHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemHoadon.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemHoadon.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiemHoadon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemHoadon.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnTimKiemHoadon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTimKiemHoadon.IconSize = 30;
+            this.btnTimKiemHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemHoadon.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemHoadon.Name = "btnTimKiemHoadon";
+            this.btnTimKiemHoadon.Size = new System.Drawing.Size(138, 36);
+            this.btnTimKiemHoadon.TabIndex = 63;
+            this.btnTimKiemHoadon.Text = "      TÌM KIẾM";
+            this.btnTimKiemHoadon.UseVisualStyleBackColor = false;
+            // 
             // FormHoaDon
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1744, 985);
@@ -389,10 +385,10 @@ namespace NTSF.GUI
         private HotelManagement.CTControls.CTTextBox txtTKHDHoadon;
         private System.Windows.Forms.Label label4;
         private CTuserControl.AdvancedPanel advancedPanel2;
-        private FontAwesome.Sharp.IconButton btnTimKiemHoadon;
         private CTuserControl.AdvancedPanel advancedPanel5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private FontAwesome.Sharp.IconButton btnTimKiemHoadon;
     }
 }

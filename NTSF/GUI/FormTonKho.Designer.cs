@@ -29,11 +29,13 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnTimKiemNhapKho = new FontAwesome.Sharp.IconButton();
+            this.btnTimKiemTonKho = new FontAwesome.Sharp.IconButton();
             this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
             this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
             this.txtTKPNNhapKho = new HotelManagement.CTControls.CTTextBox();
@@ -43,20 +45,78 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.advancedPanel4 = new NTSF.CTuserControl.AdvancedPanel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.advancedPanel5.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
-            this.advancedPanel5.SuspendLayout();
+            this.advancedPanel3.SuspendLayout();
+            this.advancedPanel4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // advancedPanel5
+            // 
+            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.label7);
+            this.advancedPanel5.Controls.Add(this.label9);
+            this.advancedPanel5.EdgeWidth = 0;
+            this.advancedPanel5.EndColor = System.Drawing.Color.White;
+            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
+            this.advancedPanel5.Location = new System.Drawing.Point(41, 252);
+            this.advancedPanel5.Name = "advancedPanel5";
+            this.advancedPanel5.RectRadius = 5;
+            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel5.ShadowShift = 5;
+            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
+            this.advancedPanel5.Size = new System.Drawing.Size(1654, 693);
+            this.advancedPanel5.StartColor = System.Drawing.Color.White;
+            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel5.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(285, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 28);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "xx";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(270, 20);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(139, 28);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "(       bản ghi)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(79, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(182, 28);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "Danh sách dữ liệu";
             // 
             // advancedPanel1
             // 
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel1.Controls.Add(this.comboBox2);
-            this.advancedPanel1.Controls.Add(this.comboBox1);
+            this.advancedPanel1.Controls.Add(this.advancedPanel4);
+            this.advancedPanel1.Controls.Add(this.advancedPanel3);
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.ctDatePicker1);
             this.advancedPanel1.Controls.Add(this.ctDatePicker3);
@@ -81,29 +141,11 @@ namespace NTSF.GUI
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 4;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(908, 135);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(182, 36);
-            this.comboBox2.TabIndex = 58;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(605, 135);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 36);
-            this.comboBox1.TabIndex = 57;
-            // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.White;
             this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel2.Controls.Add(this.btnTimKiemNhapKho);
+            this.advancedPanel2.Controls.Add(this.btnTimKiemTonKho);
             this.advancedPanel2.EdgeWidth = 0;
             this.advancedPanel2.EndColor = System.Drawing.Color.White;
             this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Transparent;
@@ -112,33 +154,32 @@ namespace NTSF.GUI
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel2.ShadowShift = 2;
-            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel2.Size = new System.Drawing.Size(141, 40);
+            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel2.Size = new System.Drawing.Size(141, 43);
             this.advancedPanel2.StartColor = System.Drawing.Color.White;
             this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 56;
             // 
-            // btnTimKiemNhapKho
+            // btnTimKiemTonKho
             // 
-            this.btnTimKiemNhapKho.AutoSize = true;
-            this.btnTimKiemNhapKho.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemNhapKho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemNhapKho.FlatAppearance.BorderSize = 0;
-            this.btnTimKiemNhapKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemNhapKho.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiemNhapKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemNhapKho.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnTimKiemNhapKho.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemNhapKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTimKiemNhapKho.IconSize = 30;
-            this.btnTimKiemNhapKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemNhapKho.Location = new System.Drawing.Point(0, 0);
-            this.btnTimKiemNhapKho.Name = "btnTimKiemNhapKho";
-            this.btnTimKiemNhapKho.Size = new System.Drawing.Size(138, 36);
-            this.btnTimKiemNhapKho.TabIndex = 58;
-            this.btnTimKiemNhapKho.Text = "TÌM KIẾM";
-            this.btnTimKiemNhapKho.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiemNhapKho.UseVisualStyleBackColor = false;
+            this.btnTimKiemTonKho.AutoSize = true;
+            this.btnTimKiemTonKho.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiemTonKho.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemTonKho.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemTonKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemTonKho.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiemTonKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemTonKho.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnTimKiemTonKho.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemTonKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTimKiemTonKho.IconSize = 30;
+            this.btnTimKiemTonKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemTonKho.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemTonKho.Name = "btnTimKiemTonKho";
+            this.btnTimKiemTonKho.Size = new System.Drawing.Size(138, 36);
+            this.btnTimKiemTonKho.TabIndex = 63;
+            this.btnTimKiemTonKho.Text = "      TÌM KIẾM";
+            this.btnTimKiemTonKho.UseVisualStyleBackColor = false;
             // 
             // ctDatePicker1
             // 
@@ -153,9 +194,9 @@ namespace NTSF.GUI
             this.ctDatePicker1.ForeColor = System.Drawing.Color.Black;
             this.ctDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ctDatePicker1.Location = new System.Drawing.Point(351, 135);
-            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 35);
+            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 43);
             this.ctDatePicker1.Name = "ctDatePicker1";
-            this.ctDatePicker1.Size = new System.Drawing.Size(219, 35);
+            this.ctDatePicker1.Size = new System.Drawing.Size(219, 43);
             this.ctDatePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker1.TabIndex = 55;
             this.ctDatePicker1.TextColor = System.Drawing.Color.Black;
@@ -173,9 +214,9 @@ namespace NTSF.GUI
             this.ctDatePicker3.ForeColor = System.Drawing.Color.Black;
             this.ctDatePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ctDatePicker3.Location = new System.Drawing.Point(84, 135);
-            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 35);
+            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 43);
             this.ctDatePicker3.Name = "ctDatePicker3";
-            this.ctDatePicker3.Size = new System.Drawing.Size(219, 35);
+            this.ctDatePicker3.Size = new System.Drawing.Size(219, 43);
             this.ctDatePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker3.TabIndex = 55;
             this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
@@ -193,12 +234,12 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.Margin = new System.Windows.Forms.Padding(4);
             this.txtTKPNNhapKho.Multiline = false;
             this.txtTKPNNhapKho.Name = "txtTKPNNhapKho";
-            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7, 0, 7, 7);
+            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7);
             this.txtTKPNNhapKho.PasswordChar = false;
             this.txtTKPNNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTKPNNhapKho.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
             this.txtTKPNNhapKho.ReadOnly = false;
-            this.txtTKPNNhapKho.Size = new System.Drawing.Size(333, 36);
+            this.txtTKPNNhapKho.Size = new System.Drawing.Size(333, 43);
             this.txtTKPNNhapKho.TabIndex = 54;
             this.txtTKPNNhapKho.Texts = "";
             this.txtTKPNNhapKho.UnderlineedStyle = false;
@@ -264,85 +305,94 @@ namespace NTSF.GUI
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(74, 22);
+            this.label6.Location = new System.Drawing.Point(50, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 38);
             this.label6.TabIndex = 51;
             this.label6.Text = "TỒN KHO";
             // 
-            // advancedPanel5
+            // advancedPanel3
             // 
-            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.label8);
-            this.advancedPanel5.Controls.Add(this.label7);
-            this.advancedPanel5.Controls.Add(this.label9);
-            this.advancedPanel5.EdgeWidth = 0;
-            this.advancedPanel5.EndColor = System.Drawing.Color.White;
-            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
-            this.advancedPanel5.Location = new System.Drawing.Point(41, 251);
-            this.advancedPanel5.Name = "advancedPanel5";
-            this.advancedPanel5.RectRadius = 5;
-            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel5.ShadowShift = 5;
-            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel5.Size = new System.Drawing.Size(1654, 693);
-            this.advancedPanel5.StartColor = System.Drawing.Color.White;
-            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel5.TabIndex = 5;
+            this.advancedPanel3.BackColor = System.Drawing.Color.White;
+            this.advancedPanel3.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel3.Controls.Add(this.comboBox1);
+            this.advancedPanel3.EdgeWidth = 1;
+            this.advancedPanel3.EndColor = System.Drawing.Color.White;
+            this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.advancedPanel3.Location = new System.Drawing.Point(605, 135);
+            this.advancedPanel3.Name = "advancedPanel3";
+            this.advancedPanel3.RectRadius = 5;
+            this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel3.ShadowShift = 2;
+            this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel3.Size = new System.Drawing.Size(270, 43);
+            this.advancedPanel3.StartColor = System.Drawing.Color.White;
+            this.advancedPanel3.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel3.TabIndex = 61;
             // 
-            // label8
+            // comboBox1
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(285, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 28);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 28;
+            this.comboBox1.Location = new System.Drawing.Point(0, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(270, 36);
+            this.comboBox1.TabIndex = 58;
             // 
-            // label7
+            // advancedPanel4
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(270, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 28);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "(       bản ghi)";
+            this.advancedPanel4.BackColor = System.Drawing.Color.White;
+            this.advancedPanel4.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel4.Controls.Add(this.comboBox2);
+            this.advancedPanel4.EdgeWidth = 1;
+            this.advancedPanel4.EndColor = System.Drawing.Color.White;
+            this.advancedPanel4.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.advancedPanel4.Location = new System.Drawing.Point(908, 135);
+            this.advancedPanel4.Name = "advancedPanel4";
+            this.advancedPanel4.RectRadius = 5;
+            this.advancedPanel4.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel4.ShadowShift = 2;
+            this.advancedPanel4.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel4.Size = new System.Drawing.Size(182, 43);
+            this.advancedPanel4.StartColor = System.Drawing.Color.White;
+            this.advancedPanel4.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel4.TabIndex = 61;
             // 
-            // label9
+            // comboBox2
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(79, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(182, 28);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "Danh sách dữ liệu";
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.ItemHeight = 28;
+            this.comboBox2.Location = new System.Drawing.Point(0, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(182, 36);
+            this.comboBox2.TabIndex = 58;
             // 
             // FormTonKho
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1722, 929);
             this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.advancedPanel1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTonKho";
             this.Text = "FormTonKho";
+            this.advancedPanel5.ResumeLayout(false);
+            this.advancedPanel5.PerformLayout();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
-            this.advancedPanel5.ResumeLayout(false);
-            this.advancedPanel5.PerformLayout();
+            this.advancedPanel3.ResumeLayout(false);
+            this.advancedPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -351,7 +401,6 @@ namespace NTSF.GUI
 
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel2;
-        private FontAwesome.Sharp.IconButton btnTimKiemNhapKho;
         private CTuserControl.CTDatePicker ctDatePicker1;
         private CTuserControl.CTDatePicker ctDatePicker3;
         private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
@@ -359,13 +408,16 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private CTuserControl.AdvancedPanel advancedPanel5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconButton btnTimKiemTonKho;
+        private CTuserControl.AdvancedPanel advancedPanel4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private CTuserControl.AdvancedPanel advancedPanel3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

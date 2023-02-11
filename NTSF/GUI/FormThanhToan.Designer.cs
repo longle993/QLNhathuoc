@@ -87,10 +87,10 @@ namespace NTSF.GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(34, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 25);
+            this.label3.Size = new System.Drawing.Size(232, 30);
             this.label3.TabIndex = 3;
             this.label3.Text = "Thông tin thanh toán";
             // 

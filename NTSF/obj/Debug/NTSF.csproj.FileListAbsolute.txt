@@ -8,7 +8,6 @@ D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormBaoCao.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormCaiDat.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormDanhMuc.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormHoaDon.resources
-D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormKho.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormLoginBackgr.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormMain.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormTongQuan.resources
@@ -25,3 +24,5 @@ D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormTonKho.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormThanhToan.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormListHangbanhang.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormTaoPhieu.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormThemHang.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormXuatKho.resources

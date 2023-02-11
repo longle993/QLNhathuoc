@@ -75,7 +75,7 @@ namespace NTSF.GUI
             this.advancedPanel5.EdgeWidth = 0;
             this.advancedPanel5.EndColor = System.Drawing.Color.White;
             this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
-            this.advancedPanel5.Location = new System.Drawing.Point(45, 261);
+            this.advancedPanel5.Location = new System.Drawing.Point(41, 252);
             this.advancedPanel5.Name = "advancedPanel5";
             this.advancedPanel5.RectRadius = 5;
             this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
@@ -139,7 +139,7 @@ namespace NTSF.GUI
             this.advancedPanel1.EdgeWidth = 0;
             this.advancedPanel1.EndColor = System.Drawing.Color.White;
             this.advancedPanel1.FlatBorderColor = System.Drawing.Color.White;
-            this.advancedPanel1.Location = new System.Drawing.Point(45, 30);
+            this.advancedPanel1.Location = new System.Drawing.Point(41, 21);
             this.advancedPanel1.Name = "advancedPanel1";
             this.advancedPanel1.RectRadius = 5;
             this.advancedPanel1.ShadowColor = System.Drawing.Color.DimGray;
@@ -158,13 +158,13 @@ namespace NTSF.GUI
             this.advancedPanel3.EdgeWidth = 0;
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.Transparent;
-            this.advancedPanel3.Location = new System.Drawing.Point(1471, 48);
+            this.advancedPanel3.Location = new System.Drawing.Point(1485, 48);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel3.ShadowShift = 2;
-            this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel3.Size = new System.Drawing.Size(155, 40);
+            this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel3.Size = new System.Drawing.Size(141, 43);
             this.advancedPanel3.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
             this.advancedPanel3.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel3.TabIndex = 59;
@@ -185,10 +185,10 @@ namespace NTSF.GUI
             this.btnNhapKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNhapKho.IconSize = 30;
             this.btnNhapKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapKho.Location = new System.Drawing.Point(-1, 2);
+            this.btnNhapKho.Location = new System.Drawing.Point(0, 1);
             this.btnNhapKho.Name = "btnNhapKho";
-            this.btnNhapKho.Size = new System.Drawing.Size(157, 36);
-            this.btnNhapKho.TabIndex = 61;
+            this.btnNhapKho.Size = new System.Drawing.Size(141, 40);
+            this.btnNhapKho.TabIndex = 64;
             this.btnNhapKho.Text = "NHẬP HÀNG";
             this.btnNhapKho.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNhapKho.UseVisualStyleBackColor = false;
@@ -207,8 +207,8 @@ namespace NTSF.GUI
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel2.ShadowShift = 2;
-            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel2.Size = new System.Drawing.Size(141, 40);
+            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel2.Size = new System.Drawing.Size(141, 43);
             this.advancedPanel2.StartColor = System.Drawing.Color.White;
             this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 56;
@@ -220,19 +220,18 @@ namespace NTSF.GUI
             this.btnTimKiemNhapKho.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTimKiemNhapKho.FlatAppearance.BorderSize = 0;
             this.btnTimKiemNhapKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemNhapKho.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiemNhapKho.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
             this.btnTimKiemNhapKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.btnTimKiemNhapKho.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnTimKiemNhapKho.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.btnTimKiemNhapKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTimKiemNhapKho.IconSize = 30;
             this.btnTimKiemNhapKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemNhapKho.Location = new System.Drawing.Point(3, 0);
+            this.btnTimKiemNhapKho.Location = new System.Drawing.Point(1, 3);
             this.btnTimKiemNhapKho.Name = "btnTimKiemNhapKho";
             this.btnTimKiemNhapKho.Size = new System.Drawing.Size(138, 36);
-            this.btnTimKiemNhapKho.TabIndex = 58;
-            this.btnTimKiemNhapKho.Text = "TÌM KIẾM";
-            this.btnTimKiemNhapKho.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimKiemNhapKho.TabIndex = 61;
+            this.btnTimKiemNhapKho.Text = "      TÌM KIẾM";
             this.btnTimKiemNhapKho.UseVisualStyleBackColor = false;
             // 
             // ctDatePicker1
@@ -248,9 +247,9 @@ namespace NTSF.GUI
             this.ctDatePicker1.ForeColor = System.Drawing.Color.Black;
             this.ctDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ctDatePicker1.Location = new System.Drawing.Point(351, 135);
-            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 35);
+            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 43);
             this.ctDatePicker1.Name = "ctDatePicker1";
-            this.ctDatePicker1.Size = new System.Drawing.Size(219, 35);
+            this.ctDatePicker1.Size = new System.Drawing.Size(219, 43);
             this.ctDatePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker1.TabIndex = 55;
             this.ctDatePicker1.TextColor = System.Drawing.Color.Black;
@@ -268,9 +267,9 @@ namespace NTSF.GUI
             this.ctDatePicker3.ForeColor = System.Drawing.Color.Black;
             this.ctDatePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ctDatePicker3.Location = new System.Drawing.Point(84, 135);
-            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 35);
+            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 39);
             this.ctDatePicker3.Name = "ctDatePicker3";
-            this.ctDatePicker3.Size = new System.Drawing.Size(219, 35);
+            this.ctDatePicker3.Size = new System.Drawing.Size(219, 39);
             this.ctDatePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker3.TabIndex = 55;
             this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
@@ -288,12 +287,12 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.Margin = new System.Windows.Forms.Padding(4);
             this.txtTKPNNhapKho.Multiline = false;
             this.txtTKPNNhapKho.Name = "txtTKPNNhapKho";
-            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7, 0, 7, 7);
+            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7);
             this.txtTKPNNhapKho.PasswordChar = false;
             this.txtTKPNNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTKPNNhapKho.PlaceholderText = "Tìm kiếm theo mã phiếu";
             this.txtTKPNNhapKho.ReadOnly = false;
-            this.txtTKPNNhapKho.Size = new System.Drawing.Size(333, 36);
+            this.txtTKPNNhapKho.Size = new System.Drawing.Size(333, 43);
             this.txtTKPNNhapKho.TabIndex = 54;
             this.txtTKPNNhapKho.Texts = "";
             this.txtTKPNNhapKho.UnderlineedStyle = false;
@@ -311,12 +310,12 @@ namespace NTSF.GUI
             this.txtTKHHNhapKho.Margin = new System.Windows.Forms.Padding(4);
             this.txtTKHHNhapKho.Multiline = false;
             this.txtTKHHNhapKho.Name = "txtTKHHNhapKho";
-            this.txtTKHHNhapKho.Padding = new System.Windows.Forms.Padding(7, 0, 7, 7);
+            this.txtTKHHNhapKho.Padding = new System.Windows.Forms.Padding(7);
             this.txtTKHHNhapKho.PasswordChar = false;
             this.txtTKHHNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTKHHNhapKho.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
             this.txtTKHHNhapKho.ReadOnly = false;
-            this.txtTKHHNhapKho.Size = new System.Drawing.Size(413, 36);
+            this.txtTKHHNhapKho.Size = new System.Drawing.Size(413, 43);
             this.txtTKHHNhapKho.TabIndex = 54;
             this.txtTKHHNhapKho.Texts = "";
             this.txtTKHHNhapKho.UnderlineedStyle = false;
@@ -371,7 +370,7 @@ namespace NTSF.GUI
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(74, 22);
+            this.label6.Location = new System.Drawing.Point(50, 22);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(165, 38);
             this.label6.TabIndex = 51;
@@ -379,7 +378,6 @@ namespace NTSF.GUI
             // 
             // FormNhapKho
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1744, 985);
@@ -410,9 +408,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label5;
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel3;
-        private FontAwesome.Sharp.IconButton btnNhapKho;
         private CTuserControl.AdvancedPanel advancedPanel2;
-        private FontAwesome.Sharp.IconButton btnTimKiemNhapKho;
         private CTuserControl.CTDatePicker ctDatePicker1;
         private CTuserControl.CTDatePicker ctDatePicker3;
         private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
@@ -422,5 +418,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private FontAwesome.Sharp.IconButton btnNhapKho;
+        private FontAwesome.Sharp.IconButton btnTimKiemNhapKho;
     }
 }

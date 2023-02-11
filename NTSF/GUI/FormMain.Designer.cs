@@ -189,14 +189,14 @@ namespace NTSF.GUI
             this.dropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
             this.dropdownMenu1.Name = "dropdownMenu1";
             this.dropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenu1.Size = new System.Drawing.Size(163, 118);
+            this.dropdownMenu1.Size = new System.Drawing.Size(241, 151);
             // 
             // dropmenuNhapkho
             // 
             this.dropmenuNhapkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.dropmenuNhapkho.Name = "dropmenuNhapkho";
             this.dropmenuNhapkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuNhapkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuNhapkho.Size = new System.Drawing.Size(240, 38);
             this.dropmenuNhapkho.Text = "Nhập kho";
             this.dropmenuNhapkho.Click += new System.EventHandler(this.dropmenuNhapkho_Click);
             // 
@@ -205,15 +205,16 @@ namespace NTSF.GUI
             this.dropmenuXuatkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.dropmenuXuatkho.Name = "dropmenuXuatkho";
             this.dropmenuXuatkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuXuatkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuXuatkho.Size = new System.Drawing.Size(240, 38);
             this.dropmenuXuatkho.Text = "Xuất kho";
+            this.dropmenuXuatkho.Click += new System.EventHandler(this.dropmenuXuatkho_Click);
             // 
             // dropmenuTonkho
             // 
             this.dropmenuTonkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.dropmenuTonkho.Name = "dropmenuTonkho";
             this.dropmenuTonkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuTonkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuTonkho.Size = new System.Drawing.Size(240, 38);
             this.dropmenuTonkho.Text = "Tồn kho";
             this.dropmenuTonkho.Click += new System.EventHandler(this.dropmenuTonkho_Click);
             // 

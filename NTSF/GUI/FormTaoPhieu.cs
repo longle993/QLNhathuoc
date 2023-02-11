@@ -22,5 +22,17 @@ namespace NTSF.GUI
         {
             this.lblHour.Text = DateTime.Now.ToString("hh:mm");
         }
+
+        private void btnThemHang_Click(object sender, EventArgs e)
+        {
+            FormThemHang formThemHang = new FormThemHang();
+            formThemHang.ShowDialog();
+        }
+
+        private void btnTroVe_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
+

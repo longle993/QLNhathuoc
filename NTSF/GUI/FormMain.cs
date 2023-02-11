@@ -182,7 +182,10 @@ namespace NTSF.GUI
             OpenChildForm(new FormTonKho());
         }
 
-
+        private void dropmenuXuatkho_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormXuatKho());
+        }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
@@ -210,5 +213,7 @@ namespace NTSF.GUI
             this.ctCirclePictureBox5.Image = null;
 
         }
+
+
     }
 }

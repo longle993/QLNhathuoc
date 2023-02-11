@@ -108,12 +108,6 @@
     <Compile Include="GUI\FormHoaDon.Designer.cs">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\FormKho.Designer.cs">
-      <DependentUpon>FormKho.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\FormListHangbanhang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +144,12 @@
     <Compile Include="GUI\FormThanhToan.Designer.cs">
       <DependentUpon>FormThanhToan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormThemHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormThemHang.Designer.cs">
+      <DependentUpon>FormThemHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormTongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +167,12 @@
     </Compile>
     <Compile Include="GUI\FormTonKho.Designer.cs">
       <DependentUpon>FormTonKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormXuatKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormXuatKho.Designer.cs">
+      <DependentUpon>FormXuatKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -188,9 +194,6 @@
     <EmbeddedResource Include="GUI\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormKho.resx">
-      <DependentUpon>FormKho.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormListHangbanhang.resx">
       <DependentUpon>FormListHangbanhang.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +212,9 @@
     <EmbeddedResource Include="GUI\FormThanhToan.resx">
       <DependentUpon>FormThanhToan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormThemHang.resx">
+      <DependentUpon>FormThemHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTongQuan.resx">
       <DependentUpon>FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTonKho.resx">
       <DependentUpon>FormTonKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormXuatKho.resx">
+      <DependentUpon>FormXuatKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
