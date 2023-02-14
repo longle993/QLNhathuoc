@@ -20,8 +20,7 @@ namespace NTSF.GUI
 
         private void btnNhapKho_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormTaoPhieu());
-            
+            OpenChildForm(new FormTaoPhieu());         
         }
 
         private void OpenChildForm(Form childForm)
@@ -41,5 +40,6 @@ namespace NTSF.GUI
             childForm.BringToFront();
             childForm.Show();
         }
+
     }
 }

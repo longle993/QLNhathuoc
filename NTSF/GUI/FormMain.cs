@@ -133,7 +133,8 @@ namespace NTSF.GUI
         private void btnDanhmuc_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color395);
-            OpenChildForm(new FormDanhMuc());
+            dropdownMenu2.Show(btnDanhmuc, btnDanhmuc.Width, 0);
+
 
         }
 
@@ -214,6 +215,15 @@ namespace NTSF.GUI
 
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormDanhMuc());
 
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormDMNCC());
+        }
     }
 }

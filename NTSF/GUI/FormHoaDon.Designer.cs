@@ -58,6 +58,7 @@ namespace NTSF.GUI
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
+            this.btnTimKiemHoadon = new FontAwesome.Sharp.IconButton();
             this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
             this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
             this.txtTKHDHoadon = new HotelManagement.CTControls.CTTextBox();
@@ -71,7 +72,6 @@ namespace NTSF.GUI
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnTimKiemHoadon = new FontAwesome.Sharp.IconButton();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
@@ -113,25 +113,47 @@ namespace NTSF.GUI
             this.advancedPanel1.StartColor = System.Drawing.Color.White;
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 0;
+            this.advancedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.advancedPanel1_Paint);
             // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.White;
             this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel2.Controls.Add(this.btnTimKiemHoadon);
-            this.advancedPanel2.EdgeWidth = 0;
+            this.advancedPanel2.EdgeWidth = 2;
             this.advancedPanel2.EndColor = System.Drawing.Color.White;
-            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
             this.advancedPanel2.Location = new System.Drawing.Point(1485, 135);
             this.advancedPanel2.Name = "advancedPanel2";
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel2.ShadowShift = 3;
+            this.advancedPanel2.ShadowShift = 0;
             this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel2.Size = new System.Drawing.Size(141, 43);
             this.advancedPanel2.StartColor = System.Drawing.Color.White;
             this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 56;
+            // 
+            // btnTimKiemHoadon
+            // 
+            this.btnTimKiemHoadon.AutoSize = true;
+            this.btnTimKiemHoadon.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiemHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemHoadon.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemHoadon.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiemHoadon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemHoadon.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnTimKiemHoadon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTimKiemHoadon.IconSize = 30;
+            this.btnTimKiemHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemHoadon.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemHoadon.Name = "btnTimKiemHoadon";
+            this.btnTimKiemHoadon.Size = new System.Drawing.Size(138, 36);
+            this.btnTimKiemHoadon.TabIndex = 64;
+            this.btnTimKiemHoadon.Text = "      TÌM KIẾM";
+            this.btnTimKiemHoadon.UseVisualStyleBackColor = false;
             // 
             // ctDatePicker1
             // 
@@ -141,13 +163,13 @@ namespace NTSF.GUI
             this.ctDatePicker1.BorderSize = 0;
             this.ctDatePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
             this.ctDatePicker1.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.ctDatePicker1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ctDatePicker1.ForeColor = System.Drawing.Color.Black;
             this.ctDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ctDatePicker1.Location = new System.Drawing.Point(375, 135);
-            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 35);
+            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 43);
             this.ctDatePicker1.Name = "ctDatePicker1";
-            this.ctDatePicker1.Size = new System.Drawing.Size(258, 37);
+            this.ctDatePicker1.Size = new System.Drawing.Size(258, 43);
             this.ctDatePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker1.TabIndex = 55;
             this.ctDatePicker1.TextColor = System.Drawing.Color.Black;
@@ -160,13 +182,13 @@ namespace NTSF.GUI
             this.ctDatePicker3.BorderSize = 0;
             this.ctDatePicker3.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
             this.ctDatePicker3.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.ctDatePicker3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ctDatePicker3.ForeColor = System.Drawing.Color.Black;
             this.ctDatePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ctDatePicker3.Location = new System.Drawing.Point(76, 135);
-            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 35);
+            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 43);
             this.ctDatePicker3.Name = "ctDatePicker3";
-            this.ctDatePicker3.Size = new System.Drawing.Size(258, 37);
+            this.ctDatePicker3.Size = new System.Drawing.Size(258, 43);
             this.ctDatePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker3.TabIndex = 55;
             this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
@@ -178,7 +200,7 @@ namespace NTSF.GUI
             this.txtTKHDHoadon.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKHDHoadon.BorderRadius = 5;
             this.txtTKHDHoadon.BorderSize = 0;
-            this.txtTKHDHoadon.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.txtTKHDHoadon.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKHDHoadon.IsFocused = false;
             this.txtTKHDHoadon.Location = new System.Drawing.Point(1124, 135);
             this.txtTKHDHoadon.Margin = new System.Windows.Forms.Padding(4);
@@ -189,7 +211,7 @@ namespace NTSF.GUI
             this.txtTKHDHoadon.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTKHDHoadon.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
             this.txtTKHDHoadon.ReadOnly = false;
-            this.txtTKHDHoadon.Size = new System.Drawing.Size(333, 36);
+            this.txtTKHDHoadon.Size = new System.Drawing.Size(333, 43);
             this.txtTKHDHoadon.TabIndex = 54;
             this.txtTKHDHoadon.Texts = "";
             this.txtTKHDHoadon.UnderlineedStyle = false;
@@ -201,7 +223,7 @@ namespace NTSF.GUI
             this.txtTKHHHoadon.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKHHHoadon.BorderRadius = 5;
             this.txtTKHHHoadon.BorderSize = 0;
-            this.txtTKHHHoadon.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.txtTKHHHoadon.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKHHHoadon.IsFocused = false;
             this.txtTKHHHoadon.Location = new System.Drawing.Point(672, 135);
             this.txtTKHHHoadon.Margin = new System.Windows.Forms.Padding(4);
@@ -212,7 +234,7 @@ namespace NTSF.GUI
             this.txtTKHHHoadon.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtTKHHHoadon.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
             this.txtTKHHHoadon.ReadOnly = false;
-            this.txtTKHHHoadon.Size = new System.Drawing.Size(413, 36);
+            this.txtTKHHHoadon.Size = new System.Drawing.Size(413, 43);
             this.txtTKHHHoadon.TabIndex = 54;
             this.txtTKHHHoadon.Texts = "";
             this.txtTKHHHoadon.UnderlineedStyle = false;
@@ -221,10 +243,10 @@ namespace NTSF.GUI
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(1118, 94);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(279, 32);
+            this.label4.Size = new System.Drawing.Size(234, 28);
             this.label4.TabIndex = 52;
             this.label4.Text = "Tìm kiếm theo hoá đơn";
             // 
@@ -232,10 +254,10 @@ namespace NTSF.GUI
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(666, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(291, 32);
+            this.label3.Size = new System.Drawing.Size(243, 28);
             this.label3.TabIndex = 52;
             this.label3.Text = "Tìm kiếm theo hàng hoá";
             // 
@@ -243,10 +265,10 @@ namespace NTSF.GUI
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(369, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 32);
+            this.label2.Size = new System.Drawing.Size(102, 28);
             this.label2.TabIndex = 52;
             this.label2.Text = "Đến ngày";
             // 
@@ -254,10 +276,10 @@ namespace NTSF.GUI
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(70, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 32);
+            this.label1.Size = new System.Drawing.Size(89, 28);
             this.label1.TabIndex = 52;
             this.label1.Text = "Từ ngày";
             // 
@@ -297,11 +319,11 @@ namespace NTSF.GUI
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(300, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 28);
+            this.label8.Size = new System.Drawing.Size(37, 30);
             this.label8.TabIndex = 52;
             this.label8.Text = "xx";
             // 
@@ -309,11 +331,11 @@ namespace NTSF.GUI
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(282, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 28);
+            this.label7.Size = new System.Drawing.Size(156, 30);
             this.label7.TabIndex = 52;
             this.label7.Text = "(       hoá đơn)";
             // 
@@ -321,34 +343,13 @@ namespace NTSF.GUI
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(52, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(195, 28);
+            this.label5.Size = new System.Drawing.Size(210, 30);
             this.label5.TabIndex = 52;
             this.label5.Text = "Danh sách hoá đơn";
-            // 
-            // btnTimKiemHoadon
-            // 
-            this.btnTimKiemHoadon.AutoSize = true;
-            this.btnTimKiemHoadon.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemHoadon.FlatAppearance.BorderSize = 0;
-            this.btnTimKiemHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemHoadon.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiemHoadon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemHoadon.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnTimKiemHoadon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTimKiemHoadon.IconSize = 30;
-            this.btnTimKiemHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemHoadon.Location = new System.Drawing.Point(1, 3);
-            this.btnTimKiemHoadon.Name = "btnTimKiemHoadon";
-            this.btnTimKiemHoadon.Size = new System.Drawing.Size(138, 36);
-            this.btnTimKiemHoadon.TabIndex = 63;
-            this.btnTimKiemHoadon.Text = "      TÌM KIẾM";
-            this.btnTimKiemHoadon.UseVisualStyleBackColor = false;
             // 
             // FormHoaDon
             // 
@@ -384,11 +385,11 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private HotelManagement.CTControls.CTTextBox txtTKHDHoadon;
         private System.Windows.Forms.Label label4;
-        private CTuserControl.AdvancedPanel advancedPanel2;
         private CTuserControl.AdvancedPanel advancedPanel5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTimKiemHoadon;
     }
 }

@@ -39,9 +39,7 @@ namespace NTSF.GUI
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbBoxNhanvien = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.cbBoxPTTT = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -54,19 +52,22 @@ namespace NTSF.GUI
             this.btnQuayve = new NTSF.CTuserControl.CTButton();
             this.btnThanhtoanIn = new NTSF.CTuserControl.CTButton();
             this.btnThanhToan = new NTSF.CTuserControl.CTButton();
-            this.advancedPanel4 = new NTSF.CTuserControl.AdvancedPanel();
-            this.lblTienKhach = new System.Windows.Forms.Label();
-            this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
-            this.lblGiamgia = new System.Windows.Forms.Label();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.txtboxGhichu = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTaomoi = new FontAwesome.Sharp.IconButton();
             this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
-            this.advancedPanel4.SuspendLayout();
-            this.advancedPanel3.SuspendLayout();
+            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ctTextBox2 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox3 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox4 = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
+            this.advancedPanel5.SuspendLayout();
+            this.advancedPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -174,17 +175,6 @@ namespace NTSF.GUI
             this.label8.TabIndex = 4;
             this.label8.Text = "Nhân viên bán hàng";
             // 
-            // cbBoxNhanvien
-            // 
-            this.cbBoxNhanvien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbBoxNhanvien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cbBoxNhanvien.FormattingEnabled = true;
-            this.cbBoxNhanvien.Location = new System.Drawing.Point(34, 241);
-            this.cbBoxNhanvien.Name = "cbBoxNhanvien";
-            this.cbBoxNhanvien.Size = new System.Drawing.Size(587, 33);
-            this.cbBoxNhanvien.TabIndex = 9;
-            this.cbBoxNhanvien.Text = "  --Chọn nhân viên bán hàng--";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -194,17 +184,6 @@ namespace NTSF.GUI
             this.label9.Size = new System.Drawing.Size(198, 21);
             this.label9.TabIndex = 4;
             this.label9.Text = "Phương thức thanh toán";
-            // 
-            // cbBoxPTTT
-            // 
-            this.cbBoxPTTT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbBoxPTTT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cbBoxPTTT.FormattingEnabled = true;
-            this.cbBoxPTTT.Location = new System.Drawing.Point(34, 336);
-            this.cbBoxPTTT.Name = "cbBoxPTTT";
-            this.cbBoxPTTT.Size = new System.Drawing.Size(587, 33);
-            this.cbBoxPTTT.TabIndex = 9;
-            this.cbBoxPTTT.Text = "  Tiền mặt";
             // 
             // label10
             // 
@@ -362,66 +341,6 @@ namespace NTSF.GUI
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             this.btnThanhToan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnThanhToan_KeyDown);
             // 
-            // advancedPanel4
-            // 
-            this.advancedPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel4.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel4.Controls.Add(this.lblTienKhach);
-            this.advancedPanel4.EdgeWidth = 0;
-            this.advancedPanel4.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel4.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel4.Location = new System.Drawing.Point(369, 525);
-            this.advancedPanel4.Name = "advancedPanel4";
-            this.advancedPanel4.RectRadius = 5;
-            this.advancedPanel4.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel4.ShadowShift = 0;
-            this.advancedPanel4.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel4.Size = new System.Drawing.Size(252, 34);
-            this.advancedPanel4.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
-            this.advancedPanel4.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel4.TabIndex = 12;
-            // 
-            // lblTienKhach
-            // 
-            this.lblTienKhach.AutoSize = true;
-            this.lblTienKhach.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTienKhach.ForeColor = System.Drawing.Color.Black;
-            this.lblTienKhach.Location = new System.Drawing.Point(8, 7);
-            this.lblTienKhach.Name = "lblTienKhach";
-            this.lblTienKhach.Size = new System.Drawing.Size(22, 25);
-            this.lblTienKhach.TabIndex = 4;
-            this.lblTienKhach.Text = "0";
-            // 
-            // advancedPanel3
-            // 
-            this.advancedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel3.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel3.Controls.Add(this.lblGiamgia);
-            this.advancedPanel3.EdgeWidth = 0;
-            this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel3.Location = new System.Drawing.Point(369, 444);
-            this.advancedPanel3.Name = "advancedPanel3";
-            this.advancedPanel3.RectRadius = 5;
-            this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel3.ShadowShift = 0;
-            this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel3.Size = new System.Drawing.Size(252, 36);
-            this.advancedPanel3.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(238)))), ((int)(((byte)(249)))));
-            this.advancedPanel3.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel3.TabIndex = 11;
-            // 
-            // lblGiamgia
-            // 
-            this.lblGiamgia.AutoSize = true;
-            this.lblGiamgia.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGiamgia.ForeColor = System.Drawing.Color.Black;
-            this.lblGiamgia.Location = new System.Drawing.Point(8, 7);
-            this.lblGiamgia.Name = "lblGiamgia";
-            this.lblGiamgia.Size = new System.Drawing.Size(22, 25);
-            this.lblGiamgia.TabIndex = 4;
-            this.lblGiamgia.Text = "0";
-            // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
@@ -524,21 +443,158 @@ namespace NTSF.GUI
             this.ctTextBox1.Texts = "";
             this.ctTextBox1.UnderlineedStyle = false;
             // 
+            // advancedPanel5
+            // 
+            this.advancedPanel5.BackColor = System.Drawing.Color.White;
+            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.comboBox1);
+            this.advancedPanel5.EdgeWidth = 1;
+            this.advancedPanel5.EndColor = System.Drawing.Color.White;
+            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.advancedPanel5.Location = new System.Drawing.Point(34, 241);
+            this.advancedPanel5.Name = "advancedPanel5";
+            this.advancedPanel5.RectRadius = 5;
+            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel5.ShadowShift = 2;
+            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel5.Size = new System.Drawing.Size(587, 40);
+            this.advancedPanel5.StartColor = System.Drawing.Color.White;
+            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel5.TabIndex = 62;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 28;
+            this.comboBox1.Location = new System.Drawing.Point(0, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(587, 36);
+            this.comboBox1.TabIndex = 58;
+            this.comboBox1.Text = " --Chọn nhân viên bán hàng--";
+            // 
+            // advancedPanel6
+            // 
+            this.advancedPanel6.BackColor = System.Drawing.Color.White;
+            this.advancedPanel6.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel6.Controls.Add(this.comboBox2);
+            this.advancedPanel6.EdgeWidth = 1;
+            this.advancedPanel6.EndColor = System.Drawing.Color.White;
+            this.advancedPanel6.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.advancedPanel6.Location = new System.Drawing.Point(34, 336);
+            this.advancedPanel6.Name = "advancedPanel6";
+            this.advancedPanel6.RectRadius = 5;
+            this.advancedPanel6.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel6.ShadowShift = 2;
+            this.advancedPanel6.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel6.Size = new System.Drawing.Size(587, 40);
+            this.advancedPanel6.StartColor = System.Drawing.Color.White;
+            this.advancedPanel6.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel6.TabIndex = 63;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.ItemHeight = 28;
+            this.comboBox2.Location = new System.Drawing.Point(0, 2);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(587, 36);
+            this.comboBox2.TabIndex = 58;
+            this.comboBox2.Text = "     Tiền mặt";
+            // 
+            // ctTextBox2
+            // 
+            this.ctTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox2.BorderColor = System.Drawing.Color.Transparent;
+            this.ctTextBox2.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox2.BorderRadius = 5;
+            this.ctTextBox2.BorderSize = 0;
+            this.ctTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox2.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox2.IsFocused = false;
+            this.ctTextBox2.Location = new System.Drawing.Point(369, 444);
+            this.ctTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox2.Multiline = false;
+            this.ctTextBox2.Name = "ctTextBox2";
+            this.ctTextBox2.Padding = new System.Windows.Forms.Padding(7);
+            this.ctTextBox2.PasswordChar = false;
+            this.ctTextBox2.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox2.PlaceholderText = "0";
+            this.ctTextBox2.ReadOnly = false;
+            this.ctTextBox2.Size = new System.Drawing.Size(252, 36);
+            this.ctTextBox2.TabIndex = 6;
+            this.ctTextBox2.Texts = "";
+            this.ctTextBox2.UnderlineedStyle = false;
+            // 
+            // ctTextBox3
+            // 
+            this.ctTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox3.BorderColor = System.Drawing.Color.Transparent;
+            this.ctTextBox3.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox3.BorderRadius = 5;
+            this.ctTextBox3.BorderSize = 0;
+            this.ctTextBox3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox3.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox3.IsFocused = false;
+            this.ctTextBox3.Location = new System.Drawing.Point(381, 526);
+            this.ctTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox3.Multiline = false;
+            this.ctTextBox3.Name = "ctTextBox3";
+            this.ctTextBox3.Padding = new System.Windows.Forms.Padding(7);
+            this.ctTextBox3.PasswordChar = false;
+            this.ctTextBox3.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox3.PlaceholderText = "0";
+            this.ctTextBox3.ReadOnly = false;
+            this.ctTextBox3.Size = new System.Drawing.Size(252, 36);
+            this.ctTextBox3.TabIndex = 6;
+            this.ctTextBox3.Texts = "";
+            this.ctTextBox3.UnderlineedStyle = false;
+            // 
+            // ctTextBox4
+            // 
+            this.ctTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox4.BorderColor = System.Drawing.Color.Transparent;
+            this.ctTextBox4.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox4.BorderRadius = 5;
+            this.ctTextBox4.BorderSize = 0;
+            this.ctTextBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox4.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox4.IsFocused = false;
+            this.ctTextBox4.Location = new System.Drawing.Point(369, 525);
+            this.ctTextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox4.Multiline = false;
+            this.ctTextBox4.Name = "ctTextBox4";
+            this.ctTextBox4.Padding = new System.Windows.Forms.Padding(7);
+            this.ctTextBox4.PasswordChar = false;
+            this.ctTextBox4.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox4.PlaceholderText = "0";
+            this.ctTextBox4.ReadOnly = false;
+            this.ctTextBox4.Size = new System.Drawing.Size(252, 36);
+            this.ctTextBox4.TabIndex = 6;
+            this.ctTextBox4.Texts = "";
+            this.ctTextBox4.UnderlineedStyle = false;
+            // 
             // FormThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(663, 969);
+            this.Controls.Add(this.advancedPanel6);
+            this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.btnQuayve);
             this.Controls.Add(this.btnThanhtoanIn);
             this.Controls.Add(this.btnThanhToan);
-            this.Controls.Add(this.advancedPanel4);
-            this.Controls.Add(this.advancedPanel3);
             this.Controls.Add(this.advancedPanel2);
-            this.Controls.Add(this.cbBoxPTTT);
-            this.Controls.Add(this.cbBoxNhanvien);
             this.Controls.Add(this.advancedPanel1);
+            this.Controls.Add(this.ctTextBox4);
+            this.Controls.Add(this.ctTextBox3);
+            this.Controls.Add(this.ctTextBox2);
             this.Controls.Add(this.ctTextBox1);
             this.Controls.Add(this.lblHour);
             this.Controls.Add(this.lblTime);
@@ -564,12 +620,10 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormThanhToan";
             this.Text = "FormThanhToan";
-            this.advancedPanel4.ResumeLayout(false);
-            this.advancedPanel4.PerformLayout();
-            this.advancedPanel3.ResumeLayout(false);
-            this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel1.ResumeLayout(false);
+            this.advancedPanel5.ResumeLayout(false);
+            this.advancedPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -589,9 +643,7 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton btnTaomoi;
         private CTuserControl.AdvancedPanel advancedPanel1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbBoxNhanvien;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cbBoxPTTT;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -602,13 +654,16 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label lblKhachcantra;
         private System.Windows.Forms.Label lblTienthua;
         private CTuserControl.AdvancedPanel advancedPanel2;
-        private CTuserControl.AdvancedPanel advancedPanel3;
-        private System.Windows.Forms.Label lblGiamgia;
-        private CTuserControl.AdvancedPanel advancedPanel4;
-        private System.Windows.Forms.Label lblTienKhach;
         private HotelManagement.CTControls.CTTextBox txtboxGhichu;
         private CTuserControl.CTButton btnThanhToan;
         private CTuserControl.CTButton btnThanhtoanIn;
         private CTuserControl.CTButton btnQuayve;
+        private CTuserControl.AdvancedPanel advancedPanel5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private CTuserControl.AdvancedPanel advancedPanel6;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private HotelManagement.CTControls.CTTextBox ctTextBox2;
+        private HotelManagement.CTControls.CTTextBox ctTextBox3;
+        private HotelManagement.CTControls.CTTextBox ctTextBox4;
     }
 }

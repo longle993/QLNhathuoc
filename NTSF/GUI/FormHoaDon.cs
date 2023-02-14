@@ -17,6 +17,11 @@ namespace NTSF.GUI
             InitializeComponent();
         }
 
+        private void advancedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
  
     }
 }

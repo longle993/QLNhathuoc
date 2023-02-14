@@ -29,6 +29,13 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelTaoPhieuThem = new System.Windows.Forms.Panel();
+            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.advancedPanel7 = new NTSF.CTuserControl.AdvancedPanel();
+            this.btnThemHang = new FontAwesome.Sharp.IconButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
             this.label9 = new System.Windows.Forms.Label();
@@ -46,21 +53,125 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.advancedPanel7 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnThemHang = new FontAwesome.Sharp.IconButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panelTaoPhieuThem.SuspendLayout();
+            this.advancedPanel5.SuspendLayout();
+            this.advancedPanel7.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel6.SuspendLayout();
             this.advancedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
-            this.advancedPanel5.SuspendLayout();
-            this.advancedPanel7.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panelTaoPhieuThem
+            // 
+            this.panelTaoPhieuThem.Controls.Add(this.advancedPanel5);
+            this.panelTaoPhieuThem.Controls.Add(this.advancedPanel1);
+            this.panelTaoPhieuThem.Location = new System.Drawing.Point(41, 21);
+            this.panelTaoPhieuThem.Name = "panelTaoPhieuThem";
+            this.panelTaoPhieuThem.Size = new System.Drawing.Size(1661, 925);
+            this.panelTaoPhieuThem.TabIndex = 0;
+            // 
+            // advancedPanel5
+            // 
+            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.advancedPanel7);
+            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.label7);
+            this.advancedPanel5.Controls.Add(this.label5);
+            this.advancedPanel5.EdgeWidth = 0;
+            this.advancedPanel5.EndColor = System.Drawing.Color.White;
+            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
+            this.advancedPanel5.Location = new System.Drawing.Point(3, 231);
+            this.advancedPanel5.Name = "advancedPanel5";
+            this.advancedPanel5.RectRadius = 5;
+            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel5.ShadowShift = 5;
+            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
+            this.advancedPanel5.Size = new System.Drawing.Size(1654, 693);
+            this.advancedPanel5.StartColor = System.Drawing.Color.White;
+            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel5.TabIndex = 7;
+            // 
+            // advancedPanel7
+            // 
+            this.advancedPanel7.BackColor = System.Drawing.Color.White;
+            this.advancedPanel7.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel7.Controls.Add(this.btnThemHang);
+            this.advancedPanel7.EdgeWidth = 2;
+            this.advancedPanel7.EndColor = System.Drawing.Color.White;
+            this.advancedPanel7.FlatBorderColor = System.Drawing.Color.Silver;
+            this.advancedPanel7.Location = new System.Drawing.Point(84, 25);
+            this.advancedPanel7.Name = "advancedPanel7";
+            this.advancedPanel7.RectRadius = 5;
+            this.advancedPanel7.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel7.ShadowShift = 0;
+            this.advancedPanel7.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel7.Size = new System.Drawing.Size(213, 43);
+            this.advancedPanel7.StartColor = System.Drawing.Color.White;
+            this.advancedPanel7.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel7.TabIndex = 68;
+            // 
+            // btnThemHang
+            // 
+            this.btnThemHang.AutoSize = true;
+            this.btnThemHang.BackColor = System.Drawing.Color.Transparent;
+            this.btnThemHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemHang.FlatAppearance.BorderSize = 0;
+            this.btnThemHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemHang.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btnThemHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnThemHang.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnThemHang.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnThemHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnThemHang.IconSize = 30;
+            this.btnThemHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemHang.Location = new System.Drawing.Point(3, 0);
+            this.btnThemHang.Name = "btnThemHang";
+            this.btnThemHang.Size = new System.Drawing.Size(213, 43);
+            this.btnThemHang.TabIndex = 67;
+            this.btnThemHang.Tag = "";
+            this.btnThemHang.Text = "THÊM HÀNG HOÁ (F7)";
+            this.btnThemHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemHang.UseVisualStyleBackColor = false;
+            this.btnThemHang.Click += new System.EventHandler(this.btnThemHang_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(263, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 30);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "xx";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(246, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 30);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "(       mục)";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(79, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(152, 30);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Chi tiết phiếu";
             // 
             // advancedPanel1
             // 
@@ -80,7 +191,7 @@ namespace NTSF.GUI
             this.advancedPanel1.EdgeWidth = 0;
             this.advancedPanel1.EndColor = System.Drawing.Color.White;
             this.advancedPanel1.FlatBorderColor = System.Drawing.Color.White;
-            this.advancedPanel1.Location = new System.Drawing.Point(41, 21);
+            this.advancedPanel1.Location = new System.Drawing.Point(3, 0);
             this.advancedPanel1.Name = "advancedPanel1";
             this.advancedPanel1.RectRadius = 5;
             this.advancedPanel1.ShadowColor = System.Drawing.Color.Gray;
@@ -89,7 +200,7 @@ namespace NTSF.GUI
             this.advancedPanel1.Size = new System.Drawing.Size(1654, 210);
             this.advancedPanel1.StartColor = System.Drawing.Color.White;
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel1.TabIndex = 4;
+            this.advancedPanel1.TabIndex = 6;
             // 
             // advancedPanel6
             // 
@@ -168,14 +279,14 @@ namespace NTSF.GUI
             this.advancedPanel3.BackColor = System.Drawing.Color.White;
             this.advancedPanel3.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel3.Controls.Add(this.btnLuu);
-            this.advancedPanel3.EdgeWidth = 0;
+            this.advancedPanel3.EdgeWidth = 2;
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
-            this.advancedPanel3.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(111)))), ((int)(((byte)(69)))));
             this.advancedPanel3.Location = new System.Drawing.Point(1277, 130);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel3.ShadowShift = 2;
+            this.advancedPanel3.ShadowShift = 0;
             this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel3.Size = new System.Drawing.Size(127, 43);
             this.advancedPanel3.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
@@ -204,20 +315,21 @@ namespace NTSF.GUI
             this.btnLuu.TabIndex = 67;
             this.btnLuu.Text = "       LƯU (F9)";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.White;
             this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel2.Controls.Add(this.btnTroVe);
-            this.advancedPanel2.EdgeWidth = 0;
+            this.advancedPanel2.EdgeWidth = 2;
             this.advancedPanel2.EndColor = System.Drawing.Color.White;
-            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
             this.advancedPanel2.Location = new System.Drawing.Point(1449, 130);
             this.advancedPanel2.Name = "advancedPanel2";
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel2.ShadowShift = 2;
+            this.advancedPanel2.ShadowShift = 0;
             this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel2.Size = new System.Drawing.Size(149, 43);
             this.advancedPanel2.StartColor = System.Drawing.Color.White;
@@ -238,9 +350,9 @@ namespace NTSF.GUI
             this.btnTroVe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTroVe.IconSize = 30;
             this.btnTroVe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTroVe.Location = new System.Drawing.Point(0, -6);
+            this.btnTroVe.Location = new System.Drawing.Point(0, 3);
             this.btnTroVe.Name = "btnTroVe";
-            this.btnTroVe.Size = new System.Drawing.Size(149, 46);
+            this.btnTroVe.Size = new System.Drawing.Size(149, 37);
             this.btnTroVe.TabIndex = 66;
             this.btnTroVe.Tag = "";
             this.btnTroVe.Text = "TRỞ VỀ (F10)";
@@ -295,10 +407,10 @@ namespace NTSF.GUI
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(879, 94);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 32);
+            this.label4.Size = new System.Drawing.Size(84, 28);
             this.label4.TabIndex = 52;
             this.label4.Text = "Ghi chú";
             // 
@@ -306,10 +418,10 @@ namespace NTSF.GUI
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(524, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 32);
+            this.label3.Size = new System.Drawing.Size(114, 28);
             this.label3.TabIndex = 52;
             this.label3.Text = "Thành tiền";
             // 
@@ -317,10 +429,10 @@ namespace NTSF.GUI
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(345, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 32);
+            this.label2.Size = new System.Drawing.Size(98, 28);
             this.label2.TabIndex = 52;
             this.label2.Text = "Giờ nhập";
             // 
@@ -328,10 +440,10 @@ namespace NTSF.GUI
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(78, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 32);
+            this.label1.Size = new System.Drawing.Size(115, 28);
             this.label1.TabIndex = 52;
             this.label1.Text = "Ngày nhập";
             // 
@@ -347,118 +459,22 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "TẠO PHIẾU";
             // 
-            // advancedPanel5
-            // 
-            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.advancedPanel7);
-            this.advancedPanel5.Controls.Add(this.label8);
-            this.advancedPanel5.Controls.Add(this.label7);
-            this.advancedPanel5.Controls.Add(this.label5);
-            this.advancedPanel5.EdgeWidth = 0;
-            this.advancedPanel5.EndColor = System.Drawing.Color.White;
-            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
-            this.advancedPanel5.Location = new System.Drawing.Point(41, 252);
-            this.advancedPanel5.Name = "advancedPanel5";
-            this.advancedPanel5.RectRadius = 5;
-            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel5.ShadowShift = 5;
-            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel5.Size = new System.Drawing.Size(1654, 693);
-            this.advancedPanel5.StartColor = System.Drawing.Color.White;
-            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel5.TabIndex = 5;
-            // 
-            // advancedPanel7
-            // 
-            this.advancedPanel7.BackColor = System.Drawing.Color.White;
-            this.advancedPanel7.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel7.Controls.Add(this.btnThemHang);
-            this.advancedPanel7.EdgeWidth = 0;
-            this.advancedPanel7.EndColor = System.Drawing.Color.White;
-            this.advancedPanel7.FlatBorderColor = System.Drawing.Color.Transparent;
-            this.advancedPanel7.Location = new System.Drawing.Point(84, 25);
-            this.advancedPanel7.Name = "advancedPanel7";
-            this.advancedPanel7.RectRadius = 5;
-            this.advancedPanel7.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel7.ShadowShift = 2;
-            this.advancedPanel7.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel7.Size = new System.Drawing.Size(213, 43);
-            this.advancedPanel7.StartColor = System.Drawing.Color.White;
-            this.advancedPanel7.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel7.TabIndex = 68;
-            // 
-            // btnThemHang
-            // 
-            this.btnThemHang.AutoSize = true;
-            this.btnThemHang.BackColor = System.Drawing.Color.Transparent;
-            this.btnThemHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemHang.FlatAppearance.BorderSize = 0;
-            this.btnThemHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemHang.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btnThemHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnThemHang.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnThemHang.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnThemHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnThemHang.IconSize = 30;
-            this.btnThemHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHang.Location = new System.Drawing.Point(3, 0);
-            this.btnThemHang.Name = "btnThemHang";
-            this.btnThemHang.Size = new System.Drawing.Size(213, 43);
-            this.btnThemHang.TabIndex = 67;
-            this.btnThemHang.Tag = "";
-            this.btnThemHang.Text = "THÊM HÀNG HOÁ (F7)";
-            this.btnThemHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemHang.UseVisualStyleBackColor = false;
-            this.btnThemHang.Click += new System.EventHandler(this.btnThemHang_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(263, 101);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 28);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(246, 101);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 28);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "(       mục)";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(79, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 28);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "Chi tiết phiếu";
-            // 
             // FormTaoPhieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1744, 985);
-            this.Controls.Add(this.advancedPanel5);
-            this.Controls.Add(this.advancedPanel1);
+            this.Controls.Add(this.panelTaoPhieuThem);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTaoPhieu";
             this.Text = "FormTaoPhieu";
+            this.panelTaoPhieuThem.ResumeLayout(false);
+            this.advancedPanel5.ResumeLayout(false);
+            this.advancedPanel5.PerformLayout();
+            this.advancedPanel7.ResumeLayout(false);
+            this.advancedPanel7.PerformLayout();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel6.ResumeLayout(false);
@@ -470,20 +486,29 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
-            this.advancedPanel5.ResumeLayout(false);
-            this.advancedPanel5.PerformLayout();
-            this.advancedPanel7.ResumeLayout(false);
-            this.advancedPanel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panelTaoPhieuThem;
+        private CTuserControl.AdvancedPanel advancedPanel5;
+        private CTuserControl.AdvancedPanel advancedPanel7;
+        private FontAwesome.Sharp.IconButton btnThemHang;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
         private CTuserControl.AdvancedPanel advancedPanel1;
+        private CTuserControl.AdvancedPanel advancedPanel6;
+        private System.Windows.Forms.Label label9;
         private CTuserControl.AdvancedPanel advancedPanel4;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Label lblHour;
         private CTuserControl.AdvancedPanel advancedPanel3;
+        private FontAwesome.Sharp.IconButton btnLuu;
         private CTuserControl.AdvancedPanel advancedPanel2;
+        private FontAwesome.Sharp.IconButton btnTroVe;
         private CTuserControl.CTDatePicker ctDatePicker3;
         private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
         private System.Windows.Forms.Label label4;
@@ -491,17 +516,5 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblHour;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private CTuserControl.AdvancedPanel advancedPanel6;
-        private System.Windows.Forms.Label label9;
-        private FontAwesome.Sharp.IconButton btnLuu;
-        private FontAwesome.Sharp.IconButton btnTroVe;
-        private CTuserControl.AdvancedPanel advancedPanel7;
-        private FontAwesome.Sharp.IconButton btnThemHang;
     }
 }

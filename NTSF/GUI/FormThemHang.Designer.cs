@@ -51,8 +51,6 @@ namespace NTSF.GUI
             this.txtTKHHNhapKho = new HotelManagement.CTControls.CTTextBox();
             this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
             this.ctTextBox2 = new HotelManagement.CTControls.CTTextBox();
-            this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label20 = new System.Windows.Forms.Label();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -62,17 +60,7 @@ namespace NTSF.GUI
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.ctTextBox3 = new HotelManagement.CTControls.CTTextBox();
-            this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.advancedPanel7 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label22 = new System.Windows.Forms.Label();
             this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
-            this.advancedPanel8 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.advancedPanel9 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.advancedPanel10 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label25 = new System.Windows.Forms.Label();
             this.advancedPanel11 = new NTSF.CTuserControl.AdvancedPanel();
             this.label26 = new System.Windows.Forms.Label();
             this.advancedPanel12 = new NTSF.CTuserControl.AdvancedPanel();
@@ -85,16 +73,18 @@ namespace NTSF.GUI
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.advancedPanel16 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnPlusNCC = new FontAwesome.Sharp.IconButton();
-            this.advancedPanel1.SuspendLayout();
+            this.ctTextBox4 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox5 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox6 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox7 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox8 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox9 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox10 = new HotelManagement.CTControls.CTTextBox();
+            this.ctTextBox11 = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel4.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
-            this.advancedPanel6.SuspendLayout();
-            this.advancedPanel7.SuspendLayout();
-            this.advancedPanel8.SuspendLayout();
-            this.advancedPanel9.SuspendLayout();
-            this.advancedPanel10.SuspendLayout();
             this.advancedPanel11.SuspendLayout();
             this.advancedPanel12.SuspendLayout();
             this.advancedPanel13.SuspendLayout();
@@ -400,35 +390,6 @@ namespace NTSF.GUI
             this.ctTextBox2.Texts = "";
             this.ctTextBox2.UnderlineedStyle = false;
             // 
-            // advancedPanel1
-            // 
-            this.advancedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel1.Controls.Add(this.label20);
-            this.advancedPanel1.EdgeWidth = 1;
-            this.advancedPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel1.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel1.Location = new System.Drawing.Point(355, 277);
-            this.advancedPanel1.Name = "advancedPanel1";
-            this.advancedPanel1.RectRadius = 5;
-            this.advancedPanel1.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel1.ShadowShift = 2;
-            this.advancedPanel1.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel1.Size = new System.Drawing.Size(170, 45);
-            this.advancedPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel1.TabIndex = 59;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(144, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(22, 25);
-            this.label20.TabIndex = 60;
-            this.label20.Text = "0";
-            // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.White;
@@ -567,73 +528,15 @@ namespace NTSF.GUI
             this.ctTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.ctTextBox3.Multiline = false;
             this.ctTextBox3.Name = "ctTextBox3";
-            this.ctTextBox3.Padding = new System.Windows.Forms.Padding(7);
+            this.ctTextBox3.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
             this.ctTextBox3.PasswordChar = false;
             this.ctTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.ctTextBox3.PlaceholderText = "";
             this.ctTextBox3.ReadOnly = false;
-            this.ctTextBox3.Size = new System.Drawing.Size(208, 43);
+            this.ctTextBox3.Size = new System.Drawing.Size(208, 45);
             this.ctTextBox3.TabIndex = 55;
             this.ctTextBox3.Texts = "";
             this.ctTextBox3.UnderlineedStyle = false;
-            // 
-            // advancedPanel6
-            // 
-            this.advancedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel6.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel6.Controls.Add(this.label21);
-            this.advancedPanel6.EdgeWidth = 1;
-            this.advancedPanel6.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel6.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel6.Location = new System.Drawing.Point(1363, 451);
-            this.advancedPanel6.Name = "advancedPanel6";
-            this.advancedPanel6.RectRadius = 5;
-            this.advancedPanel6.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel6.ShadowShift = 0;
-            this.advancedPanel6.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel6.Size = new System.Drawing.Size(208, 45);
-            this.advancedPanel6.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel6.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel6.TabIndex = 65;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(183, 9);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(22, 25);
-            this.label21.TabIndex = 60;
-            this.label21.Text = "0";
-            // 
-            // advancedPanel7
-            // 
-            this.advancedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel7.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel7.Controls.Add(this.label22);
-            this.advancedPanel7.EdgeWidth = 1;
-            this.advancedPanel7.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel7.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel7.Location = new System.Drawing.Point(919, 536);
-            this.advancedPanel7.Name = "advancedPanel7";
-            this.advancedPanel7.RectRadius = 5;
-            this.advancedPanel7.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel7.ShadowShift = 0;
-            this.advancedPanel7.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel7.Size = new System.Drawing.Size(208, 45);
-            this.advancedPanel7.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel7.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel7.TabIndex = 65;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(183, 9);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(22, 25);
-            this.label22.TabIndex = 60;
-            this.label22.Text = "0";
             // 
             // ctDatePicker1
             // 
@@ -654,93 +557,6 @@ namespace NTSF.GUI
             this.ctDatePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctDatePicker1.TabIndex = 61;
             this.ctDatePicker1.TextColor = System.Drawing.Color.Black;
-            // 
-            // advancedPanel8
-            // 
-            this.advancedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel8.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel8.Controls.Add(this.label23);
-            this.advancedPanel8.EdgeWidth = 1;
-            this.advancedPanel8.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel8.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel8.Location = new System.Drawing.Point(638, 536);
-            this.advancedPanel8.Name = "advancedPanel8";
-            this.advancedPanel8.RectRadius = 5;
-            this.advancedPanel8.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel8.ShadowShift = 0;
-            this.advancedPanel8.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel8.Size = new System.Drawing.Size(208, 45);
-            this.advancedPanel8.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel8.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel8.TabIndex = 66;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(159, 9);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(46, 25);
-            this.label23.TabIndex = 60;
-            this.label23.Text = "0.00";
-            // 
-            // advancedPanel9
-            // 
-            this.advancedPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel9.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel9.Controls.Add(this.label24);
-            this.advancedPanel9.EdgeWidth = 1;
-            this.advancedPanel9.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel9.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel9.Location = new System.Drawing.Point(355, 536);
-            this.advancedPanel9.Name = "advancedPanel9";
-            this.advancedPanel9.RectRadius = 5;
-            this.advancedPanel9.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel9.ShadowShift = 0;
-            this.advancedPanel9.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel9.Size = new System.Drawing.Size(208, 45);
-            this.advancedPanel9.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel9.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel9.TabIndex = 67;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(159, 9);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(46, 25);
-            this.label24.TabIndex = 60;
-            this.label24.Text = "0.00";
-            // 
-            // advancedPanel10
-            // 
-            this.advancedPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel10.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel10.Controls.Add(this.label25);
-            this.advancedPanel10.EdgeWidth = 1;
-            this.advancedPanel10.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel10.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel10.Location = new System.Drawing.Point(68, 536);
-            this.advancedPanel10.Name = "advancedPanel10";
-            this.advancedPanel10.RectRadius = 5;
-            this.advancedPanel10.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel10.ShadowShift = 0;
-            this.advancedPanel10.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel10.Size = new System.Drawing.Size(212, 45);
-            this.advancedPanel10.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel10.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel10.TabIndex = 68;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(183, 9);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(22, 25);
-            this.label25.TabIndex = 60;
-            this.label25.Text = "0";
             // 
             // advancedPanel11
             // 
@@ -775,14 +591,14 @@ namespace NTSF.GUI
             this.advancedPanel12.BackColor = System.Drawing.Color.White;
             this.advancedPanel12.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel12.Controls.Add(this.btnLuuThemmoi);
-            this.advancedPanel12.EdgeWidth = 0;
+            this.advancedPanel12.EdgeWidth = 2;
             this.advancedPanel12.EndColor = System.Drawing.Color.White;
-            this.advancedPanel12.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel12.FlatBorderColor = System.Drawing.Color.Silver;
             this.advancedPanel12.Location = new System.Drawing.Point(1002, 798);
             this.advancedPanel12.Name = "advancedPanel12";
             this.advancedPanel12.RectRadius = 5;
             this.advancedPanel12.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel12.ShadowShift = 2;
+            this.advancedPanel12.ShadowShift = 0;
             this.advancedPanel12.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel12.Size = new System.Drawing.Size(223, 43);
             this.advancedPanel12.StartColor = System.Drawing.Color.White;
@@ -817,14 +633,14 @@ namespace NTSF.GUI
             this.advancedPanel13.BackColor = System.Drawing.Color.White;
             this.advancedPanel13.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel13.Controls.Add(this.btnLuuThemHang);
-            this.advancedPanel13.EdgeWidth = 0;
+            this.advancedPanel13.EdgeWidth = 2;
             this.advancedPanel13.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
-            this.advancedPanel13.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel13.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(111)))), ((int)(((byte)(69)))));
             this.advancedPanel13.Location = new System.Drawing.Point(1257, 798);
             this.advancedPanel13.Name = "advancedPanel13";
             this.advancedPanel13.RectRadius = 5;
             this.advancedPanel13.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel13.ShadowShift = 2;
+            this.advancedPanel13.ShadowShift = 0;
             this.advancedPanel13.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel13.Size = new System.Drawing.Size(127, 43);
             this.advancedPanel13.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
@@ -853,20 +669,21 @@ namespace NTSF.GUI
             this.btnLuuThemHang.TabIndex = 67;
             this.btnLuuThemHang.Text = "       LƯU (F9)";
             this.btnLuuThemHang.UseVisualStyleBackColor = false;
+            this.btnLuuThemHang.Click += new System.EventHandler(this.btnLuuThemHang_Click);
             // 
             // advancedPanel14
             // 
             this.advancedPanel14.BackColor = System.Drawing.Color.White;
             this.advancedPanel14.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel14.Controls.Add(this.btnDongThemHang);
-            this.advancedPanel14.EdgeWidth = 0;
+            this.advancedPanel14.EdgeWidth = 2;
             this.advancedPanel14.EndColor = System.Drawing.Color.White;
-            this.advancedPanel14.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel14.FlatBorderColor = System.Drawing.Color.Silver;
             this.advancedPanel14.Location = new System.Drawing.Point(1417, 798);
             this.advancedPanel14.Name = "advancedPanel14";
             this.advancedPanel14.RectRadius = 5;
             this.advancedPanel14.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel14.ShadowShift = 2;
+            this.advancedPanel14.ShadowShift = 0;
             this.advancedPanel14.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel14.Size = new System.Drawing.Size(141, 43);
             this.advancedPanel14.StartColor = System.Drawing.Color.White;
@@ -965,29 +782,230 @@ namespace NTSF.GUI
             this.btnPlusNCC.TabIndex = 74;
             this.btnPlusNCC.UseVisualStyleBackColor = false;
             // 
+            // ctTextBox4
+            // 
+            this.ctTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox4.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox4.BorderRadius = 5;
+            this.ctTextBox4.BorderSize = 1;
+            this.ctTextBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctTextBox4.IsFocused = false;
+            this.ctTextBox4.Location = new System.Drawing.Point(355, 280);
+            this.ctTextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox4.Multiline = false;
+            this.ctTextBox4.Name = "ctTextBox4";
+            this.ctTextBox4.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox4.PasswordChar = false;
+            this.ctTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.ctTextBox4.PlaceholderText = "";
+            this.ctTextBox4.ReadOnly = false;
+            this.ctTextBox4.Size = new System.Drawing.Size(170, 45);
+            this.ctTextBox4.TabIndex = 75;
+            this.ctTextBox4.Texts = "";
+            this.ctTextBox4.UnderlineedStyle = false;
+            // 
+            // ctTextBox5
+            // 
+            this.ctTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox5.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox5.BorderRadius = 5;
+            this.ctTextBox5.BorderSize = 1;
+            this.ctTextBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox5.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox5.IsFocused = false;
+            this.ctTextBox5.Location = new System.Drawing.Point(68, 536);
+            this.ctTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox5.Multiline = false;
+            this.ctTextBox5.Name = "ctTextBox5";
+            this.ctTextBox5.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox5.PasswordChar = false;
+            this.ctTextBox5.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox5.PlaceholderText = "0";
+            this.ctTextBox5.ReadOnly = false;
+            this.ctTextBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox5.Size = new System.Drawing.Size(212, 45);
+            this.ctTextBox5.TabIndex = 76;
+            this.ctTextBox5.Texts = "";
+            this.ctTextBox5.UnderlineedStyle = false;
+            // 
+            // ctTextBox6
+            // 
+            this.ctTextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox6.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox6.BorderRadius = 5;
+            this.ctTextBox6.BorderSize = 1;
+            this.ctTextBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox6.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox6.IsFocused = false;
+            this.ctTextBox6.Location = new System.Drawing.Point(355, 536);
+            this.ctTextBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox6.Multiline = false;
+            this.ctTextBox6.Name = "ctTextBox6";
+            this.ctTextBox6.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox6.PasswordChar = false;
+            this.ctTextBox6.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox6.PlaceholderText = "0.00";
+            this.ctTextBox6.ReadOnly = false;
+            this.ctTextBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox6.Size = new System.Drawing.Size(208, 45);
+            this.ctTextBox6.TabIndex = 77;
+            this.ctTextBox6.Texts = "";
+            this.ctTextBox6.UnderlineedStyle = false;
+            // 
+            // ctTextBox7
+            // 
+            this.ctTextBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox7.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox7.BorderRadius = 5;
+            this.ctTextBox7.BorderSize = 1;
+            this.ctTextBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox7.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox7.IsFocused = false;
+            this.ctTextBox7.Location = new System.Drawing.Point(638, 536);
+            this.ctTextBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox7.Multiline = false;
+            this.ctTextBox7.Name = "ctTextBox7";
+            this.ctTextBox7.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox7.PasswordChar = false;
+            this.ctTextBox7.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox7.PlaceholderText = "0.00";
+            this.ctTextBox7.ReadOnly = false;
+            this.ctTextBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox7.Size = new System.Drawing.Size(208, 45);
+            this.ctTextBox7.TabIndex = 78;
+            this.ctTextBox7.Texts = "";
+            this.ctTextBox7.UnderlineedStyle = false;
+            // 
+            // ctTextBox8
+            // 
+            this.ctTextBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox8.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox8.BorderRadius = 5;
+            this.ctTextBox8.BorderSize = 1;
+            this.ctTextBox8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox8.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox8.IsFocused = false;
+            this.ctTextBox8.Location = new System.Drawing.Point(921, 536);
+            this.ctTextBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox8.Multiline = false;
+            this.ctTextBox8.Name = "ctTextBox8";
+            this.ctTextBox8.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox8.PasswordChar = false;
+            this.ctTextBox8.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.ctTextBox8.PlaceholderText = "0";
+            this.ctTextBox8.ReadOnly = false;
+            this.ctTextBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox8.Size = new System.Drawing.Size(208, 45);
+            this.ctTextBox8.TabIndex = 79;
+            this.ctTextBox8.Texts = "";
+            this.ctTextBox8.UnderlineedStyle = false;
+            // 
+            // ctTextBox9
+            // 
+            this.ctTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox9.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox9.BorderRadius = 5;
+            this.ctTextBox9.BorderSize = 1;
+            this.ctTextBox9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox9.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox9.IsFocused = false;
+            this.ctTextBox9.Location = new System.Drawing.Point(1363, 449);
+            this.ctTextBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox9.Multiline = false;
+            this.ctTextBox9.Name = "ctTextBox9";
+            this.ctTextBox9.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox9.PasswordChar = false;
+            this.ctTextBox9.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.ctTextBox9.PlaceholderText = "0.00";
+            this.ctTextBox9.ReadOnly = false;
+            this.ctTextBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox9.Size = new System.Drawing.Size(208, 45);
+            this.ctTextBox9.TabIndex = 80;
+            this.ctTextBox9.Texts = "";
+            this.ctTextBox9.UnderlineedStyle = false;
+            // 
+            // ctTextBox10
+            // 
+            this.ctTextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox10.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox10.BorderRadius = 5;
+            this.ctTextBox10.BorderSize = 1;
+            this.ctTextBox10.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox10.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox10.IsFocused = false;
+            this.ctTextBox10.Location = new System.Drawing.Point(921, 538);
+            this.ctTextBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox10.Multiline = false;
+            this.ctTextBox10.Name = "ctTextBox10";
+            this.ctTextBox10.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox10.PasswordChar = false;
+            this.ctTextBox10.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox10.PlaceholderText = "0";
+            this.ctTextBox10.ReadOnly = false;
+            this.ctTextBox10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox10.Size = new System.Drawing.Size(208, 45);
+            this.ctTextBox10.TabIndex = 79;
+            this.ctTextBox10.Texts = "";
+            this.ctTextBox10.UnderlineedStyle = false;
+            // 
+            // ctTextBox11
+            // 
+            this.ctTextBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTextBox11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.ctTextBox11.BorderFocusColor = System.Drawing.Color.Black;
+            this.ctTextBox11.BorderRadius = 5;
+            this.ctTextBox11.BorderSize = 1;
+            this.ctTextBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTextBox11.ForeColor = System.Drawing.Color.Black;
+            this.ctTextBox11.IsFocused = false;
+            this.ctTextBox11.Location = new System.Drawing.Point(1363, 451);
+            this.ctTextBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.ctTextBox11.Multiline = false;
+            this.ctTextBox11.Name = "ctTextBox11";
+            this.ctTextBox11.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.ctTextBox11.PasswordChar = false;
+            this.ctTextBox11.PlaceholderColor = System.Drawing.Color.Black;
+            this.ctTextBox11.PlaceholderText = "0.00";
+            this.ctTextBox11.ReadOnly = false;
+            this.ctTextBox11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ctTextBox11.Size = new System.Drawing.Size(208, 45);
+            this.ctTextBox11.TabIndex = 80;
+            this.ctTextBox11.Texts = "";
+            this.ctTextBox11.UnderlineedStyle = false;
+            // 
             // FormThemHang
             // 
+            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1661, 925);
+            this.Controls.Add(this.ctTextBox11);
+            this.Controls.Add(this.ctTextBox10);
+            this.Controls.Add(this.ctTextBox9);
+            this.Controls.Add(this.ctTextBox8);
+            this.Controls.Add(this.ctTextBox7);
+            this.Controls.Add(this.ctTextBox6);
+            this.Controls.Add(this.ctTextBox5);
+            this.Controls.Add(this.ctTextBox4);
             this.Controls.Add(this.advancedPanel16);
             this.Controls.Add(this.advancedPanel15);
             this.Controls.Add(this.advancedPanel14);
             this.Controls.Add(this.advancedPanel13);
             this.Controls.Add(this.advancedPanel12);
             this.Controls.Add(this.advancedPanel11);
-            this.Controls.Add(this.advancedPanel10);
-            this.Controls.Add(this.advancedPanel9);
-            this.Controls.Add(this.advancedPanel8);
             this.Controls.Add(this.ctDatePicker1);
-            this.Controls.Add(this.advancedPanel7);
-            this.Controls.Add(this.advancedPanel6);
             this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.advancedPanel4);
             this.Controls.Add(this.advancedPanel3);
             this.Controls.Add(this.advancedPanel2);
-            this.Controls.Add(this.advancedPanel1);
             this.Controls.Add(this.ctTextBox2);
             this.Controls.Add(this.ctTextBox3);
             this.Controls.Add(this.ctTextBox1);
@@ -1016,22 +1034,10 @@ namespace NTSF.GUI
             this.Name = "FormThemHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThemHang";
-            this.advancedPanel1.ResumeLayout(false);
-            this.advancedPanel1.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel3.ResumeLayout(false);
             this.advancedPanel4.ResumeLayout(false);
             this.advancedPanel5.ResumeLayout(false);
-            this.advancedPanel6.ResumeLayout(false);
-            this.advancedPanel6.PerformLayout();
-            this.advancedPanel7.ResumeLayout(false);
-            this.advancedPanel7.PerformLayout();
-            this.advancedPanel8.ResumeLayout(false);
-            this.advancedPanel8.PerformLayout();
-            this.advancedPanel9.ResumeLayout(false);
-            this.advancedPanel9.PerformLayout();
-            this.advancedPanel10.ResumeLayout(false);
-            this.advancedPanel10.PerformLayout();
             this.advancedPanel11.ResumeLayout(false);
             this.advancedPanel11.PerformLayout();
             this.advancedPanel12.ResumeLayout(false);
@@ -1071,8 +1077,6 @@ namespace NTSF.GUI
         private HotelManagement.CTControls.CTTextBox txtTKHHNhapKho;
         private HotelManagement.CTControls.CTTextBox ctTextBox1;
         private HotelManagement.CTControls.CTTextBox ctTextBox2;
-        private CTuserControl.AdvancedPanel advancedPanel1;
-        private System.Windows.Forms.Label label20;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -1082,17 +1086,7 @@ namespace NTSF.GUI
         private CTuserControl.AdvancedPanel advancedPanel5;
         private System.Windows.Forms.ComboBox comboBox4;
         private HotelManagement.CTControls.CTTextBox ctTextBox3;
-        private CTuserControl.AdvancedPanel advancedPanel6;
-        private System.Windows.Forms.Label label21;
-        private CTuserControl.AdvancedPanel advancedPanel7;
-        private System.Windows.Forms.Label label22;
         private CTuserControl.CTDatePicker ctDatePicker1;
-        private CTuserControl.AdvancedPanel advancedPanel8;
-        private System.Windows.Forms.Label label23;
-        private CTuserControl.AdvancedPanel advancedPanel9;
-        private System.Windows.Forms.Label label24;
-        private CTuserControl.AdvancedPanel advancedPanel10;
-        private System.Windows.Forms.Label label25;
         private CTuserControl.AdvancedPanel advancedPanel11;
         private System.Windows.Forms.Label label26;
         private CTuserControl.AdvancedPanel advancedPanel12;
@@ -1105,5 +1099,13 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton iconButton1;
         private CTuserControl.AdvancedPanel advancedPanel16;
         private FontAwesome.Sharp.IconButton btnPlusNCC;
+        private HotelManagement.CTControls.CTTextBox ctTextBox4;
+        private HotelManagement.CTControls.CTTextBox ctTextBox5;
+        private HotelManagement.CTControls.CTTextBox ctTextBox6;
+        private HotelManagement.CTControls.CTTextBox ctTextBox7;
+        private HotelManagement.CTControls.CTTextBox ctTextBox8;
+        private HotelManagement.CTControls.CTTextBox ctTextBox9;
+        private HotelManagement.CTControls.CTTextBox ctTextBox10;
+        private HotelManagement.CTControls.CTTextBox ctTextBox11;
     }
 }

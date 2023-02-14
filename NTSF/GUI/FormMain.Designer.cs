@@ -55,20 +55,6 @@ namespace NTSF.GUI
         {
             this.components = new System.ComponentModel.Container();
             this.panelMenu = new NTSF.GUI.FormMain.DoubleBufferPanel();
-            this.panelLogo = new NTSF.GUI.FormMain.DoubleBufferPanel();
-            this.lblAdmin = new System.Windows.Forms.Label();
-            this.panel1 = new NTSF.GUI.FormMain.DoubleBufferPanel();
-            this.lbTime = new System.Windows.Forms.Label();
-            this.panel2 = new NTSF.GUI.FormMain.DoubleBufferPanel();
-            this.panelDesktop = new NTSF.GUI.FormMain.DoubleBufferPanel();
-            this.dropdownMenu1 = new NTSF.CTuserControl.DropdownMenu(this.components);
-            this.dropmenuNhapkho = new System.Windows.Forms.ToolStripMenuItem();
-            this.dropmenuXuatkho = new System.Windows.Forms.ToolStripMenuItem();
-            this.dropmenuTonkho = new System.Windows.Forms.ToolStripMenuItem();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.ctCirclePictureBox5 = new NTSF.CTuserControl.CTCirclePictureBox();
-            this.ctCirclePictureBox4 = new NTSF.CTuserControl.CTCirclePictureBox();
-            this.btnNhathuoc = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnCaidat = new FontAwesome.Sharp.IconButton();
             this.btnDanhmuc = new FontAwesome.Sharp.IconButton();
@@ -76,22 +62,40 @@ namespace NTSF.GUI
             this.btnKho = new FontAwesome.Sharp.IconButton();
             this.btnHoadon = new FontAwesome.Sharp.IconButton();
             this.btnBuy = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.picAdmin = new System.Windows.Forms.PictureBox();
+            this.panel1 = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.lbTime = new System.Windows.Forms.Label();
+            this.panel2 = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.ctCirclePictureBox5 = new NTSF.CTuserControl.CTCirclePictureBox();
+            this.ctCirclePictureBox4 = new NTSF.CTuserControl.CTCirclePictureBox();
+            this.btnNhathuoc = new FontAwesome.Sharp.IconButton();
+            this.panelDesktop = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.dropdownMenu1 = new NTSF.CTuserControl.DropdownMenu(this.components);
+            this.dropmenuNhapkho = new System.Windows.Forms.ToolStripMenuItem();
+            this.dropmenuXuatkho = new System.Windows.Forms.ToolStripMenuItem();
+            this.dropmenuTonkho = new System.Windows.Forms.ToolStripMenuItem();
             this.ctCirclePictureBox2 = new NTSF.CTuserControl.CTCirclePictureBox();
             this.ctCirclePictureBox3 = new NTSF.CTuserControl.CTCirclePictureBox();
             this.ctCirclePictureBox1 = new NTSF.CTuserControl.CTCirclePictureBox();
+            this.dropdownMenu2 = new NTSF.CTuserControl.DropdownMenu(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.dropdownMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).BeginInit();
+            this.dropdownMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox1)).BeginInit();
+            this.dropdownMenu2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -111,189 +115,6 @@ namespace NTSF.GUI
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(176, 1080);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.lblAdmin);
-            this.panelLogo.Controls.Add(this.picAdmin);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(176, 220);
-            this.panelLogo.TabIndex = 2;
-            // 
-            // lblAdmin
-            // 
-            this.lblAdmin.AutoSize = true;
-            this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdmin.Location = new System.Drawing.Point(50, 129);
-            this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(83, 32);
-            this.lblAdmin.TabIndex = 1;
-            this.lblAdmin.Text = "admin";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.panel1.Controls.Add(this.iconPictureBox1);
-            this.panel1.Controls.Add(this.lbTime);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnNhathuoc);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(176, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1744, 95);
-            this.panel1.TabIndex = 2;
-            // 
-            // lbTime
-            // 
-            this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.ForeColor = System.Drawing.Color.White;
-            this.lbTime.Location = new System.Drawing.Point(1415, 47);
-            this.lbTime.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
-            this.lbTime.Name = "lbTime";
-            this.lbTime.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.lbTime.Size = new System.Drawing.Size(116, 33);
-            this.lbTime.TabIndex = 7;
-            this.lbTime.Text = "09/09/2003";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.ctCirclePictureBox5);
-            this.panel2.Controls.Add(this.ctCirclePictureBox4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1594, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 95);
-            this.panel2.TabIndex = 6;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(176, 95);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1744, 985);
-            this.panelDesktop.TabIndex = 3;
-            // 
-            // dropdownMenu1
-            // 
-            this.dropdownMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.dropdownMenu1.IsMainMenu = false;
-            this.dropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dropmenuNhapkho,
-            this.dropmenuXuatkho,
-            this.dropmenuTonkho});
-            this.dropdownMenu1.MenuItemHeight = 25;
-            this.dropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
-            this.dropdownMenu1.Name = "dropdownMenu1";
-            this.dropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenu1.Size = new System.Drawing.Size(241, 151);
-            // 
-            // dropmenuNhapkho
-            // 
-            this.dropmenuNhapkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.dropmenuNhapkho.Name = "dropmenuNhapkho";
-            this.dropmenuNhapkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuNhapkho.Size = new System.Drawing.Size(240, 38);
-            this.dropmenuNhapkho.Text = "Nhập kho";
-            this.dropmenuNhapkho.Click += new System.EventHandler(this.dropmenuNhapkho_Click);
-            // 
-            // dropmenuXuatkho
-            // 
-            this.dropmenuXuatkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.dropmenuXuatkho.Name = "dropmenuXuatkho";
-            this.dropmenuXuatkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuXuatkho.Size = new System.Drawing.Size(240, 38);
-            this.dropmenuXuatkho.Text = "Xuất kho";
-            this.dropmenuXuatkho.Click += new System.EventHandler(this.dropmenuXuatkho_Click);
-            // 
-            // dropmenuTonkho
-            // 
-            this.dropmenuTonkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.dropmenuTonkho.Name = "dropmenuTonkho";
-            this.dropmenuTonkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuTonkho.Size = new System.Drawing.Size(240, 38);
-            this.dropmenuTonkho.Text = "Tồn kho";
-            this.dropmenuTonkho.Click += new System.EventHandler(this.dropmenuTonkho_Click);
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 44;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1365, 40);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(53, 44);
-            this.iconPictureBox1.TabIndex = 8;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // ctCirclePictureBox5
-            // 
-            this.ctCirclePictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(170)))), ((int)(((byte)(104)))));
-            this.ctCirclePictureBox5.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.ctCirclePictureBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(170)))), ((int)(((byte)(104)))));
-            this.ctCirclePictureBox5.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(170)))), ((int)(((byte)(104)))));
-            this.ctCirclePictureBox5.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.ctCirclePictureBox5.BorderSize = 0;
-            this.ctCirclePictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctCirclePictureBox5.GradientAngle = 50F;
-            this.ctCirclePictureBox5.Location = new System.Drawing.Point(75, 0);
-            this.ctCirclePictureBox5.Name = "ctCirclePictureBox5";
-            this.ctCirclePictureBox5.Size = new System.Drawing.Size(33, 33);
-            this.ctCirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ctCirclePictureBox5.TabIndex = 0;
-            this.ctCirclePictureBox5.TabStop = false;
-            this.ctCirclePictureBox5.Click += new System.EventHandler(this.btnMin_Click);
-            this.ctCirclePictureBox5.MouseLeave += new System.EventHandler(this.ctCirclePictureBox5_MouseLeave);
-            this.ctCirclePictureBox5.MouseHover += new System.EventHandler(this.ctCirclePictureBox5_MouseHover);
-            // 
-            // ctCirclePictureBox4
-            // 
-            this.ctCirclePictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.ctCirclePictureBox4.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.ctCirclePictureBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.ctCirclePictureBox4.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.ctCirclePictureBox4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.ctCirclePictureBox4.BorderSize = 0;
-            this.ctCirclePictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctCirclePictureBox4.GradientAngle = 50F;
-            this.ctCirclePictureBox4.Location = new System.Drawing.Point(114, 0);
-            this.ctCirclePictureBox4.Name = "ctCirclePictureBox4";
-            this.ctCirclePictureBox4.Size = new System.Drawing.Size(33, 33);
-            this.ctCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.ctCirclePictureBox4.TabIndex = 0;
-            this.ctCirclePictureBox4.TabStop = false;
-            this.ctCirclePictureBox4.Click += new System.EventHandler(this.btnExit_Click);
-            this.ctCirclePictureBox4.MouseLeave += new System.EventHandler(this.ctCirclePictureBox4_MouseLeave);
-            this.ctCirclePictureBox4.MouseHover += new System.EventHandler(this.ctCirclePictureBox4_MouseHover);
-            // 
-            // btnNhathuoc
-            // 
-            this.btnNhathuoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNhathuoc.FlatAppearance.BorderSize = 0;
-            this.btnNhathuoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnNhathuoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnNhathuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhathuoc.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhathuoc.ForeColor = System.Drawing.Color.White;
-            this.btnNhathuoc.IconChar = FontAwesome.Sharp.IconChar.BriefcaseMedical;
-            this.btnNhathuoc.IconColor = System.Drawing.Color.White;
-            this.btnNhathuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNhathuoc.IconSize = 60;
-            this.btnNhathuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhathuoc.Location = new System.Drawing.Point(47, 25);
-            this.btnNhathuoc.Name = "btnNhathuoc";
-            this.btnNhathuoc.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.btnNhathuoc.Size = new System.Drawing.Size(319, 59);
-            this.btnNhathuoc.TabIndex = 3;
-            this.btnNhathuoc.Text = "NHÀ THUỐC ABC";
-            this.btnNhathuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNhathuoc.UseVisualStyleBackColor = true;
-            this.btnNhathuoc.Click += new System.EventHandler(this.btnNhathuoc_Click);
             // 
             // iconButton1
             // 
@@ -457,6 +278,27 @@ namespace NTSF.GUI
             this.btnBuy.UseVisualStyleBackColor = true;
             this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.lblAdmin);
+            this.panelLogo.Controls.Add(this.picAdmin);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(176, 220);
+            this.panelLogo.TabIndex = 2;
+            // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.Location = new System.Drawing.Point(50, 129);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(83, 32);
+            this.lblAdmin.TabIndex = 1;
+            this.lblAdmin.Text = "admin";
+            // 
             // picAdmin
             // 
             this.picAdmin.Image = global::NTSF.Properties.Resources.Logoadmin;
@@ -466,6 +308,168 @@ namespace NTSF.GUI
             this.picAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAdmin.TabIndex = 0;
             this.picAdmin.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.iconPictureBox1);
+            this.panel1.Controls.Add(this.lbTime);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnNhathuoc);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(176, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1744, 95);
+            this.panel1.TabIndex = 2;
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.CalendarDays;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.White;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 44;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1365, 40);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(53, 44);
+            this.iconPictureBox1.TabIndex = 8;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // lbTime
+            // 
+            this.lbTime.AutoSize = true;
+            this.lbTime.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTime.ForeColor = System.Drawing.Color.White;
+            this.lbTime.Location = new System.Drawing.Point(1415, 47);
+            this.lbTime.Margin = new System.Windows.Forms.Padding(3, 0, 3, 5);
+            this.lbTime.Name = "lbTime";
+            this.lbTime.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.lbTime.Size = new System.Drawing.Size(116, 33);
+            this.lbTime.TabIndex = 7;
+            this.lbTime.Text = "09/09/2003";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.ctCirclePictureBox5);
+            this.panel2.Controls.Add(this.ctCirclePictureBox4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1594, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(150, 95);
+            this.panel2.TabIndex = 6;
+            // 
+            // ctCirclePictureBox5
+            // 
+            this.ctCirclePictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(170)))), ((int)(((byte)(104)))));
+            this.ctCirclePictureBox5.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.ctCirclePictureBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(170)))), ((int)(((byte)(104)))));
+            this.ctCirclePictureBox5.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(170)))), ((int)(((byte)(104)))));
+            this.ctCirclePictureBox5.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.ctCirclePictureBox5.BorderSize = 0;
+            this.ctCirclePictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ctCirclePictureBox5.GradientAngle = 50F;
+            this.ctCirclePictureBox5.Location = new System.Drawing.Point(75, 0);
+            this.ctCirclePictureBox5.Name = "ctCirclePictureBox5";
+            this.ctCirclePictureBox5.Size = new System.Drawing.Size(33, 33);
+            this.ctCirclePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ctCirclePictureBox5.TabIndex = 0;
+            this.ctCirclePictureBox5.TabStop = false;
+            this.ctCirclePictureBox5.Click += new System.EventHandler(this.btnMin_Click);
+            this.ctCirclePictureBox5.MouseLeave += new System.EventHandler(this.ctCirclePictureBox5_MouseLeave);
+            this.ctCirclePictureBox5.MouseHover += new System.EventHandler(this.ctCirclePictureBox5_MouseHover);
+            // 
+            // ctCirclePictureBox4
+            // 
+            this.ctCirclePictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.ctCirclePictureBox4.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.ctCirclePictureBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.ctCirclePictureBox4.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.ctCirclePictureBox4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.ctCirclePictureBox4.BorderSize = 0;
+            this.ctCirclePictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ctCirclePictureBox4.GradientAngle = 50F;
+            this.ctCirclePictureBox4.Location = new System.Drawing.Point(114, 0);
+            this.ctCirclePictureBox4.Name = "ctCirclePictureBox4";
+            this.ctCirclePictureBox4.Size = new System.Drawing.Size(33, 33);
+            this.ctCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.ctCirclePictureBox4.TabIndex = 0;
+            this.ctCirclePictureBox4.TabStop = false;
+            this.ctCirclePictureBox4.Click += new System.EventHandler(this.btnExit_Click);
+            this.ctCirclePictureBox4.MouseLeave += new System.EventHandler(this.ctCirclePictureBox4_MouseLeave);
+            this.ctCirclePictureBox4.MouseHover += new System.EventHandler(this.ctCirclePictureBox4_MouseHover);
+            // 
+            // btnNhathuoc
+            // 
+            this.btnNhathuoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNhathuoc.FlatAppearance.BorderSize = 0;
+            this.btnNhathuoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnNhathuoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnNhathuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhathuoc.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhathuoc.ForeColor = System.Drawing.Color.White;
+            this.btnNhathuoc.IconChar = FontAwesome.Sharp.IconChar.BriefcaseMedical;
+            this.btnNhathuoc.IconColor = System.Drawing.Color.White;
+            this.btnNhathuoc.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNhathuoc.IconSize = 60;
+            this.btnNhathuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhathuoc.Location = new System.Drawing.Point(47, 25);
+            this.btnNhathuoc.Name = "btnNhathuoc";
+            this.btnNhathuoc.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.btnNhathuoc.Size = new System.Drawing.Size(319, 59);
+            this.btnNhathuoc.TabIndex = 3;
+            this.btnNhathuoc.Text = "NHÀ THUỐC ABC";
+            this.btnNhathuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNhathuoc.UseVisualStyleBackColor = true;
+            this.btnNhathuoc.Click += new System.EventHandler(this.btnNhathuoc_Click);
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(176, 95);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1744, 985);
+            this.panelDesktop.TabIndex = 3;
+            // 
+            // dropdownMenu1
+            // 
+            this.dropdownMenu1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.dropdownMenu1.IsMainMenu = false;
+            this.dropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dropmenuNhapkho,
+            this.dropmenuXuatkho,
+            this.dropmenuTonkho});
+            this.dropdownMenu1.MenuItemHeight = 25;
+            this.dropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.dropdownMenu1.Name = "dropdownMenu1";
+            this.dropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
+            this.dropdownMenu1.Size = new System.Drawing.Size(163, 118);
+            // 
+            // dropmenuNhapkho
+            // 
+            this.dropmenuNhapkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.dropmenuNhapkho.Name = "dropmenuNhapkho";
+            this.dropmenuNhapkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.dropmenuNhapkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuNhapkho.Text = "Nhập kho";
+            this.dropmenuNhapkho.Click += new System.EventHandler(this.dropmenuNhapkho_Click);
+            // 
+            // dropmenuXuatkho
+            // 
+            this.dropmenuXuatkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.dropmenuXuatkho.Name = "dropmenuXuatkho";
+            this.dropmenuXuatkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.dropmenuXuatkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuXuatkho.Text = "Xuất kho";
+            this.dropmenuXuatkho.Click += new System.EventHandler(this.dropmenuXuatkho_Click);
+            // 
+            // dropmenuTonkho
+            // 
+            this.dropmenuTonkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.dropmenuTonkho.Name = "dropmenuTonkho";
+            this.dropmenuTonkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.dropmenuTonkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuTonkho.Text = "Tồn kho";
+            this.dropmenuTonkho.Click += new System.EventHandler(this.dropmenuTonkho_Click);
             // 
             // ctCirclePictureBox2
             // 
@@ -517,6 +521,37 @@ namespace NTSF.GUI
             this.ctCirclePictureBox1.TabIndex = 0;
             this.ctCirclePictureBox1.TabStop = false;
             // 
+            // dropdownMenu2
+            // 
+            this.dropdownMenu2.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.dropdownMenu2.IsMainMenu = false;
+            this.dropdownMenu2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
+            this.dropdownMenu2.MenuItemHeight = 25;
+            this.dropdownMenu2.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.dropdownMenu2.Name = "dropdownMenu1";
+            this.dropdownMenu2.PrimaryColor = System.Drawing.Color.Empty;
+            this.dropdownMenu2.Size = new System.Drawing.Size(241, 113);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 38);
+            this.toolStripMenuItem1.Text = "Hàng hoá";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 38);
+            this.toolStripMenuItem2.Text = "Nhà cung cấp";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -536,17 +571,18 @@ namespace NTSF.GUI
             this.panelMenu.PerformLayout();
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.dropdownMenu1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).EndInit();
+            this.dropdownMenu1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctCirclePictureBox1)).EndInit();
+            this.dropdownMenu2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -578,6 +614,9 @@ namespace NTSF.GUI
         private ToolStripMenuItem dropmenuTonkho;
         private CTuserControl.CTCirclePictureBox ctCirclePictureBox5;
         private CTuserControl.CTCirclePictureBox ctCirclePictureBox4;
+        private CTuserControl.DropdownMenu dropdownMenu2;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem toolStripMenuItem2;
     }
 }
 

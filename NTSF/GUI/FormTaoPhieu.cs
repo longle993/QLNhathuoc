@@ -12,6 +12,7 @@ namespace NTSF.GUI
 {
     public partial class FormTaoPhieu : Form
     {
+        private Form currentChildForm;
         public FormTaoPhieu()
         {
             InitializeComponent();
@@ -25,13 +26,36 @@ namespace NTSF.GUI
 
         private void btnThemHang_Click(object sender, EventArgs e)
         {
-            FormThemHang formThemHang = new FormThemHang();
-            formThemHang.ShowDialog();
+            OpenChildForm(new FormThemHang());
         }
 
         private void btnTroVe_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void OpenChildForm(Form childForm)
+        {
+            //open only form
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            //End
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelTaoPhieuThem.Controls.Add(childForm);
+            panelTaoPhieuThem.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đã lưu");
+
         }
     }
 }

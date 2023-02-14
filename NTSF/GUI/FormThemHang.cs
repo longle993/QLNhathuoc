@@ -21,5 +21,11 @@ namespace NTSF.GUI
         {
             this.Close();
         }
+
+        private void btnLuuThemHang_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đã lưu!");
+        }
+
     }
 }
