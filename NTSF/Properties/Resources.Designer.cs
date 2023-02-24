@@ -63,6 +63,16 @@ namespace NTSF.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ADMIN__1_ {
+            get {
+                object obj = ResourceManager.GetObject("ADMIN (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Calendar {
             get {
                 object obj = ResourceManager.GetObject("Calendar", resourceCulture);
@@ -76,16 +86,6 @@ namespace NTSF.Properties {
         internal static System.Drawing.Bitmap LoginBackgr {
             get {
                 object obj = ResourceManager.GetObject("LoginBackgr", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Logoadmin {
-            get {
-                object obj = ResourceManager.GetObject("Logoadmin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

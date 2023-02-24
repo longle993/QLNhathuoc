@@ -44,11 +44,13 @@ namespace NTSF.GUI
             if (btnHidepass.IconChar == FontAwesome.Sharp.IconChar.Eye)
             {
                 btnHidepass.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+                txtPassword.PasswordChar = true;
+
             }
             else
             {
                 btnHidepass.IconChar = FontAwesome.Sharp.IconChar.Eye;
-
+                txtPassword.PasswordChar = false;
             }
         }
     }

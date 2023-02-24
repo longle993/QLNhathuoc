@@ -26,6 +26,9 @@ D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormTaoPhieu.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormThemHang.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormXuatKho.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormXuatHuy.resources
-D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.csproj.AssemblyReference.cache
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormDMNCC.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormThemMoiNCC.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.CTuserControl.TextboxLine.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormCDTK.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.csproj.AssemblyReference.cache
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormCDHT.resources

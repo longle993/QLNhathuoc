@@ -25,11 +25,9 @@ namespace NTSF.GUI
         public class DoubleBufferPanel : Panel
 
         {
-
             public DoubleBufferPanel()
 
             {
-
                 // Set the value of the double-buffering style bits to true.
 
                 this.DoubleBuffered = true;
@@ -63,8 +61,8 @@ namespace NTSF.GUI
             this.btnHoadon = new FontAwesome.Sharp.IconButton();
             this.btnBuy = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.picAdmin = new NTSF.CTuserControl.CTCirclePictureBox();
             this.lblAdmin = new System.Windows.Forms.Label();
-            this.picAdmin = new System.Windows.Forms.PictureBox();
             this.panel1 = new NTSF.GUI.FormMain.DoubleBufferPanel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lbTime = new System.Windows.Forms.Label();
@@ -83,6 +81,7 @@ namespace NTSF.GUI
             this.dropdownMenu2 = new NTSF.CTuserControl.DropdownMenu(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblTENNT = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).BeginInit();
@@ -280,13 +279,29 @@ namespace NTSF.GUI
             // 
             // panelLogo
             // 
-            this.panelLogo.Controls.Add(this.lblAdmin);
             this.panelLogo.Controls.Add(this.picAdmin);
+            this.panelLogo.Controls.Add(this.lblAdmin);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(176, 220);
             this.panelLogo.TabIndex = 2;
+            // 
+            // picAdmin
+            // 
+            this.picAdmin.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.picAdmin.BorderColor = System.Drawing.Color.Transparent;
+            this.picAdmin.BorderColor2 = System.Drawing.Color.Transparent;
+            this.picAdmin.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.picAdmin.BorderSize = 2;
+            this.picAdmin.GradientAngle = 50F;
+            this.picAdmin.Image = global::NTSF.Properties.Resources.ADMIN__1_;
+            this.picAdmin.Location = new System.Drawing.Point(42, 26);
+            this.picAdmin.Name = "picAdmin";
+            this.picAdmin.Size = new System.Drawing.Size(100, 100);
+            this.picAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdmin.TabIndex = 2;
+            this.picAdmin.TabStop = false;
             // 
             // lblAdmin
             // 
@@ -299,19 +314,10 @@ namespace NTSF.GUI
             this.lblAdmin.TabIndex = 1;
             this.lblAdmin.Text = "admin";
             // 
-            // picAdmin
-            // 
-            this.picAdmin.Image = global::NTSF.Properties.Resources.Logoadmin;
-            this.picAdmin.Location = new System.Drawing.Point(12, 25);
-            this.picAdmin.Name = "picAdmin";
-            this.picAdmin.Size = new System.Drawing.Size(162, 101);
-            this.picAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdmin.TabIndex = 0;
-            this.picAdmin.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.lblTENNT);
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Controls.Add(this.lbTime);
             this.panel1.Controls.Add(this.panel2);
@@ -415,9 +421,9 @@ namespace NTSF.GUI
             this.btnNhathuoc.Location = new System.Drawing.Point(47, 25);
             this.btnNhathuoc.Name = "btnNhathuoc";
             this.btnNhathuoc.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.btnNhathuoc.Size = new System.Drawing.Size(319, 59);
+            this.btnNhathuoc.Size = new System.Drawing.Size(248, 59);
             this.btnNhathuoc.TabIndex = 3;
-            this.btnNhathuoc.Text = "NHÀ THUỐC ABC";
+            this.btnNhathuoc.Text = "NHÀ THUỐC";
             this.btnNhathuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNhathuoc.UseVisualStyleBackColor = true;
             this.btnNhathuoc.Click += new System.EventHandler(this.btnNhathuoc_Click);
@@ -532,14 +538,14 @@ namespace NTSF.GUI
             this.dropdownMenu2.MenuItemTextColor = System.Drawing.Color.Empty;
             this.dropdownMenu2.Name = "dropdownMenu1";
             this.dropdownMenu2.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenu2.Size = new System.Drawing.Size(241, 113);
+            this.dropdownMenu2.Size = new System.Drawing.Size(194, 80);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 38);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(193, 38);
             this.toolStripMenuItem1.Text = "Hàng hoá";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -548,9 +554,21 @@ namespace NTSF.GUI
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 38);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 38);
             this.toolStripMenuItem2.Text = "Nhà cung cấp";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // lblTENNT
+            // 
+            this.lblTENNT.AutoSize = true;
+            this.lblTENNT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTENNT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTENNT.ForeColor = System.Drawing.Color.White;
+            this.lblTENNT.Location = new System.Drawing.Point(284, 35);
+            this.lblTENNT.Name = "lblTENNT";
+            this.lblTENNT.Size = new System.Drawing.Size(72, 38);
+            this.lblTENNT.TabIndex = 9;
+            this.lblTENNT.Text = "ABC";
             // 
             // FormMain
             // 
@@ -594,7 +612,6 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton btnKho;
         private FontAwesome.Sharp.IconButton btnHoadon;
         private FontAwesome.Sharp.IconButton btnBuy;
-        private System.Windows.Forms.PictureBox picAdmin;
         private System.Windows.Forms.Label lblAdmin;
         private FontAwesome.Sharp.IconButton btnNhathuoc;
         private CTuserControl.CTCirclePictureBox ctCirclePictureBox1;
@@ -617,6 +634,8 @@ namespace NTSF.GUI
         private CTuserControl.DropdownMenu dropdownMenu2;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem toolStripMenuItem2;
+        internal CTuserControl.CTCirclePictureBox picAdmin;
+        internal Label lblTENNT;
     }
 }
 

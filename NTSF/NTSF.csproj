@@ -78,6 +78,24 @@
     <Compile Include="CTuserControl\MenuColorTable.cs" />
     <Compile Include="CTuserControl\MenuRenderer.cs" />
     <Compile Include="CTuserControl\RoundedRectangle.cs" />
+    <Compile Include="CTuserControl\TextboxLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTuserControl\TextboxLine.Designer.cs">
+      <DependentUpon>TextboxLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormCDHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormCDHT.Designer.cs">
+      <DependentUpon>FormCDHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormCDTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormCDTK.Designer.cs">
+      <DependentUpon>FormCDTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +215,15 @@
     <EmbeddedResource Include="CTuserControl\CTTextBox.resx">
       <DependentUpon>CTTextBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CTuserControl\TextboxLine.resx">
+      <DependentUpon>TextboxLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormCDHT.resx">
+      <DependentUpon>FormCDHT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormCDTK.resx">
+      <DependentUpon>FormCDTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormBanHang.resx">
       <DependentUpon>FormBanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,11 +306,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Logoadmin.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Resources\Calendar.png" />
     <Content Include="Resources\minius.png" />
+    <None Include="Resources\ADMIN %281%29.png" />
     <None Include="Resources\Xmark.png" />
     <None Include="Resources\LoginBackgr.png" />
   </ItemGroup>
