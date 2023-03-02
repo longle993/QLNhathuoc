@@ -41,10 +41,13 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // advancedPanel5
@@ -106,6 +109,8 @@ namespace NTSF.GUI
             // advancedPanel1
             // 
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel1.Controls.Add(this.iconPictureBox2);
+            this.advancedPanel1.Controls.Add(this.label10);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.txtTKPNNhapKho);
@@ -133,7 +138,7 @@ namespace NTSF.GUI
             this.advancedPanel3.EdgeWidth = 2;
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(111)))), ((int)(((byte)(69)))));
-            this.advancedPanel3.Location = new System.Drawing.Point(1444, 48);
+            this.advancedPanel3.Location = new System.Drawing.Point(1444, 79);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
@@ -149,6 +154,7 @@ namespace NTSF.GUI
             this.btnThemmoiNCC.AutoSize = true;
             this.btnThemmoiNCC.BackColor = System.Drawing.Color.Transparent;
             this.btnThemmoiNCC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemmoiNCC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThemmoiNCC.FlatAppearance.BorderSize = 0;
             this.btnThemmoiNCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(183)))), ((int)(((byte)(128)))));
             this.btnThemmoiNCC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(183)))), ((int)(((byte)(128)))));
@@ -160,9 +166,9 @@ namespace NTSF.GUI
             this.btnThemmoiNCC.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThemmoiNCC.IconSize = 30;
             this.btnThemmoiNCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemmoiNCC.Location = new System.Drawing.Point(0, 1);
+            this.btnThemmoiNCC.Location = new System.Drawing.Point(0, 0);
             this.btnThemmoiNCC.Name = "btnThemmoiNCC";
-            this.btnThemmoiNCC.Size = new System.Drawing.Size(161, 40);
+            this.btnThemmoiNCC.Size = new System.Drawing.Size(164, 43);
             this.btnThemmoiNCC.TabIndex = 64;
             this.btnThemmoiNCC.Text = "THÊM MỚI (F2)";
             this.btnThemmoiNCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,6 +199,7 @@ namespace NTSF.GUI
             this.btnTimKiemNCC.AutoSize = true;
             this.btnTimKiemNCC.BackColor = System.Drawing.Color.Transparent;
             this.btnTimKiemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemNCC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTimKiemNCC.FlatAppearance.BorderSize = 0;
             this.btnTimKiemNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiemNCC.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -202,9 +209,9 @@ namespace NTSF.GUI
             this.btnTimKiemNCC.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTimKiemNCC.IconSize = 30;
             this.btnTimKiemNCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemNCC.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemNCC.Location = new System.Drawing.Point(0, 0);
             this.btnTimKiemNCC.Name = "btnTimKiemNCC";
-            this.btnTimKiemNCC.Size = new System.Drawing.Size(160, 36);
+            this.btnTimKiemNCC.Size = new System.Drawing.Size(164, 43);
             this.btnTimKiemNCC.TabIndex = 63;
             this.btnTimKiemNCC.Text = "      TÌM KIẾM";
             this.btnTimKiemNCC.UseVisualStyleBackColor = false;
@@ -215,7 +222,7 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 0;
+            this.txtTKPNNhapKho.BorderSize = 1;
             this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKPNNhapKho.IsFocused = false;
             this.txtTKPNNhapKho.Location = new System.Drawing.Point(84, 135);
@@ -251,19 +258,45 @@ namespace NTSF.GUI
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(50, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(413, 38);
+            this.label6.Size = new System.Drawing.Size(173, 38);
             this.label6.TabIndex = 51;
-            this.label6.Text = "DANH MỤC / NHÀ CUNG CẤP";
+            this.label6.Text = "DANH MỤC";
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 29;
+            this.iconPictureBox2.Location = new System.Drawing.Point(225, 31);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
+            this.iconPictureBox2.TabIndex = 64;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(251, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(229, 38);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "NHÀ CUNG CẤP";
             // 
             // FormDMNCC
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1722, 929);
             this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.advancedPanel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDMNCC";
             this.Text = "FormDMNCC";
@@ -275,6 +308,7 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,5 +327,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label6;
         private CTuserControl.AdvancedPanel advancedPanel3;
         private FontAwesome.Sharp.IconButton btnThemmoiNCC;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.Label label10;
     }
 }

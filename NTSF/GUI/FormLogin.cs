@@ -17,8 +17,8 @@ namespace NTSF.GUI
         {
             InitializeComponent();
             this.formbackgr = formbackgr;
-
         }
+
 
         private void ctButton1_Click(object sender, EventArgs e)
         {
@@ -30,7 +30,7 @@ namespace NTSF.GUI
 
         private void iconButton1_MouseHover(object sender, EventArgs e)
         {
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
         }
 
         private void iconButton1_MouseLeave(object sender, EventArgs e)
@@ -52,6 +52,19 @@ namespace NTSF.GUI
                 btnHidepass.IconChar = FontAwesome.Sharp.IconChar.Eye;
                 txtPassword.PasswordChar = false;
             }
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            FormDangKy formDangKy = new FormDangKy();
+            formDangKy.ShowDialog();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            FormQuenMK form = new FormQuenMK();
+            this.Hide();
+            form.ShowDialog();
         }
     }
 }

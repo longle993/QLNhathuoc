@@ -157,7 +157,7 @@ namespace NTSF.GUI
             this.advancedPanel3.EdgeWidth = 2;
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(111)))), ((int)(((byte)(69)))));
-            this.advancedPanel3.Location = new System.Drawing.Point(1485, 48);
+            this.advancedPanel3.Location = new System.Drawing.Point(1483, 79);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
@@ -279,7 +279,7 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 0;
+            this.txtTKPNNhapKho.BorderSize = 1;
             this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKPNNhapKho.IsFocused = false;
             this.txtTKPNNhapKho.Location = new System.Drawing.Point(1107, 135);
@@ -302,7 +302,7 @@ namespace NTSF.GUI
             this.txtTKHHNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKHHNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKHHNhapKho.BorderRadius = 5;
-            this.txtTKHHNhapKho.BorderSize = 0;
+            this.txtTKHHNhapKho.BorderSize = 1;
             this.txtTKHHNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKHHNhapKho.IsFocused = false;
             this.txtTKHHNhapKho.Location = new System.Drawing.Point(650, 135);

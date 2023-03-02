@@ -39,13 +39,13 @@ namespace NTSF.GUI
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtTKHHNhapKho = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox2 = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox3 = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox4 = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox5 = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox6 = new HotelManagement.CTControls.CTTextBox();
+            this.txtTenNCC = new HotelManagement.CTControls.CTTextBox();
+            this.txtMST = new HotelManagement.CTControls.CTTextBox();
+            this.txtEmailNCC = new HotelManagement.CTControls.CTTextBox();
+            this.txtSDTNCC = new HotelManagement.CTControls.CTTextBox();
+            this.txtWBNCC = new HotelManagement.CTControls.CTTextBox();
+            this.txtDCNCC = new HotelManagement.CTControls.CTTextBox();
+            this.txtGhichuNCC = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel12 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnLuuThemncc = new FontAwesome.Sharp.IconButton();
@@ -53,6 +53,8 @@ namespace NTSF.GUI
             this.btnLuuNCC = new FontAwesome.Sharp.IconButton();
             this.advancedPanel14 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnDongNCC = new FontAwesome.Sharp.IconButton();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel12.SuspendLayout();
             this.advancedPanel13.SuspendLayout();
@@ -164,172 +166,172 @@ namespace NTSF.GUI
             this.label10.TabIndex = 5;
             this.label10.Text = "Ghi chú";
             // 
-            // txtTKHHNhapKho
+            // txtTenNCC
             // 
-            this.txtTKHHNhapKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKHHNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKHHNhapKho.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTKHHNhapKho.BorderRadius = 5;
-            this.txtTKHHNhapKho.BorderSize = 0;
-            this.txtTKHHNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTKHHNhapKho.IsFocused = false;
-            this.txtTKHHNhapKho.Location = new System.Drawing.Point(67, 168);
-            this.txtTKHHNhapKho.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTKHHNhapKho.Multiline = false;
-            this.txtTKHHNhapKho.Name = "txtTKHHNhapKho";
-            this.txtTKHHNhapKho.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTKHHNhapKho.PasswordChar = false;
-            this.txtTKHHNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTKHHNhapKho.PlaceholderText = "";
-            this.txtTKHHNhapKho.ReadOnly = false;
-            this.txtTKHHNhapKho.Size = new System.Drawing.Size(539, 43);
-            this.txtTKHHNhapKho.TabIndex = 55;
-            this.txtTKHHNhapKho.Texts = "";
-            this.txtTKHHNhapKho.UnderlineedStyle = false;
+            this.txtTenNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtTenNCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtTenNCC.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtTenNCC.BorderRadius = 5;
+            this.txtTenNCC.BorderSize = 1;
+            this.txtTenNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTenNCC.IsFocused = false;
+            this.txtTenNCC.Location = new System.Drawing.Point(67, 168);
+            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenNCC.Multiline = false;
+            this.txtTenNCC.Name = "txtTenNCC";
+            this.txtTenNCC.Padding = new System.Windows.Forms.Padding(7);
+            this.txtTenNCC.PasswordChar = false;
+            this.txtTenNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTenNCC.PlaceholderText = "";
+            this.txtTenNCC.ReadOnly = false;
+            this.txtTenNCC.Size = new System.Drawing.Size(539, 43);
+            this.txtTenNCC.TabIndex = 55;
+            this.txtTenNCC.Texts = "";
+            this.txtTenNCC.UnderlineedStyle = false;
             // 
-            // ctTextBox1
+            // txtMST
             // 
-            this.ctTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox1.BorderRadius = 5;
-            this.ctTextBox1.BorderSize = 0;
-            this.ctTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctTextBox1.IsFocused = false;
-            this.ctTextBox1.Location = new System.Drawing.Point(809, 168);
-            this.ctTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox1.Multiline = false;
-            this.ctTextBox1.Name = "ctTextBox1";
-            this.ctTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox1.PasswordChar = false;
-            this.ctTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox1.PlaceholderText = "";
-            this.ctTextBox1.ReadOnly = false;
-            this.ctTextBox1.Size = new System.Drawing.Size(280, 43);
-            this.ctTextBox1.TabIndex = 56;
-            this.ctTextBox1.Texts = "";
-            this.ctTextBox1.UnderlineedStyle = false;
+            this.txtMST.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtMST.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtMST.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtMST.BorderRadius = 5;
+            this.txtMST.BorderSize = 1;
+            this.txtMST.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMST.IsFocused = false;
+            this.txtMST.Location = new System.Drawing.Point(809, 168);
+            this.txtMST.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMST.Multiline = false;
+            this.txtMST.Name = "txtMST";
+            this.txtMST.Padding = new System.Windows.Forms.Padding(7);
+            this.txtMST.PasswordChar = false;
+            this.txtMST.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtMST.PlaceholderText = "";
+            this.txtMST.ReadOnly = false;
+            this.txtMST.Size = new System.Drawing.Size(280, 43);
+            this.txtMST.TabIndex = 56;
+            this.txtMST.Texts = "";
+            this.txtMST.UnderlineedStyle = false;
             // 
-            // ctTextBox2
+            // txtEmailNCC
             // 
-            this.ctTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox2.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox2.BorderRadius = 5;
-            this.ctTextBox2.BorderSize = 0;
-            this.ctTextBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctTextBox2.IsFocused = false;
-            this.ctTextBox2.Location = new System.Drawing.Point(67, 273);
-            this.ctTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox2.Multiline = false;
-            this.ctTextBox2.Name = "ctTextBox2";
-            this.ctTextBox2.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox2.PasswordChar = false;
-            this.ctTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox2.PlaceholderText = "";
-            this.ctTextBox2.ReadOnly = false;
-            this.ctTextBox2.Size = new System.Drawing.Size(260, 43);
-            this.ctTextBox2.TabIndex = 57;
-            this.ctTextBox2.Texts = "";
-            this.ctTextBox2.UnderlineedStyle = false;
+            this.txtEmailNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtEmailNCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtEmailNCC.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtEmailNCC.BorderRadius = 5;
+            this.txtEmailNCC.BorderSize = 1;
+            this.txtEmailNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtEmailNCC.IsFocused = false;
+            this.txtEmailNCC.Location = new System.Drawing.Point(67, 273);
+            this.txtEmailNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmailNCC.Multiline = false;
+            this.txtEmailNCC.Name = "txtEmailNCC";
+            this.txtEmailNCC.Padding = new System.Windows.Forms.Padding(7);
+            this.txtEmailNCC.PasswordChar = false;
+            this.txtEmailNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEmailNCC.PlaceholderText = "";
+            this.txtEmailNCC.ReadOnly = false;
+            this.txtEmailNCC.Size = new System.Drawing.Size(260, 43);
+            this.txtEmailNCC.TabIndex = 57;
+            this.txtEmailNCC.Texts = "";
+            this.txtEmailNCC.UnderlineedStyle = false;
             // 
-            // ctTextBox3
+            // txtSDTNCC
             // 
-            this.ctTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox3.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox3.BorderRadius = 5;
-            this.ctTextBox3.BorderSize = 0;
-            this.ctTextBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctTextBox3.IsFocused = false;
-            this.ctTextBox3.Location = new System.Drawing.Point(438, 273);
-            this.ctTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox3.Multiline = false;
-            this.ctTextBox3.Name = "ctTextBox3";
-            this.ctTextBox3.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox3.PasswordChar = false;
-            this.ctTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox3.PlaceholderText = "";
-            this.ctTextBox3.ReadOnly = false;
-            this.ctTextBox3.Size = new System.Drawing.Size(260, 43);
-            this.ctTextBox3.TabIndex = 57;
-            this.ctTextBox3.Texts = "";
-            this.ctTextBox3.UnderlineedStyle = false;
+            this.txtSDTNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSDTNCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSDTNCC.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtSDTNCC.BorderRadius = 5;
+            this.txtSDTNCC.BorderSize = 1;
+            this.txtSDTNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtSDTNCC.IsFocused = false;
+            this.txtSDTNCC.Location = new System.Drawing.Point(438, 273);
+            this.txtSDTNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSDTNCC.Multiline = false;
+            this.txtSDTNCC.Name = "txtSDTNCC";
+            this.txtSDTNCC.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSDTNCC.PasswordChar = false;
+            this.txtSDTNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSDTNCC.PlaceholderText = "";
+            this.txtSDTNCC.ReadOnly = false;
+            this.txtSDTNCC.Size = new System.Drawing.Size(260, 43);
+            this.txtSDTNCC.TabIndex = 57;
+            this.txtSDTNCC.Texts = "";
+            this.txtSDTNCC.UnderlineedStyle = false;
             // 
-            // ctTextBox4
+            // txtWBNCC
             // 
-            this.ctTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox4.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox4.BorderRadius = 5;
-            this.ctTextBox4.BorderSize = 0;
-            this.ctTextBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctTextBox4.IsFocused = false;
-            this.ctTextBox4.Location = new System.Drawing.Point(809, 273);
-            this.ctTextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox4.Multiline = false;
-            this.ctTextBox4.Name = "ctTextBox4";
-            this.ctTextBox4.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox4.PasswordChar = false;
-            this.ctTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox4.PlaceholderText = "";
-            this.ctTextBox4.ReadOnly = false;
-            this.ctTextBox4.Size = new System.Drawing.Size(280, 43);
-            this.ctTextBox4.TabIndex = 56;
-            this.ctTextBox4.Texts = "";
-            this.ctTextBox4.UnderlineedStyle = false;
+            this.txtWBNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtWBNCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtWBNCC.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtWBNCC.BorderRadius = 5;
+            this.txtWBNCC.BorderSize = 1;
+            this.txtWBNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtWBNCC.IsFocused = false;
+            this.txtWBNCC.Location = new System.Drawing.Point(809, 273);
+            this.txtWBNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtWBNCC.Multiline = false;
+            this.txtWBNCC.Name = "txtWBNCC";
+            this.txtWBNCC.Padding = new System.Windows.Forms.Padding(7);
+            this.txtWBNCC.PasswordChar = false;
+            this.txtWBNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtWBNCC.PlaceholderText = "";
+            this.txtWBNCC.ReadOnly = false;
+            this.txtWBNCC.Size = new System.Drawing.Size(280, 43);
+            this.txtWBNCC.TabIndex = 56;
+            this.txtWBNCC.Texts = "";
+            this.txtWBNCC.UnderlineedStyle = false;
             // 
-            // ctTextBox5
+            // txtDCNCC
             // 
-            this.ctTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox5.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox5.BorderRadius = 5;
-            this.ctTextBox5.BorderSize = 0;
-            this.ctTextBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctTextBox5.IsFocused = false;
-            this.ctTextBox5.Location = new System.Drawing.Point(67, 375);
-            this.ctTextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox5.Multiline = false;
-            this.ctTextBox5.Name = "ctTextBox5";
-            this.ctTextBox5.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox5.PasswordChar = false;
-            this.ctTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox5.PlaceholderText = "";
-            this.ctTextBox5.ReadOnly = false;
-            this.ctTextBox5.Size = new System.Drawing.Size(1022, 43);
-            this.ctTextBox5.TabIndex = 55;
-            this.ctTextBox5.Texts = "";
-            this.ctTextBox5.UnderlineedStyle = false;
+            this.txtDCNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtDCNCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtDCNCC.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtDCNCC.BorderRadius = 5;
+            this.txtDCNCC.BorderSize = 1;
+            this.txtDCNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtDCNCC.IsFocused = false;
+            this.txtDCNCC.Location = new System.Drawing.Point(67, 375);
+            this.txtDCNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDCNCC.Multiline = false;
+            this.txtDCNCC.Name = "txtDCNCC";
+            this.txtDCNCC.Padding = new System.Windows.Forms.Padding(7);
+            this.txtDCNCC.PasswordChar = false;
+            this.txtDCNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDCNCC.PlaceholderText = "";
+            this.txtDCNCC.ReadOnly = false;
+            this.txtDCNCC.Size = new System.Drawing.Size(1022, 43);
+            this.txtDCNCC.TabIndex = 55;
+            this.txtDCNCC.Texts = "";
+            this.txtDCNCC.UnderlineedStyle = false;
             // 
-            // ctTextBox6
+            // txtGhichuNCC
             // 
-            this.ctTextBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox6.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox6.BorderRadius = 5;
-            this.ctTextBox6.BorderSize = 0;
-            this.ctTextBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctTextBox6.IsFocused = false;
-            this.ctTextBox6.Location = new System.Drawing.Point(0, 1);
-            this.ctTextBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox6.Multiline = false;
-            this.ctTextBox6.Name = "ctTextBox6";
-            this.ctTextBox6.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox6.PasswordChar = false;
-            this.ctTextBox6.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox6.PlaceholderText = "";
-            this.ctTextBox6.ReadOnly = false;
-            this.ctTextBox6.Size = new System.Drawing.Size(1022, 43);
-            this.ctTextBox6.TabIndex = 55;
-            this.ctTextBox6.Texts = "";
-            this.ctTextBox6.UnderlineedStyle = false;
+            this.txtGhichuNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGhichuNCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGhichuNCC.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtGhichuNCC.BorderRadius = 5;
+            this.txtGhichuNCC.BorderSize = 1;
+            this.txtGhichuNCC.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtGhichuNCC.IsFocused = false;
+            this.txtGhichuNCC.Location = new System.Drawing.Point(0, 1);
+            this.txtGhichuNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGhichuNCC.Multiline = true;
+            this.txtGhichuNCC.Name = "txtGhichuNCC";
+            this.txtGhichuNCC.Padding = new System.Windows.Forms.Padding(7);
+            this.txtGhichuNCC.PasswordChar = false;
+            this.txtGhichuNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtGhichuNCC.PlaceholderText = "";
+            this.txtGhichuNCC.ReadOnly = false;
+            this.txtGhichuNCC.Size = new System.Drawing.Size(1022, 107);
+            this.txtGhichuNCC.TabIndex = 55;
+            this.txtGhichuNCC.Texts = "";
+            this.txtGhichuNCC.UnderlineedStyle = false;
             // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel2.Controls.Add(this.ctTextBox6);
+            this.advancedPanel2.Controls.Add(this.txtGhichuNCC);
             this.advancedPanel2.EdgeWidth = 0;
             this.advancedPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.advancedPanel2.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
@@ -385,6 +387,7 @@ namespace NTSF.GUI
             this.btnLuuThemncc.Text = "      LƯU VÀ THÊM MỚI (F8)";
             this.btnLuuThemncc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuuThemncc.UseVisualStyleBackColor = false;
+            this.btnLuuThemncc.Click += new System.EventHandler(this.btnLuuThemncc_Click);
             // 
             // advancedPanel13
             // 
@@ -470,23 +473,47 @@ namespace NTSF.GUI
             this.btnDongNCC.UseVisualStyleBackColor = false;
             this.btnDongNCC.Click += new System.EventHandler(this.btnDongNCC_Click);
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Red;
+            this.label20.Location = new System.Drawing.Point(202, 140);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(20, 25);
+            this.label20.TabIndex = 82;
+            this.label20.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(896, 139);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(20, 25);
+            this.label11.TabIndex = 83;
+            this.label11.Text = "*";
+            // 
             // FormThemMoiNCC
             // 
-            this.DoubleBuffered = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1172, 694);
+            this.ControlBox = false;
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.advancedPanel14);
             this.Controls.Add(this.advancedPanel13);
             this.Controls.Add(this.advancedPanel12);
             this.Controls.Add(this.advancedPanel2);
-            this.Controls.Add(this.ctTextBox3);
-            this.Controls.Add(this.ctTextBox2);
-            this.Controls.Add(this.ctTextBox4);
-            this.Controls.Add(this.ctTextBox1);
-            this.Controls.Add(this.ctTextBox5);
-            this.Controls.Add(this.txtTKHHNhapKho);
+            this.Controls.Add(this.txtSDTNCC);
+            this.Controls.Add(this.txtEmailNCC);
+            this.Controls.Add(this.txtWBNCC);
+            this.Controls.Add(this.txtMST);
+            this.Controls.Add(this.txtDCNCC);
+            this.Controls.Add(this.txtTenNCC);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -497,10 +524,12 @@ namespace NTSF.GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormThemMoiNCC";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormThemMoiNCC";
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel12.ResumeLayout(false);
             this.advancedPanel12.PerformLayout();
@@ -525,13 +554,13 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private HotelManagement.CTControls.CTTextBox txtTKHHNhapKho;
-        private HotelManagement.CTControls.CTTextBox ctTextBox1;
-        private HotelManagement.CTControls.CTTextBox ctTextBox2;
-        private HotelManagement.CTControls.CTTextBox ctTextBox3;
-        private HotelManagement.CTControls.CTTextBox ctTextBox4;
-        private HotelManagement.CTControls.CTTextBox ctTextBox5;
-        private HotelManagement.CTControls.CTTextBox ctTextBox6;
+        private HotelManagement.CTControls.CTTextBox txtTenNCC;
+        private HotelManagement.CTControls.CTTextBox txtMST;
+        private HotelManagement.CTControls.CTTextBox txtEmailNCC;
+        private HotelManagement.CTControls.CTTextBox txtSDTNCC;
+        private HotelManagement.CTControls.CTTextBox txtWBNCC;
+        private HotelManagement.CTControls.CTTextBox txtDCNCC;
+        private HotelManagement.CTControls.CTTextBox txtGhichuNCC;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private CTuserControl.AdvancedPanel advancedPanel12;
         private FontAwesome.Sharp.IconButton btnLuuThemncc;
@@ -539,5 +568,7 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton btnLuuNCC;
         private CTuserControl.AdvancedPanel advancedPanel14;
         private FontAwesome.Sharp.IconButton btnDongNCC;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label11;
     }
 }

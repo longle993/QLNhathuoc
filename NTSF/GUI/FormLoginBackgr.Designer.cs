@@ -34,6 +34,7 @@ namespace NTSF.GUI
             // 
             // panelLogin
             // 
+            this.panelLogin.BackColor = System.Drawing.Color.Transparent;
             this.panelLogin.Location = new System.Drawing.Point(719, 183);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(483, 768);
@@ -41,7 +42,6 @@ namespace NTSF.GUI
             // 
             // FormLoginBackgr
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::NTSF.Properties.Resources.LoginBackgr;

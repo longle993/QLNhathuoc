@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace NTSF.GUI
@@ -22,10 +15,43 @@ namespace NTSF.GUI
             this.Close();
         }
 
-        private void btnLuuThemHang_Click(object sender, EventArgs e)
+        private void Luu(bool close)
         {
-            MessageBox.Show("Đã lưu!");
+            if (txtHanghoa.Texts == "" || txtQCDG.Texts == "" || txtSolo.Texts == "" || txtGiaban.Texts == "" || txtSLNhap.Texts == "" || txtDongia.Texts == "" || txtTongGiamgia.Texts == "")
+            {
+                MessageBox.Show("Bạn chưa nhập đủ thông tin!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Đã lưu!");
+                if (close == true)
+                this.Close();
+            }
+        }
+        private void ResetTextBoxes(Control control)
+        {
+            foreach (Control c in control.Controls)
+            {
+                if (c is TextBox)
+                {
+                    ((TextBox)c).Text = string.Empty;
+                }
+                else if (c.HasChildren)
+                {
+                    ResetTextBoxes(c);
+                }
+            }
         }
 
+        private void btnLuuThemHang_Click(object sender, EventArgs e)
+        {
+            Luu(true);
+        }
+
+        private void btnLuuThemmoi_Click(object sender, EventArgs e)
+        {
+            Luu(false);
+            ResetTextBoxes(this);
+        }
     }
 }

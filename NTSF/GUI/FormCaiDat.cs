@@ -31,6 +31,7 @@ namespace NTSF.GUI
             childForm.Show();
         }
 
+
         public FormCaiDat()
         {
             InitializeComponent();

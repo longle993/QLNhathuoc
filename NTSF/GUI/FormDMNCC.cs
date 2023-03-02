@@ -21,6 +21,8 @@ namespace NTSF.GUI
         {
             FormThemMoiNCC formThemMoiNCC = new FormThemMoiNCC();
             formThemMoiNCC.ShowDialog();
+            this.Opacity = 0.0;
         }
+
     }
 }

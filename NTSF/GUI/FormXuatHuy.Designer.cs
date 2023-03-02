@@ -53,6 +53,8 @@ namespace NTSF.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel16.SuspendLayout();
@@ -62,6 +64,7 @@ namespace NTSF.GUI
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // advancedPanel5
@@ -95,7 +98,7 @@ namespace NTSF.GUI
             this.advancedPanel16.EdgeWidth = 1;
             this.advancedPanel16.EndColor = System.Drawing.Color.White;
             this.advancedPanel16.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel16.Location = new System.Drawing.Point(1549, 60);
+            this.advancedPanel16.Location = new System.Drawing.Point(1538, 60);
             this.advancedPanel16.Name = "advancedPanel16";
             this.advancedPanel16.RectRadius = 5;
             this.advancedPanel16.ShadowColor = System.Drawing.Color.DimGray;
@@ -175,7 +178,7 @@ namespace NTSF.GUI
             this.ctTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.ctTextBox1.BorderFocusColor = System.Drawing.Color.Black;
             this.ctTextBox1.BorderRadius = 5;
-            this.ctTextBox1.BorderSize = 0;
+            this.ctTextBox1.BorderSize = 1;
             this.ctTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ctTextBox1.IsFocused = false;
             this.ctTextBox1.Location = new System.Drawing.Point(84, 60);
@@ -185,7 +188,7 @@ namespace NTSF.GUI
             this.ctTextBox1.Padding = new System.Windows.Forms.Padding(7);
             this.ctTextBox1.PasswordChar = false;
             this.ctTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox1.PlaceholderText = "Ghi chú";
+            this.ctTextBox1.PlaceholderText = "Tìm kiếm theo mã hoặc tên hàng hoá";
             this.ctTextBox1.ReadOnly = false;
             this.ctTextBox1.Size = new System.Drawing.Size(1447, 43);
             this.ctTextBox1.TabIndex = 54;
@@ -196,6 +199,9 @@ namespace NTSF.GUI
             // 
             this.advancedPanel1.BackColor = System.Drawing.Color.White;
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel1.Controls.Add(this.label6);
+            this.advancedPanel1.Controls.Add(this.iconPictureBox2);
+            this.advancedPanel1.Controls.Add(this.label11);
             this.advancedPanel1.Controls.Add(this.advancedPanel6);
             this.advancedPanel1.Controls.Add(this.advancedPanel4);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
@@ -206,7 +212,6 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.label3);
             this.advancedPanel1.Controls.Add(this.label2);
             this.advancedPanel1.Controls.Add(this.label1);
-            this.advancedPanel1.Controls.Add(this.label6);
             this.advancedPanel1.EdgeWidth = 0;
             this.advancedPanel1.EndColor = System.Drawing.Color.White;
             this.advancedPanel1.FlatBorderColor = System.Drawing.Color.White;
@@ -298,14 +303,14 @@ namespace NTSF.GUI
             this.advancedPanel3.BackColor = System.Drawing.Color.White;
             this.advancedPanel3.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel3.Controls.Add(this.btnLuu);
-            this.advancedPanel3.EdgeWidth = 0;
+            this.advancedPanel3.EdgeWidth = 2;
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
-            this.advancedPanel3.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(111)))), ((int)(((byte)(69)))));
             this.advancedPanel3.Location = new System.Drawing.Point(1277, 130);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel3.ShadowShift = 2;
+            this.advancedPanel3.ShadowShift = 0;
             this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel3.Size = new System.Drawing.Size(127, 43);
             this.advancedPanel3.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
@@ -317,6 +322,7 @@ namespace NTSF.GUI
             this.btnLuu.AutoSize = true;
             this.btnLuu.BackColor = System.Drawing.Color.Transparent;
             this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(183)))), ((int)(((byte)(128)))));
             this.btnLuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(183)))), ((int)(((byte)(128)))));
@@ -328,26 +334,27 @@ namespace NTSF.GUI
             this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLuu.IconSize = 30;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(0, 1);
+            this.btnLuu.Location = new System.Drawing.Point(0, 0);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(127, 40);
+            this.btnLuu.Size = new System.Drawing.Size(127, 43);
             this.btnLuu.TabIndex = 67;
             this.btnLuu.Text = "       LƯU (F9)";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // advancedPanel2
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.White;
             this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel2.Controls.Add(this.btnTroVeXuatHuy);
-            this.advancedPanel2.EdgeWidth = 0;
+            this.advancedPanel2.EdgeWidth = 2;
             this.advancedPanel2.EndColor = System.Drawing.Color.White;
-            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Transparent;
+            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
             this.advancedPanel2.Location = new System.Drawing.Point(1449, 130);
             this.advancedPanel2.Name = "advancedPanel2";
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel2.ShadowShift = 2;
+            this.advancedPanel2.ShadowShift = 0;
             this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
             this.advancedPanel2.Size = new System.Drawing.Size(149, 43);
             this.advancedPanel2.StartColor = System.Drawing.Color.White;
@@ -359,6 +366,7 @@ namespace NTSF.GUI
             this.btnTroVeXuatHuy.AutoSize = true;
             this.btnTroVeXuatHuy.BackColor = System.Drawing.Color.Transparent;
             this.btnTroVeXuatHuy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTroVeXuatHuy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTroVeXuatHuy.FlatAppearance.BorderSize = 0;
             this.btnTroVeXuatHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTroVeXuatHuy.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -368,9 +376,9 @@ namespace NTSF.GUI
             this.btnTroVeXuatHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTroVeXuatHuy.IconSize = 30;
             this.btnTroVeXuatHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTroVeXuatHuy.Location = new System.Drawing.Point(0, -6);
+            this.btnTroVeXuatHuy.Location = new System.Drawing.Point(0, 0);
             this.btnTroVeXuatHuy.Name = "btnTroVeXuatHuy";
-            this.btnTroVeXuatHuy.Size = new System.Drawing.Size(149, 46);
+            this.btnTroVeXuatHuy.Size = new System.Drawing.Size(149, 43);
             this.btnTroVeXuatHuy.TabIndex = 66;
             this.btnTroVeXuatHuy.Tag = "";
             this.btnTroVeXuatHuy.Text = "TRỞ VỀ (F10)";
@@ -404,7 +412,7 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 0;
+            this.txtTKPNNhapKho.BorderSize = 1;
             this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKPNNhapKho.IsFocused = false;
             this.txtTKPNNhapKho.Location = new System.Drawing.Point(875, 135);
@@ -465,16 +473,42 @@ namespace NTSF.GUI
             this.label1.TabIndex = 52;
             this.label1.Text = "Ngày xuất";
             // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 29;
+            this.iconPictureBox2.Location = new System.Drawing.Point(210, 29);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
+            this.iconPictureBox2.TabIndex = 65;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(50, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(157, 38);
+            this.label11.TabIndex = 64;
+            this.label11.Text = "XUẤT HUỶ";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(50, 22);
+            this.label6.Location = new System.Drawing.Point(235, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(164, 38);
-            this.label6.TabIndex = 51;
+            this.label6.TabIndex = 66;
             this.label6.Text = "TẠO PHIẾU";
             // 
             // FormXuatHuy
@@ -503,6 +537,7 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -525,7 +560,6 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
         private CTuserControl.AdvancedPanel advancedPanel5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -534,5 +568,8 @@ namespace NTSF.GUI
         private HotelManagement.CTControls.CTTextBox ctTextBox1;
         private CTuserControl.AdvancedPanel advancedPanel16;
         private FontAwesome.Sharp.IconButton btnThemHangXuatHuy;
+        private System.Windows.Forms.Label label6;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.Label label11;
     }
 }

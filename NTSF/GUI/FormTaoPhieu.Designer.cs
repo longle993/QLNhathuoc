@@ -37,6 +37,7 @@ namespace NTSF.GUI
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.advancedPanel4 = new NTSF.CTuserControl.AdvancedPanel();
@@ -52,11 +53,13 @@ namespace NTSF.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panelTaoPhieuThem.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel7.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.advancedPanel6.SuspendLayout();
             this.advancedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -118,6 +121,7 @@ namespace NTSF.GUI
             this.btnThemHang.AutoSize = true;
             this.btnThemHang.BackColor = System.Drawing.Color.Transparent;
             this.btnThemHang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThemHang.FlatAppearance.BorderSize = 0;
             this.btnThemHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemHang.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -127,7 +131,7 @@ namespace NTSF.GUI
             this.btnThemHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThemHang.IconSize = 30;
             this.btnThemHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemHang.Location = new System.Drawing.Point(3, 0);
+            this.btnThemHang.Location = new System.Drawing.Point(0, 0);
             this.btnThemHang.Name = "btnThemHang";
             this.btnThemHang.Size = new System.Drawing.Size(213, 43);
             this.btnThemHang.TabIndex = 67;
@@ -177,6 +181,7 @@ namespace NTSF.GUI
             // 
             this.advancedPanel1.BackColor = System.Drawing.Color.White;
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel1.Controls.Add(this.iconPictureBox2);
             this.advancedPanel1.Controls.Add(this.advancedPanel6);
             this.advancedPanel1.Controls.Add(this.advancedPanel4);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
@@ -187,6 +192,7 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.label3);
             this.advancedPanel1.Controls.Add(this.label2);
             this.advancedPanel1.Controls.Add(this.label1);
+            this.advancedPanel1.Controls.Add(this.label10);
             this.advancedPanel1.Controls.Add(this.label6);
             this.advancedPanel1.EdgeWidth = 0;
             this.advancedPanel1.EndColor = System.Drawing.Color.White;
@@ -201,6 +207,20 @@ namespace NTSF.GUI
             this.advancedPanel1.StartColor = System.Drawing.Color.White;
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 6;
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 29;
+            this.iconPictureBox2.Location = new System.Drawing.Point(220, 31);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
+            this.iconPictureBox2.TabIndex = 62;
+            this.iconPictureBox2.TabStop = false;
             // 
             // advancedPanel6
             // 
@@ -298,6 +318,7 @@ namespace NTSF.GUI
             this.btnLuu.AutoSize = true;
             this.btnLuu.BackColor = System.Drawing.Color.Transparent;
             this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(183)))), ((int)(((byte)(128)))));
             this.btnLuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(183)))), ((int)(((byte)(128)))));
@@ -309,9 +330,9 @@ namespace NTSF.GUI
             this.btnLuu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLuu.IconSize = 30;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(0, 1);
+            this.btnLuu.Location = new System.Drawing.Point(0, 0);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(127, 40);
+            this.btnLuu.Size = new System.Drawing.Size(127, 43);
             this.btnLuu.TabIndex = 67;
             this.btnLuu.Text = "       LƯU (F9)";
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -341,6 +362,7 @@ namespace NTSF.GUI
             this.btnTroVe.AutoSize = true;
             this.btnTroVe.BackColor = System.Drawing.Color.Transparent;
             this.btnTroVe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTroVe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTroVe.FlatAppearance.BorderSize = 0;
             this.btnTroVe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTroVe.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -350,9 +372,9 @@ namespace NTSF.GUI
             this.btnTroVe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTroVe.IconSize = 30;
             this.btnTroVe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTroVe.Location = new System.Drawing.Point(0, 3);
+            this.btnTroVe.Location = new System.Drawing.Point(0, 0);
             this.btnTroVe.Name = "btnTroVe";
-            this.btnTroVe.Size = new System.Drawing.Size(149, 37);
+            this.btnTroVe.Size = new System.Drawing.Size(149, 43);
             this.btnTroVe.TabIndex = 66;
             this.btnTroVe.Tag = "";
             this.btnTroVe.Text = "TRỞ VỀ (F10)";
@@ -386,7 +408,7 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 0;
+            this.txtTKPNNhapKho.BorderSize = 1;
             this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKPNNhapKho.IsFocused = false;
             this.txtTKPNNhapKho.Location = new System.Drawing.Point(875, 135);
@@ -447,6 +469,18 @@ namespace NTSF.GUI
             this.label1.TabIndex = 52;
             this.label1.Text = "Ngày nhập";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(246, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(164, 38);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "TẠO PHIẾU";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -455,9 +489,9 @@ namespace NTSF.GUI
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(50, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 38);
+            this.label6.Size = new System.Drawing.Size(165, 38);
             this.label6.TabIndex = 51;
-            this.label6.Text = "TẠO PHIẾU";
+            this.label6.Text = "NHẬP KHO";
             // 
             // FormTaoPhieu
             // 
@@ -477,6 +511,7 @@ namespace NTSF.GUI
             this.advancedPanel7.PerformLayout();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.advancedPanel6.ResumeLayout(false);
             this.advancedPanel6.PerformLayout();
             this.advancedPanel4.ResumeLayout(false);
@@ -516,5 +551,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.Label label10;
     }
 }

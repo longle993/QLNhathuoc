@@ -19,17 +19,7 @@ namespace NTSF.GUI
             btnThaydoiLuuCDHT.Hide();
         }
 
-        private void btnHSD_Click(object sender, EventArgs e)
-        {
-            if (btnHSD.Text == "Tháng")
-            {
-                btnHSD.Text = "Năm";
-            }
-            else
-            {
-                btnHSD.Text = "Tháng";
-            }
-        }
+
 
         private void Inmouse(CTuserControl.CTButton buttonhere )
         {
@@ -50,18 +40,23 @@ namespace NTSF.GUI
         {
             btnThaydoiHuyCDHT.Hide();
             btnThaydoiLuuCDHT.Hide();
+            btnThaydoiCDHT.Show();
+
         }
 
         private void btnThaydoiHuyCDHT_Click(object sender, EventArgs e)
         {
             btnThaydoiHuyCDHT.Hide();
             btnThaydoiLuuCDHT.Hide();
+            btnThaydoiCDHT.Show();
+
         }
 
         private void btnThaydoiCDHT_Click(object sender, EventArgs e)
         {
             btnThaydoiHuyCDHT.Show();
             btnThaydoiLuuCDHT.Show();
+            btnThaydoiCDHT.Hide();
         }
 
         private void btnThaydoiCDHT_MouseHover(object sender, EventArgs e)

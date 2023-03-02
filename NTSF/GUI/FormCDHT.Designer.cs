@@ -32,7 +32,6 @@ namespace NTSF.GUI
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHSD = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,10 +39,13 @@ namespace NTSF.GUI
             this.lblVersion = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnThaydoiHuyCDHT = new NTSF.CTuserControl.CTButton();
             this.btnThaydoiLuuCDHT = new NTSF.CTuserControl.CTButton();
             this.btnThaydoiCDHT = new NTSF.CTuserControl.CTButton();
             this.txtHSD = new NTSF.CTuserControl.TextboxLine();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -52,7 +54,7 @@ namespace NTSF.GUI
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(41, 21);
+            this.label5.Location = new System.Drawing.Point(60, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(189, 30);
             this.label5.TabIndex = 61;
@@ -65,7 +67,7 @@ namespace NTSF.GUI
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
-            this.label2.Location = new System.Drawing.Point(42, 41);
+            this.label2.Location = new System.Drawing.Point(61, 118);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(892, 21);
             this.label2.TabIndex = 60;
@@ -84,22 +86,6 @@ namespace NTSF.GUI
             this.label1.Size = new System.Drawing.Size(219, 28);
             this.label1.TabIndex = 63;
             this.label1.Text = "Hạn sử dụng tối thiểu";
-            // 
-            // btnHSD
-            // 
-            this.btnHSD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.btnHSD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHSD.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHSD.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHSD.ForeColor = System.Drawing.Color.Black;
-            this.btnHSD.Location = new System.Drawing.Point(569, 226);
-            this.btnHSD.Name = "btnHSD";
-            this.btnHSD.Size = new System.Drawing.Size(82, 40);
-            this.btnHSD.TabIndex = 64;
-            this.btnHSD.Text = "Tháng";
-            this.btnHSD.UseVisualStyleBackColor = false;
-            this.btnHSD.Click += new System.EventHandler(this.btnHSD_Click);
             // 
             // label3
             // 
@@ -184,6 +170,26 @@ namespace NTSF.GUI
             this.label10.Size = new System.Drawing.Size(88, 25);
             this.label10.TabIndex = 63;
             this.label10.Text = "3 Months";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Location = new System.Drawing.Point(560, 226);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(82, 40);
+            this.panel1.TabIndex = 68;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(9, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 25);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Tháng";
             // 
             // btnThaydoiHuyCDHT
             // 
@@ -284,10 +290,10 @@ namespace NTSF.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1094, 900);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnThaydoiHuyCDHT);
             this.Controls.Add(this.btnThaydoiLuuCDHT);
             this.Controls.Add(this.btnThaydoiCDHT);
-            this.Controls.Add(this.btnHSD);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
@@ -303,6 +309,8 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCDHT";
             this.Text = "FormCDHT";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,7 +322,6 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private CTuserControl.TextboxLine txtHSD;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHSD;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
@@ -325,5 +332,7 @@ namespace NTSF.GUI
         private CTuserControl.CTButton btnThaydoiHuyCDHT;
         private CTuserControl.CTButton btnThaydoiLuuCDHT;
         private CTuserControl.CTButton btnThaydoiCDHT;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -42,15 +42,20 @@ namespace NTSF.GUI
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // advancedPanel1
             // 
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel1.Controls.Add(this.iconPictureBox2);
+            this.advancedPanel1.Controls.Add(this.label10);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.txtTKPNNhapKho);
@@ -126,6 +131,7 @@ namespace NTSF.GUI
             this.btnTimKiemDanhmuc.AutoSize = true;
             this.btnTimKiemDanhmuc.BackColor = System.Drawing.Color.Transparent;
             this.btnTimKiemDanhmuc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemDanhmuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTimKiemDanhmuc.FlatAppearance.BorderSize = 0;
             this.btnTimKiemDanhmuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiemDanhmuc.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -135,9 +141,9 @@ namespace NTSF.GUI
             this.btnTimKiemDanhmuc.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTimKiemDanhmuc.IconSize = 30;
             this.btnTimKiemDanhmuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemDanhmuc.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemDanhmuc.Location = new System.Drawing.Point(0, 0);
             this.btnTimKiemDanhmuc.Name = "btnTimKiemDanhmuc";
-            this.btnTimKiemDanhmuc.Size = new System.Drawing.Size(138, 36);
+            this.btnTimKiemDanhmuc.Size = new System.Drawing.Size(141, 43);
             this.btnTimKiemDanhmuc.TabIndex = 63;
             this.btnTimKiemDanhmuc.Text = "      TÌM KIẾM";
             this.btnTimKiemDanhmuc.UseVisualStyleBackColor = false;
@@ -148,7 +154,7 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 0;
+            this.txtTKPNNhapKho.BorderSize = 1;
             this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKPNNhapKho.IsFocused = false;
             this.txtTKPNNhapKho.Location = new System.Drawing.Point(84, 135);
@@ -195,9 +201,9 @@ namespace NTSF.GUI
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(50, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(354, 38);
+            this.label6.Size = new System.Drawing.Size(173, 38);
             this.label6.TabIndex = 51;
-            this.label6.Text = "DANH MỤC / HÀNG HOÁ";
+            this.label6.Text = "DANH MỤC";
             // 
             // advancedPanel5
             // 
@@ -255,6 +261,32 @@ namespace NTSF.GUI
             this.label9.TabIndex = 52;
             this.label9.Text = "Danh sách hàng hoá";
             // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 29;
+            this.iconPictureBox2.Location = new System.Drawing.Point(221, 31);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
+            this.iconPictureBox2.TabIndex = 64;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(247, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(170, 38);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "HÀNG HOÁ";
+            // 
             // FormDanhMuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -273,6 +305,7 @@ namespace NTSF.GUI
             this.advancedPanel2.PerformLayout();
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,5 +325,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.Label label10;
     }
 }

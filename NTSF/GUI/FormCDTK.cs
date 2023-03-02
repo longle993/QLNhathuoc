@@ -37,6 +37,7 @@ namespace NTSF.GUI
         {
             btnThaydoiHuy.Show();
             btnThaydoiLuu.Show();
+            btnThaydoiCDTK.Hide();
         }
 
         private void btnThaydoiLuu_MouseHover(object sender, EventArgs e)
@@ -87,6 +88,7 @@ namespace NTSF.GUI
         {
             btnThaydoiHuy.Hide();
             btnThaydoiLuu.Hide();
+            btnThaydoiCDTK.Show();
         }
 
         private void btnThaydoiLuu_Click(object sender, EventArgs e)
@@ -99,6 +101,7 @@ namespace NTSF.GUI
             formMain.lblTENNT.Text = txtTenNT.Texts.ToUpper();
             btnThaydoiHuy.Hide();
             btnThaydoiLuu.Hide();
+            btnThaydoiCDTK.Show();
         }
     }
 }

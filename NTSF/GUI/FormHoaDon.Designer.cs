@@ -113,7 +113,6 @@ namespace NTSF.GUI
             this.advancedPanel1.StartColor = System.Drawing.Color.White;
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 0;
-            this.advancedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.advancedPanel1_Paint);
             // 
             // advancedPanel2
             // 
@@ -199,7 +198,7 @@ namespace NTSF.GUI
             this.txtTKHDHoadon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKHDHoadon.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKHDHoadon.BorderRadius = 5;
-            this.txtTKHDHoadon.BorderSize = 0;
+            this.txtTKHDHoadon.BorderSize = 1;
             this.txtTKHDHoadon.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKHDHoadon.IsFocused = false;
             this.txtTKHDHoadon.Location = new System.Drawing.Point(1124, 135);
@@ -222,7 +221,7 @@ namespace NTSF.GUI
             this.txtTKHHHoadon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKHHHoadon.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKHHHoadon.BorderRadius = 5;
-            this.txtTKHHHoadon.BorderSize = 0;
+            this.txtTKHHHoadon.BorderSize = 1;
             this.txtTKHHHoadon.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKHHHoadon.IsFocused = false;
             this.txtTKHHHoadon.Location = new System.Drawing.Point(672, 135);

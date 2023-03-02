@@ -114,6 +114,12 @@
     <Compile Include="GUI\FormCaiDat.Designer.cs">
       <DependentUpon>FormCaiDat.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormDangKy.Designer.cs">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FormDanhMuc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,12 @@
     </Compile>
     <Compile Include="GUI\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormQuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormQuenMK.Designer.cs">
+      <DependentUpon>FormQuenMK.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormTaoPhieu.cs">
       <SubType>Form</SubType>
@@ -233,6 +245,9 @@
     <EmbeddedResource Include="GUI\FormCaiDat.resx">
       <DependentUpon>FormCaiDat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDangKy.resx">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormDanhMuc.resx">
       <DependentUpon>FormDanhMuc.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormQuenMK.resx">
+      <DependentUpon>FormQuenMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTaoPhieu.resx">
       <DependentUpon>FormTaoPhieu.cs</DependentUpon>

@@ -366,20 +366,20 @@ namespace NTSF.GUI
             this.txtboxGhichu.BorderColor = System.Drawing.Color.Transparent;
             this.txtboxGhichu.BorderFocusColor = System.Drawing.Color.Black;
             this.txtboxGhichu.BorderRadius = 5;
-            this.txtboxGhichu.BorderSize = 0;
+            this.txtboxGhichu.BorderSize = 1;
             this.txtboxGhichu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtboxGhichu.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtboxGhichu.IsFocused = false;
             this.txtboxGhichu.Location = new System.Drawing.Point(0, 0);
             this.txtboxGhichu.Margin = new System.Windows.Forms.Padding(4);
-            this.txtboxGhichu.Multiline = false;
+            this.txtboxGhichu.Multiline = true;
             this.txtboxGhichu.Name = "txtboxGhichu";
             this.txtboxGhichu.Padding = new System.Windows.Forms.Padding(7);
             this.txtboxGhichu.PasswordChar = false;
             this.txtboxGhichu.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtboxGhichu.PlaceholderText = "Ghi chú thêm đơn hàng";
             this.txtboxGhichu.ReadOnly = false;
-            this.txtboxGhichu.Size = new System.Drawing.Size(590, 40);
+            this.txtboxGhichu.Size = new System.Drawing.Size(590, 80);
             this.txtboxGhichu.TabIndex = 6;
             this.txtboxGhichu.Texts = "";
             this.txtboxGhichu.UnderlineedStyle = false;
@@ -426,7 +426,7 @@ namespace NTSF.GUI
             this.ctTextBox1.BorderColor = System.Drawing.Color.Transparent;
             this.ctTextBox1.BorderFocusColor = System.Drawing.Color.Black;
             this.ctTextBox1.BorderRadius = 5;
-            this.ctTextBox1.BorderSize = 0;
+            this.ctTextBox1.BorderSize = 1;
             this.ctTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ctTextBox1.IsFocused = false;
             this.ctTextBox1.Location = new System.Drawing.Point(34, 155);
@@ -466,12 +466,12 @@ namespace NTSF.GUI
             // 
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 28;
-            this.comboBox1.Location = new System.Drawing.Point(0, 2);
+            this.comboBox1.ItemHeight = 25;
+            this.comboBox1.Location = new System.Drawing.Point(0, 1);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(587, 36);
+            this.comboBox1.Size = new System.Drawing.Size(587, 33);
             this.comboBox1.TabIndex = 58;
             this.comboBox1.Text = " --Chọn nhân viên bán hàng--";
             // 
@@ -498,12 +498,13 @@ namespace NTSF.GUI
             // 
             this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 28;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.ItemHeight = 25;
             this.comboBox2.Location = new System.Drawing.Point(0, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(587, 36);
+            this.comboBox2.Size = new System.Drawing.Size(587, 33);
             this.comboBox2.TabIndex = 58;
             this.comboBox2.Text = "     Tiền mặt";
             // 
@@ -513,7 +514,7 @@ namespace NTSF.GUI
             this.ctTextBox2.BorderColor = System.Drawing.Color.Transparent;
             this.ctTextBox2.BorderFocusColor = System.Drawing.Color.Black;
             this.ctTextBox2.BorderRadius = 5;
-            this.ctTextBox2.BorderSize = 0;
+            this.ctTextBox2.BorderSize = 1;
             this.ctTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctTextBox2.ForeColor = System.Drawing.Color.Black;
             this.ctTextBox2.IsFocused = false;
@@ -550,7 +551,7 @@ namespace NTSF.GUI
             this.ctTextBox3.PlaceholderColor = System.Drawing.Color.Black;
             this.ctTextBox3.PlaceholderText = "0";
             this.ctTextBox3.ReadOnly = false;
-            this.ctTextBox3.Size = new System.Drawing.Size(252, 36);
+            this.ctTextBox3.Size = new System.Drawing.Size(240, 36);
             this.ctTextBox3.TabIndex = 6;
             this.ctTextBox3.Texts = "";
             this.ctTextBox3.UnderlineedStyle = false;
@@ -561,7 +562,7 @@ namespace NTSF.GUI
             this.ctTextBox4.BorderColor = System.Drawing.Color.Transparent;
             this.ctTextBox4.BorderFocusColor = System.Drawing.Color.Black;
             this.ctTextBox4.BorderRadius = 5;
-            this.ctTextBox4.BorderSize = 0;
+            this.ctTextBox4.BorderSize = 1;
             this.ctTextBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctTextBox4.ForeColor = System.Drawing.Color.Black;
             this.ctTextBox4.IsFocused = false;

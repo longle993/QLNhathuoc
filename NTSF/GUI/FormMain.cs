@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
@@ -39,7 +33,6 @@ namespace NTSF.GUI
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             OpenChildForm(new FormTongQuan());
-
         }
 
         private void OpenChildForm(Form childForm)
@@ -103,7 +96,6 @@ namespace NTSF.GUI
         private void LoadTimeNow()
         {
             this.lbTime.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
         }
 
         private void btnBuy_Click(object sender, EventArgs e)
@@ -134,22 +126,18 @@ namespace NTSF.GUI
         {
             ActivateButton(sender, RGBColors.color395);
             dropdownMenu2.Show(btnDanhmuc, btnDanhmuc.Width, 0);
-
-
         }
 
         private void btnCaidat_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color395);
             OpenChildForm(new FormCaiDat());
-
         }
 
         private void btnNhathuoc_Click(object sender, EventArgs e)
         {
             Reset();
             OpenChildForm(new FormTongQuan());
-
         }
 
 
@@ -157,8 +145,6 @@ namespace NTSF.GUI
         {
             Application.Exit();
         }
-
-
 
         private void btnMin_Click(object sender, EventArgs e)
         {
@@ -175,7 +161,6 @@ namespace NTSF.GUI
         private void dropmenuNhapkho_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormNhapKho());
-
         }
 
         private void dropmenuTonkho_Click(object sender, EventArgs e)
@@ -195,7 +180,6 @@ namespace NTSF.GUI
 
         private void ctCirclePictureBox4_MouseHover(object sender, EventArgs e)
         {
-
                 this.ctCirclePictureBox4.Image = global::NTSF.Properties.Resources.Xmark;
         }
 
@@ -212,13 +196,11 @@ namespace NTSF.GUI
         private void ctCirclePictureBox5_MouseLeave(object sender, EventArgs e)
         {
             this.ctCirclePictureBox5.Image = null;
-
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormDanhMuc());
-
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)

@@ -55,7 +55,7 @@ namespace NTSF.GUI
         private void btnLuu_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Đã lưu");
-
+            this.Close();
         }
     }
 }

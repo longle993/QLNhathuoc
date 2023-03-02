@@ -32,3 +32,5 @@ D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.CTuserControl.TextboxLine.resour
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormCDTK.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.csproj.AssemblyReference.cache
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormCDHT.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormDangKy.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormQuenMK.resources

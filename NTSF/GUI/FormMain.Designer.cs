@@ -64,6 +64,7 @@ namespace NTSF.GUI
             this.picAdmin = new NTSF.CTuserControl.CTCirclePictureBox();
             this.lblAdmin = new System.Windows.Forms.Label();
             this.panel1 = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.lblTENNT = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lbTime = new System.Windows.Forms.Label();
             this.panel2 = new NTSF.GUI.FormMain.DoubleBufferPanel();
@@ -81,7 +82,6 @@ namespace NTSF.GUI
             this.dropdownMenu2 = new NTSF.CTuserControl.DropdownMenu(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblTENNT = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).BeginInit();
@@ -328,6 +328,18 @@ namespace NTSF.GUI
             this.panel1.Size = new System.Drawing.Size(1744, 95);
             this.panel1.TabIndex = 2;
             // 
+            // lblTENNT
+            // 
+            this.lblTENNT.AutoSize = true;
+            this.lblTENNT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTENNT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTENNT.ForeColor = System.Drawing.Color.White;
+            this.lblTENNT.Location = new System.Drawing.Point(284, 35);
+            this.lblTENNT.Name = "lblTENNT";
+            this.lblTENNT.Size = new System.Drawing.Size(72, 38);
+            this.lblTENNT.TabIndex = 9;
+            this.lblTENNT.Text = "ABC";
+            // 
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -448,32 +460,35 @@ namespace NTSF.GUI
             this.dropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
             this.dropdownMenu1.Name = "dropdownMenu1";
             this.dropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenu1.Size = new System.Drawing.Size(163, 118);
+            this.dropdownMenu1.Size = new System.Drawing.Size(180, 172);
             // 
             // dropmenuNhapkho
             // 
             this.dropmenuNhapkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.dropmenuNhapkho.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dropmenuNhapkho.Name = "dropmenuNhapkho";
-            this.dropmenuNhapkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuNhapkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuNhapkho.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.dropmenuNhapkho.Size = new System.Drawing.Size(179, 56);
             this.dropmenuNhapkho.Text = "Nhập kho";
             this.dropmenuNhapkho.Click += new System.EventHandler(this.dropmenuNhapkho_Click);
             // 
             // dropmenuXuatkho
             // 
             this.dropmenuXuatkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.dropmenuXuatkho.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dropmenuXuatkho.Name = "dropmenuXuatkho";
-            this.dropmenuXuatkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuXuatkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuXuatkho.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.dropmenuXuatkho.Size = new System.Drawing.Size(179, 56);
             this.dropmenuXuatkho.Text = "Xuất kho";
             this.dropmenuXuatkho.Click += new System.EventHandler(this.dropmenuXuatkho_Click);
             // 
             // dropmenuTonkho
             // 
             this.dropmenuTonkho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.dropmenuTonkho.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dropmenuTonkho.Name = "dropmenuTonkho";
-            this.dropmenuTonkho.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.dropmenuTonkho.Size = new System.Drawing.Size(162, 38);
+            this.dropmenuTonkho.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.dropmenuTonkho.Size = new System.Drawing.Size(179, 56);
             this.dropmenuTonkho.Text = "Tồn kho";
             this.dropmenuTonkho.Click += new System.EventHandler(this.dropmenuTonkho_Click);
             // 
@@ -538,37 +553,27 @@ namespace NTSF.GUI
             this.dropdownMenu2.MenuItemTextColor = System.Drawing.Color.Empty;
             this.dropdownMenu2.Name = "dropdownMenu1";
             this.dropdownMenu2.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenu2.Size = new System.Drawing.Size(194, 80);
+            this.dropdownMenu2.Size = new System.Drawing.Size(241, 149);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(193, 38);
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 56);
             this.toolStripMenuItem1.Text = "Hàng hoá";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 38);
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 56);
             this.toolStripMenuItem2.Text = "Nhà cung cấp";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // lblTENNT
-            // 
-            this.lblTENNT.AutoSize = true;
-            this.lblTENNT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTENNT.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTENNT.ForeColor = System.Drawing.Color.White;
-            this.lblTENNT.Location = new System.Drawing.Point(284, 35);
-            this.lblTENNT.Name = "lblTENNT";
-            this.lblTENNT.Size = new System.Drawing.Size(72, 38);
-            this.lblTENNT.TabIndex = 9;
-            this.lblTENNT.Text = "ABC";
             // 
             // FormMain
             // 

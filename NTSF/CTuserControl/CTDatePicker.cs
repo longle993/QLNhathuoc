@@ -136,9 +136,6 @@ namespace NTSF.CTuserControl
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-
-            
-
             using (Graphics graphic = this.CreateGraphics())
             using (Pen penBorder = new Pen(borderColor, borderSize))
             using (SolidBrush skinBrush = new SolidBrush(skinColor))

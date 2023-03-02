@@ -33,6 +33,7 @@ namespace NTSF.GUI
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTimKiemBC = new FontAwesome.Sharp.IconButton();
@@ -41,7 +42,6 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
@@ -104,6 +104,17 @@ namespace NTSF.GUI
             this.label9.TabIndex = 52;
             this.label9.Text = "Danh sách dữ liệu";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(1183, 621);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 28);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Tổng:";
+            // 
             // advancedPanel1
             // 
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
@@ -151,6 +162,7 @@ namespace NTSF.GUI
             this.btnTimKiemBC.AutoSize = true;
             this.btnTimKiemBC.BackColor = System.Drawing.Color.Transparent;
             this.btnTimKiemBC.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemBC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTimKiemBC.FlatAppearance.BorderSize = 0;
             this.btnTimKiemBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiemBC.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -160,9 +172,9 @@ namespace NTSF.GUI
             this.btnTimKiemBC.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTimKiemBC.IconSize = 30;
             this.btnTimKiemBC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemBC.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemBC.Location = new System.Drawing.Point(0, 0);
             this.btnTimKiemBC.Name = "btnTimKiemBC";
-            this.btnTimKiemBC.Size = new System.Drawing.Size(138, 36);
+            this.btnTimKiemBC.Size = new System.Drawing.Size(141, 43);
             this.btnTimKiemBC.TabIndex = 63;
             this.btnTimKiemBC.Text = "      TÌM KIẾM";
             this.btnTimKiemBC.UseVisualStyleBackColor = false;
@@ -241,26 +253,15 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "BÁO CÁO";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(1183, 621);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 28);
-            this.label3.TabIndex = 52;
-            this.label3.Text = "Tổng:";
-            // 
             // FormBaoCao
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1744, 985);
             this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.advancedPanel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormBaoCao";
             this.Text = "FormBaoCao";

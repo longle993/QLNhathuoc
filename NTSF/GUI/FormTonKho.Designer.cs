@@ -227,6 +227,7 @@ namespace NTSF.GUI
             this.btnTimKiemTonKho.AutoSize = true;
             this.btnTimKiemTonKho.BackColor = System.Drawing.Color.Transparent;
             this.btnTimKiemTonKho.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemTonKho.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTimKiemTonKho.FlatAppearance.BorderSize = 0;
             this.btnTimKiemTonKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiemTonKho.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
@@ -236,9 +237,9 @@ namespace NTSF.GUI
             this.btnTimKiemTonKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTimKiemTonKho.IconSize = 30;
             this.btnTimKiemTonKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemTonKho.Location = new System.Drawing.Point(1, 3);
+            this.btnTimKiemTonKho.Location = new System.Drawing.Point(0, 0);
             this.btnTimKiemTonKho.Name = "btnTimKiemTonKho";
-            this.btnTimKiemTonKho.Size = new System.Drawing.Size(138, 36);
+            this.btnTimKiemTonKho.Size = new System.Drawing.Size(141, 43);
             this.btnTimKiemTonKho.TabIndex = 63;
             this.btnTimKiemTonKho.Text = "      TÌM KIẾM";
             this.btnTimKiemTonKho.UseVisualStyleBackColor = false;
@@ -289,7 +290,7 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
             this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 0;
+            this.txtTKPNNhapKho.BorderSize = 1;
             this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtTKPNNhapKho.IsFocused = false;
             this.txtTKPNNhapKho.Location = new System.Drawing.Point(1124, 135);
@@ -378,7 +379,7 @@ namespace NTSF.GUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(1722, 929);
+            this.ClientSize = new System.Drawing.Size(1744, 985);
             this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.advancedPanel1);
             this.DoubleBuffered = true;
