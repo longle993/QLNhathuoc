@@ -31,16 +31,16 @@ namespace NTSF.GUI
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnCDHT = new FontAwesome.Sharp.IconButton();
-            this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnCDTK = new FontAwesome.Sharp.IconButton();
+            this.panelBtnHT = new NTSF.CTuserControl.AdvancedPanel();
+            this.btnCDHT = new FontAwesome.Sharp.IconButton();
+            this.panelBtnTK = new NTSF.CTuserControl.AdvancedPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.panelCDTK = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.advancedPanel2.SuspendLayout();
-            this.advancedPanel1.SuspendLayout();
+            this.panelBtnHT.SuspendLayout();
+            this.panelBtnTK.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -63,8 +63,8 @@ namespace NTSF.GUI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.advancedPanel2);
-            this.panel1.Controls.Add(this.advancedPanel1);
+            this.panel1.Controls.Add(this.panelBtnHT);
+            this.panel1.Controls.Add(this.panelBtnTK);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -72,25 +72,50 @@ namespace NTSF.GUI
             this.panel1.Size = new System.Drawing.Size(544, 900);
             this.panel1.TabIndex = 1;
             // 
-            // advancedPanel2
+            // btnCDTK
             // 
-            this.advancedPanel2.BackColor = System.Drawing.Color.White;
-            this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel2.Controls.Add(this.btnCDHT);
-            this.advancedPanel2.EdgeWidth = 2;
-            this.advancedPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.advancedPanel2.Location = new System.Drawing.Point(40, 208);
-            this.advancedPanel2.Name = "advancedPanel2";
-            this.advancedPanel2.RectRadius = 10;
-            this.advancedPanel2.ShadowColor = System.Drawing.Color.Transparent;
-            this.advancedPanel2.ShadowShift = 0;
-            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel2.Size = new System.Drawing.Size(327, 50);
-            this.advancedPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel2.TabIndex = 54;
+            this.btnCDTK.BackColor = System.Drawing.Color.Transparent;
+            this.btnCDTK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCDTK.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCDTK.FlatAppearance.BorderSize = 0;
+            this.btnCDTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCDTK.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCDTK.ForeColor = System.Drawing.Color.Black;
+            this.btnCDTK.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.btnCDTK.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
+            this.btnCDTK.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCDTK.IconSize = 35;
+            this.btnCDTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCDTK.Location = new System.Drawing.Point(0, 0);
+            this.btnCDTK.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.btnCDTK.Name = "btnCDTK";
+            this.btnCDTK.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
+            this.btnCDTK.Size = new System.Drawing.Size(327, 50);
+            this.btnCDTK.TabIndex = 0;
+            this.btnCDTK.Text = "           Cài đặt tài khoản";
+            this.btnCDTK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCDTK.UseVisualStyleBackColor = false;
+            this.btnCDTK.Click += new System.EventHandler(this.btnCDTK_Click);
+            // 
+            // panelBtnHT
+            // 
+            this.panelBtnHT.BackColor = System.Drawing.Color.White;
+            this.panelBtnHT.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.panelBtnHT.Controls.Add(this.btnCDHT);
+            this.panelBtnHT.EdgeWidth = 2;
+            this.panelBtnHT.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panelBtnHT.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panelBtnHT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelBtnHT.Location = new System.Drawing.Point(40, 208);
+            this.panelBtnHT.Name = "panelBtnHT";
+            this.panelBtnHT.RectRadius = 10;
+            this.panelBtnHT.ShadowColor = System.Drawing.Color.Transparent;
+            this.panelBtnHT.ShadowShift = 0;
+            this.panelBtnHT.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
+            this.panelBtnHT.Size = new System.Drawing.Size(327, 50);
+            this.panelBtnHT.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panelBtnHT.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.panelBtnHT.TabIndex = 54;
             // 
             // btnCDHT
             // 
@@ -117,50 +142,25 @@ namespace NTSF.GUI
             this.btnCDHT.UseVisualStyleBackColor = false;
             this.btnCDHT.Click += new System.EventHandler(this.btnCDHT_Click);
             // 
-            // advancedPanel1
+            // panelBtnTK
             // 
-            this.advancedPanel1.BackColor = System.Drawing.Color.White;
-            this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel1.Controls.Add(this.btnCDTK);
-            this.advancedPanel1.EdgeWidth = 2;
-            this.advancedPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel1.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.advancedPanel1.Location = new System.Drawing.Point(38, 116);
-            this.advancedPanel1.Name = "advancedPanel1";
-            this.advancedPanel1.RectRadius = 10;
-            this.advancedPanel1.ShadowColor = System.Drawing.Color.Transparent;
-            this.advancedPanel1.ShadowShift = 0;
-            this.advancedPanel1.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel1.Size = new System.Drawing.Size(327, 50);
-            this.advancedPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel1.TabIndex = 53;
-            // 
-            // btnCDTK
-            // 
-            this.btnCDTK.BackColor = System.Drawing.Color.Transparent;
-            this.btnCDTK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCDTK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCDTK.FlatAppearance.BorderSize = 0;
-            this.btnCDTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCDTK.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCDTK.ForeColor = System.Drawing.Color.Black;
-            this.btnCDTK.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.btnCDTK.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
-            this.btnCDTK.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCDTK.IconSize = 35;
-            this.btnCDTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCDTK.Location = new System.Drawing.Point(0, 0);
-            this.btnCDTK.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.btnCDTK.Name = "btnCDTK";
-            this.btnCDTK.Padding = new System.Windows.Forms.Padding(21, 0, 0, 0);
-            this.btnCDTK.Size = new System.Drawing.Size(327, 50);
-            this.btnCDTK.TabIndex = 0;
-            this.btnCDTK.Text = "           Cài đặt tài khoản";
-            this.btnCDTK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCDTK.UseVisualStyleBackColor = false;
-            this.btnCDTK.Click += new System.EventHandler(this.btnCDTK_Click);
+            this.panelBtnTK.BackColor = System.Drawing.Color.White;
+            this.panelBtnTK.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.panelBtnTK.Controls.Add(this.btnCDTK);
+            this.panelBtnTK.EdgeWidth = 2;
+            this.panelBtnTK.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panelBtnTK.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panelBtnTK.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelBtnTK.Location = new System.Drawing.Point(38, 116);
+            this.panelBtnTK.Name = "panelBtnTK";
+            this.panelBtnTK.RectRadius = 10;
+            this.panelBtnTK.ShadowColor = System.Drawing.Color.Transparent;
+            this.panelBtnTK.ShadowShift = 0;
+            this.panelBtnTK.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
+            this.panelBtnTK.Size = new System.Drawing.Size(327, 50);
+            this.panelBtnTK.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.panelBtnTK.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.panelBtnTK.TabIndex = 53;
             // 
             // label6
             // 
@@ -197,8 +197,8 @@ namespace NTSF.GUI
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.advancedPanel2.ResumeLayout(false);
-            this.advancedPanel1.ResumeLayout(false);
+            this.panelBtnHT.ResumeLayout(false);
+            this.panelBtnTK.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -207,9 +207,9 @@ namespace NTSF.GUI
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private CTuserControl.AdvancedPanel advancedPanel2;
+        private CTuserControl.AdvancedPanel panelBtnHT;
         private FontAwesome.Sharp.IconButton btnCDHT;
-        private CTuserControl.AdvancedPanel advancedPanel1;
+        private CTuserControl.AdvancedPanel panelBtnTK;
         private FontAwesome.Sharp.IconButton btnCDTK;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panelCDTK;

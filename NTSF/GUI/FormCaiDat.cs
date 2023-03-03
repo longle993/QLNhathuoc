@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FontAwesome.Sharp;
 using System.Windows.Forms;
+using NTSF.CTuserControl;
 
 namespace NTSF.GUI
 {
     public partial class FormCaiDat : Form
     {
+        private IconButton currentBtn;
         private Form currentChildForm;
         private void OpenChildForm(Form childForm)
         {
@@ -35,15 +32,44 @@ namespace NTSF.GUI
         public FormCaiDat()
         {
             InitializeComponent();
+            OpenChildForm(new FormCDTK());
+            ActivateButton(btnCDTK, panelBtnTK);
+        }
+
+        private void ActivateButton(object senderBtn, AdvancedPanel panel)
+        {
+            if (senderBtn != null)
+            {
+                DisableButton();
+                //Button
+                currentBtn = (IconButton)senderBtn;
+                panel.FlatBorderColor = Color.FromArgb(170, 139, 86);
+                panel.BringToFront();
+                currentBtn.ForeColor = Color.FromArgb(170, 139, 86);
+            }
+        }
+
+
+        private void DisableButton()
+        {
+            if (currentBtn != null)
+            {
+                currentBtn.ForeColor = Color.Black;
+                panelBtnHT.FlatBorderColor = Color.FromArgb(236, 236, 236);
+                panelBtnTK.FlatBorderColor = Color.FromArgb(236, 236, 236);
+
+            }
         }
 
         private void btnCDTK_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, panelBtnTK);
             OpenChildForm(new FormCDTK());
         }
 
         private void btnCDHT_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender,panelBtnHT);
             OpenChildForm(new FormCDHT());
         }
     }
