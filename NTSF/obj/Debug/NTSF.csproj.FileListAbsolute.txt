@@ -34,3 +34,7 @@ D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.csproj.AssemblyReference.cache
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormCDHT.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormDangKy.resources
 D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\obj\Debug\NTSF.GUI.FormQuenMK.resources
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\bin\Debug\EntityFramework.dll
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\bin\Debug\EntityFramework.xml
+D:\Long Lê\UEH\HK4\SE\NTSF\NTSF\bin\Debug\EntityFramework.SqlServer.xml

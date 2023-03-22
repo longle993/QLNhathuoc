@@ -30,25 +30,37 @@ namespace NTSF.GUI
         private void InitializeComponent()
         {
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbboxNhomhang = new System.Windows.Forms.ComboBox();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTimKiemDanhmuc = new FontAwesome.Sharp.IconButton();
-            this.txtTKPNNhapKho = new HotelManagement.CTControls.CTTextBox();
+            this.txtSearchHH = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.dataHangHoa = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaisp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hamluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QCDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mo_ta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt_cb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vat_ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongton = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHangHoa)).BeginInit();
             this.SuspendLayout();
             // 
             // advancedPanel1
@@ -58,7 +70,7 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.label10);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
-            this.advancedPanel1.Controls.Add(this.txtTKPNNhapKho);
+            this.advancedPanel1.Controls.Add(this.txtSearchHH);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label3);
             this.advancedPanel1.Controls.Add(this.label6);
@@ -76,11 +88,37 @@ namespace NTSF.GUI
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 5;
             // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 29;
+            this.iconPictureBox2.Location = new System.Drawing.Point(221, 31);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
+            this.iconPictureBox2.TabIndex = 64;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(247, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(170, 38);
+            this.label10.TabIndex = 63;
+            this.label10.Text = "HÀNG HOÁ";
+            // 
             // advancedPanel3
             // 
             this.advancedPanel3.BackColor = System.Drawing.Color.White;
             this.advancedPanel3.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel3.Controls.Add(this.comboBox1);
+            this.advancedPanel3.Controls.Add(this.cbboxNhomhang);
             this.advancedPanel3.EdgeWidth = 1;
             this.advancedPanel3.EndColor = System.Drawing.Color.White;
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
@@ -90,22 +128,23 @@ namespace NTSF.GUI
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel3.ShadowShift = 2;
             this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel3.Size = new System.Drawing.Size(270, 43);
+            this.advancedPanel3.Size = new System.Drawing.Size(390, 43);
             this.advancedPanel3.StartColor = System.Drawing.Color.White;
             this.advancedPanel3.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel3.TabIndex = 61;
             // 
-            // comboBox1
+            // cbboxNhomhang
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 28;
-            this.comboBox1.Location = new System.Drawing.Point(0, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 36);
-            this.comboBox1.TabIndex = 58;
+            this.cbboxNhomhang.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbboxNhomhang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbboxNhomhang.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbboxNhomhang.FormattingEnabled = true;
+            this.cbboxNhomhang.ItemHeight = 28;
+            this.cbboxNhomhang.Location = new System.Drawing.Point(3, 0);
+            this.cbboxNhomhang.Name = "cbboxNhomhang";
+            this.cbboxNhomhang.Size = new System.Drawing.Size(384, 36);
+            this.cbboxNhomhang.TabIndex = 58;
+            this.cbboxNhomhang.SelectedIndexChanged += new System.EventHandler(this.cbboxNhomhang_SelectedIndexChanged);
             // 
             // advancedPanel2
             // 
@@ -115,7 +154,7 @@ namespace NTSF.GUI
             this.advancedPanel2.EdgeWidth = 2;
             this.advancedPanel2.EndColor = System.Drawing.Color.White;
             this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
-            this.advancedPanel2.Location = new System.Drawing.Point(1002, 135);
+            this.advancedPanel2.Location = new System.Drawing.Point(1133, 135);
             this.advancedPanel2.Name = "advancedPanel2";
             this.advancedPanel2.RectRadius = 5;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
@@ -147,29 +186,31 @@ namespace NTSF.GUI
             this.btnTimKiemDanhmuc.TabIndex = 63;
             this.btnTimKiemDanhmuc.Text = "      TÌM KIẾM";
             this.btnTimKiemDanhmuc.UseVisualStyleBackColor = false;
+            this.btnTimKiemDanhmuc.Click += new System.EventHandler(this.btnTimKiemDanhmuc_Click);
             // 
-            // txtTKPNNhapKho
+            // txtSearchHH
             // 
-            this.txtTKPNNhapKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 1;
-            this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTKPNNhapKho.IsFocused = false;
-            this.txtTKPNNhapKho.Location = new System.Drawing.Point(84, 135);
-            this.txtTKPNNhapKho.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTKPNNhapKho.Multiline = false;
-            this.txtTKPNNhapKho.Name = "txtTKPNNhapKho";
-            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTKPNNhapKho.PasswordChar = false;
-            this.txtTKPNNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTKPNNhapKho.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
-            this.txtTKPNNhapKho.ReadOnly = false;
-            this.txtTKPNNhapKho.Size = new System.Drawing.Size(500, 43);
-            this.txtTKPNNhapKho.TabIndex = 54;
-            this.txtTKPNNhapKho.Texts = "";
-            this.txtTKPNNhapKho.UnderlineedStyle = false;
+            this.txtSearchHH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSearchHH.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSearchHH.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtSearchHH.BorderRadius = 5;
+            this.txtSearchHH.BorderSize = 1;
+            this.txtSearchHH.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtSearchHH.IsFocused = false;
+            this.txtSearchHH.Location = new System.Drawing.Point(84, 135);
+            this.txtSearchHH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchHH.Multiline = false;
+            this.txtSearchHH.Name = "txtSearchHH";
+            this.txtSearchHH.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSearchHH.PasswordChar = false;
+            this.txtSearchHH.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearchHH.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
+            this.txtSearchHH.ReadOnly = false;
+            this.txtSearchHH.Size = new System.Drawing.Size(500, 43);
+            this.txtSearchHH.TabIndex = 54;
+            this.txtSearchHH.Texts = "";
+            this.txtSearchHH.UnderlineedStyle = false;
+            this.txtSearchHH._TextChanged += new System.EventHandler(this.txtSearchHH__TextChanged);
             // 
             // label4
             // 
@@ -187,7 +228,7 @@ namespace NTSF.GUI
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(655, 94);
+            this.label3.Location = new System.Drawing.Point(659, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 28);
             this.label3.TabIndex = 52;
@@ -208,6 +249,7 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataHangHoa);
             this.advancedPanel5.Controls.Add(this.label8);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label9);
@@ -224,6 +266,28 @@ namespace NTSF.GUI
             this.advancedPanel5.StartColor = System.Drawing.Color.White;
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 6;
+            // 
+            // dataHangHoa
+            // 
+            this.dataHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHangHoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.masp,
+            this.tensp,
+            this.loaisp,
+            this.hamluong,
+            this.QCDG,
+            this.mo_ta,
+            this.dvt_cb,
+            this.vat_ban,
+            this.giaban,
+            this.tongton});
+            this.dataHangHoa.Location = new System.Drawing.Point(33, 76);
+            this.dataHangHoa.Name = "dataHangHoa";
+            this.dataHangHoa.RowHeadersVisible = false;
+            this.dataHangHoa.RowHeadersWidth = 62;
+            this.dataHangHoa.RowTemplate.Height = 28;
+            this.dataHangHoa.Size = new System.Drawing.Size(1559, 499);
+            this.dataHangHoa.TabIndex = 53;
             // 
             // label8
             // 
@@ -261,31 +325,75 @@ namespace NTSF.GUI
             this.label9.TabIndex = 52;
             this.label9.Text = "Danh sách hàng hoá";
             // 
-            // iconPictureBox2
+            // masp
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
-            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 29;
-            this.iconPictureBox2.Location = new System.Drawing.Point(221, 31);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
-            this.iconPictureBox2.TabIndex = 64;
-            this.iconPictureBox2.TabStop = false;
+            this.masp.HeaderText = "Mã SP";
+            this.masp.MinimumWidth = 8;
+            this.masp.Name = "masp";
+            this.masp.Width = 110;
             // 
-            // label10
+            // tensp
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(247, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(170, 38);
-            this.label10.TabIndex = 63;
-            this.label10.Text = "HÀNG HOÁ";
+            this.tensp.HeaderText = "Tên SP";
+            this.tensp.MinimumWidth = 8;
+            this.tensp.Name = "tensp";
+            this.tensp.Width = 340;
+            // 
+            // loaisp
+            // 
+            this.loaisp.HeaderText = "Loại SP";
+            this.loaisp.MinimumWidth = 8;
+            this.loaisp.Name = "loaisp";
+            this.loaisp.Width = 180;
+            // 
+            // hamluong
+            // 
+            this.hamluong.HeaderText = "Hàm lượng";
+            this.hamluong.MinimumWidth = 8;
+            this.hamluong.Name = "hamluong";
+            this.hamluong.Width = 140;
+            // 
+            // QCDG
+            // 
+            this.QCDG.HeaderText = "Quy cách đóng gói";
+            this.QCDG.MinimumWidth = 8;
+            this.QCDG.Name = "QCDG";
+            this.QCDG.Width = 150;
+            // 
+            // mo_ta
+            // 
+            this.mo_ta.HeaderText = "Mô tả";
+            this.mo_ta.MinimumWidth = 8;
+            this.mo_ta.Name = "mo_ta";
+            this.mo_ta.Width = 85;
+            // 
+            // dvt_cb
+            // 
+            this.dvt_cb.HeaderText = "DVT Cơ bản";
+            this.dvt_cb.MinimumWidth = 8;
+            this.dvt_cb.Name = "dvt_cb";
+            this.dvt_cb.Width = 150;
+            // 
+            // vat_ban
+            // 
+            this.vat_ban.HeaderText = "VAT Bán";
+            this.vat_ban.MinimumWidth = 8;
+            this.vat_ban.Name = "vat_ban";
+            this.vat_ban.Width = 125;
+            // 
+            // giaban
+            // 
+            this.giaban.HeaderText = "Giá Bán";
+            this.giaban.MinimumWidth = 8;
+            this.giaban.Name = "giaban";
+            this.giaban.Width = 125;
+            // 
+            // tongton
+            // 
+            this.tongton.HeaderText = "Tổng tồn";
+            this.tongton.MinimumWidth = 8;
+            this.tongton.Name = "tongton";
+            this.tongton.Width = 125;
             // 
             // FormDanhMuc
             // 
@@ -298,14 +406,16 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDanhMuc";
             this.Text = "FormDanhMuc";
+            this.Load += new System.EventHandler(this.FormDanhMuc_Load);
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.advancedPanel3.ResumeLayout(false);
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHangHoa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -314,10 +424,10 @@ namespace NTSF.GUI
 
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbboxNhomhang;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTimKiemDanhmuc;
-        private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
+        private HotelManagement.CTControls.CTTextBox txtSearchHH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
@@ -327,5 +437,16 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label9;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dataHangHoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn masp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tensp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaisp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hamluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QCDG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mo_ta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt_cb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vat_ban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongton;
     }
 }

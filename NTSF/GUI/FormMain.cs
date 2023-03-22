@@ -25,7 +25,7 @@ namespace NTSF.GUI
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 120);
+            leftBorderBtn.Size = new Size(7, 100);
             panelMenu.Controls.Add(leftBorderBtn);
             LoadTimeNow();
             this.Text = string.Empty;
@@ -33,6 +33,7 @@ namespace NTSF.GUI
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             OpenChildForm(new FormTongQuan());
+            ActivateButton(btnTongquan, RGBColors.color395);
         }
 
         private void OpenChildForm(Form childForm)
@@ -98,6 +99,11 @@ namespace NTSF.GUI
             this.lbTime.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
+        private void btnTongquan_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color395);
+            OpenChildForm(new FormTongQuan());
+        }
         private void btnBuy_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color395);
@@ -137,6 +143,7 @@ namespace NTSF.GUI
         private void btnNhathuoc_Click(object sender, EventArgs e)
         {
             Reset();
+            ActivateButton(btnTongquan, RGBColors.color395);
             OpenChildForm(new FormTongQuan());
         }
 
@@ -207,6 +214,7 @@ namespace NTSF.GUI
         {
             OpenChildForm(new FormDMNCC());
         }
+
 
     }
 }
