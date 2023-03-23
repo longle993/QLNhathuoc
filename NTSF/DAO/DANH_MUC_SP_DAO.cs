@@ -36,5 +36,7 @@ namespace NTSF.DAO
             return db.DANH_MUC_SP.Where(p => p.NHOM_SP == loaisp).ToList();
         }
 
+
+
     }
 }

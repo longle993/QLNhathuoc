@@ -62,19 +62,28 @@ namespace NTSF.GUI
             this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
             this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
             this.txtTKHDHoadon = new HotelManagement.CTControls.CTTextBox();
-            this.txtTKHHHoadon = new HotelManagement.CTControls.CTTextBox();
+            this.txtSearchByName = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.dataHoaDon = new System.Windows.Forms.DataGridView();
+            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mapttt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trigia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -94,7 +103,7 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.ctDatePicker1);
             this.advancedPanel1.Controls.Add(this.ctDatePicker3);
             this.advancedPanel1.Controls.Add(this.txtTKHDHoadon);
-            this.advancedPanel1.Controls.Add(this.txtTKHHHoadon);
+            this.advancedPanel1.Controls.Add(this.txtSearchByName);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label3);
             this.advancedPanel1.Controls.Add(this.label2);
@@ -215,28 +224,29 @@ namespace NTSF.GUI
             this.txtTKHDHoadon.Texts = "";
             this.txtTKHDHoadon.UnderlineedStyle = false;
             // 
-            // txtTKHHHoadon
+            // txtSearchByName
             // 
-            this.txtTKHHHoadon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKHHHoadon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKHHHoadon.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTKHHHoadon.BorderRadius = 5;
-            this.txtTKHHHoadon.BorderSize = 1;
-            this.txtTKHHHoadon.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTKHHHoadon.IsFocused = false;
-            this.txtTKHHHoadon.Location = new System.Drawing.Point(672, 135);
-            this.txtTKHHHoadon.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTKHHHoadon.Multiline = false;
-            this.txtTKHHHoadon.Name = "txtTKHHHoadon";
-            this.txtTKHHHoadon.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTKHHHoadon.PasswordChar = false;
-            this.txtTKHHHoadon.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTKHHHoadon.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
-            this.txtTKHHHoadon.ReadOnly = false;
-            this.txtTKHHHoadon.Size = new System.Drawing.Size(413, 43);
-            this.txtTKHHHoadon.TabIndex = 54;
-            this.txtTKHHHoadon.Texts = "";
-            this.txtTKHHHoadon.UnderlineedStyle = false;
+            this.txtSearchByName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSearchByName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSearchByName.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtSearchByName.BorderRadius = 5;
+            this.txtSearchByName.BorderSize = 1;
+            this.txtSearchByName.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtSearchByName.IsFocused = false;
+            this.txtSearchByName.Location = new System.Drawing.Point(672, 135);
+            this.txtSearchByName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchByName.Multiline = false;
+            this.txtSearchByName.Name = "txtSearchByName";
+            this.txtSearchByName.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSearchByName.PasswordChar = false;
+            this.txtSearchByName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearchByName.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
+            this.txtSearchByName.ReadOnly = false;
+            this.txtSearchByName.Size = new System.Drawing.Size(413, 43);
+            this.txtSearchByName.TabIndex = 54;
+            this.txtSearchByName.Texts = "";
+            this.txtSearchByName.UnderlineedStyle = false;
+            this.txtSearchByName._TextChanged += new System.EventHandler(this.txtSearchByName__TextChanged);
             // 
             // label4
             // 
@@ -297,6 +307,7 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataHoaDon);
             this.advancedPanel5.Controls.Add(this.label8);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label5);
@@ -313,6 +324,74 @@ namespace NTSF.GUI
             this.advancedPanel5.StartColor = System.Drawing.Color.White;
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 2;
+            // 
+            // dataHoaDon
+            // 
+            this.dataHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahd,
+            this.ngayhd,
+            this.manv,
+            this.tenkh,
+            this.mapttt,
+            this.trigia,
+            this.ghichu});
+            this.dataHoaDon.Location = new System.Drawing.Point(33, 76);
+            this.dataHoaDon.Name = "dataHoaDon";
+            this.dataHoaDon.RowHeadersVisible = false;
+            this.dataHoaDon.RowHeadersWidth = 62;
+            this.dataHoaDon.RowTemplate.Height = 28;
+            this.dataHoaDon.Size = new System.Drawing.Size(1559, 499);
+            this.dataHoaDon.TabIndex = 53;
+            // 
+            // mahd
+            // 
+            this.mahd.HeaderText = "Mã hoá đơn";
+            this.mahd.MinimumWidth = 8;
+            this.mahd.Name = "mahd";
+            this.mahd.Width = 150;
+            // 
+            // ngayhd
+            // 
+            this.ngayhd.HeaderText = "Ngày hoá đơn";
+            this.ngayhd.MinimumWidth = 8;
+            this.ngayhd.Name = "ngayhd";
+            this.ngayhd.Width = 150;
+            // 
+            // manv
+            // 
+            this.manv.HeaderText = "Mã NV";
+            this.manv.MinimumWidth = 8;
+            this.manv.Name = "manv";
+            this.manv.Width = 150;
+            // 
+            // tenkh
+            // 
+            this.tenkh.HeaderText = "Tên KH";
+            this.tenkh.MinimumWidth = 8;
+            this.tenkh.Name = "tenkh";
+            this.tenkh.Width = 150;
+            // 
+            // mapttt
+            // 
+            this.mapttt.HeaderText = "Mã PTTT";
+            this.mapttt.MinimumWidth = 8;
+            this.mapttt.Name = "mapttt";
+            this.mapttt.Width = 150;
+            // 
+            // trigia
+            // 
+            this.trigia.HeaderText = "Trị giá";
+            this.trigia.MinimumWidth = 8;
+            this.trigia.Name = "trigia";
+            this.trigia.Width = 150;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 150;
             // 
             // label8
             // 
@@ -361,12 +440,14 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormHoaDon";
             this.Text = "FormHoaDon";
+            this.Load += new System.EventHandler(this.FormHoaDon_Load);
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHoaDon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,7 +458,7 @@ namespace NTSF.GUI
         private CTuserControl.AdvancedPanel advancedPanel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private HotelManagement.CTControls.CTTextBox txtTKHHHoadon;
+        private HotelManagement.CTControls.CTTextBox txtSearchByName;
         private CTuserControl.CTDatePicker ctDatePicker1;
         private CTuserControl.CTDatePicker ctDatePicker3;
         private System.Windows.Forms.Label label3;
@@ -390,5 +471,13 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label7;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTimKiemHoadon;
+        private DataGridView dataHoaDon;
+        private DataGridViewTextBoxColumn mahd;
+        private DataGridViewTextBoxColumn ngayhd;
+        private DataGridViewTextBoxColumn manv;
+        private DataGridViewTextBoxColumn tenkh;
+        private DataGridViewTextBoxColumn mapttt;
+        private DataGridViewTextBoxColumn trigia;
+        private DataGridViewTextBoxColumn ghichu;
     }
 }

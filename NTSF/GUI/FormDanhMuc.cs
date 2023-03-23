@@ -40,7 +40,7 @@ namespace NTSF.GUI
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message,"Cảnh báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
 
