@@ -31,6 +31,11 @@ namespace NTSF.GUI
         {
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataNCC = new System.Windows.Forms.DataGridView();
+            this.mancc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.masothue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,11 +49,6 @@ namespace NTSF.GUI
             this.txtSearchNCC = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.mancc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.masothue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataNCC)).BeginInit();
             this.advancedPanel1.SuspendLayout();
@@ -94,6 +94,41 @@ namespace NTSF.GUI
             this.dataNCC.RowTemplate.Height = 28;
             this.dataNCC.Size = new System.Drawing.Size(1559, 499);
             this.dataNCC.TabIndex = 53;
+            // 
+            // mancc
+            // 
+            this.mancc.HeaderText = "Mã Nhà Cung Cấp";
+            this.mancc.MinimumWidth = 8;
+            this.mancc.Name = "mancc";
+            this.mancc.Width = 250;
+            // 
+            // tenncc
+            // 
+            this.tenncc.HeaderText = "Tên Nhà Cung Cấp";
+            this.tenncc.MinimumWidth = 8;
+            this.tenncc.Name = "tenncc";
+            this.tenncc.Width = 516;
+            // 
+            // masothue
+            // 
+            this.masothue.HeaderText = "Mã Số Thuế";
+            this.masothue.MinimumWidth = 8;
+            this.masothue.Name = "masothue";
+            this.masothue.Width = 280;
+            // 
+            // sdt
+            // 
+            this.sdt.HeaderText = "Số điện thoại";
+            this.sdt.MinimumWidth = 8;
+            this.sdt.Name = "sdt";
+            this.sdt.Width = 250;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 260;
             // 
             // label8
             // 
@@ -313,41 +348,6 @@ namespace NTSF.GUI
             this.label6.Size = new System.Drawing.Size(173, 38);
             this.label6.TabIndex = 51;
             this.label6.Text = "DANH MỤC";
-            // 
-            // mancc
-            // 
-            this.mancc.HeaderText = "Mã Nhà Cung Cấp";
-            this.mancc.MinimumWidth = 8;
-            this.mancc.Name = "mancc";
-            this.mancc.Width = 250;
-            // 
-            // tenncc
-            // 
-            this.tenncc.HeaderText = "Tên Nhà Cung Cấp";
-            this.tenncc.MinimumWidth = 8;
-            this.tenncc.Name = "tenncc";
-            this.tenncc.Width = 516;
-            // 
-            // masothue
-            // 
-            this.masothue.HeaderText = "Mã Số Thuế";
-            this.masothue.MinimumWidth = 8;
-            this.masothue.Name = "masothue";
-            this.masothue.Width = 280;
-            // 
-            // sdt
-            // 
-            this.sdt.HeaderText = "Số điện thoại";
-            this.sdt.MinimumWidth = 8;
-            this.sdt.Name = "sdt";
-            this.sdt.Width = 250;
-            // 
-            // ghichu
-            // 
-            this.ghichu.HeaderText = "Ghi chú";
-            this.ghichu.MinimumWidth = 8;
-            this.ghichu.Name = "ghichu";
-            this.ghichu.Width = 260;
             // 
             // FormDMNCC
             // 

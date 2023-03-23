@@ -77,7 +77,7 @@ namespace NTSF.GUI
             this.mapttt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trigia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblCountHD = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.advancedPanel1.SuspendLayout();
@@ -308,7 +308,7 @@ namespace NTSF.GUI
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel5.Controls.Add(this.dataHoaDon);
-            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.lblCountHD);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label5);
             this.advancedPanel5.EdgeWidth = 0;
@@ -393,17 +393,17 @@ namespace NTSF.GUI
             this.ghichu.Name = "ghichu";
             this.ghichu.Width = 150;
             // 
-            // label8
+            // lblCountHD
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(300, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
+            this.lblCountHD.AutoSize = true;
+            this.lblCountHD.BackColor = System.Drawing.Color.White;
+            this.lblCountHD.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountHD.ForeColor = System.Drawing.Color.Black;
+            this.lblCountHD.Location = new System.Drawing.Point(300, 20);
+            this.lblCountHD.Name = "lblCountHD";
+            this.lblCountHD.Size = new System.Drawing.Size(37, 30);
+            this.lblCountHD.TabIndex = 52;
+            this.lblCountHD.Text = "xx";
             // 
             // label7
             // 
@@ -467,7 +467,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label4;
         private CTuserControl.AdvancedPanel advancedPanel5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCountHD;
         private System.Windows.Forms.Label label7;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTimKiemHoadon;

@@ -58,9 +58,9 @@ namespace NTSF.GUI
             this.btnTaomoi = new FontAwesome.Sharp.IconButton();
             this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbboxNV = new System.Windows.Forms.ComboBox();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbboxPTTT = new System.Windows.Forms.ComboBox();
             this.ctTextBox2 = new HotelManagement.CTControls.CTTextBox();
             this.ctTextBox3 = new HotelManagement.CTControls.CTTextBox();
             this.ctTextBox4 = new HotelManagement.CTControls.CTTextBox();
@@ -317,7 +317,6 @@ namespace NTSF.GUI
             this.btnThanhtoanIn.Text = "Thanh toán và In hoá đơn (F10)";
             this.btnThanhtoanIn.TextColor = System.Drawing.Color.White;
             this.btnThanhtoanIn.UseVisualStyleBackColor = false;
-            this.btnThanhtoanIn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnThanhtoanIn_KeyDown);
             // 
             // btnThanhToan
             // 
@@ -338,8 +337,6 @@ namespace NTSF.GUI
             this.btnThanhToan.Text = "THANH TOÁN (F9)";
             this.btnThanhToan.TextColor = System.Drawing.Color.White;
             this.btnThanhToan.UseVisualStyleBackColor = false;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
-            this.btnThanhToan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnThanhToan_KeyDown);
             // 
             // advancedPanel2
             // 
@@ -447,7 +444,7 @@ namespace NTSF.GUI
             // 
             this.advancedPanel5.BackColor = System.Drawing.Color.White;
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.comboBox1);
+            this.advancedPanel5.Controls.Add(this.cbboxNV);
             this.advancedPanel5.EdgeWidth = 1;
             this.advancedPanel5.EndColor = System.Drawing.Color.White;
             this.advancedPanel5.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
@@ -462,24 +459,24 @@ namespace NTSF.GUI
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 62;
             // 
-            // comboBox1
+            // cbboxNV
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 25;
-            this.comboBox1.Location = new System.Drawing.Point(0, 1);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(587, 33);
-            this.comboBox1.TabIndex = 58;
-            this.comboBox1.Text = " --Chọn nhân viên bán hàng--";
+            this.cbboxNV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbboxNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbboxNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cbboxNV.FormattingEnabled = true;
+            this.cbboxNV.ItemHeight = 25;
+            this.cbboxNV.Location = new System.Drawing.Point(0, 1);
+            this.cbboxNV.Name = "cbboxNV";
+            this.cbboxNV.Size = new System.Drawing.Size(587, 33);
+            this.cbboxNV.TabIndex = 58;
+            this.cbboxNV.Text = " --Chọn nhân viên bán hàng--";
             // 
             // advancedPanel6
             // 
             this.advancedPanel6.BackColor = System.Drawing.Color.White;
             this.advancedPanel6.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel6.Controls.Add(this.comboBox2);
+            this.advancedPanel6.Controls.Add(this.cbboxPTTT);
             this.advancedPanel6.EdgeWidth = 1;
             this.advancedPanel6.EndColor = System.Drawing.Color.White;
             this.advancedPanel6.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
@@ -494,19 +491,19 @@ namespace NTSF.GUI
             this.advancedPanel6.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel6.TabIndex = 63;
             // 
-            // comboBox2
+            // cbboxPTTT
             // 
-            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.ItemHeight = 25;
-            this.comboBox2.Location = new System.Drawing.Point(0, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(587, 33);
-            this.comboBox2.TabIndex = 58;
-            this.comboBox2.Text = "     Tiền mặt";
+            this.cbboxPTTT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbboxPTTT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbboxPTTT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cbboxPTTT.FormattingEnabled = true;
+            this.cbboxPTTT.IntegralHeight = false;
+            this.cbboxPTTT.ItemHeight = 25;
+            this.cbboxPTTT.Location = new System.Drawing.Point(0, 2);
+            this.cbboxPTTT.Name = "cbboxPTTT";
+            this.cbboxPTTT.Size = new System.Drawing.Size(587, 33);
+            this.cbboxPTTT.TabIndex = 58;
+            this.cbboxPTTT.Text = " --Chọn phương thức thanh toán--";
             // 
             // ctTextBox2
             // 
@@ -621,6 +618,7 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormThanhToan";
             this.Text = "FormThanhToan";
+            this.Load += new System.EventHandler(this.FormThanhToan_Load);
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel5.ResumeLayout(false);
@@ -660,9 +658,9 @@ namespace NTSF.GUI
         private CTuserControl.CTButton btnThanhtoanIn;
         private CTuserControl.CTButton btnQuayve;
         private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbboxNV;
         private CTuserControl.AdvancedPanel advancedPanel6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbboxPTTT;
         private HotelManagement.CTControls.CTTextBox ctTextBox2;
         private HotelManagement.CTControls.CTTextBox ctTextBox3;
         private HotelManagement.CTControls.CTTextBox ctTextBox4;

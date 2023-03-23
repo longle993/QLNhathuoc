@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NTSF.BUS;
+using NTSF.DTO;
 
 namespace NTSF.GUI
 {
@@ -25,29 +27,36 @@ namespace NTSF.GUI
 
         }
 
-
-
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private void LoadNV()
         {
-
-        }
-
-        private void btnThanhToan_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
+            this.cbboxNV.Items.Clear();
+            List<NHAN_VIEN> DanhSachNV = NHAN_VIEN_BUS.Instance.GetNHAN_VIENs();
+            foreach(NHAN_VIEN nv in DanhSachNV)
             {
-                
+                if (this.cbboxNV.Items.Contains(nv.TEN_NV))
+
+                continue;
+                cbboxNV.Items.Add(nv.TEN_NV);
             }
         }
 
-        private void btnThanhtoanIn_KeyDown(object sender, KeyEventArgs e)
+        private void LoadPTTT()
         {
-            if (e.KeyCode == Keys.F10)
+            this.cbboxPTTT.Items.Clear();
+            List<PTTT> DanhSachPTTT = PTTT_BUS.Instance.GetPTTTs();
+            foreach (PTTT pttt in DanhSachPTTT)
             {
+                if (this.cbboxNV.Items.Contains(pttt.TEN_PTTT))
 
+                    continue;
+                cbboxPTTT.Items.Add(pttt.TEN_PTTT);
             }
         }
 
-
+        private void FormThanhToan_Load(object sender, EventArgs e)
+        {
+            LoadNV();
+            LoadPTTT();
+        }
     }
 }

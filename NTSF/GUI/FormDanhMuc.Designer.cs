@@ -269,6 +269,8 @@ namespace NTSF.GUI
             // 
             // dataHangHoa
             // 
+            this.dataHangHoa.AllowUserToResizeColumns = false;
+            this.dataHangHoa.AllowUserToResizeRows = false;
             this.dataHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataHangHoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.masp,
@@ -337,7 +339,7 @@ namespace NTSF.GUI
             this.tensp.HeaderText = "Tên SP";
             this.tensp.MinimumWidth = 8;
             this.tensp.Name = "tensp";
-            this.tensp.Width = 340;
+            this.tensp.Width = 350;
             // 
             // loaisp
             // 
@@ -351,14 +353,14 @@ namespace NTSF.GUI
             this.hamluong.HeaderText = "Hàm lượng";
             this.hamluong.MinimumWidth = 8;
             this.hamluong.Name = "hamluong";
-            this.hamluong.Width = 140;
+            this.hamluong.Width = 120;
             // 
             // QCDG
             // 
             this.QCDG.HeaderText = "Quy cách đóng gói";
             this.QCDG.MinimumWidth = 8;
             this.QCDG.Name = "QCDG";
-            this.QCDG.Width = 150;
+            this.QCDG.Width = 180;
             // 
             // mo_ta
             // 
@@ -372,7 +374,7 @@ namespace NTSF.GUI
             this.dvt_cb.HeaderText = "DVT Cơ bản";
             this.dvt_cb.MinimumWidth = 8;
             this.dvt_cb.Name = "dvt_cb";
-            this.dvt_cb.Width = 150;
+            this.dvt_cb.Width = 130;
             // 
             // vat_ban
             // 

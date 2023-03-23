@@ -41,11 +41,14 @@ namespace NTSF.GUI
         {
             this.DanhSachHD = HOA_DON_BUS.Instance.GetHOA_DONs();
             LoadGrid();
+            lblCountHD.Text = DanhSachHD.Count.ToString();
+
         }
 
         private void FormHoaDon_Load(object sender, EventArgs e)
         {
             LoadAll();
+
         }
 
         private void txtSearchByName__TextChanged(object sender, EventArgs e)

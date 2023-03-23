@@ -34,7 +34,7 @@ namespace NTSF.GUI
                 this.dataHangHoa.Rows.Clear();
                 foreach(DANH_MUC_SP hanghoa in this.DanhMucSP)
                 {
-                    this.dataHangHoa.Rows.Add(hanghoa.MA_SP, hanghoa.TEN_SP, hanghoa.NHOM_SP, hanghoa.QUY_CACH_DONG_GOI, hanghoa.MO_TA, hanghoa.DVT_CO_BAN, hanghoa.VAT_BAN, hanghoa.TONG_TON);
+                    this.dataHangHoa.Rows.Add(hanghoa.MA_SP, hanghoa.TEN_SP, hanghoa.NHOM_SP,hanghoa.HAM_LUONG, hanghoa.QUY_CACH_DONG_GOI, hanghoa.MO_TA, hanghoa.DVT_CO_BAN, hanghoa.VAT_BAN,hanghoa.GIA_BAN, hanghoa.TONG_TON);
 
                 }
             }
