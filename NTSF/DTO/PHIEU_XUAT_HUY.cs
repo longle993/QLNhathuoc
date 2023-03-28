@@ -12,6 +12,7 @@ namespace NTSF.DTO
         public PHIEU_XUAT_HUY()
         {
             CT_PHIEU_XUAT_HUY = new HashSet<CT_PHIEU_XUAT_HUY>();
+            CT_PHIEU_XUAT_HUY1 = new HashSet<CT_PHIEU_XUAT_HUY>();
         }
 
         [Key]
@@ -31,5 +32,8 @@ namespace NTSF.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_PHIEU_XUAT_HUY> CT_PHIEU_XUAT_HUY { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_PHIEU_XUAT_HUY> CT_PHIEU_XUAT_HUY1 { get; set; }
     }
 }

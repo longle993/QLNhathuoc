@@ -70,16 +70,15 @@ namespace NTSF.GUI
             this.label6 = new System.Windows.Forms.Label();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataHoaDon = new System.Windows.Forms.DataGridView();
-            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mapttt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trigia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblCountHD = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khachhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
@@ -327,71 +326,25 @@ namespace NTSF.GUI
             // 
             // dataHoaDon
             // 
+            this.dataHoaDon.AllowUserToResizeColumns = false;
+            this.dataHoaDon.AllowUserToResizeRows = false;
             this.dataHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahd,
-            this.ngayhd,
-            this.manv,
-            this.tenkh,
-            this.mapttt,
-            this.trigia,
+            this.khachhang,
+            this.ngayban,
+            this.gioban,
+            this.tongtien,
             this.ghichu});
+            this.dataHoaDon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataHoaDon.Location = new System.Drawing.Point(33, 76);
             this.dataHoaDon.Name = "dataHoaDon";
+            this.dataHoaDon.ReadOnly = true;
             this.dataHoaDon.RowHeadersVisible = false;
             this.dataHoaDon.RowHeadersWidth = 62;
             this.dataHoaDon.RowTemplate.Height = 28;
             this.dataHoaDon.Size = new System.Drawing.Size(1559, 499);
             this.dataHoaDon.TabIndex = 53;
-            // 
-            // mahd
-            // 
-            this.mahd.HeaderText = "Mã hoá đơn";
-            this.mahd.MinimumWidth = 8;
-            this.mahd.Name = "mahd";
-            this.mahd.Width = 150;
-            // 
-            // ngayhd
-            // 
-            this.ngayhd.HeaderText = "Ngày hoá đơn";
-            this.ngayhd.MinimumWidth = 8;
-            this.ngayhd.Name = "ngayhd";
-            this.ngayhd.Width = 150;
-            // 
-            // manv
-            // 
-            this.manv.HeaderText = "Mã NV";
-            this.manv.MinimumWidth = 8;
-            this.manv.Name = "manv";
-            this.manv.Width = 150;
-            // 
-            // tenkh
-            // 
-            this.tenkh.HeaderText = "Tên KH";
-            this.tenkh.MinimumWidth = 8;
-            this.tenkh.Name = "tenkh";
-            this.tenkh.Width = 150;
-            // 
-            // mapttt
-            // 
-            this.mapttt.HeaderText = "Mã PTTT";
-            this.mapttt.MinimumWidth = 8;
-            this.mapttt.Name = "mapttt";
-            this.mapttt.Width = 150;
-            // 
-            // trigia
-            // 
-            this.trigia.HeaderText = "Trị giá";
-            this.trigia.MinimumWidth = 8;
-            this.trigia.Name = "trigia";
-            this.trigia.Width = 150;
-            // 
-            // ghichu
-            // 
-            this.ghichu.HeaderText = "Ghi chú";
-            this.ghichu.MinimumWidth = 8;
-            this.ghichu.Name = "ghichu";
-            this.ghichu.Width = 150;
             // 
             // lblCountHD
             // 
@@ -428,6 +381,54 @@ namespace NTSF.GUI
             this.label5.Size = new System.Drawing.Size(210, 30);
             this.label5.TabIndex = 52;
             this.label5.Text = "Danh sách hoá đơn";
+            // 
+            // mahd
+            // 
+            this.mahd.HeaderText = "Mã hoá đơn";
+            this.mahd.MinimumWidth = 8;
+            this.mahd.Name = "mahd";
+            this.mahd.ReadOnly = true;
+            this.mahd.Width = 300;
+            // 
+            // khachhang
+            // 
+            this.khachhang.HeaderText = "Khách hàng";
+            this.khachhang.MinimumWidth = 8;
+            this.khachhang.Name = "khachhang";
+            this.khachhang.ReadOnly = true;
+            this.khachhang.Width = 300;
+            // 
+            // ngayban
+            // 
+            this.ngayban.HeaderText = "Ngày bán hàng";
+            this.ngayban.MinimumWidth = 8;
+            this.ngayban.Name = "ngayban";
+            this.ngayban.ReadOnly = true;
+            this.ngayban.Width = 250;
+            // 
+            // gioban
+            // 
+            this.gioban.HeaderText = "Giờ bán hàng";
+            this.gioban.MinimumWidth = 8;
+            this.gioban.Name = "gioban";
+            this.gioban.ReadOnly = true;
+            this.gioban.Width = 200;
+            // 
+            // tongtien
+            // 
+            this.tongtien.HeaderText = "Tổng tiền";
+            this.tongtien.MinimumWidth = 8;
+            this.tongtien.Name = "tongtien";
+            this.tongtien.ReadOnly = true;
+            this.tongtien.Width = 280;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.ReadOnly = true;
+            this.ghichu.Width = 200;
             // 
             // FormHoaDon
             // 
@@ -473,11 +474,10 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton btnTimKiemHoadon;
         private DataGridView dataHoaDon;
         private DataGridViewTextBoxColumn mahd;
-        private DataGridViewTextBoxColumn ngayhd;
-        private DataGridViewTextBoxColumn manv;
-        private DataGridViewTextBoxColumn tenkh;
-        private DataGridViewTextBoxColumn mapttt;
-        private DataGridViewTextBoxColumn trigia;
+        private DataGridViewTextBoxColumn khachhang;
+        private DataGridViewTextBoxColumn ngayban;
+        private DataGridViewTextBoxColumn gioban;
+        private DataGridViewTextBoxColumn tongtien;
         private DataGridViewTextBoxColumn ghichu;
     }
 }

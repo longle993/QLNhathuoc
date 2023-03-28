@@ -19,7 +19,7 @@ namespace NTSF.DAO
 
         public List<DANH_MUC_SP> GetDANH_MUC_SP_DAOs()
         {
-            return db.DANH_MUC_SP.ToList();
+                return db.DANH_MUC_SP.ToList();
         }
 
         public List<DANH_MUC_SP> FindByName(string TENSP,string loaisp)
@@ -36,6 +36,28 @@ namespace NTSF.DAO
             return db.DANH_MUC_SP.Where(p => p.NHOM_SP == loaisp).ToList();
         }
 
+        public void AddUpdateDMSP(DANH_MUC_SP dmsp)
+        {
+            try
+            {
+                if(db.DANH_MUC_SP.Find(dmsp.MA_SP) is null)
+                {
+                    db.DANH_MUC_SP.Add(dmsp);
+                    db.SaveChanges();
+                }
+                else
+                {
+                    db.DANH_MUC_SP.Attach(dmsp);
+                    dmsp.TONG_TON += dmsp.TONG_TON;
+                    db.SaveChanges();
+                }
+            }
+
+            catch(Exception)
+            {
+               
+            }
+        }
 
 
     }

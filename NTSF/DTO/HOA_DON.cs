@@ -12,6 +12,7 @@ namespace NTSF.DTO
         public HOA_DON()
         {
             CT_HOA_DON = new HashSet<CT_HOA_DON>();
+            CT_HOA_DON1 = new HashSet<CT_HOA_DON>();
         }
 
         [Key]
@@ -42,8 +43,13 @@ namespace NTSF.DTO
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_HOA_DON> CT_HOA_DON { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_HOA_DON> CT_HOA_DON1 { get; set; }
+
         public virtual NHAN_VIEN NHAN_VIEN { get; set; }
 
         public virtual PTTT PTTT { get; set; }
+
+        public virtual PTTT PTTT1 { get; set; }
     }
 }

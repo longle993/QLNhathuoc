@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace NTSF.GUI
         {
             InitializeComponent();
             LoadTimeNow();
+            MaAuto();
         }
 
         private void LoadTimeNow()
@@ -52,11 +54,33 @@ namespace NTSF.GUI
                 cbboxPTTT.Items.Add(pttt.TEN_PTTT);
             }
         }
-
+        
         private void FormThanhToan_Load(object sender, EventArgs e)
         {
             LoadNV();
             LoadPTTT();
+        }
+
+        private void MaAuto()
+        {
+            try
+            {
+                string connectionString = "Data Source=DESKTOP-JSUCTMT;Initial Catalog=QUANLYBANTHUOC;Integrated Security=True";
+                string query = "SELECT COUNT(*) FROM HOA_DON;";
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    SqlCommand command = new SqlCommand(query, connection);
+                    connection.Open();
+                    int count = (int)command.ExecuteScalar();
+                    count++;
+                    lblmaHDAuto.Text = $"#{DateTime.Now.ToString("dd")}{DateTime.Now.ToString("MM")}{DateTime.Now.ToString("yy")}{count.ToString("00")}";
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

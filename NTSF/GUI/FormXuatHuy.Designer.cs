@@ -38,6 +38,9 @@ namespace NTSF.GUI
             this.label10 = new System.Windows.Forms.Label();
             this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.advancedPanel4 = new NTSF.CTuserControl.AdvancedPanel();
@@ -53,23 +56,32 @@ namespace NTSF.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dataPhieuXuatHuy = new System.Windows.Forms.DataGridView();
+            this.mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hsd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lydo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giavon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel16.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.advancedPanel6.SuspendLayout();
             this.advancedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPhieuXuatHuy)).BeginInit();
             this.SuspendLayout();
             // 
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataPhieuXuatHuy);
             this.advancedPanel5.Controls.Add(this.advancedPanel16);
             this.advancedPanel5.Controls.Add(this.label8);
             this.advancedPanel5.Controls.Add(this.label7);
@@ -225,6 +237,44 @@ namespace NTSF.GUI
             this.advancedPanel1.StartColor = System.Drawing.Color.White;
             this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(235, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(164, 38);
+            this.label6.TabIndex = 66;
+            this.label6.Text = "TẠO PHIẾU";
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
+            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
+            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 29;
+            this.iconPictureBox2.Location = new System.Drawing.Point(210, 29);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
+            this.iconPictureBox2.TabIndex = 65;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(50, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(157, 38);
+            this.label11.TabIndex = 64;
+            this.label11.Text = "XUẤT HUỶ";
             // 
             // advancedPanel6
             // 
@@ -473,43 +523,91 @@ namespace NTSF.GUI
             this.label1.TabIndex = 52;
             this.label1.Text = "Ngày xuất";
             // 
-            // iconPictureBox2
+            // dataPhieuXuatHuy
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.ChevronRight;
-            this.iconPictureBox2.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 29;
-            this.iconPictureBox2.Location = new System.Drawing.Point(210, 29);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(35, 29);
-            this.iconPictureBox2.TabIndex = 65;
-            this.iconPictureBox2.TabStop = false;
+            this.dataPhieuXuatHuy.AllowUserToResizeColumns = false;
+            this.dataPhieuXuatHuy.AllowUserToResizeRows = false;
+            this.dataPhieuXuatHuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataPhieuXuatHuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahang,
+            this.tenhang,
+            this.solo,
+            this.hsd,
+            this.dvt,
+            this.soluong,
+            this.lydo,
+            this.giavon,
+            this.thanhtien});
+            this.dataPhieuXuatHuy.Location = new System.Drawing.Point(57, 148);
+            this.dataPhieuXuatHuy.Name = "dataPhieuXuatHuy";
+            this.dataPhieuXuatHuy.RowHeadersVisible = false;
+            this.dataPhieuXuatHuy.RowHeadersWidth = 62;
+            this.dataPhieuXuatHuy.RowTemplate.Height = 28;
+            this.dataPhieuXuatHuy.Size = new System.Drawing.Size(1559, 499);
+            this.dataPhieuXuatHuy.TabIndex = 76;
             // 
-            // label11
+            // mahang
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(50, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(157, 38);
-            this.label11.TabIndex = 64;
-            this.label11.Text = "XUẤT HUỶ";
+            this.mahang.HeaderText = "Mã hàng hoá";
+            this.mahang.MinimumWidth = 8;
+            this.mahang.Name = "mahang";
+            this.mahang.Width = 150;
             // 
-            // label6
+            // tenhang
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(235, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 38);
-            this.label6.TabIndex = 66;
-            this.label6.Text = "TẠO PHIẾU";
+            this.tenhang.HeaderText = "Tên hàng hoá";
+            this.tenhang.MinimumWidth = 8;
+            this.tenhang.Name = "tenhang";
+            this.tenhang.Width = 300;
+            // 
+            // solo
+            // 
+            this.solo.HeaderText = "Số lô";
+            this.solo.MinimumWidth = 8;
+            this.solo.Name = "solo";
+            this.solo.Width = 150;
+            // 
+            // hsd
+            // 
+            this.hsd.HeaderText = "HSD";
+            this.hsd.MinimumWidth = 8;
+            this.hsd.Name = "hsd";
+            this.hsd.Width = 150;
+            // 
+            // dvt
+            // 
+            this.dvt.HeaderText = "ĐVT";
+            this.dvt.MinimumWidth = 8;
+            this.dvt.Name = "dvt";
+            this.dvt.Width = 150;
+            // 
+            // soluong
+            // 
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 8;
+            this.soluong.Name = "soluong";
+            this.soluong.Width = 150;
+            // 
+            // lydo
+            // 
+            this.lydo.HeaderText = "Lý do";
+            this.lydo.MinimumWidth = 8;
+            this.lydo.Name = "lydo";
+            this.lydo.Width = 155;
+            // 
+            // giavon
+            // 
+            this.giavon.HeaderText = "Giá vốn";
+            this.giavon.MinimumWidth = 8;
+            this.giavon.Name = "giavon";
+            this.giavon.Width = 150;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.HeaderText = "Thành tiền";
+            this.thanhtien.MinimumWidth = 8;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.Width = 200;
             // 
             // FormXuatHuy
             // 
@@ -528,6 +626,7 @@ namespace NTSF.GUI
             this.advancedPanel16.ResumeLayout(false);
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.advancedPanel6.ResumeLayout(false);
             this.advancedPanel6.PerformLayout();
             this.advancedPanel4.ResumeLayout(false);
@@ -537,7 +636,7 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPhieuXuatHuy)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -571,5 +670,15 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridView dataPhieuXuatHuy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mahang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenhang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hsd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lydo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giavon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
     }
 }

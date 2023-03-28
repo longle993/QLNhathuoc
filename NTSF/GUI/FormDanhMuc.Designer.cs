@@ -48,11 +48,6 @@ namespace NTSF.GUI
             this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loaisp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hamluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QCDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mo_ta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvt_cb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vat_ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongton = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel1.SuspendLayout();
@@ -276,11 +271,6 @@ namespace NTSF.GUI
             this.masp,
             this.tensp,
             this.loaisp,
-            this.hamluong,
-            this.QCDG,
-            this.mo_ta,
-            this.dvt_cb,
-            this.vat_ban,
             this.giaban,
             this.tongton});
             this.dataHangHoa.Location = new System.Drawing.Point(33, 76);
@@ -329,73 +319,38 @@ namespace NTSF.GUI
             // 
             // masp
             // 
-            this.masp.HeaderText = "Mã SP";
+            this.masp.HeaderText = "Mã hàng hoá";
             this.masp.MinimumWidth = 8;
             this.masp.Name = "masp";
-            this.masp.Width = 110;
+            this.masp.Width = 250;
             // 
             // tensp
             // 
-            this.tensp.HeaderText = "Tên SP";
+            this.tensp.HeaderText = "Tên hàng hoá";
             this.tensp.MinimumWidth = 8;
             this.tensp.Name = "tensp";
             this.tensp.Width = 350;
             // 
             // loaisp
             // 
-            this.loaisp.HeaderText = "Loại SP";
+            this.loaisp.HeaderText = "Loại hàng hoá";
             this.loaisp.MinimumWidth = 8;
             this.loaisp.Name = "loaisp";
-            this.loaisp.Width = 180;
-            // 
-            // hamluong
-            // 
-            this.hamluong.HeaderText = "Hàm lượng";
-            this.hamluong.MinimumWidth = 8;
-            this.hamluong.Name = "hamluong";
-            this.hamluong.Width = 120;
-            // 
-            // QCDG
-            // 
-            this.QCDG.HeaderText = "Quy cách đóng gói";
-            this.QCDG.MinimumWidth = 8;
-            this.QCDG.Name = "QCDG";
-            this.QCDG.Width = 180;
-            // 
-            // mo_ta
-            // 
-            this.mo_ta.HeaderText = "Mô tả";
-            this.mo_ta.MinimumWidth = 8;
-            this.mo_ta.Name = "mo_ta";
-            this.mo_ta.Width = 85;
-            // 
-            // dvt_cb
-            // 
-            this.dvt_cb.HeaderText = "DVT Cơ bản";
-            this.dvt_cb.MinimumWidth = 8;
-            this.dvt_cb.Name = "dvt_cb";
-            this.dvt_cb.Width = 130;
-            // 
-            // vat_ban
-            // 
-            this.vat_ban.HeaderText = "VAT Bán";
-            this.vat_ban.MinimumWidth = 8;
-            this.vat_ban.Name = "vat_ban";
-            this.vat_ban.Width = 125;
+            this.loaisp.Width = 300;
             // 
             // giaban
             // 
             this.giaban.HeaderText = "Giá Bán";
             this.giaban.MinimumWidth = 8;
             this.giaban.Name = "giaban";
-            this.giaban.Width = 125;
+            this.giaban.Width = 250;
             // 
             // tongton
             // 
             this.tongton.HeaderText = "Tổng tồn";
             this.tongton.MinimumWidth = 8;
             this.tongton.Name = "tongton";
-            this.tongton.Width = 125;
+            this.tongton.Width = 250;
             // 
             // FormDanhMuc
             // 
@@ -443,11 +398,6 @@ namespace NTSF.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn masp;
         private System.Windows.Forms.DataGridViewTextBoxColumn tensp;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaisp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hamluong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QCDG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mo_ta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvt_cb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vat_ban;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaban;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongton;
     }

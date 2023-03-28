@@ -32,7 +32,7 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblmaHDAuto = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblHour = new System.Windows.Forms.Label();
@@ -105,15 +105,15 @@ namespace NTSF.GUI
             this.label4.TabIndex = 4;
             this.label4.Text = "Mã HD:";
             // 
-            // label5
+            // lblmaHDAuto
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.label5.Location = new System.Drawing.Point(137, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "#29012301";
+            this.lblmaHDAuto.AutoSize = true;
+            this.lblmaHDAuto.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.lblmaHDAuto.Location = new System.Drawing.Point(137, 87);
+            this.lblmaHDAuto.Name = "lblmaHDAuto";
+            this.lblmaHDAuto.Size = new System.Drawing.Size(91, 21);
+            this.lblmaHDAuto.TabIndex = 4;
+            this.lblmaHDAuto.Text = "#29012301";
             // 
             // label6
             // 
@@ -599,7 +599,7 @@ namespace NTSF.GUI
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblTienthua);
             this.Controls.Add(this.lblKhachcantra);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblmaHDAuto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -632,7 +632,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblmaHDAuto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblHour;

@@ -30,6 +30,12 @@ namespace NTSF.GUI
         private void InitializeComponent()
         {
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.dataXuatHuy = new System.Windows.Forms.DataGridView();
+            this.thoigian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tonghd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.doanhthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tonggiavon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loinhuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -42,7 +48,11 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).BeginInit();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,9 +60,13 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataXuatHuy);
             this.advancedPanel5.Controls.Add(this.label8);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label9);
+            this.advancedPanel5.Controls.Add(this.label10);
+            this.advancedPanel5.Controls.Add(this.label5);
+            this.advancedPanel5.Controls.Add(this.label4);
             this.advancedPanel5.Controls.Add(this.label3);
             this.advancedPanel5.EdgeWidth = 0;
             this.advancedPanel5.EndColor = System.Drawing.Color.White;
@@ -67,6 +81,60 @@ namespace NTSF.GUI
             this.advancedPanel5.StartColor = System.Drawing.Color.White;
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 7;
+            // 
+            // dataXuatHuy
+            // 
+            this.dataXuatHuy.AllowUserToResizeColumns = false;
+            this.dataXuatHuy.AllowUserToResizeRows = false;
+            this.dataXuatHuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataXuatHuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.thoigian,
+            this.tonghd,
+            this.doanhthu,
+            this.tonggiavon,
+            this.loinhuan});
+            this.dataXuatHuy.Location = new System.Drawing.Point(57, 84);
+            this.dataXuatHuy.Name = "dataXuatHuy";
+            this.dataXuatHuy.RowHeadersVisible = false;
+            this.dataXuatHuy.RowHeadersWidth = 62;
+            this.dataXuatHuy.RowTemplate.Height = 28;
+            this.dataXuatHuy.Size = new System.Drawing.Size(1559, 499);
+            this.dataXuatHuy.TabIndex = 56;
+            // 
+            // thoigian
+            // 
+            this.thoigian.HeaderText = "Thời gian";
+            this.thoigian.MinimumWidth = 8;
+            this.thoigian.Name = "thoigian";
+            this.thoigian.Width = 300;
+            // 
+            // tonghd
+            // 
+            this.tonghd.HeaderText = "Tổng tiền hoá đơn";
+            this.tonghd.MinimumWidth = 8;
+            this.tonghd.Name = "tonghd";
+            this.tonghd.Width = 320;
+            // 
+            // doanhthu
+            // 
+            this.doanhthu.HeaderText = "Doanh thu";
+            this.doanhthu.MinimumWidth = 8;
+            this.doanhthu.Name = "doanhthu";
+            this.doanhthu.Width = 305;
+            // 
+            // tonggiavon
+            // 
+            this.tonggiavon.HeaderText = "Tổng giá vốn";
+            this.tonggiavon.MinimumWidth = 8;
+            this.tonggiavon.Name = "tonggiavon";
+            this.tonggiavon.Width = 310;
+            // 
+            // loinhuan
+            // 
+            this.loinhuan.HeaderText = "Lợi nhuận";
+            this.loinhuan.MinimumWidth = 8;
+            this.loinhuan.Name = "loinhuan";
+            this.loinhuan.Width = 320;
             // 
             // label8
             // 
@@ -109,7 +177,7 @@ namespace NTSF.GUI
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(1183, 621);
+            this.label3.Location = new System.Drawing.Point(1327, 606);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 28);
             this.label3.TabIndex = 52;
@@ -253,6 +321,39 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "BÁO CÁO";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(1010, 606);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 28);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "Tổng:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(696, 606);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 28);
+            this.label5.TabIndex = 52;
+            this.label5.Text = "Tổng:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(354, 606);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 28);
+            this.label10.TabIndex = 52;
+            this.label10.Text = "Tổng:";
+            // 
             // FormBaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -267,6 +368,7 @@ namespace NTSF.GUI
             this.Text = "FormBaoCao";
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).EndInit();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
@@ -290,5 +392,14 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dataXuatHuy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thoigian;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tonghd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn doanhthu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tonggiavon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loinhuan;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

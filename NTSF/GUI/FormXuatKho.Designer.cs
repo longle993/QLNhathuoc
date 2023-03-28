@@ -48,11 +48,17 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.dataXuatHuy = new System.Windows.Forms.DataGridView();
+            this.maphieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayxuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelXH.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).BeginInit();
             this.SuspendLayout();
             // 
             // panelXH
@@ -68,6 +74,7 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataXuatHuy);
             this.advancedPanel5.Controls.Add(this.lblPhieuNhapKho);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label5);
@@ -375,6 +382,52 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "XUẤT HUỶ";
             // 
+            // dataXuatHuy
+            // 
+            this.dataXuatHuy.AllowUserToResizeColumns = false;
+            this.dataXuatHuy.AllowUserToResizeRows = false;
+            this.dataXuatHuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataXuatHuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maphieu,
+            this.ngayxuat,
+            this.tongtien,
+            this.ghichu});
+            this.dataXuatHuy.Location = new System.Drawing.Point(57, 63);
+            this.dataXuatHuy.Name = "dataXuatHuy";
+            this.dataXuatHuy.RowHeadersVisible = false;
+            this.dataXuatHuy.RowHeadersWidth = 62;
+            this.dataXuatHuy.RowTemplate.Height = 28;
+            this.dataXuatHuy.Size = new System.Drawing.Size(1559, 499);
+            this.dataXuatHuy.TabIndex = 55;
+            // 
+            // maphieu
+            // 
+            this.maphieu.HeaderText = "Mã phiếu";
+            this.maphieu.MinimumWidth = 8;
+            this.maphieu.Name = "maphieu";
+            this.maphieu.Width = 375;
+            // 
+            // ngayxuat
+            // 
+            this.ngayxuat.HeaderText = "Ngày xuất";
+            this.ngayxuat.MinimumWidth = 8;
+            this.ngayxuat.Name = "ngayxuat";
+            this.ngayxuat.Width = 470;
+            // 
+            // tongtien
+            // 
+            this.tongtien.HeaderText = "Tổng tiền";
+            this.tongtien.MinimumWidth = 8;
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Width = 360;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 350;
+            // 
             // FormXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -395,6 +448,7 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -420,5 +474,10 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dataXuatHuy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maphieu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayxuat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongtien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghichu;
     }
 }

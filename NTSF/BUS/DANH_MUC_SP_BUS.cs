@@ -31,6 +31,11 @@ namespace NTSF.BUS
             return DANH_MUC_SP_DAO.Instance.FindByLoaiSP(loaisp);
         }
 
+        public void AddUpdateDMSP(DANH_MUC_SP dmsp)
+        {
+            DANH_MUC_SP_DAO.Instance.AddUpdateDMSP(dmsp);
+        }
+
 
     }
 }

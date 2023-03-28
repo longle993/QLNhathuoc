@@ -13,6 +13,7 @@ namespace NTSF.DTO
         public PTTT()
         {
             HOA_DON = new HashSet<HOA_DON>();
+            HOA_DON1 = new HashSet<HOA_DON>();
         }
 
         [Key]
@@ -24,5 +25,8 @@ namespace NTSF.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOA_DON> HOA_DON { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HOA_DON> HOA_DON1 { get; set; }
     }
 }

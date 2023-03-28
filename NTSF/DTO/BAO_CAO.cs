@@ -13,12 +13,12 @@ namespace NTSF.DTO
         public DateTime THOI_GIAN { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal? DOANH_THU { get; set; }
+        public decimal DOANH_THU { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal? TIEN_VON { get; set; }
+        public decimal TIEN_VON { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal? LOI_NHUAN { get; set; }
+        public decimal LOI_NHUAN { get; set; }
     }
 }

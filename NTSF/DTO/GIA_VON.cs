@@ -22,5 +22,7 @@ namespace NTSF.DTO
         public decimal? GIAVON { get; set; }
 
         public virtual TON_KHO TON_KHO { get; set; }
+
+        public virtual TON_KHO TON_KHO1 { get; set; }
     }
 }

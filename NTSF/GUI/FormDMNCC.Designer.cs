@@ -80,6 +80,8 @@ namespace NTSF.GUI
             // 
             // dataNCC
             // 
+            this.dataNCC.AllowUserToResizeColumns = false;
+            this.dataNCC.AllowUserToResizeRows = false;
             this.dataNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataNCC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mancc,

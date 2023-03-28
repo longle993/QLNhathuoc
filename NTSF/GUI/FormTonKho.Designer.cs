@@ -49,16 +49,29 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.dataTonKho = new System.Windows.Forms.DataGridView();
+            this.mahang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhomhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hsd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tondau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toncuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel5.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel4.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTonKho)).BeginInit();
             this.SuspendLayout();
             // 
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataTonKho);
             this.advancedPanel5.Controls.Add(this.label8);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label9);
@@ -374,6 +387,112 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "TỒN KHO";
             // 
+            // dataTonKho
+            // 
+            this.dataTonKho.AllowUserToResizeColumns = false;
+            this.dataTonKho.AllowUserToResizeRows = false;
+            this.dataTonKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTonKho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahang,
+            this.tenhang,
+            this.nhomhang,
+            this.solo,
+            this.hsd,
+            this.dgia,
+            this.dvt,
+            this.tondau,
+            this.xuat,
+            this.toncuoi});
+            this.dataTonKho.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataTonKho.Location = new System.Drawing.Point(48, 97);
+            this.dataTonKho.Name = "dataTonKho";
+            this.dataTonKho.ReadOnly = true;
+            this.dataTonKho.RowHeadersVisible = false;
+            this.dataTonKho.RowHeadersWidth = 62;
+            this.dataTonKho.RowTemplate.Height = 28;
+            this.dataTonKho.Size = new System.Drawing.Size(1559, 499);
+            this.dataTonKho.TabIndex = 54;
+            // 
+            // mahang
+            // 
+            this.mahang.HeaderText = "Mã hàng hoá";
+            this.mahang.MinimumWidth = 8;
+            this.mahang.Name = "mahang";
+            this.mahang.ReadOnly = true;
+            this.mahang.Width = 171;
+            // 
+            // tenhang
+            // 
+            this.tenhang.HeaderText = "Tên hàng hoá";
+            this.tenhang.MinimumWidth = 8;
+            this.tenhang.Name = "tenhang";
+            this.tenhang.ReadOnly = true;
+            this.tenhang.Width = 330;
+            // 
+            // nhomhang
+            // 
+            this.nhomhang.HeaderText = "Nhóm hàng hoá";
+            this.nhomhang.MinimumWidth = 8;
+            this.nhomhang.Name = "nhomhang";
+            this.nhomhang.ReadOnly = true;
+            this.nhomhang.Width = 175;
+            // 
+            // solo
+            // 
+            this.solo.HeaderText = "Số lô";
+            this.solo.MinimumWidth = 8;
+            this.solo.Name = "solo";
+            this.solo.ReadOnly = true;
+            this.solo.Width = 140;
+            // 
+            // hsd
+            // 
+            this.hsd.HeaderText = "Hạn dùng";
+            this.hsd.MinimumWidth = 8;
+            this.hsd.Name = "hsd";
+            this.hsd.ReadOnly = true;
+            this.hsd.Width = 165;
+            // 
+            // dgia
+            // 
+            this.dgia.HeaderText = "Đơn giá";
+            this.dgia.MinimumWidth = 8;
+            this.dgia.Name = "dgia";
+            this.dgia.ReadOnly = true;
+            this.dgia.Width = 145;
+            // 
+            // dvt
+            // 
+            this.dvt.HeaderText = "ĐVT";
+            this.dvt.MinimumWidth = 8;
+            this.dvt.Name = "dvt";
+            this.dvt.ReadOnly = true;
+            this.dvt.Width = 98;
+            // 
+            // tondau
+            // 
+            this.tondau.HeaderText = "Tồn đầu";
+            this.tondau.MinimumWidth = 8;
+            this.tondau.Name = "tondau";
+            this.tondau.ReadOnly = true;
+            this.tondau.Width = 110;
+            // 
+            // xuat
+            // 
+            this.xuat.HeaderText = "Xuất";
+            this.xuat.MinimumWidth = 8;
+            this.xuat.Name = "xuat";
+            this.xuat.ReadOnly = true;
+            this.xuat.Width = 110;
+            // 
+            // toncuoi
+            // 
+            this.toncuoi.HeaderText = "Tồn cuối";
+            this.toncuoi.MinimumWidth = 8;
+            this.toncuoi.Name = "toncuoi";
+            this.toncuoi.ReadOnly = true;
+            this.toncuoi.Width = 110;
+            // 
             // FormTonKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -394,6 +513,7 @@ namespace NTSF.GUI
             this.advancedPanel3.ResumeLayout(false);
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTonKho)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -420,5 +540,16 @@ namespace NTSF.GUI
         private System.Windows.Forms.ComboBox comboBox2;
         private CTuserControl.AdvancedPanel advancedPanel3;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView dataTonKho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mahang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenhang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nhomhang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hsd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tondau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xuat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn toncuoi;
     }
 }

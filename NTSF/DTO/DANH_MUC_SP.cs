@@ -12,8 +12,11 @@ namespace NTSF.DTO
         public DANH_MUC_SP()
         {
             CT_HOA_DON = new HashSet<CT_HOA_DON>();
+            CT_HOA_DON1 = new HashSet<CT_HOA_DON>();
             CT_PHIEU_XUAT_HUY = new HashSet<CT_PHIEU_XUAT_HUY>();
+            CT_PHIEU_XUAT_HUY1 = new HashSet<CT_PHIEU_XUAT_HUY>();
             DON_VI_TINH = new HashSet<DON_VI_TINH>();
+            DON_VI_TINH1 = new HashSet<DON_VI_TINH>();
         }
 
         [Key]
@@ -43,15 +46,24 @@ namespace NTSF.DTO
         [Column(TypeName = "money")]
         public decimal GIA_BAN { get; set; }
 
-        public int? TONG_TON { get; set; }
+        public int TONG_TON { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_HOA_DON> CT_HOA_DON { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_HOA_DON> CT_HOA_DON1 { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_PHIEU_XUAT_HUY> CT_PHIEU_XUAT_HUY { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_PHIEU_XUAT_HUY> CT_PHIEU_XUAT_HUY1 { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DON_VI_TINH> DON_VI_TINH { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DON_VI_TINH> DON_VI_TINH1 { get; set; }
     }
 }

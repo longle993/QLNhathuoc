@@ -33,6 +33,6 @@ namespace NTSF.GUI
             childForm.Show();
         }
 
-
+        //Bán hàng: Mặc định khách thanh toán = khách cần trả
     }
 }

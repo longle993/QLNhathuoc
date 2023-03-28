@@ -28,7 +28,7 @@ namespace NTSF.GUI
                 this.dataHoaDon.Rows.Clear();
                 foreach(HOA_DON hoadon in this.DanhSachHD)
                 {
-                    this.dataHoaDon.Rows.Add(hoadon.MA_HD, hoadon.NGAY_HD, hoadon.MA_NV, hoadon.TEN_KH,hoadon.MA_PTTT, hoadon.TRI_GIA, hoadon.GHI_CHU);
+                    this.dataHoaDon.Rows.Add(hoadon.MA_HD,hoadon.TEN_KH, hoadon.NGAY_HD, hoadon.TRI_GIA,hoadon.GHI_CHU);
                 }
             }
             catch (Exception ex)

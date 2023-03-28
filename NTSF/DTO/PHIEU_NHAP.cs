@@ -12,6 +12,7 @@ namespace NTSF.DTO
         public PHIEU_NHAP()
         {
             CT_PHIEU_NHAP = new HashSet<CT_PHIEU_NHAP>();
+            CT_PHIEU_NHAP1 = new HashSet<CT_PHIEU_NHAP>();
         }
 
         [Key]
@@ -31,5 +32,8 @@ namespace NTSF.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_PHIEU_NHAP> CT_PHIEU_NHAP { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_PHIEU_NHAP> CT_PHIEU_NHAP1 { get; set; }
     }
 }

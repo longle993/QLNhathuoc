@@ -28,5 +28,7 @@ namespace NTSF.GUI
             MessageBox.Show("Đã lưu!");
             this.Close();
         }
+
+
     }
 }
