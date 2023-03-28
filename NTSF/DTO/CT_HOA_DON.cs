@@ -28,10 +28,6 @@ namespace NTSF.DTO
 
         public virtual HOA_DON HOA_DON { get; set; }
 
-        public virtual HOA_DON HOA_DON1 { get; set; }
-
         public virtual DANH_MUC_SP DANH_MUC_SP { get; set; }
-
-        public virtual DANH_MUC_SP DANH_MUC_SP1 { get; set; }
     }
 }

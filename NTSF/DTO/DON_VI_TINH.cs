@@ -24,7 +24,5 @@ namespace NTSF.DTO
         public decimal GIA_BAN { get; set; }
 
         public virtual DANH_MUC_SP DANH_MUC_SP { get; set; }
-
-        public virtual DANH_MUC_SP DANH_MUC_SP1 { get; set; }
     }
 }

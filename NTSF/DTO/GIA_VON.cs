@@ -19,10 +19,8 @@ namespace NTSF.DTO
         public string SOLO { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal? GIAVON { get; set; }
+        public decimal GIAVON { get; set; }
 
         public virtual TON_KHO TON_KHO { get; set; }
-
-        public virtual TON_KHO TON_KHO1 { get; set; }
     }
 }

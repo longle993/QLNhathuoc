@@ -35,14 +35,8 @@ namespace NTSF.DTO
 
         public virtual PHIEU_XUAT_HUY PHIEU_XUAT_HUY { get; set; }
 
-        public virtual PHIEU_XUAT_HUY PHIEU_XUAT_HUY1 { get; set; }
-
         public virtual DANH_MUC_SP DANH_MUC_SP { get; set; }
 
-        public virtual DANH_MUC_SP DANH_MUC_SP1 { get; set; }
-
         public virtual TON_KHO TON_KHO { get; set; }
-
-        public virtual TON_KHO TON_KHO1 { get; set; }
     }
 }

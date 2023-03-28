@@ -54,21 +54,20 @@ namespace NTSF.GUI
             TON_KHO tonkho = new TON_KHO();
             PHIEU_NHAP PN = new PHIEU_NHAP();
             CT_PHIEU_NHAP CTPN = new CT_PHIEU_NHAP();
-
             sP.MA_SP = LoadMaSPAuto(sP.MA_SP);
             sP.TEN_SP = txtHanghoa.Texts;
             sP.NHOM_SP = cbboxNhomhang.Text;
             sP.HAM_LUONG = txtHamluong.Texts;
-            sP.QUY_CACH_DONG_GOI = txtQCDG.Texts;/*
-            sP.VAT_BAN = Byte.Parse(txtSLNhap.Text);*/
+            sP.QUY_CACH_DONG_GOI = txtQCDG.Texts;
+            sP.VAT_BAN = byte.Parse(txtVATBan.Texts);
             sP.DVT_CO_BAN = cbboxDVTCB.Text;
-            sP.GIA_BAN = decimal.Parse(txtGiaban.Text);
-            sP.TONG_TON = int.Parse(txtSLNhap.Text);
+            sP.GIA_BAN = decimal.Parse(txtGiaban.Texts);
+            sP.TONG_TON = int.Parse(txtSLNhap.Texts);
 
 
             tonkho.MA_SP = LoadMaSPAuto(sP.MA_SP);
             tonkho.SO_LO = txtSolo.Texts;
-            tonkho.SO_LUONG_NHAP = Convert.ToInt32(txtSLNhap.Text);
+            tonkho.SO_LUONG_NHAP = Convert.ToInt32(txtSLNhap.Texts);
 
             PN.MA_PHIEU = LoadMaPNAuto(PN.MA_PHIEU);
             PN.NGAY_NHAP = DateTime.Now.Date;
@@ -82,11 +81,12 @@ namespace NTSF.GUI
             CTPN.DON_VI_NHAP = cbDVN.Text;
             CTPN.QUY_DOI = 1;
             CTPN.SOLUONG = tonkho.SO_LUONG_NHAP;
-            CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Text);
-            CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Text);
-            CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Text);
+            CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Texts);
+            CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Texts);
+            CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Texts);
 
             DANH_MUC_SP_BUS.Instance.AddUpdateDMSP(sP);
+
         }
 
         private void btnLuuThemmoi_Click(object sender, EventArgs e)

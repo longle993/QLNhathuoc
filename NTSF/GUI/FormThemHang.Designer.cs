@@ -889,7 +889,7 @@ namespace NTSF.GUI
             this.datepickerHSD.BorderSize = 0;
             this.datepickerHSD.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepickerHSD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.datepickerHSD.CustomFormat = "dd/MM/yyyy";
+            this.datepickerHSD.CustomFormat = "yyyy/MM/dd";
             this.datepickerHSD.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.datepickerHSD.ForeColor = System.Drawing.Color.Black;
             this.datepickerHSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;

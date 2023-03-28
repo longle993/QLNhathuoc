@@ -19,7 +19,7 @@ namespace NTSF.DAO
 
         public List<DANH_MUC_SP> GetDANH_MUC_SP_DAOs()
         {
-                return db.DANH_MUC_SP.ToList();
+            return db.DANH_MUC_SP.ToList();
         }
 
         public List<DANH_MUC_SP> FindByName(string TENSP,string loaisp)

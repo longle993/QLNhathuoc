@@ -116,37 +116,16 @@ namespace NTSF.DTO
             modelBuilder.Entity<DANH_MUC_SP>()
                 .HasMany(e => e.CT_HOA_DON)
                 .WithRequired(e => e.DANH_MUC_SP)
-                .HasForeignKey(e => e.MA_SP)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<DANH_MUC_SP>()
-                .HasMany(e => e.CT_HOA_DON1)
-                .WithRequired(e => e.DANH_MUC_SP1)
-                .HasForeignKey(e => e.MA_SP)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DANH_MUC_SP>()
                 .HasMany(e => e.CT_PHIEU_XUAT_HUY)
                 .WithRequired(e => e.DANH_MUC_SP)
-                .HasForeignKey(e => e.MA_SP)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<DANH_MUC_SP>()
-                .HasMany(e => e.CT_PHIEU_XUAT_HUY1)
-                .WithRequired(e => e.DANH_MUC_SP1)
-                .HasForeignKey(e => e.MA_SP)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DANH_MUC_SP>()
                 .HasMany(e => e.DON_VI_TINH)
                 .WithRequired(e => e.DANH_MUC_SP)
-                .HasForeignKey(e => e.MA_SP)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<DANH_MUC_SP>()
-                .HasMany(e => e.DON_VI_TINH1)
-                .WithRequired(e => e.DANH_MUC_SP1)
-                .HasForeignKey(e => e.MA_SP)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DON_VI_TINH>()
@@ -192,15 +171,12 @@ namespace NTSF.DTO
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<HOA_DON>()
-                .HasMany(e => e.CT_HOA_DON)
-                .WithRequired(e => e.HOA_DON)
-                .HasForeignKey(e => e.MA_HD)
-                .WillCascadeOnDelete(false);
+                .Property(e => e.GIO_BAN_HANG)
+                .HasPrecision(0);
 
             modelBuilder.Entity<HOA_DON>()
-                .HasMany(e => e.CT_HOA_DON1)
-                .WithRequired(e => e.HOA_DON1)
-                .HasForeignKey(e => e.MA_HD)
+                .HasMany(e => e.CT_HOA_DON)
+                .WithRequired(e => e.HOA_DON)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<KHACH_HANG>()
@@ -226,13 +202,6 @@ namespace NTSF.DTO
             modelBuilder.Entity<NHA_CUNG_CAP>()
                 .HasMany(e => e.CT_PHIEU_NHAP)
                 .WithRequired(e => e.NHA_CUNG_CAP)
-                .HasForeignKey(e => e.MA_NCC)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<NHA_CUNG_CAP>()
-                .HasMany(e => e.CT_PHIEU_NHAP1)
-                .WithRequired(e => e.NHA_CUNG_CAP1)
-                .HasForeignKey(e => e.MA_NCC)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<NHAN_VIEN>()
@@ -244,11 +213,6 @@ namespace NTSF.DTO
                 .Property(e => e.SDT)
                 .IsFixedLength()
                 .IsUnicode(false);
-
-            modelBuilder.Entity<NHAN_VIEN>()
-                .HasMany(e => e.HOA_DON)
-                .WithRequired(e => e.NHAN_VIEN)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<PHIEU_NHAP>()
                 .Property(e => e.MA_PHIEU)
@@ -266,13 +230,6 @@ namespace NTSF.DTO
             modelBuilder.Entity<PHIEU_NHAP>()
                 .HasMany(e => e.CT_PHIEU_NHAP)
                 .WithRequired(e => e.PHIEU_NHAP)
-                .HasForeignKey(e => e.MA_PHIEU)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<PHIEU_NHAP>()
-                .HasMany(e => e.CT_PHIEU_NHAP1)
-                .WithRequired(e => e.PHIEU_NHAP1)
-                .HasForeignKey(e => e.MA_PHIEU)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<PHIEU_XUAT_HUY>()
@@ -291,13 +248,6 @@ namespace NTSF.DTO
             modelBuilder.Entity<PHIEU_XUAT_HUY>()
                 .HasMany(e => e.CT_PHIEU_XUAT_HUY)
                 .WithRequired(e => e.PHIEU_XUAT_HUY)
-                .HasForeignKey(e => e.MA_PHIEU)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<PHIEU_XUAT_HUY>()
-                .HasMany(e => e.CT_PHIEU_XUAT_HUY1)
-                .WithRequired(e => e.PHIEU_XUAT_HUY1)
-                .HasForeignKey(e => e.MA_PHIEU)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<PTTT>()
@@ -308,13 +258,6 @@ namespace NTSF.DTO
             modelBuilder.Entity<PTTT>()
                 .HasMany(e => e.HOA_DON)
                 .WithRequired(e => e.PTTT)
-                .HasForeignKey(e => e.MA_PTTT)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<PTTT>()
-                .HasMany(e => e.HOA_DON1)
-                .WithRequired(e => e.PTTT1)
-                .HasForeignKey(e => e.MA_PTTT)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<TON_KHO>()
@@ -334,30 +277,14 @@ namespace NTSF.DTO
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<TON_KHO>()
-                .HasMany(e => e.CT_PHIEU_NHAP1)
-                .WithRequired(e => e.TON_KHO1)
-                .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<TON_KHO>()
                 .HasMany(e => e.CT_PHIEU_XUAT_HUY)
                 .WithRequired(e => e.TON_KHO)
                 .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<TON_KHO>()
-                .HasMany(e => e.CT_PHIEU_XUAT_HUY1)
-                .WithRequired(e => e.TON_KHO1)
-                .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<TON_KHO>()
                 .HasOptional(e => e.GIA_VON)
                 .WithRequired(e => e.TON_KHO);
-
-            modelBuilder.Entity<TON_KHO>()
-                .HasOptional(e => e.GIA_VON1)
-                .WithRequired(e => e.TON_KHO1);
         }
     }
 }
