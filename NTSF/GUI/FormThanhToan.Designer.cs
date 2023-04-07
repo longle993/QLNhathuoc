@@ -417,6 +417,7 @@ namespace NTSF.GUI
             this.btnTaomoi.Size = new System.Drawing.Size(45, 40);
             this.btnTaomoi.TabIndex = 7;
             this.btnTaomoi.UseVisualStyleBackColor = false;
+            this.btnTaomoi.Click += new System.EventHandler(this.btnTaomoi_Click);
             // 
             // txtTenKH
             // 

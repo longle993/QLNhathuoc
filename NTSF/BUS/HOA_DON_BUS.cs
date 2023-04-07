@@ -25,5 +25,18 @@ namespace NTSF.BUS
         {
             HOA_DON_DAO.Instance.RemoveHD(mahd);
         }
+
+        public List<HOA_DON> FindByName(string tensp)
+        {
+            return HOA_DON_DAO.Instance.FindByName(tensp);
+        }
+        public HOA_DON GetHDforCTHD(string mahd)
+        {
+            return HOA_DON_DAO.Instance.GetHDforCTHD(mahd);
+        }
+        public void AddOrUpdate(HOA_DON hd)
+        {
+            HOA_DON_DAO.Instance.AddOrUpdate(hd);
+        }
     }
 }

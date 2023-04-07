@@ -49,8 +49,6 @@ namespace NTSF.DAO
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi nếu có
-                // Ví dụ: ghi log hoặc thông báo cho người dùng
                 Console.WriteLine(ex.Message);
             }
         }
@@ -60,5 +58,6 @@ namespace NTSF.DAO
             db.NHAN_VIEN.Remove(nv);
             db.SaveChanges();
         }
+
     }
 }

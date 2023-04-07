@@ -190,12 +190,6 @@
     <Compile Include="GUI\HoaDon\FormCTHD.Designer.cs">
       <DependentUpon>FormCTHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HoaDon\FormSuaHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\HoaDon\FormSuaHD.Designer.cs">
-      <DependentUpon>FormSuaHD.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\KhachHang\FormSuaKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -356,9 +350,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\HoaDon\FormCTHD.resx">
       <DependentUpon>FormCTHD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HoaDon\FormSuaHD.resx">
-      <DependentUpon>FormSuaHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\KhachHang\FormSuaKH.resx">
       <DependentUpon>FormSuaKH.cs</DependentUpon>

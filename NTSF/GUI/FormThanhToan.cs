@@ -95,11 +95,16 @@ namespace NTSF.GUI
             AutoCompleteStringCollection autoload = new AutoCompleteStringCollection();
             foreach (KHACH_HANG kh in this.KHBan)
             {
-                autoload.Add($"{kh.SDT}- {kh.TEN_KH}");
+                autoload.Add($"{kh.SDT.Trim(' ')} - {kh.TEN_KH}");
             }
             txtTenKH.TextBoxControl.AutoCompleteCustomSource = autoload;
         }
 
+        private void btnTaomoi_Click(object sender, EventArgs e)
+        {
+            FormThemKH formThemKH = new FormThemKH();
+            formThemKH.ShowDialog();
+        }
     }
     }
 

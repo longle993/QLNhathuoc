@@ -32,7 +32,7 @@ namespace NTSF.GUI
                 foreach (HOA_DON hoadon in this.DanhSachHD)
                 {
                     
-                    this.dataHoaDon.Rows.Add(hoadon.MA_HD, hoadon.TEN_KH, hoadon.NGAY_HD, Convert.ToInt32(hoadon.TRI_GIA),hoadon.GHI_CHU );
+                    this.dataHoaDon.Rows.Add(hoadon.MA_HD, hoadon.TEN_KH, hoadon.NGAY_HD, hoadon.TRI_GIA.ToString("#,#"), hoadon.GHI_CHU );
                 }
             }
             catch (Exception ex)
@@ -121,6 +121,7 @@ namespace NTSF.GUI
                         string mahd = ((string)currentRow.Cells[0].Value).Substring(0,11);
                         FormCTHD formCTHD = new FormCTHD(mahd);
                         formCTHD.ShowDialog();
+                        LoadAll();
                         this.Opacity = 0.0;
                     }
                 }
@@ -138,6 +139,22 @@ namespace NTSF.GUI
                     }
                 }
             }
+        }
+
+        private void btnTimKiemHoadon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataHoaDon.Rows.Clear();
+                DanhSachHD = HOA_DON_BUS.Instance.FindByName(txtSearchByName.Texts);
+                LoadGrid();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Không có hoá đơn tương ứng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoadAll();
+            }
+            
         }
     }
 }

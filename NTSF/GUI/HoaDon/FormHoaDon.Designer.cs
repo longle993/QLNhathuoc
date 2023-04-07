@@ -60,6 +60,12 @@ namespace NTSF.GUI
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataHoaDon = new System.Windows.Forms.DataGridView();
+            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khachhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.combobox = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.lblCountHD = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,12 +81,6 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.mahd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khachhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.combobox = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.advancedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataHoaDon)).BeginInit();
             this.advancedPanel1.SuspendLayout();
@@ -156,6 +156,52 @@ namespace NTSF.GUI
             this.dataHoaDon.Size = new System.Drawing.Size(1559, 499);
             this.dataHoaDon.TabIndex = 53;
             this.dataHoaDon.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataHoaDon_EditingControlShowing);
+            // 
+            // mahd
+            // 
+            this.mahd.HeaderText = "Mã Hoá đơn";
+            this.mahd.MinimumWidth = 8;
+            this.mahd.Name = "mahd";
+            this.mahd.Width = 280;
+            // 
+            // khachhang
+            // 
+            this.khachhang.HeaderText = "Khách hàng";
+            this.khachhang.MinimumWidth = 8;
+            this.khachhang.Name = "khachhang";
+            this.khachhang.Width = 300;
+            // 
+            // ngayban
+            // 
+            this.ngayban.HeaderText = "Ngày bán hàng";
+            this.ngayban.MinimumWidth = 8;
+            this.ngayban.Name = "ngayban";
+            this.ngayban.Width = 280;
+            // 
+            // tongtien
+            // 
+            this.tongtien.HeaderText = "Tổng tiền";
+            this.tongtien.MinimumWidth = 8;
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Width = 280;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 200;
+            // 
+            // combobox
+            // 
+            this.combobox.HeaderText = "";
+            this.combobox.Items.AddRange(new object[] {
+            "Xem chi tiết",
+            "Sửa Thông tin",
+            "Xoá HĐ"});
+            this.combobox.MinimumWidth = 8;
+            this.combobox.Name = "combobox";
+            this.combobox.Width = 190;
             // 
             // lblCountHD
             // 
@@ -259,6 +305,7 @@ namespace NTSF.GUI
             this.btnTimKiemHoadon.TabIndex = 64;
             this.btnTimKiemHoadon.Text = "      TÌM KIẾM";
             this.btnTimKiemHoadon.UseVisualStyleBackColor = false;
+            this.btnTimKiemHoadon.Click += new System.EventHandler(this.btnTimKiemHoadon_Click);
             // 
             // ctTimeTo
             // 
@@ -401,52 +448,6 @@ namespace NTSF.GUI
             this.label6.Size = new System.Drawing.Size(152, 38);
             this.label6.TabIndex = 51;
             this.label6.Text = "HOÁ ĐƠN";
-            // 
-            // mahd
-            // 
-            this.mahd.HeaderText = "Mã Hoá đơn";
-            this.mahd.MinimumWidth = 8;
-            this.mahd.Name = "mahd";
-            this.mahd.Width = 280;
-            // 
-            // khachhang
-            // 
-            this.khachhang.HeaderText = "Khách hàng";
-            this.khachhang.MinimumWidth = 8;
-            this.khachhang.Name = "khachhang";
-            this.khachhang.Width = 300;
-            // 
-            // ngayban
-            // 
-            this.ngayban.HeaderText = "Ngày bán hàng";
-            this.ngayban.MinimumWidth = 8;
-            this.ngayban.Name = "ngayban";
-            this.ngayban.Width = 280;
-            // 
-            // tongtien
-            // 
-            this.tongtien.HeaderText = "Tổng tiền";
-            this.tongtien.MinimumWidth = 8;
-            this.tongtien.Name = "tongtien";
-            this.tongtien.Width = 280;
-            // 
-            // ghichu
-            // 
-            this.ghichu.HeaderText = "Ghi chú";
-            this.ghichu.MinimumWidth = 8;
-            this.ghichu.Name = "ghichu";
-            this.ghichu.Width = 200;
-            // 
-            // combobox
-            // 
-            this.combobox.HeaderText = "";
-            this.combobox.Items.AddRange(new object[] {
-            "Xem chi tiết",
-            "Sửa Thông tin",
-            "Xoá HĐ"});
-            this.combobox.MinimumWidth = 8;
-            this.combobox.Name = "combobox";
-            this.combobox.Width = 190;
             // 
             // FormHoaDon
             // 

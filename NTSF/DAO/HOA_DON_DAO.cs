@@ -28,6 +28,50 @@ namespace NTSF.DAO
             db.HOA_DON.Remove(hd);
             db.SaveChanges();
         }
-        
+
+        public List<HOA_DON> FindByName(string tensp)
+        {
+            DANH_MUC_SP sP = db.DANH_MUC_SP.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
+            List<CT_HOA_DON> cthd = db.CT_HOA_DON.Where(p => p.MA_SP == sP.MA_SP).ToList();
+
+            List<HOA_DON> hoadon = new List<HOA_DON>();
+            foreach(CT_HOA_DON ct in cthd)
+            {
+                hoadon.Add(db.HOA_DON.Find(ct.MA_HD));
+            }
+
+            return hoadon;
+        }
+
+        public HOA_DON GetHDforCTHD(string mahd)
+        {
+            return db.HOA_DON.SingleOrDefault(p => p.MA_HD == mahd);
+        }
+
+        public void AddOrUpdate(HOA_DON hd)
+        {
+            try
+            {
+                // Kiểm tra xem nhân viên đã tồn tại trong cơ sở dữ liệu chưa
+                HOA_DON existingHD = db.HOA_DON.AsNoTracking().SingleOrDefault(p => p.MA_HD == hd.MA_HD);
+
+                if (existingHD is null)
+                {
+                    db.HOA_DON.Add(hd);
+                }
+                else
+                {
+                    db.HOA_DON.Remove(existingHD);
+                    db.HOA_DON.Add(hd);
+                }
+
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
     }
 }

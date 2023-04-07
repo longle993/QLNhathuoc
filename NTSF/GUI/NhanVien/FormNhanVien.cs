@@ -24,6 +24,7 @@ namespace NTSF.GUI
         {
             FormThemNV formThemNV = new FormThemNV();
             formThemNV.ShowDialog();
+            LoadAll();
             this.Opacity = 0.0;
         }
         private void LoadGrid()

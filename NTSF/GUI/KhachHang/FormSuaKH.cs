@@ -34,7 +34,6 @@ namespace NTSF.GUI.KhachHang
             this.lblSDT.Text = khachhang.SDT;
             this.txtTenKH.Texts = khachhang.TEN_KH;
             this.cbGioitinh.Text = khachhang.GIOI_TINH;
-            this.txtGhichuKH.Texts = khachhang.GHI_CHU;
         }
 
         private void lblSDT_Click(object sender, EventArgs e)
@@ -60,7 +59,6 @@ namespace NTSF.GUI.KhachHang
             this.khachhang.TEN_KH = txtTenKH.Texts;
             this.khachhang.SDT = lblSDT.Text;
             this.khachhang.GIOI_TINH = cbGioitinh.Text;
-            this.khachhang.GHI_CHU = txtGhichuKH.Texts;
             KHACH_HANG_BUS.Instance.AddUpdateKH(this.khachhang);
         }
 

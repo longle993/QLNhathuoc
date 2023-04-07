@@ -26,5 +26,7 @@ namespace NTSF.BUS
         {
             CT_HOA_DON_DAO.Instance.RemoveCTHD(mahoadon);
         }
+        
+
     }
 }

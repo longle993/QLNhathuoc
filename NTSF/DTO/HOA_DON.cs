@@ -19,7 +19,7 @@ namespace NTSF.DTO
         public string MA_HD { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime? NGAY_HD { get; set; }
+        public DateTime NGAY_HD { get; set; }
 
         [Required]
         [StringLength(50)]

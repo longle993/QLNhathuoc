@@ -38,12 +38,9 @@ namespace NTSF.DAO
             {
                 // Kiểm tra xem nhân viên đã tồn tại trong cơ sở dữ liệu chưa
                 KHACH_HANG existingKH = db.KHACH_HANG.AsNoTracking().SingleOrDefault(p => p.SDT == kh.SDT);
-
-
                 if (existingKH is null)
                 {
                     db.KHACH_HANG.Add(kh);
-
                 }
                 else
                 {
@@ -51,7 +48,6 @@ namespace NTSF.DAO
                     db.KHACH_HANG.Add(kh);
                 }
                 db.SaveChanges();
-
             }
 
             catch (Exception)
