@@ -20,7 +20,5 @@ namespace NTSF.DTO
 
         [Column(TypeName = "money")]
         public decimal GIAVON { get; set; }
-
-        public virtual TON_KHO TON_KHO { get; set; }
     }
 }

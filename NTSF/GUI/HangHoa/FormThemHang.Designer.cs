@@ -58,7 +58,6 @@ namespace NTSF.GUI
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
             this.advancedPanel15 = new NTSF.CTuserControl.AdvancedPanel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.txtGiaban = new HotelManagement.CTControls.CTTextBox();
@@ -444,17 +443,6 @@ namespace NTSF.GUI
             this.label30.TabIndex = 88;
             this.label30.Text = "*";
             // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Red;
-            this.label31.Location = new System.Drawing.Point(764, 507);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(20, 25);
-            this.label31.TabIndex = 89;
-            this.label31.Text = "*";
-            // 
             // advancedPanel15
             // 
             this.advancedPanel15.BackColor = System.Drawing.Color.White;
@@ -687,6 +675,8 @@ namespace NTSF.GUI
             this.txtVATBan.TabIndex = 75;
             this.txtVATBan.Texts = "";
             this.txtVATBan.UnderlineedStyle = false;
+            this.txtVATBan._TextChanged += new System.EventHandler(this.txtVATBan__TextChanged);
+            this.txtVATBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVATBan_KeyPress);
             // 
             // advancedPanel16
             // 
@@ -889,7 +879,7 @@ namespace NTSF.GUI
             this.datepickerHSD.BorderSize = 0;
             this.datepickerHSD.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datepickerHSD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.datepickerHSD.CustomFormat = "yyyy/MM/dd";
+            this.datepickerHSD.CustomFormat = "dd/MM/yyyy";
             this.datepickerHSD.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.datepickerHSD.ForeColor = System.Drawing.Color.Black;
             this.datepickerHSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -1124,7 +1114,6 @@ namespace NTSF.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1661, 925);
-            this.Controls.Add(this.label31);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label28);
@@ -1265,6 +1254,5 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
     }
 }

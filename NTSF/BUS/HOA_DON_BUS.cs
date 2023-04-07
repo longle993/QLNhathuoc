@@ -21,5 +21,9 @@ namespace NTSF.BUS
         {
             return HOA_DON_DAO.Instance.GetHOA_DONs();
         }
+        public void RemoveHD(string mahd)
+        {
+            HOA_DON_DAO.Instance.RemoveHD(mahd);
+        }
     }
 }

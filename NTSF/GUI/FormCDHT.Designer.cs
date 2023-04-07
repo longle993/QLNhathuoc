@@ -205,7 +205,7 @@ namespace NTSF.GUI
             this.btnThaydoiHuyCDHT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThaydoiHuyCDHT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThaydoiHuyCDHT.ForeColor = System.Drawing.Color.DimGray;
-            this.btnThaydoiHuyCDHT.Location = new System.Drawing.Point(897, 295);
+            this.btnThaydoiHuyCDHT.Location = new System.Drawing.Point(897, 221);
             this.btnThaydoiHuyCDHT.Name = "btnThaydoiHuyCDHT";
             this.btnThaydoiHuyCDHT.Size = new System.Drawing.Size(93, 45);
             this.btnThaydoiHuyCDHT.TabIndex = 65;
@@ -230,7 +230,7 @@ namespace NTSF.GUI
             this.btnThaydoiLuuCDHT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThaydoiLuuCDHT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThaydoiLuuCDHT.ForeColor = System.Drawing.Color.DimGray;
-            this.btnThaydoiLuuCDHT.Location = new System.Drawing.Point(757, 295);
+            this.btnThaydoiLuuCDHT.Location = new System.Drawing.Point(757, 221);
             this.btnThaydoiLuuCDHT.Name = "btnThaydoiLuuCDHT";
             this.btnThaydoiLuuCDHT.Size = new System.Drawing.Size(93, 45);
             this.btnThaydoiLuuCDHT.TabIndex = 66;

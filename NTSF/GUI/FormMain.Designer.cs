@@ -52,7 +52,16 @@ namespace NTSF.GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenu = new NTSF.GUI.FormMain.DoubleBufferPanel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnCaidat = new FontAwesome.Sharp.IconButton();
+            this.btnDanhmuc = new FontAwesome.Sharp.IconButton();
+            this.btnBaocao = new FontAwesome.Sharp.IconButton();
+            this.btnKho = new FontAwesome.Sharp.IconButton();
+            this.btnHoadon = new FontAwesome.Sharp.IconButton();
+            this.btnBuy = new FontAwesome.Sharp.IconButton();
+            this.btnTongquan = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new NTSF.GUI.FormMain.DoubleBufferPanel();
             this.picAdmin = new NTSF.CTuserControl.CTCirclePictureBox();
             this.lblAdmin = new System.Windows.Forms.Label();
@@ -75,14 +84,8 @@ namespace NTSF.GUI
             this.dropdownMenu2 = new NTSF.CTuserControl.DropdownMenu(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnTongquan = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.btnCaidat = new FontAwesome.Sharp.IconButton();
-            this.btnDanhmuc = new FontAwesome.Sharp.IconButton();
-            this.btnBaocao = new FontAwesome.Sharp.IconButton();
-            this.btnKho = new FontAwesome.Sharp.IconButton();
-            this.btnHoadon = new FontAwesome.Sharp.IconButton();
-            this.btnBuy = new FontAwesome.Sharp.IconButton();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAdmin)).BeginInit();
@@ -116,6 +119,191 @@ namespace NTSF.GUI
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(176, 1080);
             this.panelMenu.TabIndex = 0;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.AutoSize = true;
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 42;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.iconButton1.Location = new System.Drawing.Point(0, 980);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.iconButton1.Size = new System.Drawing.Size(176, 100);
+            this.iconButton1.TabIndex = 24;
+            this.iconButton1.Text = "Đăng xuất";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnCaidat
+            // 
+            this.btnCaidat.AutoSize = true;
+            this.btnCaidat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCaidat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCaidat.FlatAppearance.BorderSize = 0;
+            this.btnCaidat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaidat.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnCaidat.IconChar = FontAwesome.Sharp.IconChar.Gear;
+            this.btnCaidat.IconColor = System.Drawing.Color.White;
+            this.btnCaidat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCaidat.IconSize = 42;
+            this.btnCaidat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCaidat.Location = new System.Drawing.Point(0, 783);
+            this.btnCaidat.Name = "btnCaidat";
+            this.btnCaidat.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnCaidat.Size = new System.Drawing.Size(176, 100);
+            this.btnCaidat.TabIndex = 23;
+            this.btnCaidat.Text = "Cài đặt";
+            this.btnCaidat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCaidat.UseVisualStyleBackColor = true;
+            this.btnCaidat.Click += new System.EventHandler(this.btnCaidat_Click);
+            // 
+            // btnDanhmuc
+            // 
+            this.btnDanhmuc.AutoSize = true;
+            this.btnDanhmuc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDanhmuc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDanhmuc.FlatAppearance.BorderSize = 0;
+            this.btnDanhmuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhmuc.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnDanhmuc.IconChar = FontAwesome.Sharp.IconChar.GripHorizontal;
+            this.btnDanhmuc.IconColor = System.Drawing.Color.White;
+            this.btnDanhmuc.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDanhmuc.IconSize = 42;
+            this.btnDanhmuc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDanhmuc.Location = new System.Drawing.Point(0, 683);
+            this.btnDanhmuc.Name = "btnDanhmuc";
+            this.btnDanhmuc.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnDanhmuc.Size = new System.Drawing.Size(176, 100);
+            this.btnDanhmuc.TabIndex = 22;
+            this.btnDanhmuc.Text = "Danh mục";
+            this.btnDanhmuc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDanhmuc.UseVisualStyleBackColor = true;
+            this.btnDanhmuc.Click += new System.EventHandler(this.btnDanhmuc_Click);
+            // 
+            // btnBaocao
+            // 
+            this.btnBaocao.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnBaocao.AutoSize = true;
+            this.btnBaocao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaocao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaocao.FlatAppearance.BorderSize = 0;
+            this.btnBaocao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaocao.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnBaocao.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
+            this.btnBaocao.IconColor = System.Drawing.Color.White;
+            this.btnBaocao.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBaocao.IconSize = 42;
+            this.btnBaocao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBaocao.Location = new System.Drawing.Point(0, 583);
+            this.btnBaocao.Name = "btnBaocao";
+            this.btnBaocao.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnBaocao.Size = new System.Drawing.Size(176, 100);
+            this.btnBaocao.TabIndex = 21;
+            this.btnBaocao.Text = "Báo cáo";
+            this.btnBaocao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBaocao.UseVisualStyleBackColor = true;
+            this.btnBaocao.Click += new System.EventHandler(this.btnBaocao_Click);
+            // 
+            // btnKho
+            // 
+            this.btnKho.AutoSize = true;
+            this.btnKho.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKho.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKho.FlatAppearance.BorderSize = 0;
+            this.btnKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKho.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnKho.IconChar = FontAwesome.Sharp.IconChar.BoxArchive;
+            this.btnKho.IconColor = System.Drawing.Color.White;
+            this.btnKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnKho.IconSize = 42;
+            this.btnKho.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnKho.Location = new System.Drawing.Point(0, 483);
+            this.btnKho.Name = "btnKho";
+            this.btnKho.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnKho.Size = new System.Drawing.Size(176, 100);
+            this.btnKho.TabIndex = 20;
+            this.btnKho.Text = "Kho";
+            this.btnKho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnKho.UseVisualStyleBackColor = true;
+            this.btnKho.Click += new System.EventHandler(this.btnKho_Click);
+            // 
+            // btnHoadon
+            // 
+            this.btnHoadon.AutoSize = true;
+            this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHoadon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHoadon.FlatAppearance.BorderSize = 0;
+            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoadon.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnHoadon.IconChar = FontAwesome.Sharp.IconChar.FileLines;
+            this.btnHoadon.IconColor = System.Drawing.Color.White;
+            this.btnHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnHoadon.IconSize = 42;
+            this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnHoadon.Location = new System.Drawing.Point(0, 383);
+            this.btnHoadon.Name = "btnHoadon";
+            this.btnHoadon.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnHoadon.Size = new System.Drawing.Size(176, 100);
+            this.btnHoadon.TabIndex = 19;
+            this.btnHoadon.Text = "Hoá đơn";
+            this.btnHoadon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHoadon.UseVisualStyleBackColor = true;
+            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
+            // 
+            // btnBuy
+            // 
+            this.btnBuy.AutoSize = true;
+            this.btnBuy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBuy.FlatAppearance.BorderSize = 0;
+            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuy.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnBuy.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
+            this.btnBuy.IconColor = System.Drawing.Color.White;
+            this.btnBuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuy.IconSize = 42;
+            this.btnBuy.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnBuy.Location = new System.Drawing.Point(0, 283);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnBuy.Size = new System.Drawing.Size(176, 100);
+            this.btnBuy.TabIndex = 18;
+            this.btnBuy.Text = "Bán hàng";
+            this.btnBuy.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuy.UseVisualStyleBackColor = true;
+            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
+            // 
+            // btnTongquan
+            // 
+            this.btnTongquan.AutoSize = true;
+            this.btnTongquan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTongquan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTongquan.FlatAppearance.BorderSize = 0;
+            this.btnTongquan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTongquan.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.btnTongquan.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.btnTongquan.IconColor = System.Drawing.Color.White;
+            this.btnTongquan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTongquan.IconSize = 42;
+            this.btnTongquan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnTongquan.Location = new System.Drawing.Point(0, 183);
+            this.btnTongquan.Name = "btnTongquan";
+            this.btnTongquan.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
+            this.btnTongquan.Size = new System.Drawing.Size(176, 100);
+            this.btnTongquan.TabIndex = 17;
+            this.btnTongquan.Text = "Tổng quan";
+            this.btnTongquan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTongquan.UseVisualStyleBackColor = true;
+            this.btnTongquan.Click += new System.EventHandler(this.btnTongquan_Click);
             // 
             // panelLogo
             // 
@@ -388,12 +576,14 @@ namespace NTSF.GUI
             this.dropdownMenu2.IsMainMenu = false;
             this.dropdownMenu2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.toolStripMenuItem2});
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
             this.dropdownMenu2.MenuItemHeight = 25;
             this.dropdownMenu2.MenuItemTextColor = System.Drawing.Color.Empty;
             this.dropdownMenu2.Name = "dropdownMenu1";
             this.dropdownMenu2.PrimaryColor = System.Drawing.Color.Empty;
-            this.dropdownMenu2.Size = new System.Drawing.Size(218, 116);
+            this.dropdownMenu2.Size = new System.Drawing.Size(218, 228);
             // 
             // toolStripMenuItem1
             // 
@@ -401,7 +591,7 @@ namespace NTSF.GUI
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(217, 56);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(240, 56);
             this.toolStripMenuItem1.Text = "Hàng hoá";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -411,194 +601,29 @@ namespace NTSF.GUI
             this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(217, 56);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(240, 56);
             this.toolStripMenuItem2.Text = "Nhà cung cấp";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
-            // btnTongquan
+            // toolStripMenuItem3
             // 
-            this.btnTongquan.AutoSize = true;
-            this.btnTongquan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTongquan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTongquan.FlatAppearance.BorderSize = 0;
-            this.btnTongquan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTongquan.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnTongquan.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.btnTongquan.IconColor = System.Drawing.Color.White;
-            this.btnTongquan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTongquan.IconSize = 42;
-            this.btnTongquan.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnTongquan.Location = new System.Drawing.Point(0, 183);
-            this.btnTongquan.Name = "btnTongquan";
-            this.btnTongquan.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnTongquan.Size = new System.Drawing.Size(176, 100);
-            this.btnTongquan.TabIndex = 17;
-            this.btnTongquan.Text = "Tổng quan";
-            this.btnTongquan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnTongquan.UseVisualStyleBackColor = true;
-            this.btnTongquan.Click += new System.EventHandler(this.btnTongquan_Click);
+            this.toolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(240, 56);
+            this.toolStripMenuItem3.Text = "Nhân viên";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
-            // iconButton1
+            // toolStripMenuItem4
             // 
-            this.iconButton1.AutoSize = true;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ArrowRightFromBracket;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 42;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton1.Location = new System.Drawing.Point(0, 980);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.iconButton1.Size = new System.Drawing.Size(176, 100);
-            this.iconButton1.TabIndex = 24;
-            this.iconButton1.Text = "Đăng xuất";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnCaidat
-            // 
-            this.btnCaidat.AutoSize = true;
-            this.btnCaidat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCaidat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCaidat.FlatAppearance.BorderSize = 0;
-            this.btnCaidat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCaidat.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnCaidat.IconChar = FontAwesome.Sharp.IconChar.Gear;
-            this.btnCaidat.IconColor = System.Drawing.Color.White;
-            this.btnCaidat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCaidat.IconSize = 42;
-            this.btnCaidat.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCaidat.Location = new System.Drawing.Point(0, 783);
-            this.btnCaidat.Name = "btnCaidat";
-            this.btnCaidat.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnCaidat.Size = new System.Drawing.Size(176, 100);
-            this.btnCaidat.TabIndex = 23;
-            this.btnCaidat.Text = "Cài đặt";
-            this.btnCaidat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCaidat.UseVisualStyleBackColor = true;
-            this.btnCaidat.Click += new System.EventHandler(this.btnCaidat_Click);
-            // 
-            // btnDanhmuc
-            // 
-            this.btnDanhmuc.AutoSize = true;
-            this.btnDanhmuc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDanhmuc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDanhmuc.FlatAppearance.BorderSize = 0;
-            this.btnDanhmuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDanhmuc.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnDanhmuc.IconChar = FontAwesome.Sharp.IconChar.GripHorizontal;
-            this.btnDanhmuc.IconColor = System.Drawing.Color.White;
-            this.btnDanhmuc.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDanhmuc.IconSize = 42;
-            this.btnDanhmuc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDanhmuc.Location = new System.Drawing.Point(0, 683);
-            this.btnDanhmuc.Name = "btnDanhmuc";
-            this.btnDanhmuc.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnDanhmuc.Size = new System.Drawing.Size(176, 100);
-            this.btnDanhmuc.TabIndex = 22;
-            this.btnDanhmuc.Text = "Danh mục";
-            this.btnDanhmuc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnDanhmuc.UseVisualStyleBackColor = true;
-            this.btnDanhmuc.Click += new System.EventHandler(this.btnDanhmuc_Click);
-            // 
-            // btnBaocao
-            // 
-            this.btnBaocao.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.btnBaocao.AutoSize = true;
-            this.btnBaocao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBaocao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBaocao.FlatAppearance.BorderSize = 0;
-            this.btnBaocao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaocao.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBaocao.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
-            this.btnBaocao.IconColor = System.Drawing.Color.White;
-            this.btnBaocao.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBaocao.IconSize = 42;
-            this.btnBaocao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBaocao.Location = new System.Drawing.Point(0, 583);
-            this.btnBaocao.Name = "btnBaocao";
-            this.btnBaocao.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnBaocao.Size = new System.Drawing.Size(176, 100);
-            this.btnBaocao.TabIndex = 21;
-            this.btnBaocao.Text = "Báo cáo";
-            this.btnBaocao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBaocao.UseVisualStyleBackColor = true;
-            this.btnBaocao.Click += new System.EventHandler(this.btnBaocao_Click);
-            // 
-            // btnKho
-            // 
-            this.btnKho.AutoSize = true;
-            this.btnKho.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKho.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKho.FlatAppearance.BorderSize = 0;
-            this.btnKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKho.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnKho.IconChar = FontAwesome.Sharp.IconChar.BoxArchive;
-            this.btnKho.IconColor = System.Drawing.Color.White;
-            this.btnKho.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnKho.IconSize = 42;
-            this.btnKho.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnKho.Location = new System.Drawing.Point(0, 483);
-            this.btnKho.Name = "btnKho";
-            this.btnKho.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnKho.Size = new System.Drawing.Size(176, 100);
-            this.btnKho.TabIndex = 20;
-            this.btnKho.Text = "Kho";
-            this.btnKho.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnKho.UseVisualStyleBackColor = true;
-            this.btnKho.Click += new System.EventHandler(this.btnKho_Click);
-            // 
-            // btnHoadon
-            // 
-            this.btnHoadon.AutoSize = true;
-            this.btnHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHoadon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHoadon.FlatAppearance.BorderSize = 0;
-            this.btnHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoadon.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnHoadon.IconChar = FontAwesome.Sharp.IconChar.FileLines;
-            this.btnHoadon.IconColor = System.Drawing.Color.White;
-            this.btnHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnHoadon.IconSize = 42;
-            this.btnHoadon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnHoadon.Location = new System.Drawing.Point(0, 383);
-            this.btnHoadon.Name = "btnHoadon";
-            this.btnHoadon.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnHoadon.Size = new System.Drawing.Size(176, 100);
-            this.btnHoadon.TabIndex = 19;
-            this.btnHoadon.Text = "Hoá đơn";
-            this.btnHoadon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnHoadon.UseVisualStyleBackColor = true;
-            this.btnHoadon.Click += new System.EventHandler(this.btnHoadon_Click);
-            // 
-            // btnBuy
-            // 
-            this.btnBuy.AutoSize = true;
-            this.btnBuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuy.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBuy.FlatAppearance.BorderSize = 0;
-            this.btnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuy.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
-            this.btnBuy.IconChar = FontAwesome.Sharp.IconChar.CartShopping;
-            this.btnBuy.IconColor = System.Drawing.Color.White;
-            this.btnBuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuy.IconSize = 42;
-            this.btnBuy.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBuy.Location = new System.Drawing.Point(0, 283);
-            this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Padding = new System.Windows.Forms.Padding(0, 10, 0, 20);
-            this.btnBuy.Size = new System.Drawing.Size(176, 100);
-            this.btnBuy.TabIndex = 18;
-            this.btnBuy.Text = "Bán hàng";
-            this.btnBuy.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBuy.UseVisualStyleBackColor = true;
-            this.btnBuy.Click += new System.EventHandler(this.btnBuy_Click);
+            this.toolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Padding = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(217, 56);
+            this.toolStripMenuItem4.Text = "Khách hàng";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // FormMain
             // 
@@ -612,6 +637,7 @@ namespace NTSF.GUI
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -667,6 +693,8 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton btnHoadon;
         private FontAwesome.Sharp.IconButton btnBuy;
         private FontAwesome.Sharp.IconButton btnTongquan;
+        private ToolStripMenuItem toolStripMenuItem3;
+        private ToolStripMenuItem toolStripMenuItem4;
     }
 }
 

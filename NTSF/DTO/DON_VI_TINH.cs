@@ -22,7 +22,5 @@ namespace NTSF.DTO
 
         [Column(TypeName = "money")]
         public decimal GIA_BAN { get; set; }
-
-        public virtual DANH_MUC_SP DANH_MUC_SP { get; set; }
     }
 }

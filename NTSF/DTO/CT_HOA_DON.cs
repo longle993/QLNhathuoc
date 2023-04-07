@@ -27,7 +27,5 @@ namespace NTSF.DTO
         public decimal CHIET_KHAU { get; set; }
 
         public virtual HOA_DON HOA_DON { get; set; }
-
-        public virtual DANH_MUC_SP DANH_MUC_SP { get; set; }
     }
 }

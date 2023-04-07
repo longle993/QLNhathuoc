@@ -30,12 +30,22 @@ namespace HotelManagement.CTControls
         public CTTextBox()
         {
             InitializeComponent();
+            AutoCompleteStringCollection autoCompleteList = new AutoCompleteStringCollection();
+            autoCompleteList.AddRange(new string[] { });
+            textBox1.AutoCompleteCustomSource = autoCompleteList;
+            textBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+            textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+
         }
 
         //Events
         public event EventHandler _TextChanged;
 
         //Properties
+        public TextBox TextBoxControl
+        {
+            get { return textBox1; }
+        }
         public bool ReadOnly
         {
             get

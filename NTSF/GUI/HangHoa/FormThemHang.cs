@@ -49,44 +49,40 @@ namespace NTSF.GUI
 
         private void btnLuuThemHang_Click(object sender, EventArgs e)
         {
-            Luu(true);
-            DANH_MUC_SP sP = new DANH_MUC_SP();
-            TON_KHO tonkho = new TON_KHO();
-            PHIEU_NHAP PN = new PHIEU_NHAP();
-            CT_PHIEU_NHAP CTPN = new CT_PHIEU_NHAP();
-            sP.MA_SP = LoadMaSPAuto(sP.MA_SP);
-            sP.TEN_SP = txtHanghoa.Texts;
-            sP.NHOM_SP = cbboxNhomhang.Text;
-            sP.HAM_LUONG = txtHamluong.Texts;
-            sP.QUY_CACH_DONG_GOI = txtQCDG.Texts;
-            sP.VAT_BAN = byte.Parse(txtVATBan.Texts);
-            sP.DVT_CO_BAN = cbboxDVTCB.Text;
-            sP.GIA_BAN = decimal.Parse(txtGiaban.Texts);
-            sP.TONG_TON = int.Parse(txtSLNhap.Texts);
+
+                DANH_MUC_SP sP = new DANH_MUC_SP();
+                PHIEU_NHAP PN = new PHIEU_NHAP();
+                CT_PHIEU_NHAP CTPN = new CT_PHIEU_NHAP();
+                sP.MA_SP = LoadMaSPAuto(sP.MA_SP);
+                sP.TEN_SP = txtHanghoa.Texts;
+                sP.NHOM_SP = cbboxNhomhang.Text;
+                sP.HAM_LUONG = txtHamluong.Texts;
+                sP.QUY_CACH_DONG_GOI = txtQCDG.Texts;
+                MessageBox.Show(txtVATBan.Texts);
+                sP.VAT_BAN = byte.Parse(txtVATBan.Texts);
+                sP.DVT_CO_BAN = cbboxDVTCB.Text;
+                sP.GIA_BAN = decimal.Parse(txtGiaban.Texts);
+                sP.TONG_TON = int.Parse(txtSLNhap.Texts);
 
 
-            tonkho.MA_SP = LoadMaSPAuto(sP.MA_SP);
-            tonkho.SO_LO = txtSolo.Texts;
-            tonkho.SO_LUONG_NHAP = Convert.ToInt32(txtSLNhap.Texts);
+                PN.MA_PHIEU = LoadMaPNAuto(PN.MA_PHIEU);
+                PN.NGAY_NHAP = DateTime.Now.Date;
+                PN.GIO_NHAP = DateTime.Now.TimeOfDay;
+                PN.TRI_GIA = Convert.ToDecimal(lblTRIGIA.Text);
 
-            PN.MA_PHIEU = LoadMaPNAuto(PN.MA_PHIEU);
-            PN.NGAY_NHAP = DateTime.Now.Date;
-            PN.GIO_NHAP = DateTime.Now.TimeOfDay;
-            PN.TRI_GIA = Convert.ToDecimal(lblTRIGIA.Text);
+                CTPN.MA_PHIEU = PN.MA_PHIEU;
+                CTPN.MA_SP = LoadMaSPAuto(sP.MA_SP);
+                CTPN.SO_LO = txtSolo.Texts;
+                CTPN.HSD = datepickerHSD.Value;
+                CTPN.DON_VI_NHAP = cbDVN.Text;
+                CTPN.QUY_DOI = 1;
+                CTPN.SOLUONG = Convert.ToInt32(txtSLNhap.Texts);
+                CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Texts);
+                CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Texts);
+                CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Texts);
 
-            CTPN.MA_PHIEU = PN.MA_PHIEU;
-            CTPN.MA_SP = tonkho.MA_SP;
-            CTPN.SO_LO = tonkho.SO_LO;
-            CTPN.HSD = DateTime.Parse(datepickerHSD.Text);
-            CTPN.DON_VI_NHAP = cbDVN.Text;
-            CTPN.QUY_DOI = 1;
-            CTPN.SOLUONG = tonkho.SO_LUONG_NHAP;
-            CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Texts);
-            CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Texts);
-            CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Texts);
-
-            DANH_MUC_SP_BUS.Instance.AddUpdateDMSP(sP);
-
+                DANH_MUC_SP_BUS.Instance.AddUpdateDMSP(sP);
+                Luu(true);
         }
 
         private void btnLuuThemmoi_Click(object sender, EventArgs e)
@@ -141,5 +137,31 @@ namespace NTSF.GUI
             return mapn;
         }
 
+        private void txtVATBan__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //Bắt lỗi text box
+        private void txtVATBan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+
+        }
     }
 }

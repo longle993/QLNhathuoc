@@ -46,10 +46,6 @@ namespace NTSF.DTO
 
         public byte VAT_NHAP { get; set; }
 
-        public virtual NHA_CUNG_CAP NHA_CUNG_CAP { get; set; }
-
         public virtual PHIEU_NHAP PHIEU_NHAP { get; set; }
-
-        public virtual TON_KHO TON_KHO { get; set; }
     }
 }

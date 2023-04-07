@@ -29,14 +29,11 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataNCC = new System.Windows.Forms.DataGridView();
-            this.mancc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.masothue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblCountNCC = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
@@ -44,24 +41,27 @@ namespace NTSF.GUI
             this.label10 = new System.Windows.Forms.Label();
             this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnThemmoiNCC = new FontAwesome.Sharp.IconButton();
-            this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnTimKiemNCC = new FontAwesome.Sharp.IconButton();
             this.txtSearchNCC = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.mancc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.masothue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.combobox = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.advancedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataNCC)).BeginInit();
             this.advancedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.advancedPanel3.SuspendLayout();
-            this.advancedPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel5.Controls.Add(this.dataNCC);
-            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.lblCountNCC);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label9);
             this.advancedPanel5.EdgeWidth = 0;
@@ -80,69 +80,56 @@ namespace NTSF.GUI
             // 
             // dataNCC
             // 
+            this.dataNCC.AllowUserToAddRows = false;
             this.dataNCC.AllowUserToResizeColumns = false;
             this.dataNCC.AllowUserToResizeRows = false;
+            this.dataNCC.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataNCC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataNCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataNCC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mancc,
             this.tenncc,
             this.masothue,
             this.sdt,
-            this.ghichu});
+            this.ghichu,
+            this.combobox});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataNCC.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataNCC.GridColor = System.Drawing.Color.Silver;
             this.dataNCC.Location = new System.Drawing.Point(33, 76);
             this.dataNCC.Name = "dataNCC";
             this.dataNCC.RowHeadersVisible = false;
             this.dataNCC.RowHeadersWidth = 62;
-            this.dataNCC.RowTemplate.Height = 28;
+            this.dataNCC.RowTemplate.Height = 50;
             this.dataNCC.Size = new System.Drawing.Size(1559, 499);
             this.dataNCC.TabIndex = 53;
+            this.dataNCC.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataNCC_EditingControlShowing);
             // 
-            // mancc
+            // lblCountNCC
             // 
-            this.mancc.HeaderText = "Mã Nhà Cung Cấp";
-            this.mancc.MinimumWidth = 8;
-            this.mancc.Name = "mancc";
-            this.mancc.Width = 250;
-            // 
-            // tenncc
-            // 
-            this.tenncc.HeaderText = "Tên Nhà Cung Cấp";
-            this.tenncc.MinimumWidth = 8;
-            this.tenncc.Name = "tenncc";
-            this.tenncc.Width = 516;
-            // 
-            // masothue
-            // 
-            this.masothue.HeaderText = "Mã Số Thuế";
-            this.masothue.MinimumWidth = 8;
-            this.masothue.Name = "masothue";
-            this.masothue.Width = 280;
-            // 
-            // sdt
-            // 
-            this.sdt.HeaderText = "Số điện thoại";
-            this.sdt.MinimumWidth = 8;
-            this.sdt.Name = "sdt";
-            this.sdt.Width = 250;
-            // 
-            // ghichu
-            // 
-            this.ghichu.HeaderText = "Ghi chú";
-            this.ghichu.MinimumWidth = 8;
-            this.ghichu.Name = "ghichu";
-            this.ghichu.Width = 260;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(378, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
+            this.lblCountNCC.AutoSize = true;
+            this.lblCountNCC.BackColor = System.Drawing.Color.White;
+            this.lblCountNCC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountNCC.ForeColor = System.Drawing.Color.Black;
+            this.lblCountNCC.Location = new System.Drawing.Point(378, 20);
+            this.lblCountNCC.Name = "lblCountNCC";
+            this.lblCountNCC.Size = new System.Drawing.Size(37, 30);
+            this.lblCountNCC.TabIndex = 52;
+            this.lblCountNCC.Text = "xx";
             // 
             // label7
             // 
@@ -174,7 +161,6 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.iconPictureBox2);
             this.advancedPanel1.Controls.Add(this.label10);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
-            this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.txtSearchNCC);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label6);
@@ -226,7 +212,7 @@ namespace NTSF.GUI
             this.advancedPanel3.EdgeWidth = 2;
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(139)))), ((int)(((byte)(86)))));
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(111)))), ((int)(((byte)(69)))));
-            this.advancedPanel3.Location = new System.Drawing.Point(1444, 79);
+            this.advancedPanel3.Location = new System.Drawing.Point(1428, 135);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
@@ -263,47 +249,6 @@ namespace NTSF.GUI
             this.btnThemmoiNCC.UseVisualStyleBackColor = false;
             this.btnThemmoiNCC.Click += new System.EventHandler(this.btnThemmoiNCC_Click);
             // 
-            // advancedPanel2
-            // 
-            this.advancedPanel2.BackColor = System.Drawing.Color.White;
-            this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel2.Controls.Add(this.btnTimKiemNCC);
-            this.advancedPanel2.EdgeWidth = 2;
-            this.advancedPanel2.EndColor = System.Drawing.Color.White;
-            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
-            this.advancedPanel2.Location = new System.Drawing.Point(1444, 135);
-            this.advancedPanel2.Name = "advancedPanel2";
-            this.advancedPanel2.RectRadius = 5;
-            this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel2.ShadowShift = 0;
-            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel2.Size = new System.Drawing.Size(164, 43);
-            this.advancedPanel2.StartColor = System.Drawing.Color.White;
-            this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel2.TabIndex = 56;
-            // 
-            // btnTimKiemNCC
-            // 
-            this.btnTimKiemNCC.AutoSize = true;
-            this.btnTimKiemNCC.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemNCC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTimKiemNCC.FlatAppearance.BorderSize = 0;
-            this.btnTimKiemNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemNCC.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiemNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemNCC.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnTimKiemNCC.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemNCC.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTimKiemNCC.IconSize = 30;
-            this.btnTimKiemNCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemNCC.Location = new System.Drawing.Point(0, 0);
-            this.btnTimKiemNCC.Name = "btnTimKiemNCC";
-            this.btnTimKiemNCC.Size = new System.Drawing.Size(164, 43);
-            this.btnTimKiemNCC.TabIndex = 63;
-            this.btnTimKiemNCC.Text = "      TÌM KIẾM";
-            this.btnTimKiemNCC.UseVisualStyleBackColor = false;
-            // 
             // txtSearchNCC
             // 
             this.txtSearchNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
@@ -320,7 +265,7 @@ namespace NTSF.GUI
             this.txtSearchNCC.Padding = new System.Windows.Forms.Padding(7);
             this.txtSearchNCC.PasswordChar = false;
             this.txtSearchNCC.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSearchNCC.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
+            this.txtSearchNCC.PlaceholderText = "Tìm kiếm theo mã, tên của nhà cung cấp";
             this.txtSearchNCC.ReadOnly = false;
             this.txtSearchNCC.Size = new System.Drawing.Size(1326, 43);
             this.txtSearchNCC.TabIndex = 54;
@@ -335,9 +280,9 @@ namespace NTSF.GUI
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(80, 94);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(243, 28);
+            this.label4.Size = new System.Drawing.Size(232, 28);
             this.label4.TabIndex = 52;
-            this.label4.Text = "Tìm kiếm theo hàng hoá";
+            this.label4.Text = "Tìm kiếm nhà cung cấp";
             // 
             // label6
             // 
@@ -350,6 +295,51 @@ namespace NTSF.GUI
             this.label6.Size = new System.Drawing.Size(173, 38);
             this.label6.TabIndex = 51;
             this.label6.Text = "DANH MỤC";
+            // 
+            // mancc
+            // 
+            this.mancc.HeaderText = "Mã NCC";
+            this.mancc.MinimumWidth = 8;
+            this.mancc.Name = "mancc";
+            this.mancc.Width = 150;
+            // 
+            // tenncc
+            // 
+            this.tenncc.HeaderText = "Tên Nhà Cung Cấp";
+            this.tenncc.MinimumWidth = 8;
+            this.tenncc.Name = "tenncc";
+            this.tenncc.Width = 591;
+            // 
+            // masothue
+            // 
+            this.masothue.HeaderText = "Mã Số Thuế";
+            this.masothue.MinimumWidth = 8;
+            this.masothue.Name = "masothue";
+            this.masothue.Width = 220;
+            // 
+            // sdt
+            // 
+            this.sdt.HeaderText = "Số điện thoại";
+            this.sdt.MinimumWidth = 8;
+            this.sdt.Name = "sdt";
+            this.sdt.Width = 200;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 205;
+            // 
+            // combobox
+            // 
+            this.combobox.HeaderText = "";
+            this.combobox.Items.AddRange(new object[] {
+            "Sửa Thông Tin",
+            "Xoá NCC"});
+            this.combobox.MinimumWidth = 8;
+            this.combobox.Name = "combobox";
+            this.combobox.Width = 162;
             // 
             // FormDMNCC
             // 
@@ -372,8 +362,6 @@ namespace NTSF.GUI
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.advancedPanel3.ResumeLayout(false);
             this.advancedPanel3.PerformLayout();
-            this.advancedPanel2.ResumeLayout(false);
-            this.advancedPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -381,12 +369,10 @@ namespace NTSF.GUI
         #endregion
 
         private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCountNCC;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private CTuserControl.AdvancedPanel advancedPanel1;
-        private CTuserControl.AdvancedPanel advancedPanel2;
-        private FontAwesome.Sharp.IconButton btnTimKiemNCC;
         private HotelManagement.CTControls.CTTextBox txtSearchNCC;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
@@ -400,5 +386,6 @@ namespace NTSF.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn masothue;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
         private System.Windows.Forms.DataGridViewTextBoxColumn ghichu;
+        private System.Windows.Forms.DataGridViewComboBoxColumn combobox;
     }
 }

@@ -22,6 +22,12 @@ namespace NTSF.DAO
             return db.HOA_DON.ToList();
         }
 
+        public void RemoveHD(string mahd)
+        {
+            HOA_DON hd = db.HOA_DON.AsNoTracking().SingleOrDefault(p => p.MA_HD == mahd);
+            db.HOA_DON.Remove(hd);
+            db.SaveChanges();
+        }
         
     }
 }

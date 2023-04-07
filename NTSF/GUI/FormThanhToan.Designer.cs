@@ -56,7 +56,7 @@ namespace NTSF.GUI
             this.txtboxGhichu = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTaomoi = new FontAwesome.Sharp.IconButton();
-            this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
+            this.txtTenKH = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.cbboxNV = new System.Windows.Forms.ComboBox();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
@@ -280,9 +280,9 @@ namespace NTSF.GUI
             // 
             // btnQuayve
             // 
-            this.btnQuayve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnQuayve.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnQuayve.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnQuayve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnQuayve.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            this.btnQuayve.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.btnQuayve.BorderRadius = 5;
             this.btnQuayve.BorderSize = 0;
             this.btnQuayve.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -294,9 +294,10 @@ namespace NTSF.GUI
             this.btnQuayve.Name = "btnQuayve";
             this.btnQuayve.Size = new System.Drawing.Size(291, 44);
             this.btnQuayve.TabIndex = 13;
-            this.btnQuayve.Text = "Quay về";
+            this.btnQuayve.Text = "Đặt lại thông tin";
             this.btnQuayve.TextColor = System.Drawing.Color.White;
             this.btnQuayve.UseVisualStyleBackColor = false;
+            this.btnQuayve.Click += new System.EventHandler(this.btnQuayve_Click);
             // 
             // btnThanhtoanIn
             // 
@@ -417,28 +418,29 @@ namespace NTSF.GUI
             this.btnTaomoi.TabIndex = 7;
             this.btnTaomoi.UseVisualStyleBackColor = false;
             // 
-            // ctTextBox1
+            // txtTenKH
             // 
-            this.ctTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.ctTextBox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox1.BorderRadius = 5;
-            this.ctTextBox1.BorderSize = 1;
-            this.ctTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ctTextBox1.IsFocused = false;
-            this.ctTextBox1.Location = new System.Drawing.Point(34, 155);
-            this.ctTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox1.Multiline = false;
-            this.ctTextBox1.Name = "ctTextBox1";
-            this.ctTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox1.PasswordChar = false;
-            this.ctTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox1.PlaceholderText = "Tìm kiếm khách hàng";
-            this.ctTextBox1.ReadOnly = false;
-            this.ctTextBox1.Size = new System.Drawing.Size(485, 40);
-            this.ctTextBox1.TabIndex = 6;
-            this.ctTextBox1.Texts = "";
-            this.ctTextBox1.UnderlineedStyle = false;
+            this.txtTenKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtTenKH.BorderColor = System.Drawing.Color.Transparent;
+            this.txtTenKH.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtTenKH.BorderRadius = 5;
+            this.txtTenKH.BorderSize = 1;
+            this.txtTenKH.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTenKH.IsFocused = false;
+            this.txtTenKH.Location = new System.Drawing.Point(34, 155);
+            this.txtTenKH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenKH.Multiline = false;
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.Padding = new System.Windows.Forms.Padding(7);
+            this.txtTenKH.PasswordChar = false;
+            this.txtTenKH.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTenKH.PlaceholderText = "Tìm kiếm khách hàng";
+            this.txtTenKH.ReadOnly = false;
+            this.txtTenKH.Size = new System.Drawing.Size(485, 40);
+            this.txtTenKH.TabIndex = 6;
+            this.txtTenKH.Texts = "";
+            this.txtTenKH.UnderlineedStyle = false;
+            this.txtTenKH._TextChanged += new System.EventHandler(this.txtTenKH__TextChanged);
             // 
             // advancedPanel5
             // 
@@ -593,7 +595,7 @@ namespace NTSF.GUI
             this.Controls.Add(this.ctTextBox4);
             this.Controls.Add(this.ctTextBox3);
             this.Controls.Add(this.ctTextBox2);
-            this.Controls.Add(this.ctTextBox1);
+            this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.lblHour);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.label6);
@@ -638,7 +640,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label lblHour;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private HotelManagement.CTControls.CTTextBox ctTextBox1;
+        private HotelManagement.CTControls.CTTextBox txtTenKH;
         private FontAwesome.Sharp.IconButton btnTaomoi;
         private CTuserControl.AdvancedPanel advancedPanel1;
         private System.Windows.Forms.Label label8;

@@ -21,5 +21,19 @@ namespace NTSF.BUS
         {
             return NHAN_VIEN_DAO.Instance.GetNHAN_VIENs();
         }
+        public List<NHAN_VIEN> FindByName(string TENNV)
+        {
+            return NHAN_VIEN_DAO.Instance.FindByName(TENNV);
+        }
+        public void AddUpdateNV(NHAN_VIEN nv)
+        {
+            NHAN_VIEN_DAO.Instance.AddUpdateNV(nv);
+        }
+        public void RemoveNV(NHAN_VIEN nv)
+        {
+            NHAN_VIEN_DAO.Instance.RemoveNV(nv);
+        }
+
+
     }
 }

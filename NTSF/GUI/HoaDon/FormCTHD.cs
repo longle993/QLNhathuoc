@@ -7,28 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NTSF.BUS;
 using NTSF.DTO;
+using NTSF.BUS;
 
-namespace NTSF.GUI
+namespace NTSF.GUI.HoaDon
 {
-    public partial class FormHoaDon : Form
+    public partial class FormCTHD : Form
     {
-        private List<HOA_DON> DanhSachHD;
-        public FormHoaDon()
+        List<CT_HOA_DON> DSCTHD;
+        public FormCTHD()
         {
             InitializeComponent();
         }
+        public FormCTHD(string mahoadon)
+        {
+            InitializeComponent();
+            lblMaHD.Text = mahoadon;
 
+        }
 
         private void LoadGrid()
         {
             try
             {
-                this.dataHoaDon.Rows.Clear();
-                foreach(HOA_DON hoadon in this.DanhSachHD)
+                this.dataCTHD.Rows.Clear();
+                foreach (CT_HOA_DON cthds in this.DSCTHD)
                 {
-                    this.dataHoaDon.Rows.Add(hoadon.MA_HD,hoadon.TEN_KH, hoadon.NGAY_HD, hoadon.TRI_GIA,hoadon.GHI_CHU);
+
+                    this.dataCTHD.Rows.Add(cthds.MA_SP, cthds.DVT, cthds.SO_LUONG, cthds.CHIET_KHAU);
                 }
             }
             catch (Exception ex)
@@ -39,21 +45,14 @@ namespace NTSF.GUI
 
         private void LoadAll()
         {
-            this.DanhSachHD = HOA_DON_BUS.Instance.GetHOA_DONs();
+            this.DSCTHD = CT_HOA_DON_BUS.Instance.GetCT_HOA_DONs(this.lblMaHD.Text);
             LoadGrid();
-            lblCountHD.Text = DanhSachHD.Count.ToString();
 
         }
 
-        private void FormHoaDon_Load(object sender, EventArgs e)
+        private void FormCTHD_Load(object sender, EventArgs e)
         {
             LoadAll();
-
-        }
-
-        private void txtSearchByName__TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

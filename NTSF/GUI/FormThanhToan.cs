@@ -15,6 +15,7 @@ namespace NTSF.GUI
 {
     public partial class FormThanhToan : Form
     {
+        List<KHACH_HANG> KHBan = new List<KHACH_HANG>();
         public FormThanhToan()
         {
             InitializeComponent();
@@ -63,24 +64,42 @@ namespace NTSF.GUI
 
         private void MaAuto()
         {
-            try
+            NhaThuoc db = new NhaThuoc();
+            int count = db.HOA_DON.ToList().Count + 1;
+            lblmaHDAuto.Text = $"#{DateTime.Now.ToString("dd")}{DateTime.Now.ToString("MM")}{DateTime.Now.ToString("yy")}{count.ToString("00")}";
+        }
+
+        private void btnQuayve_Click(object sender, EventArgs e)
+        {
+            ResetTextBoxes(this);
+        }
+        private void ResetTextBoxes(Control control)
+        {
+            foreach (Control c in control.Controls)
             {
-                string connectionString = "Data Source=DESKTOP-JSUCTMT;Initial Catalog=QUANLYBANTHUOC;Integrated Security=True";
-                string query = "SELECT COUNT(*) FROM HOA_DON;";
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                if (c is TextBox)
                 {
-                    SqlCommand command = new SqlCommand(query, connection);
-                    connection.Open();
-                    int count = (int)command.ExecuteScalar();
-                    count++;
-                    lblmaHDAuto.Text = $"#{DateTime.Now.ToString("dd")}{DateTime.Now.ToString("MM")}{DateTime.Now.ToString("yy")}{count.ToString("00")}";
+                    ((TextBox)c).Text = string.Empty;
+                }
+                else if (c.HasChildren)
+                {
+                    ResetTextBoxes(c);
                 }
             }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
+
+        private void txtTenKH__TextChanged(object sender, EventArgs e)
+        {
+            this.KHBan = KHACH_HANG_BUS.Instance.GetKHACH_HANGs();
+            
+            AutoCompleteStringCollection autoload = new AutoCompleteStringCollection();
+            foreach (KHACH_HANG kh in this.KHBan)
+            {
+                autoload.Add($"{kh.SDT}- {kh.TEN_KH}");
+            }
+            txtTenKH.TextBoxControl.AutoCompleteCustomSource = autoload;
+        }
+
     }
-}
+    }
+

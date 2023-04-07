@@ -29,34 +29,186 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.dataHangHoa = new System.Windows.Forms.DataGridView();
+            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaisp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giavon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongton = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonchitiet = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.lblCountHang = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
             this.cbboxNhomhang = new System.Windows.Forms.ComboBox();
-            this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnTimKiemDanhmuc = new FontAwesome.Sharp.IconButton();
             this.txtSearchHH = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.dataHangHoa = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaisp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongton = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHangHoa)).BeginInit();
             this.advancedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.advancedPanel3.SuspendLayout();
-            this.advancedPanel2.SuspendLayout();
-            this.advancedPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataHangHoa)).BeginInit();
             this.SuspendLayout();
+            // 
+            // advancedPanel5
+            // 
+            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataHangHoa);
+            this.advancedPanel5.Controls.Add(this.lblCountHang);
+            this.advancedPanel5.Controls.Add(this.label7);
+            this.advancedPanel5.Controls.Add(this.label9);
+            this.advancedPanel5.EdgeWidth = 0;
+            this.advancedPanel5.EndColor = System.Drawing.Color.White;
+            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
+            this.advancedPanel5.Location = new System.Drawing.Point(41, 252);
+            this.advancedPanel5.Name = "advancedPanel5";
+            this.advancedPanel5.RectRadius = 5;
+            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel5.ShadowShift = 5;
+            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
+            this.advancedPanel5.Size = new System.Drawing.Size(1654, 693);
+            this.advancedPanel5.StartColor = System.Drawing.Color.White;
+            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel5.TabIndex = 6;
+            // 
+            // dataHangHoa
+            // 
+            this.dataHangHoa.AllowUserToAddRows = false;
+            this.dataHangHoa.AllowUserToResizeColumns = false;
+            this.dataHangHoa.AllowUserToResizeRows = false;
+            this.dataHangHoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataHangHoa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHangHoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.masp,
+            this.tensp,
+            this.loaisp,
+            this.giavon,
+            this.giaban,
+            this.tongton,
+            this.buttonchitiet});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataHangHoa.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataHangHoa.GridColor = System.Drawing.Color.Silver;
+            this.dataHangHoa.Location = new System.Drawing.Point(33, 76);
+            this.dataHangHoa.Name = "dataHangHoa";
+            this.dataHangHoa.RowHeadersVisible = false;
+            this.dataHangHoa.RowHeadersWidth = 62;
+            this.dataHangHoa.RowTemplate.Height = 50;
+            this.dataHangHoa.Size = new System.Drawing.Size(1559, 499);
+            this.dataHangHoa.TabIndex = 53;
+            this.dataHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangHoa_CellClick);
+            this.dataHangHoa.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataHangHoa_CellFormatting);
+            // 
+            // masp
+            // 
+            this.masp.HeaderText = "Mã hàng hoá";
+            this.masp.MinimumWidth = 8;
+            this.masp.Name = "masp";
+            this.masp.Width = 170;
+            // 
+            // tensp
+            // 
+            this.tensp.HeaderText = "Tên hàng hoá";
+            this.tensp.MinimumWidth = 8;
+            this.tensp.Name = "tensp";
+            this.tensp.Width = 410;
+            // 
+            // loaisp
+            // 
+            this.loaisp.HeaderText = "Loại hàng hoá";
+            this.loaisp.MinimumWidth = 8;
+            this.loaisp.Name = "loaisp";
+            this.loaisp.Width = 220;
+            // 
+            // giavon
+            // 
+            this.giavon.HeaderText = "Giá vốn";
+            this.giavon.MinimumWidth = 8;
+            this.giavon.Name = "giavon";
+            this.giavon.Width = 180;
+            // 
+            // giaban
+            // 
+            this.giaban.HeaderText = "Giá Bán";
+            this.giaban.MinimumWidth = 8;
+            this.giaban.Name = "giaban";
+            this.giaban.Width = 250;
+            // 
+            // tongton
+            // 
+            this.tongton.HeaderText = "Tổng tồn";
+            this.tongton.MinimumWidth = 8;
+            this.tongton.Name = "tongton";
+            this.tongton.Width = 130;
+            // 
+            // buttonchitiet
+            // 
+            this.buttonchitiet.HeaderText = "Thao tác";
+            this.buttonchitiet.MinimumWidth = 8;
+            this.buttonchitiet.Name = "buttonchitiet";
+            this.buttonchitiet.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.buttonchitiet.Text = "Xem chi tiết";
+            this.buttonchitiet.Width = 168;
+            // 
+            // lblCountHang
+            // 
+            this.lblCountHang.AutoSize = true;
+            this.lblCountHang.BackColor = System.Drawing.Color.White;
+            this.lblCountHang.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountHang.ForeColor = System.Drawing.Color.Black;
+            this.lblCountHang.Location = new System.Drawing.Point(337, 20);
+            this.lblCountHang.Name = "lblCountHang";
+            this.lblCountHang.Size = new System.Drawing.Size(37, 30);
+            this.lblCountHang.TabIndex = 52;
+            this.lblCountHang.Text = "xx";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(325, 20);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(167, 30);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "(       hàng hoá)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(79, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(221, 30);
+            this.label9.TabIndex = 52;
+            this.label9.Text = "Danh sách hàng hoá";
             // 
             // advancedPanel1
             // 
@@ -64,7 +216,6 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.iconPictureBox2);
             this.advancedPanel1.Controls.Add(this.label10);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
-            this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.txtSearchHH);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label3);
@@ -117,13 +268,13 @@ namespace NTSF.GUI
             this.advancedPanel3.EdgeWidth = 1;
             this.advancedPanel3.EndColor = System.Drawing.Color.White;
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel3.Location = new System.Drawing.Point(661, 135);
+            this.advancedPanel3.Location = new System.Drawing.Point(989, 135);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 5;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel3.ShadowShift = 2;
             this.advancedPanel3.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel3.Size = new System.Drawing.Size(390, 43);
+            this.advancedPanel3.Size = new System.Drawing.Size(603, 43);
             this.advancedPanel3.StartColor = System.Drawing.Color.White;
             this.advancedPanel3.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel3.TabIndex = 61;
@@ -137,51 +288,9 @@ namespace NTSF.GUI
             this.cbboxNhomhang.ItemHeight = 28;
             this.cbboxNhomhang.Location = new System.Drawing.Point(3, 0);
             this.cbboxNhomhang.Name = "cbboxNhomhang";
-            this.cbboxNhomhang.Size = new System.Drawing.Size(384, 36);
+            this.cbboxNhomhang.Size = new System.Drawing.Size(597, 36);
             this.cbboxNhomhang.TabIndex = 58;
             this.cbboxNhomhang.SelectedIndexChanged += new System.EventHandler(this.cbboxNhomhang_SelectedIndexChanged);
-            // 
-            // advancedPanel2
-            // 
-            this.advancedPanel2.BackColor = System.Drawing.Color.White;
-            this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel2.Controls.Add(this.btnTimKiemDanhmuc);
-            this.advancedPanel2.EdgeWidth = 2;
-            this.advancedPanel2.EndColor = System.Drawing.Color.White;
-            this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
-            this.advancedPanel2.Location = new System.Drawing.Point(1133, 135);
-            this.advancedPanel2.Name = "advancedPanel2";
-            this.advancedPanel2.RectRadius = 5;
-            this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel2.ShadowShift = 0;
-            this.advancedPanel2.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel2.Size = new System.Drawing.Size(141, 43);
-            this.advancedPanel2.StartColor = System.Drawing.Color.White;
-            this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel2.TabIndex = 56;
-            // 
-            // btnTimKiemDanhmuc
-            // 
-            this.btnTimKiemDanhmuc.AutoSize = true;
-            this.btnTimKiemDanhmuc.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemDanhmuc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemDanhmuc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTimKiemDanhmuc.FlatAppearance.BorderSize = 0;
-            this.btnTimKiemDanhmuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemDanhmuc.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiemDanhmuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemDanhmuc.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnTimKiemDanhmuc.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemDanhmuc.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTimKiemDanhmuc.IconSize = 30;
-            this.btnTimKiemDanhmuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemDanhmuc.Location = new System.Drawing.Point(0, 0);
-            this.btnTimKiemDanhmuc.Name = "btnTimKiemDanhmuc";
-            this.btnTimKiemDanhmuc.Size = new System.Drawing.Size(141, 43);
-            this.btnTimKiemDanhmuc.TabIndex = 63;
-            this.btnTimKiemDanhmuc.Text = "      TÌM KIẾM";
-            this.btnTimKiemDanhmuc.UseVisualStyleBackColor = false;
-            this.btnTimKiemDanhmuc.Click += new System.EventHandler(this.btnTimKiemDanhmuc_Click);
             // 
             // txtSearchHH
             // 
@@ -201,7 +310,7 @@ namespace NTSF.GUI
             this.txtSearchHH.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSearchHH.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
             this.txtSearchHH.ReadOnly = false;
-            this.txtSearchHH.Size = new System.Drawing.Size(500, 43);
+            this.txtSearchHH.Size = new System.Drawing.Size(756, 43);
             this.txtSearchHH.TabIndex = 54;
             this.txtSearchHH.Texts = "";
             this.txtSearchHH.UnderlineedStyle = false;
@@ -223,7 +332,7 @@ namespace NTSF.GUI
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(659, 94);
+            this.label3.Location = new System.Drawing.Point(984, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 28);
             this.label3.TabIndex = 52;
@@ -241,117 +350,6 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "DANH MỤC";
             // 
-            // advancedPanel5
-            // 
-            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.dataHangHoa);
-            this.advancedPanel5.Controls.Add(this.label8);
-            this.advancedPanel5.Controls.Add(this.label7);
-            this.advancedPanel5.Controls.Add(this.label9);
-            this.advancedPanel5.EdgeWidth = 0;
-            this.advancedPanel5.EndColor = System.Drawing.Color.White;
-            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
-            this.advancedPanel5.Location = new System.Drawing.Point(41, 252);
-            this.advancedPanel5.Name = "advancedPanel5";
-            this.advancedPanel5.RectRadius = 5;
-            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel5.ShadowShift = 5;
-            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel5.Size = new System.Drawing.Size(1654, 693);
-            this.advancedPanel5.StartColor = System.Drawing.Color.White;
-            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel5.TabIndex = 6;
-            // 
-            // dataHangHoa
-            // 
-            this.dataHangHoa.AllowUserToResizeColumns = false;
-            this.dataHangHoa.AllowUserToResizeRows = false;
-            this.dataHangHoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataHangHoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.masp,
-            this.tensp,
-            this.loaisp,
-            this.giaban,
-            this.tongton});
-            this.dataHangHoa.Location = new System.Drawing.Point(33, 76);
-            this.dataHangHoa.Name = "dataHangHoa";
-            this.dataHangHoa.RowHeadersVisible = false;
-            this.dataHangHoa.RowHeadersWidth = 62;
-            this.dataHangHoa.RowTemplate.Height = 28;
-            this.dataHangHoa.Size = new System.Drawing.Size(1559, 499);
-            this.dataHangHoa.TabIndex = 53;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(337, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(325, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 30);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "(       hàng hoá)";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(79, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(221, 30);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "Danh sách hàng hoá";
-            // 
-            // masp
-            // 
-            this.masp.HeaderText = "Mã hàng hoá";
-            this.masp.MinimumWidth = 8;
-            this.masp.Name = "masp";
-            this.masp.Width = 250;
-            // 
-            // tensp
-            // 
-            this.tensp.HeaderText = "Tên hàng hoá";
-            this.tensp.MinimumWidth = 8;
-            this.tensp.Name = "tensp";
-            this.tensp.Width = 350;
-            // 
-            // loaisp
-            // 
-            this.loaisp.HeaderText = "Loại hàng hoá";
-            this.loaisp.MinimumWidth = 8;
-            this.loaisp.Name = "loaisp";
-            this.loaisp.Width = 300;
-            // 
-            // giaban
-            // 
-            this.giaban.HeaderText = "Giá Bán";
-            this.giaban.MinimumWidth = 8;
-            this.giaban.Name = "giaban";
-            this.giaban.Width = 250;
-            // 
-            // tongton
-            // 
-            this.tongton.HeaderText = "Tổng tồn";
-            this.tongton.MinimumWidth = 8;
-            this.tongton.Name = "tongton";
-            this.tongton.Width = 250;
-            // 
             // FormDanhMuc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -364,15 +362,13 @@ namespace NTSF.GUI
             this.Name = "FormDanhMuc";
             this.Text = "FormDanhMuc";
             this.Load += new System.EventHandler(this.FormDanhMuc_Load);
+            this.advancedPanel5.ResumeLayout(false);
+            this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHangHoa)).EndInit();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.advancedPanel3.ResumeLayout(false);
-            this.advancedPanel2.ResumeLayout(false);
-            this.advancedPanel2.PerformLayout();
-            this.advancedPanel5.ResumeLayout(false);
-            this.advancedPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataHangHoa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,14 +378,12 @@ namespace NTSF.GUI
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel3;
         private System.Windows.Forms.ComboBox cbboxNhomhang;
-        private CTuserControl.AdvancedPanel advancedPanel2;
-        private FontAwesome.Sharp.IconButton btnTimKiemDanhmuc;
         private HotelManagement.CTControls.CTTextBox txtSearchHH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCountHang;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
@@ -398,7 +392,10 @@ namespace NTSF.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn masp;
         private System.Windows.Forms.DataGridViewTextBoxColumn tensp;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaisp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giavon;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaban;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongton;
+        private System.Windows.Forms.DataGridViewButtonColumn buttonchitiet;
+
     }
 }

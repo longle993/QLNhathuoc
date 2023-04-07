@@ -30,6 +30,14 @@ namespace HotelManagement.CTControls
         public CTTextBox()
         {
             InitializeComponent();
+            // Tạo một danh sách chuỗi cho AutoComplete
+            AutoCompleteStringCollection autoCompleteList = new AutoCompleteStringCollection();
+            autoCompleteList.AddRange(new string[] ());
+
+            // Thiết lập AutoComplete cho TextBox
+            myTextBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            myTextBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            myTextBox.AutoCompleteCustomSource = autoCompleteList;
         }
 
         //Events

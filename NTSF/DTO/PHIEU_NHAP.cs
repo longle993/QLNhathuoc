@@ -24,7 +24,7 @@ namespace NTSF.DTO
         public TimeSpan GIO_NHAP { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal? TRI_GIA { get; set; }
+        public decimal TRI_GIA { get; set; }
 
         [StringLength(500)]
         public string GHI_CHU { get; set; }

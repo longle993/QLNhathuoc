@@ -29,11 +29,11 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTKPNNhapKho = new HotelManagement.CTControls.CTTextBox();
+            this.txtHangBan = new HotelManagement.CTControls.CTTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,40 +70,41 @@ namespace NTSF.GUI
             this.label3.TabIndex = 6;
             this.label3.Text = "Bán hàng";
             // 
-            // txtTKPNNhapKho
+            // txtHangBan
             // 
-            this.txtTKPNNhapKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 1;
-            this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTKPNNhapKho.IsFocused = false;
-            this.txtTKPNNhapKho.Location = new System.Drawing.Point(34, 84);
-            this.txtTKPNNhapKho.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTKPNNhapKho.Multiline = false;
-            this.txtTKPNNhapKho.Name = "txtTKPNNhapKho";
-            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTKPNNhapKho.PasswordChar = false;
-            this.txtTKPNNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTKPNNhapKho.PlaceholderText = "Nhập mã sản phẩm hoặc tên sản phẩm để tìm kiếm";
-            this.txtTKPNNhapKho.ReadOnly = false;
-            this.txtTKPNNhapKho.Size = new System.Drawing.Size(888, 40);
-            this.txtTKPNNhapKho.TabIndex = 55;
-            this.txtTKPNNhapKho.Texts = "";
-            this.txtTKPNNhapKho.UnderlineedStyle = false;
+            this.txtHangBan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtHangBan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtHangBan.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtHangBan.BorderRadius = 5;
+            this.txtHangBan.BorderSize = 1;
+            this.txtHangBan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHangBan.IsFocused = false;
+            this.txtHangBan.Location = new System.Drawing.Point(34, 84);
+            this.txtHangBan.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHangBan.Multiline = false;
+            this.txtHangBan.Name = "txtHangBan";
+            this.txtHangBan.Padding = new System.Windows.Forms.Padding(7);
+            this.txtHangBan.PasswordChar = false;
+            this.txtHangBan.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtHangBan.PlaceholderText = "Nhập mã sản phẩm hoặc tên sản phẩm để tìm kiếm";
+            this.txtHangBan.ReadOnly = false;
+            this.txtHangBan.Size = new System.Drawing.Size(888, 40);
+            this.txtHangBan.TabIndex = 55;
+            this.txtHangBan.Texts = "";
+            this.txtHangBan.UnderlineedStyle = false;
+            this.txtHangBan._TextChanged += new System.EventHandler(this.txtHangBan__TextChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -138,8 +139,8 @@ namespace NTSF.GUI
             // 
             // DVTinh
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.DVTinh.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DVTinh.DefaultCellStyle = dataGridViewCellStyle4;
             this.DVTinh.HeaderText = "Đơn vị tính";
             this.DVTinh.MinimumWidth = 8;
             this.DVTinh.Name = "DVTinh";
@@ -180,7 +181,7 @@ namespace NTSF.GUI
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(950, 411);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtTKPNNhapKho);
+            this.Controls.Add(this.txtHangBan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
@@ -197,7 +198,7 @@ namespace NTSF.GUI
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
+        private HotelManagement.CTControls.CTTextBox txtHangBan;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tenhang;

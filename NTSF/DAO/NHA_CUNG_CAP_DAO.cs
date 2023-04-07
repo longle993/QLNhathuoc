@@ -26,5 +26,37 @@ namespace NTSF.DAO
         {
             return db.NHA_CUNG_CAP.Where(p => p.TEN_NCC.StartsWith(tenncc)).ToList();
         }
+
+        public void AddUpdateNCC(NHA_CUNG_CAP ncc)
+        {
+            try
+            {
+                // Kiểm tra xem nhân viên đã tồn tại trong cơ sở dữ liệu chưa
+                NHA_CUNG_CAP existingNCC = db.NHA_CUNG_CAP.Find(ncc);
+
+                if (existingNCC is null)
+                {
+                    db.NHA_CUNG_CAP.Add(ncc);
+                }
+                else
+                {
+                    db.NHA_CUNG_CAP.Remove(existingNCC);
+                    db.NHA_CUNG_CAP.Add(ncc);
+
+                }
+
+                db.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public void RemoveNCC(NHA_CUNG_CAP ncc)
+        {
+            db.NHA_CUNG_CAP.Remove(ncc);
+            db.SaveChanges();
+        }
     }
 }

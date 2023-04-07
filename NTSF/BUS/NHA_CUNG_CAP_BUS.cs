@@ -26,5 +26,14 @@ namespace NTSF.BUS
         {
             return NHA_CUNG_CAP_DAO.Instance.FindByName(tenncc);
         }
+        public void AddUpdateNCC(NHA_CUNG_CAP ncc)
+        {
+            NHA_CUNG_CAP_DAO.Instance.AddUpdateNCC(ncc);
+        }
+
+        public  void RemoveNCC(NHA_CUNG_CAP ncc)
+        {
+            NHA_CUNG_CAP_DAO.Instance.RemoveNCC(ncc);
+        }
     }
 }
