@@ -29,7 +29,7 @@ namespace NTSF.DAO
             db.SaveChanges();
         }
 
-        public List<HOA_DON> FindByName(string tensp)
+        public List<HOA_DON> FindByName(string tensp, string mahd, DateTime timeFrom, DateTime timeTo)
         {
             DANH_MUC_SP sP = db.DANH_MUC_SP.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
             List<CT_HOA_DON> cthd = db.CT_HOA_DON.Where(p => p.MA_SP == sP.MA_SP).ToList();
@@ -39,8 +39,14 @@ namespace NTSF.DAO
             {
                 hoadon.Add(db.HOA_DON.Find(ct.MA_HD));
             }
-
-            return hoadon;
+            if (mahd == "")
+            {
+                return hoadon;
+            }
+            else
+            {
+                return hoadon.Where(p => p.MA_HD.StartsWith(mahd) && p.NGAY_HD >= timeFrom && p.NGAY_HD <= timeTo).ToList();
+            }
         }
 
         public HOA_DON GetHDforCTHD(string mahd)
@@ -73,5 +79,14 @@ namespace NTSF.DAO
             }
         }
 
+        public List<HOA_DON> FindByMaHD(string mahd)
+        {
+            return db.HOA_DON.Where(p => p.MA_HD.StartsWith(mahd)).ToList();
+        }
+
+        public List<HOA_DON> GetBaoCao(DateTime timeFrom, DateTime timeTo)
+        {
+            return db.HOA_DON.Where(p => p.NGAY_HD >= timeFrom && p.NGAY_HD <= timeTo).ToList();
+        }
     }
 }

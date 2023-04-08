@@ -36,6 +36,8 @@ namespace NTSF.GUI
                 {
                     this.dataNV.Rows.Add(nv.MA_NV,nv.TEN_NV, nv.SDT);
                 }
+                lblCountNV.Text = DSNV.Count.ToString();
+
             }
             catch (Exception ex)
             {
@@ -47,7 +49,6 @@ namespace NTSF.GUI
         {
             this.DSNV = NHAN_VIEN_BUS.Instance.GetNHAN_VIENs();
             LoadGrid();
-            lblCountNV.Text = DSNV.Count.ToString();
         }
 
         private void FormNhanVien_Load(object sender, EventArgs e)

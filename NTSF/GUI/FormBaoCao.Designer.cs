@@ -29,30 +29,33 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.dataXuatHuy = new System.Windows.Forms.DataGridView();
-            this.thoigian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tonghd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doanhthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tonggiavon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loinhuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dataBaoCao = new System.Windows.Forms.DataGridView();
+            this.lblCountBC = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTimKiemBC = new FontAwesome.Sharp.IconButton();
-            this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
-            this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
+            this.ctTimeTo = new NTSF.CTuserControl.CTDatePicker();
+            this.ctTimeFrom = new NTSF.CTuserControl.CTDatePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblTonghoadon = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblTonggiavon = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lblTongloinhuan = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.thoigian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tonghd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tonggiavon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loinhuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaoCao)).BeginInit();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -60,14 +63,16 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.dataXuatHuy);
-            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.lblTonghoadon);
+            this.advancedPanel5.Controls.Add(this.label12);
+            this.advancedPanel5.Controls.Add(this.lblTonggiavon);
+            this.advancedPanel5.Controls.Add(this.label13);
+            this.advancedPanel5.Controls.Add(this.lblTongloinhuan);
+            this.advancedPanel5.Controls.Add(this.label14);
+            this.advancedPanel5.Controls.Add(this.dataBaoCao);
+            this.advancedPanel5.Controls.Add(this.lblCountBC);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label9);
-            this.advancedPanel5.Controls.Add(this.label10);
-            this.advancedPanel5.Controls.Add(this.label5);
-            this.advancedPanel5.Controls.Add(this.label4);
-            this.advancedPanel5.Controls.Add(this.label3);
             this.advancedPanel5.EdgeWidth = 0;
             this.advancedPanel5.EndColor = System.Drawing.Color.White;
             this.advancedPanel5.FlatBorderColor = System.Drawing.Color.White;
@@ -82,71 +87,56 @@ namespace NTSF.GUI
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 7;
             // 
-            // dataXuatHuy
+            // dataBaoCao
             // 
-            this.dataXuatHuy.AllowUserToResizeColumns = false;
-            this.dataXuatHuy.AllowUserToResizeRows = false;
-            this.dataXuatHuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataXuatHuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataBaoCao.AllowUserToAddRows = false;
+            this.dataBaoCao.AllowUserToDeleteRows = false;
+            this.dataBaoCao.AllowUserToResizeColumns = false;
+            this.dataBaoCao.AllowUserToResizeRows = false;
+            this.dataBaoCao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataBaoCao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataBaoCao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataBaoCao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.thoigian,
             this.tonghd,
-            this.doanhthu,
             this.tonggiavon,
             this.loinhuan});
-            this.dataXuatHuy.Location = new System.Drawing.Point(57, 84);
-            this.dataXuatHuy.Name = "dataXuatHuy";
-            this.dataXuatHuy.RowHeadersVisible = false;
-            this.dataXuatHuy.RowHeadersWidth = 62;
-            this.dataXuatHuy.RowTemplate.Height = 28;
-            this.dataXuatHuy.Size = new System.Drawing.Size(1559, 499);
-            this.dataXuatHuy.TabIndex = 56;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataBaoCao.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataBaoCao.GridColor = System.Drawing.Color.Silver;
+            this.dataBaoCao.Location = new System.Drawing.Point(57, 84);
+            this.dataBaoCao.Name = "dataBaoCao";
+            this.dataBaoCao.RowHeadersVisible = false;
+            this.dataBaoCao.RowHeadersWidth = 62;
+            this.dataBaoCao.RowTemplate.Height = 50;
+            this.dataBaoCao.Size = new System.Drawing.Size(1559, 499);
+            this.dataBaoCao.TabIndex = 56;
             // 
-            // thoigian
+            // lblCountBC
             // 
-            this.thoigian.HeaderText = "Thời gian";
-            this.thoigian.MinimumWidth = 8;
-            this.thoigian.Name = "thoigian";
-            this.thoigian.Width = 300;
-            // 
-            // tonghd
-            // 
-            this.tonghd.HeaderText = "Tổng tiền hoá đơn";
-            this.tonghd.MinimumWidth = 8;
-            this.tonghd.Name = "tonghd";
-            this.tonghd.Width = 320;
-            // 
-            // doanhthu
-            // 
-            this.doanhthu.HeaderText = "Doanh thu";
-            this.doanhthu.MinimumWidth = 8;
-            this.doanhthu.Name = "doanhthu";
-            this.doanhthu.Width = 305;
-            // 
-            // tonggiavon
-            // 
-            this.tonggiavon.HeaderText = "Tổng giá vốn";
-            this.tonggiavon.MinimumWidth = 8;
-            this.tonggiavon.Name = "tonggiavon";
-            this.tonggiavon.Width = 310;
-            // 
-            // loinhuan
-            // 
-            this.loinhuan.HeaderText = "Lợi nhuận";
-            this.loinhuan.MinimumWidth = 8;
-            this.loinhuan.Name = "loinhuan";
-            this.loinhuan.Width = 320;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(285, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
+            this.lblCountBC.AutoSize = true;
+            this.lblCountBC.BackColor = System.Drawing.Color.White;
+            this.lblCountBC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountBC.ForeColor = System.Drawing.Color.Black;
+            this.lblCountBC.Location = new System.Drawing.Point(285, 20);
+            this.lblCountBC.Name = "lblCountBC";
+            this.lblCountBC.Size = new System.Drawing.Size(37, 30);
+            this.lblCountBC.TabIndex = 52;
+            this.lblCountBC.Text = "xx";
             // 
             // label7
             // 
@@ -172,23 +162,12 @@ namespace NTSF.GUI
             this.label9.TabIndex = 52;
             this.label9.Text = "Danh sách dữ liệu";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(1327, 606);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 28);
-            this.label3.TabIndex = 52;
-            this.label3.Text = "Tổng:";
-            // 
             // advancedPanel1
             // 
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
-            this.advancedPanel1.Controls.Add(this.ctDatePicker1);
-            this.advancedPanel1.Controls.Add(this.ctDatePicker3);
+            this.advancedPanel1.Controls.Add(this.ctTimeTo);
+            this.advancedPanel1.Controls.Add(this.ctTimeFrom);
             this.advancedPanel1.Controls.Add(this.label2);
             this.advancedPanel1.Controls.Add(this.label1);
             this.advancedPanel1.Controls.Add(this.label6);
@@ -246,46 +225,49 @@ namespace NTSF.GUI
             this.btnTimKiemBC.TabIndex = 63;
             this.btnTimKiemBC.Text = "      TÌM KIẾM";
             this.btnTimKiemBC.UseVisualStyleBackColor = false;
+            this.btnTimKiemBC.Click += new System.EventHandler(this.btnTimKiemBC_Click);
             // 
-            // ctDatePicker1
+            // ctTimeTo
             // 
-            this.ctDatePicker1.BackColor = System.Drawing.Color.White;
-            this.ctDatePicker1.BorderColor = System.Drawing.Color.PaleGoldenrod;
-            this.ctDatePicker1.BorderRadius = 15;
-            this.ctDatePicker1.BorderSize = 0;
-            this.ctDatePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctDatePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctDatePicker1.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctDatePicker1.ForeColor = System.Drawing.Color.Black;
-            this.ctDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ctDatePicker1.Location = new System.Drawing.Point(380, 135);
-            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 43);
-            this.ctDatePicker1.Name = "ctDatePicker1";
-            this.ctDatePicker1.Size = new System.Drawing.Size(258, 43);
-            this.ctDatePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctDatePicker1.TabIndex = 55;
-            this.ctDatePicker1.TextColor = System.Drawing.Color.Black;
+            this.ctTimeTo.BackColor = System.Drawing.Color.White;
+            this.ctTimeTo.BorderColor = System.Drawing.Color.PaleGoldenrod;
+            this.ctTimeTo.BorderRadius = 15;
+            this.ctTimeTo.BorderSize = 0;
+            this.ctTimeTo.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTimeTo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ctTimeTo.CustomFormat = "dd/MM/yyyy";
+            this.ctTimeTo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctTimeTo.ForeColor = System.Drawing.Color.Black;
+            this.ctTimeTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ctTimeTo.Location = new System.Drawing.Point(380, 135);
+            this.ctTimeTo.MinimumSize = new System.Drawing.Size(4, 43);
+            this.ctTimeTo.Name = "ctTimeTo";
+            this.ctTimeTo.Size = new System.Drawing.Size(258, 43);
+            this.ctTimeTo.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTimeTo.TabIndex = 55;
+            this.ctTimeTo.TextColor = System.Drawing.Color.Black;
+            this.ctTimeTo.ValueChanged += new System.EventHandler(this.ctTimeTo_ValueChanged);
             // 
-            // ctDatePicker3
+            // ctTimeFrom
             // 
-            this.ctDatePicker3.BackColor = System.Drawing.Color.White;
-            this.ctDatePicker3.BorderColor = System.Drawing.Color.PaleGoldenrod;
-            this.ctDatePicker3.BorderRadius = 15;
-            this.ctDatePicker3.BorderSize = 0;
-            this.ctDatePicker3.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctDatePicker3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctDatePicker3.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctDatePicker3.ForeColor = System.Drawing.Color.Black;
-            this.ctDatePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ctDatePicker3.Location = new System.Drawing.Point(84, 135);
-            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 43);
-            this.ctDatePicker3.Name = "ctDatePicker3";
-            this.ctDatePicker3.Size = new System.Drawing.Size(258, 43);
-            this.ctDatePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctDatePicker3.TabIndex = 55;
-            this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
+            this.ctTimeFrom.BackColor = System.Drawing.Color.White;
+            this.ctTimeFrom.BorderColor = System.Drawing.Color.PaleGoldenrod;
+            this.ctTimeFrom.BorderRadius = 15;
+            this.ctTimeFrom.BorderSize = 0;
+            this.ctTimeFrom.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctTimeFrom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ctTimeFrom.CustomFormat = "dd/MM/yyyy";
+            this.ctTimeFrom.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctTimeFrom.ForeColor = System.Drawing.Color.Black;
+            this.ctTimeFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ctTimeFrom.Location = new System.Drawing.Point(84, 135);
+            this.ctTimeFrom.MinimumSize = new System.Drawing.Size(4, 43);
+            this.ctTimeFrom.Name = "ctTimeFrom";
+            this.ctTimeFrom.Size = new System.Drawing.Size(258, 43);
+            this.ctTimeFrom.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTimeFrom.TabIndex = 55;
+            this.ctTimeFrom.TextColor = System.Drawing.Color.Black;
+            this.ctTimeFrom.ValueChanged += new System.EventHandler(this.ctTimeFrom_ValueChanged);
             // 
             // label2
             // 
@@ -321,38 +303,99 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "BÁO CÁO";
             // 
-            // label4
+            // lblTonghoadon
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(1010, 606);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 28);
-            this.label4.TabIndex = 52;
-            this.label4.Text = "Tổng:";
+            this.lblTonghoadon.AutoSize = true;
+            this.lblTonghoadon.BackColor = System.Drawing.Color.White;
+            this.lblTonghoadon.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTonghoadon.Location = new System.Drawing.Point(570, 607);
+            this.lblTonghoadon.Name = "lblTonghoadon";
+            this.lblTonghoadon.Size = new System.Drawing.Size(24, 28);
+            this.lblTonghoadon.TabIndex = 57;
+            this.lblTonghoadon.Text = "0";
             // 
-            // label5
+            // label12
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(696, 606);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 28);
-            this.label5.TabIndex = 52;
-            this.label5.Text = "Tổng:";
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(499, 607);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 28);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "Tổng:";
             // 
-            // label10
+            // lblTonggiavon
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(354, 606);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 28);
-            this.label10.TabIndex = 52;
-            this.label10.Text = "Tổng:";
+            this.lblTonggiavon.AutoSize = true;
+            this.lblTonggiavon.BackColor = System.Drawing.Color.White;
+            this.lblTonggiavon.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTonggiavon.Location = new System.Drawing.Point(973, 607);
+            this.lblTonggiavon.Name = "lblTonggiavon";
+            this.lblTonggiavon.Size = new System.Drawing.Size(24, 28);
+            this.lblTonggiavon.TabIndex = 59;
+            this.lblTonggiavon.Text = "0";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(902, 607);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 28);
+            this.label13.TabIndex = 60;
+            this.label13.Text = "Tổng:";
+            // 
+            // lblTongloinhuan
+            // 
+            this.lblTongloinhuan.AutoSize = true;
+            this.lblTongloinhuan.BackColor = System.Drawing.Color.White;
+            this.lblTongloinhuan.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblTongloinhuan.Location = new System.Drawing.Point(1364, 607);
+            this.lblTongloinhuan.Name = "lblTongloinhuan";
+            this.lblTongloinhuan.Size = new System.Drawing.Size(24, 28);
+            this.lblTongloinhuan.TabIndex = 61;
+            this.lblTongloinhuan.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(1293, 607);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 28);
+            this.label14.TabIndex = 62;
+            this.label14.Text = "Tổng:";
+            // 
+            // thoigian
+            // 
+            this.thoigian.HeaderText = "Thời gian";
+            this.thoigian.MinimumWidth = 8;
+            this.thoigian.Name = "thoigian";
+            this.thoigian.Width = 385;
+            // 
+            // tonghd
+            // 
+            this.tonghd.HeaderText = "Tổng tiền hoá đơn";
+            this.tonghd.MinimumWidth = 8;
+            this.tonghd.Name = "tonghd";
+            this.tonghd.Width = 390;
+            // 
+            // tonggiavon
+            // 
+            this.tonggiavon.HeaderText = "Tổng giá vốn";
+            this.tonggiavon.MinimumWidth = 8;
+            this.tonggiavon.Name = "tonggiavon";
+            this.tonggiavon.Width = 390;
+            // 
+            // loinhuan
+            // 
+            this.loinhuan.HeaderText = "Lợi nhuận";
+            this.loinhuan.MinimumWidth = 8;
+            this.loinhuan.Name = "loinhuan";
+            this.loinhuan.Width = 390;
             // 
             // FormBaoCao
             // 
@@ -368,7 +411,7 @@ namespace NTSF.GUI
             this.Text = "FormBaoCao";
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaoCao)).EndInit();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
@@ -380,26 +423,27 @@ namespace NTSF.GUI
         #endregion
 
         private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCountBC;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label3;
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTimKiemBC;
-        private CTuserControl.CTDatePicker ctDatePicker1;
-        private CTuserControl.CTDatePicker ctDatePicker3;
+        private CTuserControl.CTDatePicker ctTimeTo;
+        private CTuserControl.CTDatePicker ctTimeFrom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataXuatHuy;
+        private System.Windows.Forms.DataGridView dataBaoCao;
+        private System.Windows.Forms.Label lblTonghoadon;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTonggiavon;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblTongloinhuan;
+        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridViewTextBoxColumn thoigian;
         private System.Windows.Forms.DataGridViewTextBoxColumn tonghd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doanhthu;
         private System.Windows.Forms.DataGridViewTextBoxColumn tonggiavon;
         private System.Windows.Forms.DataGridViewTextBoxColumn loinhuan;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
     }
 }

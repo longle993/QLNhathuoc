@@ -26,7 +26,18 @@ namespace NTSF.BUS
         {
             PHIEU_NHAP_DAO.Instance.AddUpdatePN(pn);
         }
+        public List<PHIEU_NHAP> FindByMaPN(string mapn)
+        {
+            return PHIEU_NHAP_DAO.Instance.FindByMaPN(mapn);
+        }
+        public List<PHIEU_NHAP> FindByName(string tensp, string mapn, DateTime timeFrom, DateTime timeTo)
+        {
+            return PHIEU_NHAP_DAO.Instance.FindByName(tensp, mapn, timeFrom, timeTo);
+        }
 
-
+        public List<PHIEU_NHAP> GetBaoCao(DateTime timeFrom, DateTime timeTo)
+        {
+            return PHIEU_NHAP_DAO.Instance.GetBaoCao(timeFrom, timeTo);
+        }
     }
 }

@@ -34,6 +34,8 @@ namespace NTSF.GUI
                     
                     this.dataHoaDon.Rows.Add(hoadon.MA_HD, hoadon.TEN_KH, hoadon.NGAY_HD, hoadon.TRI_GIA.ToString("#,#"), hoadon.GHI_CHU );
                 }
+                lblCountHD.Text = DanhSachHD.Count.ToString();
+
             }
             catch (Exception ex)
             {
@@ -45,14 +47,11 @@ namespace NTSF.GUI
         {
             this.DanhSachHD = HOA_DON_BUS.Instance.GetHOA_DONs();
             LoadGrid();
-            lblCountHD.Text = DanhSachHD.Count.ToString();
-
         }
 
         private void FormHoaDon_Load(object sender, EventArgs e)
         {
             LoadAll();
-
         }
 
 
@@ -146,7 +145,7 @@ namespace NTSF.GUI
             try
             {
                 dataHoaDon.Rows.Clear();
-                DanhSachHD = HOA_DON_BUS.Instance.FindByName(txtSearchByName.Texts);
+                DanhSachHD = HOA_DON_BUS.Instance.FindByName(txtSearchByName.Texts,txtTKHDHoadon.Texts,ctTimeFrom.Value,ctTimeTo.Value);
                 LoadGrid();
             }
             catch(Exception ex)
@@ -155,6 +154,16 @@ namespace NTSF.GUI
                 LoadAll();
             }
             
+        }
+
+        private void txtTKHDHoadon__TextChanged(object sender, EventArgs e)
+        {
+            if (txtTKHDHoadon.Texts == "" || txtTKHDHoadon.Texts is null)
+            {
+                LoadAll();
+            }
+            this.DanhSachHD = HOA_DON_BUS.Instance.FindByMaHD(txtTKHDHoadon.Texts);
+            LoadGrid();
         }
     }
 }

@@ -369,6 +369,7 @@ namespace NTSF.GUI
             this.txtTKHDHoadon.TabIndex = 54;
             this.txtTKHDHoadon.Texts = "";
             this.txtTKHDHoadon.UnderlineedStyle = false;
+            this.txtTKHDHoadon._TextChanged += new System.EventHandler(this.txtTKHDHoadon__TextChanged);
             // 
             // txtSearchByName
             // 

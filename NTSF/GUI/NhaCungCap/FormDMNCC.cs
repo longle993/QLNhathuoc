@@ -36,6 +36,8 @@ namespace NTSF.GUI
                 {
                     this.dataNCC.Rows.Add(ncc.MA_NCC, ncc.TEN_NCC, ncc.MA_SO_THUE, ncc.SDT, ncc.GHI_CHU);
                 }
+                lblCountNCC.Text = DanhSachNCC.Count.ToString();
+
             }
             catch (Exception ex)
             {
@@ -47,7 +49,6 @@ namespace NTSF.GUI
         {
             this.DanhSachNCC = NHA_CUNG_CAP_BUS.Instance.GetNHA_CUNG_CAPs();
             LoadGrid();
-            lblCountNCC.Text = DanhSachNCC.Count.ToString();
 
         }
 

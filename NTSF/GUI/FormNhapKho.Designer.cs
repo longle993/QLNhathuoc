@@ -29,20 +29,27 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTaoPhieu = new System.Windows.Forms.Panel();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dataPhieuNhap = new System.Windows.Forms.DataGridView();
+            this.mapn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaynhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trigia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblCountPN = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
-            this.btnTimKiemHoadon = new FontAwesome.Sharp.IconButton();
+            this.btnTimKiemPN = new FontAwesome.Sharp.IconButton();
             this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnNhapKho = new FontAwesome.Sharp.IconButton();
-            this.ctDatePicker1 = new NTSF.CTuserControl.CTDatePicker();
-            this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
+            this.ctTimeTo = new NTSF.CTuserControl.CTDatePicker();
+            this.ctTimeFrom = new NTSF.CTuserControl.CTDatePicker();
             this.txtTKPNNhapKho = new HotelManagement.CTControls.CTTextBox();
-            this.txtTKHHNhapKho = new HotelManagement.CTControls.CTTextBox();
+            this.txtSearchHHNK = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +57,7 @@ namespace NTSF.GUI
             this.label6 = new System.Windows.Forms.Label();
             this.panelTaoPhieu.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPhieuNhap)).BeginInit();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
@@ -69,7 +77,8 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.dataPhieuNhap);
+            this.advancedPanel5.Controls.Add(this.lblCountPN);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label5);
             this.advancedPanel5.EdgeWidth = 0;
@@ -86,17 +95,84 @@ namespace NTSF.GUI
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 6;
             // 
-            // label8
+            // dataPhieuNhap
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(285, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
+            this.dataPhieuNhap.AllowUserToAddRows = false;
+            this.dataPhieuNhap.AllowUserToDeleteRows = false;
+            this.dataPhieuNhap.AllowUserToResizeColumns = false;
+            this.dataPhieuNhap.AllowUserToResizeRows = false;
+            this.dataPhieuNhap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataPhieuNhap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataPhieuNhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataPhieuNhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mapn,
+            this.ngaynhap,
+            this.trigia,
+            this.ghichu});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataPhieuNhap.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataPhieuNhap.GridColor = System.Drawing.Color.Silver;
+            this.dataPhieuNhap.Location = new System.Drawing.Point(31, 76);
+            this.dataPhieuNhap.Name = "dataPhieuNhap";
+            this.dataPhieuNhap.RowHeadersVisible = false;
+            this.dataPhieuNhap.RowHeadersWidth = 62;
+            this.dataPhieuNhap.RowTemplate.Height = 50;
+            this.dataPhieuNhap.Size = new System.Drawing.Size(1559, 499);
+            this.dataPhieuNhap.TabIndex = 57;
+            // 
+            // mapn
+            // 
+            this.mapn.HeaderText = "Mã phiếu";
+            this.mapn.MinimumWidth = 8;
+            this.mapn.Name = "mapn";
+            this.mapn.Width = 380;
+            // 
+            // ngaynhap
+            // 
+            this.ngaynhap.HeaderText = "Ngày nhập";
+            this.ngaynhap.MinimumWidth = 8;
+            this.ngaynhap.Name = "ngaynhap";
+            this.ngaynhap.Width = 390;
+            // 
+            // trigia
+            // 
+            this.trigia.HeaderText = "Trị giá";
+            this.trigia.MinimumWidth = 8;
+            this.trigia.Name = "trigia";
+            this.trigia.Width = 390;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 390;
+            // 
+            // lblCountPN
+            // 
+            this.lblCountPN.AutoSize = true;
+            this.lblCountPN.BackColor = System.Drawing.Color.White;
+            this.lblCountPN.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountPN.ForeColor = System.Drawing.Color.Black;
+            this.lblCountPN.Location = new System.Drawing.Point(285, 20);
+            this.lblCountPN.Name = "lblCountPN";
+            this.lblCountPN.Size = new System.Drawing.Size(37, 30);
+            this.lblCountPN.TabIndex = 52;
+            this.lblCountPN.Text = "xx";
             // 
             // label7
             // 
@@ -127,10 +203,10 @@ namespace NTSF.GUI
             this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
-            this.advancedPanel1.Controls.Add(this.ctDatePicker1);
-            this.advancedPanel1.Controls.Add(this.ctDatePicker3);
+            this.advancedPanel1.Controls.Add(this.ctTimeTo);
+            this.advancedPanel1.Controls.Add(this.ctTimeFrom);
             this.advancedPanel1.Controls.Add(this.txtTKPNNhapKho);
-            this.advancedPanel1.Controls.Add(this.txtTKHHNhapKho);
+            this.advancedPanel1.Controls.Add(this.txtSearchHHNK);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label3);
             this.advancedPanel1.Controls.Add(this.label2);
@@ -154,7 +230,7 @@ namespace NTSF.GUI
             // 
             this.advancedPanel2.BackColor = System.Drawing.Color.White;
             this.advancedPanel2.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel2.Controls.Add(this.btnTimKiemHoadon);
+            this.advancedPanel2.Controls.Add(this.btnTimKiemPN);
             this.advancedPanel2.EdgeWidth = 2;
             this.advancedPanel2.EndColor = System.Drawing.Color.White;
             this.advancedPanel2.FlatBorderColor = System.Drawing.Color.Silver;
@@ -169,27 +245,28 @@ namespace NTSF.GUI
             this.advancedPanel2.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 60;
             // 
-            // btnTimKiemHoadon
+            // btnTimKiemPN
             // 
-            this.btnTimKiemHoadon.AutoSize = true;
-            this.btnTimKiemHoadon.BackColor = System.Drawing.Color.Transparent;
-            this.btnTimKiemHoadon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimKiemHoadon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTimKiemHoadon.FlatAppearance.BorderSize = 0;
-            this.btnTimKiemHoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemHoadon.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.btnTimKiemHoadon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemHoadon.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnTimKiemHoadon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btnTimKiemHoadon.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTimKiemHoadon.IconSize = 30;
-            this.btnTimKiemHoadon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemHoadon.Location = new System.Drawing.Point(0, 0);
-            this.btnTimKiemHoadon.Name = "btnTimKiemHoadon";
-            this.btnTimKiemHoadon.Size = new System.Drawing.Size(141, 43);
-            this.btnTimKiemHoadon.TabIndex = 64;
-            this.btnTimKiemHoadon.Text = "      TÌM KIẾM";
-            this.btnTimKiemHoadon.UseVisualStyleBackColor = false;
+            this.btnTimKiemPN.AutoSize = true;
+            this.btnTimKiemPN.BackColor = System.Drawing.Color.Transparent;
+            this.btnTimKiemPN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTimKiemPN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTimKiemPN.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemPN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemPN.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiemPN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemPN.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnTimKiemPN.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnTimKiemPN.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnTimKiemPN.IconSize = 30;
+            this.btnTimKiemPN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemPN.Location = new System.Drawing.Point(0, 0);
+            this.btnTimKiemPN.Name = "btnTimKiemPN";
+            this.btnTimKiemPN.Size = new System.Drawing.Size(141, 43);
+            this.btnTimKiemPN.TabIndex = 64;
+            this.btnTimKiemPN.Text = "      TÌM KIẾM";
+            this.btnTimKiemPN.UseVisualStyleBackColor = false;
+            this.btnTimKiemPN.Click += new System.EventHandler(this.btnTimKiemPN_Click);
             // 
             // advancedPanel3
             // 
@@ -236,45 +313,47 @@ namespace NTSF.GUI
             this.btnNhapKho.UseVisualStyleBackColor = false;
             this.btnNhapKho.Click += new System.EventHandler(this.btnNhapKho_Click);
             // 
-            // ctDatePicker1
+            // ctTimeTo
             // 
-            this.ctDatePicker1.BackColor = System.Drawing.Color.White;
-            this.ctDatePicker1.BorderColor = System.Drawing.Color.PaleGoldenrod;
-            this.ctDatePicker1.BorderRadius = 15;
-            this.ctDatePicker1.BorderSize = 0;
-            this.ctDatePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctDatePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctDatePicker1.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctDatePicker1.ForeColor = System.Drawing.Color.Black;
-            this.ctDatePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ctDatePicker1.Location = new System.Drawing.Point(351, 135);
-            this.ctDatePicker1.MinimumSize = new System.Drawing.Size(4, 43);
-            this.ctDatePicker1.Name = "ctDatePicker1";
-            this.ctDatePicker1.Size = new System.Drawing.Size(219, 43);
-            this.ctDatePicker1.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctDatePicker1.TabIndex = 55;
-            this.ctDatePicker1.TextColor = System.Drawing.Color.Black;
+            this.ctTimeTo.BackColor = System.Drawing.Color.White;
+            this.ctTimeTo.BorderColor = System.Drawing.Color.PaleGoldenrod;
+            this.ctTimeTo.BorderRadius = 15;
+            this.ctTimeTo.BorderSize = 0;
+            this.ctTimeTo.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTimeTo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ctTimeTo.CustomFormat = "dd/MM/yyyy";
+            this.ctTimeTo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctTimeTo.ForeColor = System.Drawing.Color.Black;
+            this.ctTimeTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ctTimeTo.Location = new System.Drawing.Point(351, 135);
+            this.ctTimeTo.MinimumSize = new System.Drawing.Size(4, 43);
+            this.ctTimeTo.Name = "ctTimeTo";
+            this.ctTimeTo.Size = new System.Drawing.Size(219, 43);
+            this.ctTimeTo.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTimeTo.TabIndex = 55;
+            this.ctTimeTo.TextColor = System.Drawing.Color.Black;
+            this.ctTimeTo.ValueChanged += new System.EventHandler(this.ctTimeTo_ValueChanged);
             // 
-            // ctDatePicker3
+            // ctTimeFrom
             // 
-            this.ctDatePicker3.BackColor = System.Drawing.Color.White;
-            this.ctDatePicker3.BorderColor = System.Drawing.Color.PaleGoldenrod;
-            this.ctDatePicker3.BorderRadius = 15;
-            this.ctDatePicker3.BorderSize = 0;
-            this.ctDatePicker3.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctDatePicker3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctDatePicker3.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctDatePicker3.ForeColor = System.Drawing.Color.Black;
-            this.ctDatePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ctDatePicker3.Location = new System.Drawing.Point(84, 135);
-            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 39);
-            this.ctDatePicker3.Name = "ctDatePicker3";
-            this.ctDatePicker3.Size = new System.Drawing.Size(219, 39);
-            this.ctDatePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctDatePicker3.TabIndex = 55;
-            this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
+            this.ctTimeFrom.BackColor = System.Drawing.Color.White;
+            this.ctTimeFrom.BorderColor = System.Drawing.Color.PaleGoldenrod;
+            this.ctTimeFrom.BorderRadius = 15;
+            this.ctTimeFrom.BorderSize = 0;
+            this.ctTimeFrom.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ctTimeFrom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ctTimeFrom.CustomFormat = "dd/MM/yyyy";
+            this.ctTimeFrom.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ctTimeFrom.ForeColor = System.Drawing.Color.Black;
+            this.ctTimeFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ctTimeFrom.Location = new System.Drawing.Point(84, 135);
+            this.ctTimeFrom.MinimumSize = new System.Drawing.Size(4, 39);
+            this.ctTimeFrom.Name = "ctTimeFrom";
+            this.ctTimeFrom.Size = new System.Drawing.Size(219, 39);
+            this.ctTimeFrom.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.ctTimeFrom.TabIndex = 55;
+            this.ctTimeFrom.TextColor = System.Drawing.Color.Black;
+            this.ctTimeFrom.ValueChanged += new System.EventHandler(this.ctTimeFrom_ValueChanged);
             // 
             // txtTKPNNhapKho
             // 
@@ -298,29 +377,30 @@ namespace NTSF.GUI
             this.txtTKPNNhapKho.TabIndex = 54;
             this.txtTKPNNhapKho.Texts = "";
             this.txtTKPNNhapKho.UnderlineedStyle = false;
+            this.txtTKPNNhapKho._TextChanged += new System.EventHandler(this.txtTKPNNhapKho__TextChanged);
             // 
-            // txtTKHHNhapKho
+            // txtSearchHHNK
             // 
-            this.txtTKHHNhapKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKHHNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKHHNhapKho.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTKHHNhapKho.BorderRadius = 5;
-            this.txtTKHHNhapKho.BorderSize = 1;
-            this.txtTKHHNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTKHHNhapKho.IsFocused = false;
-            this.txtTKHHNhapKho.Location = new System.Drawing.Point(650, 135);
-            this.txtTKHHNhapKho.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTKHHNhapKho.Multiline = false;
-            this.txtTKHHNhapKho.Name = "txtTKHHNhapKho";
-            this.txtTKHHNhapKho.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTKHHNhapKho.PasswordChar = false;
-            this.txtTKHHNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTKHHNhapKho.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
-            this.txtTKHHNhapKho.ReadOnly = false;
-            this.txtTKHHNhapKho.Size = new System.Drawing.Size(413, 43);
-            this.txtTKHHNhapKho.TabIndex = 54;
-            this.txtTKHHNhapKho.Texts = "";
-            this.txtTKHHNhapKho.UnderlineedStyle = false;
+            this.txtSearchHHNK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSearchHHNK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtSearchHHNK.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtSearchHHNK.BorderRadius = 5;
+            this.txtSearchHHNK.BorderSize = 1;
+            this.txtSearchHHNK.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtSearchHHNK.IsFocused = false;
+            this.txtSearchHHNK.Location = new System.Drawing.Point(650, 135);
+            this.txtSearchHHNK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchHHNK.Multiline = false;
+            this.txtSearchHHNK.Name = "txtSearchHHNK";
+            this.txtSearchHHNK.Padding = new System.Windows.Forms.Padding(7);
+            this.txtSearchHHNK.PasswordChar = false;
+            this.txtSearchHHNK.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSearchHHNK.PlaceholderText = "Tìm kiếm theo mã, tên của hàng hoá";
+            this.txtSearchHHNK.ReadOnly = false;
+            this.txtSearchHHNK.Size = new System.Drawing.Size(413, 43);
+            this.txtSearchHHNK.TabIndex = 54;
+            this.txtSearchHHNK.Texts = "";
+            this.txtSearchHHNK.UnderlineedStyle = false;
             // 
             // label4
             // 
@@ -388,9 +468,11 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormNhapKho";
             this.Text = "NhapKho";
+            this.Load += new System.EventHandler(this.FormNhapKho_Load);
             this.panelTaoPhieu.ResumeLayout(false);
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPhieuNhap)).EndInit();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
@@ -403,23 +485,28 @@ namespace NTSF.GUI
 
         #endregion
         private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCountPN;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelTaoPhieu;
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel2;
-        private FontAwesome.Sharp.IconButton btnTimKiemHoadon;
+        private FontAwesome.Sharp.IconButton btnTimKiemPN;
         private CTuserControl.AdvancedPanel advancedPanel3;
         private FontAwesome.Sharp.IconButton btnNhapKho;
-        private CTuserControl.CTDatePicker ctDatePicker1;
-        private CTuserControl.CTDatePicker ctDatePicker3;
+        private CTuserControl.CTDatePicker ctTimeTo;
+        private CTuserControl.CTDatePicker ctTimeFrom;
         private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
-        private HotelManagement.CTControls.CTTextBox txtTKHHNhapKho;
+        private HotelManagement.CTControls.CTTextBox txtSearchHHNK;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dataPhieuNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mapn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaynhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn trigia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghichu;
     }
 }

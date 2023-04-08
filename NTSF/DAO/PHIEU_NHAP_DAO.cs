@@ -49,5 +49,33 @@ namespace NTSF.DAO
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public List<PHIEU_NHAP> FindByMaPN(string mapn)
+        {
+            return db.PHIEU_NHAP.Where(p => p.MA_PHIEU.StartsWith(mapn)).ToList();
+        }
+        public List<PHIEU_NHAP> FindByName(string tensp, string mapn, DateTime timeFrom, DateTime timeTo)
+        {
+            DANH_MUC_SP sP = db.DANH_MUC_SP.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
+            List<CT_PHIEU_NHAP> CTPN = db.CT_PHIEU_NHAP.Where(p => p.MA_SP == sP.MA_SP).ToList();
+
+            List<PHIEU_NHAP> pN = new List<PHIEU_NHAP>();
+            foreach (CT_PHIEU_NHAP ct in CTPN)
+            {
+                pN.Add(db.PHIEU_NHAP.Find(ct.MA_PHIEU));
+            }
+            if (mapn == "")
+            {
+                return pN;
+            }
+            else
+            {
+                return pN.Where(p => p.MA_PHIEU.StartsWith(mapn) && p.NGAY_NHAP >= timeFrom && p.NGAY_NHAP <= timeTo).ToList();
+            }
+        }
+        public List<PHIEU_NHAP> GetBaoCao(DateTime timeFrom, DateTime timeTo)
+        {
+            return db.PHIEU_NHAP.Where(p => p.NGAY_NHAP >= timeFrom && p.NGAY_NHAP <= timeTo).ToList();
+        }
     }
 }

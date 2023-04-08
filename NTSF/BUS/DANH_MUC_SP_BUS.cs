@@ -36,6 +36,9 @@ namespace NTSF.BUS
             DANH_MUC_SP_DAO.Instance.AddUpdateDMSP(dmsp);
         }
 
-
+        public DANH_MUC_SP GetTenSP(string masp)
+        {
+            return DANH_MUC_SP_DAO.Instance.GetTenSP(masp);
+        }
     }
 }

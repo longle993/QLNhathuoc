@@ -8,7 +8,7 @@ namespace NTSF.DTO
     public partial class NhaThuoc : DbContext
     {
         public NhaThuoc()
-            : base("name=NhaThuoc")
+            : base("name=NhaThuoc1")
         {
         }
 
@@ -87,16 +87,6 @@ namespace NTSF.DTO
 
             modelBuilder.Entity<DANH_MUC_SP>()
                 .Property(e => e.MA_SP)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<DANH_MUC_SP>()
-                .Property(e => e.NHOM_SP)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<DANH_MUC_SP>()
-                .Property(e => e.HAM_LUONG)
                 .IsFixedLength()
                 .IsUnicode(false);
 
@@ -185,10 +175,6 @@ namespace NTSF.DTO
                 .Property(e => e.MA_PHIEU)
                 .IsFixedLength()
                 .IsUnicode(false);
-
-            modelBuilder.Entity<PHIEU_NHAP>()
-                .Property(e => e.GIO_NHAP)
-                .HasPrecision(0);
 
             modelBuilder.Entity<PHIEU_NHAP>()
                 .Property(e => e.TRI_GIA)

@@ -1171,6 +1171,7 @@ namespace NTSF.GUI
             this.Name = "FormThemHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThemHang";
+            this.Load += new System.EventHandler(this.FormThemHang_Load);
             this.advancedPanel15.ResumeLayout(false);
             this.advancedPanel16.ResumeLayout(false);
             this.advancedPanel14.ResumeLayout(false);

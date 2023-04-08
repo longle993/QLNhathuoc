@@ -66,6 +66,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application_Class\Pair.cs" />
     <Compile Include="BUS\CT_HOA_DON_BUS.cs" />
     <Compile Include="BUS\CT_PHIEU_NHAP_BUS.cs" />
     <Compile Include="BUS\CT_PHIEU_XUAT_HUY_BUS.cs" />

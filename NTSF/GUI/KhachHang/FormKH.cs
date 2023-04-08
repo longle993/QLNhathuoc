@@ -29,6 +29,8 @@ namespace NTSF.GUI
                 {
                     this.dataKH.Rows.Add(kh.TEN_KH, kh.GIOI_TINH,kh.SDT );
                 }
+                lblCountKH.Text = DSKH.Count.ToString();
+
             }
             catch (Exception ex)
             {
@@ -40,7 +42,6 @@ namespace NTSF.GUI
         {
             this.DSKH = KHACH_HANG_BUS.Instance.GetKHACH_HANGs();
             LoadGrid();
-            lblCountKH.Text = DSKH.Count.ToString();
         }
 
         private void FormKH_Load(object sender, EventArgs e)

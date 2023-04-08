@@ -58,7 +58,12 @@ namespace NTSF.DAO
                
             }
         }
-
+        
+        public DANH_MUC_SP GetTenSP(string masp)
+        {
+            DANH_MUC_SP sp = db.DANH_MUC_SP.SingleOrDefault(p => p.MA_SP == masp);
+            return sp;
+        }
 
     }
 }

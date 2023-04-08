@@ -29,15 +29,11 @@ namespace NTSF.GUI.HoaDon
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataCTHD = new System.Windows.Forms.DataGridView();
-            this.sanpham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chietkhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMaHD = new System.Windows.Forms.Label();
             this.advancedPanel14 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnDongCTHD = new FontAwesome.Sharp.IconButton();
@@ -53,6 +49,11 @@ namespace NTSF.GUI.HoaDon
             this.ctDateHD = new NTSF.CTuserControl.CTDatePicker();
             this.advancedPanel13 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnLuuKH = new FontAwesome.Sharp.IconButton();
+            this.sanpham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chietkhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataCTHD)).BeginInit();
             this.advancedPanel14.SuspendLayout();
             this.advancedPanel13.SuspendLayout();
@@ -89,29 +90,30 @@ namespace NTSF.GUI.HoaDon
             // 
             this.dataCTHD.AllowUserToAddRows = false;
             this.dataCTHD.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataCTHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataCTHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataCTHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCTHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sanpham,
+            this.tensp,
             this.dvt,
             this.soluong,
             this.chietkhau});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataCTHD.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataCTHD.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataCTHD.GridColor = System.Drawing.Color.Silver;
             this.dataCTHD.Location = new System.Drawing.Point(33, 245);
             this.dataCTHD.Name = "dataCTHD";
@@ -119,35 +121,7 @@ namespace NTSF.GUI.HoaDon
             this.dataCTHD.RowHeadersWidth = 62;
             this.dataCTHD.RowTemplate.Height = 50;
             this.dataCTHD.Size = new System.Drawing.Size(1072, 395);
-            this.dataCTHD.TabIndex = 108;
-            // 
-            // sanpham
-            // 
-            this.sanpham.HeaderText = "Mã Sản phẩm";
-            this.sanpham.MinimumWidth = 8;
-            this.sanpham.Name = "sanpham";
-            this.sanpham.Width = 300;
-            // 
-            // dvt
-            // 
-            this.dvt.HeaderText = "Đơn vị tính";
-            this.dvt.MinimumWidth = 8;
-            this.dvt.Name = "dvt";
-            this.dvt.Width = 280;
-            // 
-            // soluong
-            // 
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 8;
-            this.soluong.Name = "soluong";
-            this.soluong.Width = 280;
-            // 
-            // chietkhau
-            // 
-            this.chietkhau.HeaderText = "Chiết khấu";
-            this.chietkhau.MinimumWidth = 8;
-            this.chietkhau.Name = "chietkhau";
-            this.chietkhau.Width = 200;
+            this.dataCTHD.TabIndex = 6;
             // 
             // lblMaHD
             // 
@@ -232,7 +206,7 @@ namespace NTSF.GUI.HoaDon
             this.txtPhutban.PlaceholderText = "";
             this.txtPhutban.ReadOnly = false;
             this.txtPhutban.Size = new System.Drawing.Size(53, 43);
-            this.txtPhutban.TabIndex = 118;
+            this.txtPhutban.TabIndex = 3;
             this.txtPhutban.Texts = "";
             this.txtPhutban.UnderlineedStyle = false;
             // 
@@ -255,7 +229,7 @@ namespace NTSF.GUI.HoaDon
             this.txtGioban.PlaceholderText = "";
             this.txtGioban.ReadOnly = false;
             this.txtGioban.Size = new System.Drawing.Size(53, 43);
-            this.txtGioban.TabIndex = 119;
+            this.txtGioban.TabIndex = 2;
             this.txtGioban.Texts = "";
             this.txtGioban.UnderlineedStyle = false;
             // 
@@ -300,7 +274,7 @@ namespace NTSF.GUI.HoaDon
             this.txtTenNV.PlaceholderText = "";
             this.txtTenNV.ReadOnly = false;
             this.txtTenNV.Size = new System.Drawing.Size(257, 43);
-            this.txtTenNV.TabIndex = 121;
+            this.txtTenNV.TabIndex = 5;
             this.txtTenNV.Texts = "";
             this.txtTenNV.UnderlineedStyle = false;
             this.txtTenNV._TextChanged += new System.EventHandler(this.txtTenNV__TextChanged);
@@ -346,7 +320,7 @@ namespace NTSF.GUI.HoaDon
             this.txtTenKH.PlaceholderText = "";
             this.txtTenKH.ReadOnly = false;
             this.txtTenKH.Size = new System.Drawing.Size(257, 43);
-            this.txtTenKH.TabIndex = 121;
+            this.txtTenKH.TabIndex = 4;
             this.txtTenKH.Texts = "";
             this.txtTenKH.UnderlineedStyle = false;
             this.txtTenKH._TextChanged += new System.EventHandler(this.txtTenKH__TextChanged);
@@ -367,7 +341,7 @@ namespace NTSF.GUI.HoaDon
             this.ctDateHD.Name = "ctDateHD";
             this.ctDateHD.Size = new System.Drawing.Size(258, 43);
             this.ctDateHD.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctDateHD.TabIndex = 123;
+            this.ctDateHD.TabIndex = 1;
             this.ctDateHD.TextColor = System.Drawing.Color.Black;
             // 
             // advancedPanel13
@@ -416,6 +390,41 @@ namespace NTSF.GUI.HoaDon
             this.btnLuuKH.UseVisualStyleBackColor = false;
             this.btnLuuKH.Click += new System.EventHandler(this.btnLuuKH_Click);
             // 
+            // sanpham
+            // 
+            this.sanpham.HeaderText = "Mã Sản phẩm";
+            this.sanpham.MinimumWidth = 8;
+            this.sanpham.Name = "sanpham";
+            this.sanpham.Width = 200;
+            // 
+            // tensp
+            // 
+            this.tensp.HeaderText = "Tên Sản phẩm";
+            this.tensp.MinimumWidth = 8;
+            this.tensp.Name = "tensp";
+            this.tensp.Width = 267;
+            // 
+            // dvt
+            // 
+            this.dvt.HeaderText = "Đơn vị tính";
+            this.dvt.MinimumWidth = 8;
+            this.dvt.Name = "dvt";
+            this.dvt.Width = 200;
+            // 
+            // soluong
+            // 
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 8;
+            this.soluong.Name = "soluong";
+            this.soluong.Width = 200;
+            // 
+            // chietkhau
+            // 
+            this.chietkhau.HeaderText = "Chiết khấu";
+            this.chietkhau.MinimumWidth = 8;
+            this.chietkhau.Name = "chietkhau";
+            this.chietkhau.Width = 200;
+            // 
             // FormCTHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -458,10 +467,6 @@ namespace NTSF.GUI.HoaDon
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataCTHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sanpham;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn chietkhau;
         private System.Windows.Forms.Label lblMaHD;
         private CTuserControl.AdvancedPanel advancedPanel14;
         private FontAwesome.Sharp.IconButton btnDongCTHD;
@@ -477,5 +482,10 @@ namespace NTSF.GUI.HoaDon
         private CTuserControl.CTDatePicker ctDateHD;
         private CTuserControl.AdvancedPanel advancedPanel13;
         private FontAwesome.Sharp.IconButton btnLuuKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sanpham;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tensp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chietkhau;
     }
 }

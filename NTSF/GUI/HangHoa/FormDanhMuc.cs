@@ -36,8 +36,10 @@ namespace NTSF.GUI
                 {
                     this.dataHangHoa.Rows.Add(hanghoa.MA_SP, hanghoa.TEN_SP, hanghoa.NHOM_SP,"Chi tiết giá vốn",hanghoa.GIA_BAN, hanghoa.TONG_TON);
                 }
+                lblCountHang.Text = DanhMucSP.Count.ToString();
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message,"Cảnh báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
@@ -46,7 +48,6 @@ namespace NTSF.GUI
         private void LoadAll()
         {
             this.DanhMucSP = DANH_MUC_SP_BUS.Instance.GetDANH_MUC_SP_DAOs();
-            lblCountHang.Text = DanhMucSP.Count.ToString();
             LoadGrid();
         }
 

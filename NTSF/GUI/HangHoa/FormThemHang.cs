@@ -66,8 +66,7 @@ namespace NTSF.GUI
 
 
                 PN.MA_PHIEU = LoadMaPNAuto(PN.MA_PHIEU);
-                PN.NGAY_NHAP = DateTime.Now.Date;
-                PN.GIO_NHAP = DateTime.Now.TimeOfDay;
+                PN.NGAY_NHAP = DateTime.Now;
                 PN.TRI_GIA = Convert.ToDecimal(lblTRIGIA.Text);
 
                 CTPN.MA_PHIEU = PN.MA_PHIEU;
@@ -161,6 +160,11 @@ namespace NTSF.GUI
             {
                 e.Handled = true;
             }
+
+        }
+
+        private void FormThemHang_Load(object sender, EventArgs e)
+        {
 
         }
     }

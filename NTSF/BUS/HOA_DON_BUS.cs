@@ -26,9 +26,9 @@ namespace NTSF.BUS
             HOA_DON_DAO.Instance.RemoveHD(mahd);
         }
 
-        public List<HOA_DON> FindByName(string tensp)
+        public List<HOA_DON> FindByName(string tensp, string mahd, DateTime timeFrom, DateTime timeTo)
         {
-            return HOA_DON_DAO.Instance.FindByName(tensp);
+            return HOA_DON_DAO.Instance.FindByName(tensp, mahd,timeFrom,timeTo);
         }
         public HOA_DON GetHDforCTHD(string mahd)
         {
@@ -37,6 +37,15 @@ namespace NTSF.BUS
         public void AddOrUpdate(HOA_DON hd)
         {
             HOA_DON_DAO.Instance.AddOrUpdate(hd);
+        }
+
+        public List<HOA_DON> FindByMaHD(string mahd)
+        {
+            return HOA_DON_DAO.Instance.FindByMaHD(mahd);
+        }
+        public List<HOA_DON> GetBaoCao(DateTime timeFrom, DateTime timeTo)
+        {
+            return HOA_DON_DAO.Instance.GetBaoCao(timeFrom, timeTo);
         }
     }
 }
