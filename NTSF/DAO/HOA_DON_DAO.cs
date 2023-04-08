@@ -88,5 +88,10 @@ namespace NTSF.DAO
         {
             return db.HOA_DON.Where(p => p.NGAY_HD >= timeFrom && p.NGAY_HD <= timeTo).ToList();
         }
+
+        public List<HOA_DON> GetTongQuan(DateTime date)
+        {
+            return db.HOA_DON.Where(p => p.NGAY_HD.Month <= date.Month && p.NGAY_HD.Month >= date.Month -1).ToList();
+        }
     }
 }

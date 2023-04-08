@@ -47,5 +47,9 @@ namespace NTSF.BUS
         {
             return HOA_DON_DAO.Instance.GetBaoCao(timeFrom, timeTo);
         }
+        public List<HOA_DON> GetTongQuan(DateTime date)
+        {
+            return HOA_DON_DAO.Instance.GetTongQuan(date);
+        }
     }
 }
