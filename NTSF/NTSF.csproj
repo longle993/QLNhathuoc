@@ -70,7 +70,7 @@
     <Compile Include="BUS\CT_HOA_DON_BUS.cs" />
     <Compile Include="BUS\CT_PHIEU_NHAP_BUS.cs" />
     <Compile Include="BUS\CT_PHIEU_XUAT_HUY_BUS.cs" />
-    <Compile Include="BUS\DANH_MUC_SP_BUS.cs" />
+    <Compile Include="BUS\HANG_HOA_BUS.cs" />
     <Compile Include="BUS\DON_VI_TINH_BUS.cs" />
     <Compile Include="BUS\GIA_VON_BUS.cs" />
     <Compile Include="BUS\HOA_DON_BUS.cs" />
@@ -80,6 +80,7 @@
     <Compile Include="BUS\PHIEU_NHAP_BUS.cs" />
     <Compile Include="BUS\PHIEU_XUAT_HUY_BUS.cs" />
     <Compile Include="BUS\PTTT_BUS.cs" />
+    <Compile Include="BUS\TAI_KHOAN_BUS.cs" />
     <Compile Include="CTuserControl\AdvancedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -113,7 +114,7 @@
     <Compile Include="DAO\CT_HOA_DON_DAO.cs" />
     <Compile Include="DAO\CT_PHIEU_NHAP_DAO.cs" />
     <Compile Include="DAO\CT_PHIEU_XUAT_HUY_DAO.cs" />
-    <Compile Include="DAO\DANH_MUC_SP_DAO.cs" />
+    <Compile Include="DAO\HANG_HOA_DAO.cs" />
     <Compile Include="DAO\DON_VI_TINH_DAO.cs" />
     <Compile Include="DAO\GIA_VON_DAO.cs" />
     <Compile Include="DAO\HOA_DON_DAO.cs" />
@@ -123,12 +124,13 @@
     <Compile Include="DAO\PHIEU_NHAP_DAO.cs" />
     <Compile Include="DAO\PHIEU_XUAT_HUY_DAO.cs" />
     <Compile Include="DAO\PTTT_DAO.cs" />
+    <Compile Include="DAO\TAI_KHOAN_DAO.cs" />
     <Compile Include="DTO\CT_HOA_DON.cs" />
     <Compile Include="DTO\CT_PHIEU_NHAP.cs" />
     <Compile Include="DTO\CT_PHIEU_XUAT_HUY.cs" />
-    <Compile Include="DTO\DANH_MUC_SP.cs" />
     <Compile Include="DTO\DON_VI_TINH.cs" />
     <Compile Include="DTO\GIA_VON.cs" />
+    <Compile Include="DTO\HANG_HOA.cs" />
     <Compile Include="DTO\HOA_DON.cs" />
     <Compile Include="DTO\KHACH_HANG.cs" />
     <Compile Include="DTO\NHAN_VIEN.cs" />
@@ -137,6 +139,7 @@
     <Compile Include="DTO\PHIEU_NHAP.cs" />
     <Compile Include="DTO\PHIEU_XUAT_HUY.cs" />
     <Compile Include="DTO\PTTT.cs" />
+    <Compile Include="DTO\TAI_KHOAN.cs" />
     <Compile Include="GUI\FormCDHT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,11 +176,11 @@
     <Compile Include="GUI\FormDangKy.Designer.cs">
       <DependentUpon>FormDangKy.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\HangHoa\FormDanhMuc.cs">
+    <Compile Include="GUI\HangHoa\FormHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\HangHoa\FormDanhMuc.Designer.cs">
-      <DependentUpon>FormDanhMuc.cs</DependentUpon>
+    <Compile Include="GUI\HangHoa\FormHangHoa.Designer.cs">
+      <DependentUpon>FormHangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormDatLaiMK.cs">
       <SubType>Form</SubType>
@@ -343,8 +346,8 @@
     <EmbeddedResource Include="GUI\FormDangKy.resx">
       <DependentUpon>FormDangKy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\HangHoa\FormDanhMuc.resx">
-      <DependentUpon>FormDanhMuc.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\HangHoa\FormHangHoa.resx">
+      <DependentUpon>FormHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormDatLaiMK.resx">
       <DependentUpon>FormDatLaiMK.cs</DependentUpon>

@@ -11,14 +11,16 @@ namespace NTSF.DTO
         [Key]
         [Column(Order = 0)]
         [StringLength(50)]
-        public string MASP { get; set; }
+        public string MA_SP { get; set; }
 
         [Key]
         [Column(Order = 1)]
         [StringLength(50)]
-        public string SOLO { get; set; }
+        public string SO_LO { get; set; }
 
         [Column(TypeName = "money")]
         public decimal GIAVON { get; set; }
+
+        public virtual HANG_HOA HANG_HOA { get; set; }
     }
 }

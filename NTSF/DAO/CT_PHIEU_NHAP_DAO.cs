@@ -48,5 +48,10 @@ namespace NTSF.DAO
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public List<CT_PHIEU_NHAP> GetHSDUnder3()
+        {
+            return db.CT_PHIEU_NHAP.Where(p => p.HSD <= DateTime.Now).ToList();
+        }
     }
 }

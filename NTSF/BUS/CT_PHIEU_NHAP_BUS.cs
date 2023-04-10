@@ -10,7 +10,6 @@ namespace NTSF.BUS
 {
     class CT_PHIEU_NHAP_BUS
     {
-        NhaThuoc db = new NhaThuoc();
         private static CT_PHIEU_NHAP_BUS instance;
         public static CT_PHIEU_NHAP_BUS Instance
         {
@@ -25,7 +24,10 @@ namespace NTSF.BUS
         {
             CT_PHIEU_NHAP_DAO.Instance.AddUpdateCTPN(ctpn);
         }
-
+        public List<CT_PHIEU_NHAP> GetHSDUnder3()
+        {
+            return CT_PHIEU_NHAP_DAO.Instance.GetHSDUnder3();
+        }
 
     }
 }

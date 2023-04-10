@@ -8,16 +8,16 @@ namespace NTSF.DTO
     public partial class NhaThuoc : DbContext
     {
         public NhaThuoc()
-            : base("name=NhaThuoc1")
+            : base("name=NhaThuoc")
         {
         }
 
         public virtual DbSet<CT_HOA_DON> CT_HOA_DON { get; set; }
         public virtual DbSet<CT_PHIEU_NHAP> CT_PHIEU_NHAP { get; set; }
         public virtual DbSet<CT_PHIEU_XUAT_HUY> CT_PHIEU_XUAT_HUY { get; set; }
-        public virtual DbSet<DANH_MUC_SP> DANH_MUC_SP { get; set; }
         public virtual DbSet<DON_VI_TINH> DON_VI_TINH { get; set; }
         public virtual DbSet<GIA_VON> GIA_VON { get; set; }
+        public virtual DbSet<HANG_HOA> HANG_HOA { get; set; }
         public virtual DbSet<HOA_DON> HOA_DON { get; set; }
         public virtual DbSet<KHACH_HANG> KHACH_HANG { get; set; }
         public virtual DbSet<NHA_CUNG_CAP> NHA_CUNG_CAP { get; set; }
@@ -25,6 +25,7 @@ namespace NTSF.DTO
         public virtual DbSet<PHIEU_NHAP> PHIEU_NHAP { get; set; }
         public virtual DbSet<PHIEU_XUAT_HUY> PHIEU_XUAT_HUY { get; set; }
         public virtual DbSet<PTTT> PTTTs { get; set; }
+        public virtual DbSet<TAI_KHOAN> TAI_KHOAN { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -35,6 +36,11 @@ namespace NTSF.DTO
 
             modelBuilder.Entity<CT_HOA_DON>()
                 .Property(e => e.MA_SP)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CT_HOA_DON>()
+                .Property(e => e.SO_LO)
                 .IsFixedLength()
                 .IsUnicode(false);
 
@@ -85,17 +91,13 @@ namespace NTSF.DTO
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<DANH_MUC_SP>()
+            modelBuilder.Entity<DON_VI_TINH>()
                 .Property(e => e.MA_SP)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<DANH_MUC_SP>()
-                .Property(e => e.GIA_BAN)
-                .HasPrecision(19, 4);
-
             modelBuilder.Entity<DON_VI_TINH>()
-                .Property(e => e.MA_SP)
+                .Property(e => e.SO_LO)
                 .IsFixedLength()
                 .IsUnicode(false);
 
@@ -104,18 +106,60 @@ namespace NTSF.DTO
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<GIA_VON>()
-                .Property(e => e.MASP)
+                .Property(e => e.MA_SP)
                 .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<GIA_VON>()
-                .Property(e => e.SOLO)
+                .Property(e => e.SO_LO)
                 .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<GIA_VON>()
                 .Property(e => e.GIAVON)
                 .HasPrecision(19, 4);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .Property(e => e.MA_SP)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .Property(e => e.SO_LO)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .Property(e => e.GIA_BAN)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .HasMany(e => e.CT_HOA_DON)
+                .WithRequired(e => e.HANG_HOA)
+                .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .HasMany(e => e.CT_PHIEU_NHAP)
+                .WithRequired(e => e.HANG_HOA)
+                .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .HasMany(e => e.CT_PHIEU_XUAT_HUY)
+                .WithRequired(e => e.HANG_HOA)
+                .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .HasMany(e => e.DON_VI_TINH)
+                .WithRequired(e => e.HANG_HOA)
+                .HasForeignKey(e => new { e.MA_SP, e.SO_LO })
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<HANG_HOA>()
+                .HasOptional(e => e.GIA_VON)
+                .WithRequired(e => e.HANG_HOA);
 
             modelBuilder.Entity<HOA_DON>()
                 .Property(e => e.MA_HD)
@@ -161,6 +205,11 @@ namespace NTSF.DTO
                 .IsFixedLength()
                 .IsUnicode(false);
 
+            modelBuilder.Entity<NHA_CUNG_CAP>()
+                .HasMany(e => e.CT_PHIEU_NHAP)
+                .WithRequired(e => e.NHA_CUNG_CAP)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<NHAN_VIEN>()
                 .Property(e => e.MA_NV)
                 .IsFixedLength()
@@ -191,10 +240,6 @@ namespace NTSF.DTO
                 .IsUnicode(false);
 
             modelBuilder.Entity<PHIEU_XUAT_HUY>()
-                .Property(e => e.GIO_XUAT)
-                .HasPrecision(0);
-
-            modelBuilder.Entity<PHIEU_XUAT_HUY>()
                 .Property(e => e.TRI_GIA)
                 .HasPrecision(19, 4);
 
@@ -207,6 +252,11 @@ namespace NTSF.DTO
                 .Property(e => e.MA_PTTT)
                 .IsFixedLength()
                 .IsUnicode(false);
+
+            modelBuilder.Entity<PTTT>()
+                .HasMany(e => e.HOA_DON)
+                .WithRequired(e => e.PTTT)
+                .WillCascadeOnDelete(false);
         }
     }
 }

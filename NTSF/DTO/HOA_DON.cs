@@ -41,5 +41,7 @@ namespace NTSF.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_HOA_DON> CT_HOA_DON { get; set; }
+
+        public virtual PTTT PTTT { get; set; }
     }
 }

@@ -31,25 +31,29 @@ namespace NTSF.GUI
         {
             this.panelQuenMK = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.ctButton1 = new NTSF.CTuserControl.CTButton();
-            this.btnKTOTP = new NTSF.CTuserControl.CTButton();
-            this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
-            this.txtTenNT = new HotelManagement.CTControls.CTTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCreateOTP = new NTSF.CTuserControl.CTButton();
+            this.btnKTOTP = new NTSF.CTuserControl.CTButton();
+            this.txtOTP = new HotelManagement.CTControls.CTTextBox();
+            this.txtMailSend = new HotelManagement.CTControls.CTTextBox();
+            this.lblEmailCheck = new System.Windows.Forms.Label();
             this.panelQuenMK.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelQuenMK
             // 
             this.panelQuenMK.Controls.Add(this.label2);
+            this.panelQuenMK.Controls.Add(this.lblEmailCheck);
+            this.panelQuenMK.Controls.Add(this.lblError);
             this.panelQuenMK.Controls.Add(this.label3);
             this.panelQuenMK.Controls.Add(this.label9);
-            this.panelQuenMK.Controls.Add(this.ctButton1);
+            this.panelQuenMK.Controls.Add(this.btnCreateOTP);
             this.panelQuenMK.Controls.Add(this.btnKTOTP);
-            this.panelQuenMK.Controls.Add(this.ctTextBox1);
-            this.panelQuenMK.Controls.Add(this.txtTenNT);
+            this.panelQuenMK.Controls.Add(this.txtOTP);
+            this.panelQuenMK.Controls.Add(this.txtMailSend);
             this.panelQuenMK.Controls.Add(this.label1);
             this.panelQuenMK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelQuenMK.Location = new System.Drawing.Point(0, 0);
@@ -67,6 +71,18 @@ namespace NTSF.GUI
             this.label2.Size = new System.Drawing.Size(525, 21);
             this.label2.TabIndex = 25;
             this.label2.Text = "của bạn và chúng tôi sẽ gửi cho bạn mã xác nhận để bạn đặt lại mật khẩu";
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(39, 412);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(170, 21);
+            this.lblError.TabIndex = 26;
+            this.lblError.Text = "Mã OTP không hợp lệ!!";
+            this.lblError.Visible = false;
             // 
             // label3
             // 
@@ -90,29 +106,39 @@ namespace NTSF.GUI
             this.label9.TabIndex = 27;
             this.label9.Text = "Nhập địa chỉ email đã được xác minh của tài khoản người dùng";
             // 
-            // ctButton1
+            // label1
             // 
-            this.ctButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.ctButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.ctButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.ctButton1.BorderRadius = 5;
-            this.ctButton1.BorderSize = 0;
-            this.ctButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctButton1.FlatAppearance.BorderSize = 0;
-            this.ctButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ctButton1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
-            this.ctButton1.ForeColor = System.Drawing.Color.White;
-            this.ctButton1.Location = new System.Drawing.Point(432, 268);
-            this.ctButton1.Name = "ctButton1";
-            this.ctButton1.Size = new System.Drawing.Size(107, 40);
-            this.ctButton1.TabIndex = 23;
-            this.ctButton1.Text = "Gửi Mã";
-            this.ctButton1.TextColor = System.Drawing.Color.White;
-            this.ctButton1.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(183, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 32);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "QUÊN MẬT KHẨU";
+            // 
+            // btnCreateOTP
+            // 
+            this.btnCreateOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnCreateOTP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnCreateOTP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btnCreateOTP.BorderRadius = 5;
+            this.btnCreateOTP.BorderSize = 0;
+            this.btnCreateOTP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreateOTP.FlatAppearance.BorderSize = 0;
+            this.btnCreateOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateOTP.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
+            this.btnCreateOTP.ForeColor = System.Drawing.Color.White;
+            this.btnCreateOTP.Location = new System.Drawing.Point(432, 268);
+            this.btnCreateOTP.Name = "btnCreateOTP";
+            this.btnCreateOTP.Size = new System.Drawing.Size(107, 40);
+            this.btnCreateOTP.TabIndex = 23;
+            this.btnCreateOTP.Text = "Gửi Mã";
+            this.btnCreateOTP.TextColor = System.Drawing.Color.White;
+            this.btnCreateOTP.UseVisualStyleBackColor = false;
+            this.btnCreateOTP.Click += new System.EventHandler(this.btnCreateOTP_Click);
             // 
             // btnKTOTP
             // 
-            
             this.btnKTOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.btnKTOTP.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
             this.btnKTOTP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
@@ -132,65 +158,66 @@ namespace NTSF.GUI
             this.btnKTOTP.UseVisualStyleBackColor = false;
             this.btnKTOTP.Click += new System.EventHandler(this.btnKTOTP_Click);
             // 
-            // ctTextBox1
+            // txtOTP
             // 
-            this.ctTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.ctTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.ctTextBox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox1.BorderRadius = 5;
-            this.ctTextBox1.BorderSize = 1;
-            this.ctTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctTextBox1.IsFocused = false;
-            this.ctTextBox1.Location = new System.Drawing.Point(35, 368);
-            this.ctTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox1.Multiline = false;
-            this.ctTextBox1.Name = "ctTextBox1";
-            this.ctTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 33, 7);
-            this.ctTextBox1.PasswordChar = false;
-            this.ctTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox1.PlaceholderText = "";
-            this.ctTextBox1.ReadOnly = false;
-            this.ctTextBox1.Size = new System.Drawing.Size(504, 40);
-            this.ctTextBox1.TabIndex = 21;
-            this.ctTextBox1.Texts = "";
-            this.ctTextBox1.UnderlineedStyle = false;
+            this.txtOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.txtOTP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.txtOTP.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtOTP.BorderRadius = 5;
+            this.txtOTP.BorderSize = 1;
+            this.txtOTP.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOTP.IsFocused = false;
+            this.txtOTP.Location = new System.Drawing.Point(35, 368);
+            this.txtOTP.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOTP.Multiline = false;
+            this.txtOTP.Name = "txtOTP";
+            this.txtOTP.Padding = new System.Windows.Forms.Padding(10, 7, 33, 7);
+            this.txtOTP.PasswordChar = false;
+            this.txtOTP.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtOTP.PlaceholderText = "";
+            this.txtOTP.ReadOnly = false;
+            this.txtOTP.Size = new System.Drawing.Size(504, 40);
+            this.txtOTP.TabIndex = 21;
+            this.txtOTP.Texts = "";
+            this.txtOTP.UnderlineedStyle = false;
             // 
-            // txtTenNT
+            // txtMailSend
             // 
-            this.txtTenNT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.txtTenNT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.txtTenNT.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTenNT.BorderRadius = 5;
-            this.txtTenNT.BorderSize = 1;
-            this.txtTenNT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenNT.IsFocused = false;
-            this.txtTenNT.Location = new System.Drawing.Point(35, 268);
-            this.txtTenNT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenNT.Multiline = false;
-            this.txtTenNT.Name = "txtTenNT";
-            this.txtTenNT.Padding = new System.Windows.Forms.Padding(10, 7, 33, 7);
-            this.txtTenNT.PasswordChar = false;
-            this.txtTenNT.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTenNT.PlaceholderText = "Nhập Email của bạn tại đây";
-            this.txtTenNT.ReadOnly = false;
-            this.txtTenNT.Size = new System.Drawing.Size(504, 40);
-            this.txtTenNT.TabIndex = 22;
-            this.txtTenNT.Texts = "";
-            this.txtTenNT.UnderlineedStyle = false;
+            this.txtMailSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.txtMailSend.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.txtMailSend.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtMailSend.BorderRadius = 5;
+            this.txtMailSend.BorderSize = 1;
+            this.txtMailSend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMailSend.IsFocused = false;
+            this.txtMailSend.Location = new System.Drawing.Point(35, 268);
+            this.txtMailSend.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMailSend.Multiline = false;
+            this.txtMailSend.Name = "txtMailSend";
+            this.txtMailSend.Padding = new System.Windows.Forms.Padding(10, 7, 33, 7);
+            this.txtMailSend.PasswordChar = false;
+            this.txtMailSend.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtMailSend.PlaceholderText = "Nhập Email của bạn tại đây";
+            this.txtMailSend.ReadOnly = false;
+            this.txtMailSend.Size = new System.Drawing.Size(504, 40);
+            this.txtMailSend.TabIndex = 22;
+            this.txtMailSend.Texts = "";
+            this.txtMailSend.UnderlineedStyle = false;
             // 
-            // label1
+            // lblEmailCheck
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(183, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 32);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "QUÊN MẬT KHẨU";
+            this.lblEmailCheck.AutoSize = true;
+            this.lblEmailCheck.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailCheck.ForeColor = System.Drawing.Color.Red;
+            this.lblEmailCheck.Location = new System.Drawing.Point(39, 312);
+            this.lblEmailCheck.Name = "lblEmailCheck";
+            this.lblEmailCheck.Size = new System.Drawing.Size(151, 21);
+            this.lblEmailCheck.TabIndex = 26;
+            this.lblEmailCheck.Text = "Email không tồn tại!";
+            this.lblEmailCheck.Visible = false;
             // 
             // FormQuenMK
             // 
-            this.DoubleBuffered = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
@@ -213,10 +240,12 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
-        private CTuserControl.CTButton ctButton1;
+        private CTuserControl.CTButton btnCreateOTP;
         private CTuserControl.CTButton btnKTOTP;
-        private HotelManagement.CTControls.CTTextBox ctTextBox1;
-        private HotelManagement.CTControls.CTTextBox txtTenNT;
+        private HotelManagement.CTControls.CTTextBox txtOTP;
+        private HotelManagement.CTControls.CTTextBox txtMailSend;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label lblEmailCheck;
     }
 }

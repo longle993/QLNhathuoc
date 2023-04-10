@@ -35,7 +35,7 @@ namespace NTSF.GUI.HoaDon
                 this.dataCTHD.Rows.Clear();
                 foreach (CT_HOA_DON cthds in this.DSCTHD)
                 {
-                    DANH_MUC_SP sp = DANH_MUC_SP_BUS.Instance.GetTenSP(cthds.MA_SP);
+                    HANG_HOA sp = HANG_HOA_BUS.Instance.GetTenSP(cthds.MA_SP);
                     this.dataCTHD.Rows.Add(cthds.MA_SP,sp.TEN_SP, cthds.DVT, cthds.SO_LUONG, cthds.CHIET_KHAU);
                 }
             }

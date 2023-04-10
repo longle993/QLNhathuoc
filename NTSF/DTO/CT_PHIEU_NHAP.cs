@@ -36,7 +36,7 @@ namespace NTSF.DTO
 
         public short QUY_DOI { get; set; }
 
-        public int SOLUONG { get; set; }
+        public int SO_LUONG { get; set; }
 
         [Column(TypeName = "money")]
         public decimal DON_GIA { get; set; }
@@ -46,6 +46,10 @@ namespace NTSF.DTO
 
         public byte VAT_NHAP { get; set; }
 
+        public virtual NHA_CUNG_CAP NHA_CUNG_CAP { get; set; }
+
         public virtual PHIEU_NHAP PHIEU_NHAP { get; set; }
+
+        public virtual HANG_HOA HANG_HOA { get; set; }
     }
 }

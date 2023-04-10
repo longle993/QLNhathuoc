@@ -34,5 +34,7 @@ namespace NTSF.DTO
         public string LY_DO { get; set; }
 
         public virtual PHIEU_XUAT_HUY PHIEU_XUAT_HUY { get; set; }
+
+        public virtual HANG_HOA HANG_HOA { get; set; }
     }
 }

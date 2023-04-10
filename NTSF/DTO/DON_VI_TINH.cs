@@ -15,6 +15,11 @@ namespace NTSF.DTO
 
         [Key]
         [Column(Order = 1)]
+        [StringLength(50)]
+        public string SO_LO { get; set; }
+
+        [Key]
+        [Column(Order = 2)]
         [StringLength(200)]
         public string DVT_KHAC { get; set; }
 
@@ -22,5 +27,7 @@ namespace NTSF.DTO
 
         [Column(TypeName = "money")]
         public decimal GIA_BAN { get; set; }
+
+        public virtual HANG_HOA HANG_HOA { get; set; }
     }
 }

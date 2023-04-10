@@ -18,6 +18,12 @@ namespace NTSF.DTO
         [StringLength(50)]
         public string MA_SP { get; set; }
 
+        [Key]
+        [Column(Order = 2)]
+        [StringLength(50)]
+        public string SO_LO { get; set; }
+
+        [Required]
         [StringLength(200)]
         public string DVT { get; set; }
 
@@ -27,5 +33,7 @@ namespace NTSF.DTO
         public decimal CHIET_KHAU { get; set; }
 
         public virtual HOA_DON HOA_DON { get; set; }
+
+        public virtual HANG_HOA HANG_HOA { get; set; }
     }
 }

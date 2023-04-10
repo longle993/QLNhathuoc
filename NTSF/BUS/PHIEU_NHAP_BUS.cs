@@ -11,7 +11,6 @@ namespace NTSF.BUS
 {
     class PHIEU_NHAP_BUS
     {
-        NhaThuoc db = new NhaThuoc();
         private static PHIEU_NHAP_BUS instance;
         public static PHIEU_NHAP_BUS Instance
         {

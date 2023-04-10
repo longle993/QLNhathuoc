@@ -56,7 +56,7 @@ namespace NTSF.DAO
         }
         public List<PHIEU_NHAP> FindByName(string tensp, string mapn, DateTime timeFrom, DateTime timeTo)
         {
-            DANH_MUC_SP sP = db.DANH_MUC_SP.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
+            HANG_HOA sP = db.HANG_HOA.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
             List<CT_PHIEU_NHAP> CTPN = db.CT_PHIEU_NHAP.Where(p => p.MA_SP == sP.MA_SP).ToList();
 
             List<PHIEU_NHAP> pN = new List<PHIEU_NHAP>();

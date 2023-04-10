@@ -31,7 +31,7 @@ namespace NTSF.DAO
 
         public List<HOA_DON> FindByName(string tensp, string mahd, DateTime timeFrom, DateTime timeTo)
         {
-            DANH_MUC_SP sP = db.DANH_MUC_SP.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
+            HANG_HOA sP = db.HANG_HOA.SingleOrDefault(p => p.TEN_SP.StartsWith(tensp));
             List<CT_HOA_DON> cthd = db.CT_HOA_DON.Where(p => p.MA_SP == sP.MA_SP).ToList();
 
             List<HOA_DON> hoadon = new List<HOA_DON>();

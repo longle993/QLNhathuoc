@@ -10,7 +10,6 @@ namespace NTSF.BUS
 {
     class CT_HOA_DON_BUS
     {
-        NhaThuoc db = new NhaThuoc();
         private static CT_HOA_DON_BUS instance;
         public static CT_HOA_DON_BUS Instance
         {

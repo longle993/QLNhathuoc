@@ -29,8 +29,15 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelXH = new System.Windows.Forms.Panel();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.dataXuatHuy = new System.Windows.Forms.DataGridView();
+            this.maphieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayxuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblPhieuNhapKho = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,17 +55,12 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataXuatHuy = new System.Windows.Forms.DataGridView();
-            this.maphieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayxuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelXH.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).BeginInit();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).BeginInit();
             this.SuspendLayout();
             // 
             // panelXH
@@ -91,6 +93,73 @@ namespace NTSF.GUI
             this.advancedPanel5.StartColor = System.Drawing.Color.White;
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 9;
+            // 
+            // dataXuatHuy
+            // 
+            this.dataXuatHuy.AllowUserToAddRows = false;
+            this.dataXuatHuy.AllowUserToDeleteRows = false;
+            this.dataXuatHuy.AllowUserToResizeColumns = false;
+            this.dataXuatHuy.AllowUserToResizeRows = false;
+            this.dataXuatHuy.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataXuatHuy.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataXuatHuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataXuatHuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maphieu,
+            this.ngayxuat,
+            this.tongtien,
+            this.ghichu});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataXuatHuy.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataXuatHuy.GridColor = System.Drawing.Color.Silver;
+            this.dataXuatHuy.Location = new System.Drawing.Point(57, 63);
+            this.dataXuatHuy.Name = "dataXuatHuy";
+            this.dataXuatHuy.RowHeadersVisible = false;
+            this.dataXuatHuy.RowHeadersWidth = 62;
+            this.dataXuatHuy.RowTemplate.Height = 50;
+            this.dataXuatHuy.Size = new System.Drawing.Size(1559, 499);
+            this.dataXuatHuy.TabIndex = 55;
+            // 
+            // maphieu
+            // 
+            this.maphieu.HeaderText = "Mã phiếu";
+            this.maphieu.MinimumWidth = 8;
+            this.maphieu.Name = "maphieu";
+            this.maphieu.Width = 375;
+            // 
+            // ngayxuat
+            // 
+            this.ngayxuat.HeaderText = "Ngày xuất";
+            this.ngayxuat.MinimumWidth = 8;
+            this.ngayxuat.Name = "ngayxuat";
+            this.ngayxuat.Width = 470;
+            // 
+            // tongtien
+            // 
+            this.tongtien.HeaderText = "Tổng tiền";
+            this.tongtien.MinimumWidth = 8;
+            this.tongtien.Name = "tongtien";
+            this.tongtien.Width = 360;
+            // 
+            // ghichu
+            // 
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 8;
+            this.ghichu.Name = "ghichu";
+            this.ghichu.Width = 350;
             // 
             // lblPhieuNhapKho
             // 
@@ -382,52 +451,6 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "XUẤT HUỶ";
             // 
-            // dataXuatHuy
-            // 
-            this.dataXuatHuy.AllowUserToResizeColumns = false;
-            this.dataXuatHuy.AllowUserToResizeRows = false;
-            this.dataXuatHuy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataXuatHuy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maphieu,
-            this.ngayxuat,
-            this.tongtien,
-            this.ghichu});
-            this.dataXuatHuy.Location = new System.Drawing.Point(57, 63);
-            this.dataXuatHuy.Name = "dataXuatHuy";
-            this.dataXuatHuy.RowHeadersVisible = false;
-            this.dataXuatHuy.RowHeadersWidth = 62;
-            this.dataXuatHuy.RowTemplate.Height = 28;
-            this.dataXuatHuy.Size = new System.Drawing.Size(1559, 499);
-            this.dataXuatHuy.TabIndex = 55;
-            // 
-            // maphieu
-            // 
-            this.maphieu.HeaderText = "Mã phiếu";
-            this.maphieu.MinimumWidth = 8;
-            this.maphieu.Name = "maphieu";
-            this.maphieu.Width = 375;
-            // 
-            // ngayxuat
-            // 
-            this.ngayxuat.HeaderText = "Ngày xuất";
-            this.ngayxuat.MinimumWidth = 8;
-            this.ngayxuat.Name = "ngayxuat";
-            this.ngayxuat.Width = 470;
-            // 
-            // tongtien
-            // 
-            this.tongtien.HeaderText = "Tổng tiền";
-            this.tongtien.MinimumWidth = 8;
-            this.tongtien.Name = "tongtien";
-            this.tongtien.Width = 360;
-            // 
-            // ghichu
-            // 
-            this.ghichu.HeaderText = "Ghi chú";
-            this.ghichu.MinimumWidth = 8;
-            this.ghichu.Name = "ghichu";
-            this.ghichu.Width = 350;
-            // 
             // FormXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -439,16 +462,17 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormXuatKho";
             this.Text = "FormXuatKho";
+            this.Load += new System.EventHandler(this.FormXuatKho_Load);
             this.panelXH.ResumeLayout(false);
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).EndInit();
             this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel1.PerformLayout();
             this.advancedPanel3.ResumeLayout(false);
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataXuatHuy)).EndInit();
             this.ResumeLayout(false);
 
         }

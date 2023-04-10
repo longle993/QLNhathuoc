@@ -39,7 +39,7 @@ namespace NTSF.GUI
             this.btnHidepass = new FontAwesome.Sharp.IconButton();
             this.btnLogin = new NTSF.CTuserControl.CTButton();
             this.txtPassword = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox1 = new HotelManagement.CTControls.CTTextBox();
+            this.txtEmail = new HotelManagement.CTControls.CTTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -205,31 +205,32 @@ namespace NTSF.GUI
             this.txtPassword.Texts = "";
             this.txtPassword.UnderlineedStyle = false;
             // 
-            // ctTextBox1
+            // txtEmail
             // 
-            this.ctTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.ctTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.ctTextBox1.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox1.BorderRadius = 5;
-            this.ctTextBox1.BorderSize = 1;
-            this.ctTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctTextBox1.IsFocused = false;
-            this.ctTextBox1.Location = new System.Drawing.Point(64, 172);
-            this.ctTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox1.Multiline = false;
-            this.ctTextBox1.Name = "ctTextBox1";
-            this.ctTextBox1.Padding = new System.Windows.Forms.Padding(40, 7, 33, 7);
-            this.ctTextBox1.PasswordChar = false;
-            this.ctTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox1.PlaceholderText = "";
-            this.ctTextBox1.ReadOnly = false;
-            this.ctTextBox1.Size = new System.Drawing.Size(355, 40);
-            this.ctTextBox1.TabIndex = 2;
-            this.ctTextBox1.Texts = "";
-            this.ctTextBox1.UnderlineedStyle = false;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.txtEmail.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtEmail.BorderRadius = 5;
+            this.txtEmail.BorderSize = 1;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.IsFocused = false;
+            this.txtEmail.Location = new System.Drawing.Point(64, 172);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Multiline = false;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Padding = new System.Windows.Forms.Padding(40, 7, 33, 7);
+            this.txtEmail.PasswordChar = false;
+            this.txtEmail.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.ReadOnly = false;
+            this.txtEmail.Size = new System.Drawing.Size(355, 40);
+            this.txtEmail.TabIndex = 2;
+            this.txtEmail.Texts = "";
+            this.txtEmail.UnderlineedStyle = false;
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
@@ -240,7 +241,7 @@ namespace NTSF.GUI
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.ctTextBox1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -260,7 +261,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private HotelManagement.CTControls.CTTextBox ctTextBox1;
+        private HotelManagement.CTControls.CTTextBox txtEmail;
         private HotelManagement.CTControls.CTTextBox txtPassword;
         private CTuserControl.CTButton btnLogin;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

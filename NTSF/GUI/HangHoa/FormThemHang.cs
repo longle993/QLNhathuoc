@@ -50,12 +50,12 @@ namespace NTSF.GUI
         private void btnLuuThemHang_Click(object sender, EventArgs e)
         {
 
-                DANH_MUC_SP sP = new DANH_MUC_SP();
+                HANG_HOA sP = new HANG_HOA();
                 PHIEU_NHAP PN = new PHIEU_NHAP();
                 CT_PHIEU_NHAP CTPN = new CT_PHIEU_NHAP();
                 sP.MA_SP = LoadMaSPAuto(sP.MA_SP);
                 sP.TEN_SP = txtHanghoa.Texts;
-                sP.NHOM_SP = cbboxNhomhang.Text;
+                sP.LOAI_SP = cbboxNhomhang.Text;
                 sP.HAM_LUONG = txtHamluong.Texts;
                 sP.QUY_CACH_DONG_GOI = txtQCDG.Texts;
                 MessageBox.Show(txtVATBan.Texts);
@@ -75,12 +75,12 @@ namespace NTSF.GUI
                 CTPN.HSD = datepickerHSD.Value;
                 CTPN.DON_VI_NHAP = cbDVN.Text;
                 CTPN.QUY_DOI = 1;
-                CTPN.SOLUONG = Convert.ToInt32(txtSLNhap.Texts);
+                CTPN.SO_LUONG = Convert.ToInt32(txtSLNhap.Texts);
                 CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Texts);
                 CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Texts);
                 CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Texts);
 
-                DANH_MUC_SP_BUS.Instance.AddUpdateDMSP(sP);
+                HANG_HOA_BUS.Instance.AddUpdateDMSP(sP);
                 Luu(true);
         }
 

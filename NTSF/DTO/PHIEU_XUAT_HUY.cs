@@ -18,10 +18,7 @@ namespace NTSF.DTO
         [StringLength(50)]
         public string MA_PHIEU { get; set; }
 
-        [Column(TypeName = "date")]
         public DateTime NGAY_XUAT { get; set; }
-
-        public TimeSpan GIO_XUAT { get; set; }
 
         [Column(TypeName = "money")]
         public decimal TRI_GIA { get; set; }
