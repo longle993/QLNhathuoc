@@ -73,7 +73,7 @@ namespace NTSF.GUI
 
         private void label4_Click(object sender, EventArgs e)
         {
-            FormQuenMK form = new FormQuenMK();
+            FormQuenMK form = new FormQuenMK(this.formbackgr);
             this.Hide();
             form.ShowDialog();
         }

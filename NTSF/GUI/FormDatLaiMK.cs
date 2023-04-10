@@ -16,10 +16,14 @@ namespace NTSF.GUI
     {
         private Form currentChildForm;
         string email;
-        public FormDatLaiMK(string email)
+        FormQuenMK formQuenMK;
+        FormLoginBackgr formLoginBackgr;
+        public FormDatLaiMK(FormQuenMK formQuenMK, FormLoginBackgr formLoginBackgr,string email)
         {
             InitializeComponent();
             this.email = email;
+            this.formLoginBackgr = formLoginBackgr;
+            this.formQuenMK = formQuenMK;
         }
 
 
@@ -53,10 +57,13 @@ namespace NTSF.GUI
             }
             TAI_KHOAN_BUS.Instance.AddOrUpdate(email, ConvertToMD5(txtnewpass.Texts));
             MessageBox.Show("Thay đổi mật khẩu thành công!");
-            FormLoginBackgr formLoginBackgr = new FormLoginBackgr();
+            this.formLoginBackgr.Hide();
             this.Close();
+            this.formQuenMK.Hide();
+            FormLoginBackgr formLoginBackgr1 = new FormLoginBackgr();
+            formLoginBackgr1.ShowDialog();
 
-            formLoginBackgr.ShowDialog();
+            //formLoginBackgr.ShowDialog();
 
         }
         private string ConvertToMD5(string s)

@@ -17,16 +17,18 @@ namespace NTSF.GUI
     {
         private Form currentChildForm;
         string OTP ="XYZ";
-        public FormQuenMK()
+        FormLoginBackgr formLoginBackgr;
+        public FormQuenMK(FormLoginBackgr formLoginBackgr)
         {
             InitializeComponent();
+            this.formLoginBackgr = formLoginBackgr;
         }
 
         private void btnKTOTP_Click(object sender, EventArgs e)
         {
             if (checkOTP())
             {
-                OpenChildForm(new FormDatLaiMK(txtMailSend.Texts));
+                OpenChildForm(new FormDatLaiMK(this,formLoginBackgr,txtMailSend.Texts));
                 
             }
             else
