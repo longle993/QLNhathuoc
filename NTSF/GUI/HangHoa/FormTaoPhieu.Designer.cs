@@ -29,8 +29,9 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTaoPhieuThem = new System.Windows.Forms.Panel();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataCTphieunhap = new System.Windows.Forms.DataGridView();
@@ -46,7 +47,7 @@ namespace NTSF.GUI
             this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel7 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnThemHang = new FontAwesome.Sharp.IconButton();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblCountPN = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
@@ -60,7 +61,7 @@ namespace NTSF.GUI
             this.btnLuu = new FontAwesome.Sharp.IconButton();
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTroVe = new FontAwesome.Sharp.IconButton();
-            this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
+            this.datePN = new NTSF.CTuserControl.CTDatePicker();
             this.txtGhichu = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,6 +69,7 @@ namespace NTSF.GUI
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.formHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelTaoPhieuThem.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCTphieunhap)).BeginInit();
@@ -79,6 +81,7 @@ namespace NTSF.GUI
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.formHoaDonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTaoPhieuThem
@@ -95,7 +98,7 @@ namespace NTSF.GUI
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
             this.advancedPanel5.Controls.Add(this.dataCTphieunhap);
             this.advancedPanel5.Controls.Add(this.advancedPanel7);
-            this.advancedPanel5.Controls.Add(this.label8);
+            this.advancedPanel5.Controls.Add(this.lblCountPN);
             this.advancedPanel5.Controls.Add(this.label7);
             this.advancedPanel5.Controls.Add(this.label5);
             this.advancedPanel5.EdgeWidth = 0;
@@ -119,14 +122,14 @@ namespace NTSF.GUI
             this.dataCTphieunhap.AllowUserToResizeColumns = false;
             this.dataCTphieunhap.AllowUserToResizeRows = false;
             this.dataCTphieunhap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataCTphieunhap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataCTphieunhap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataCTphieunhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCTphieunhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahh,
@@ -139,15 +142,15 @@ namespace NTSF.GUI
             this.tongchietkhau,
             this.vat,
             this.thanhtien});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataCTphieunhap.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataCTphieunhap.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataCTphieunhap.GridColor = System.Drawing.Color.Silver;
             this.dataCTphieunhap.Location = new System.Drawing.Point(31, 150);
             this.dataCTphieunhap.Name = "dataCTphieunhap";
@@ -271,17 +274,17 @@ namespace NTSF.GUI
             this.btnThemHang.UseVisualStyleBackColor = false;
             this.btnThemHang.Click += new System.EventHandler(this.btnThemHang_Click);
             // 
-            // label8
+            // lblCountPN
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(263, 101);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 30);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "xx";
+            this.lblCountPN.AutoSize = true;
+            this.lblCountPN.BackColor = System.Drawing.Color.White;
+            this.lblCountPN.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountPN.ForeColor = System.Drawing.Color.Black;
+            this.lblCountPN.Location = new System.Drawing.Point(263, 101);
+            this.lblCountPN.Name = "lblCountPN";
+            this.lblCountPN.Size = new System.Drawing.Size(26, 30);
+            this.lblCountPN.TabIndex = 52;
+            this.lblCountPN.Text = "0";
             // 
             // label7
             // 
@@ -316,7 +319,7 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.advancedPanel4);
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
-            this.advancedPanel1.Controls.Add(this.ctDatePicker3);
+            this.advancedPanel1.Controls.Add(this.datePN);
             this.advancedPanel1.Controls.Add(this.txtGhichu);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label3);
@@ -512,25 +515,25 @@ namespace NTSF.GUI
             this.btnTroVe.UseVisualStyleBackColor = false;
             this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
-            // ctDatePicker3
+            // datePN
             // 
-            this.ctDatePicker3.BackColor = System.Drawing.Color.White;
-            this.ctDatePicker3.BorderColor = System.Drawing.Color.PaleGoldenrod;
-            this.ctDatePicker3.BorderRadius = 15;
-            this.ctDatePicker3.BorderSize = 0;
-            this.ctDatePicker3.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctDatePicker3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ctDatePicker3.CustomFormat = "dd/MM/yyyy";
-            this.ctDatePicker3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ctDatePicker3.ForeColor = System.Drawing.Color.Black;
-            this.ctDatePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ctDatePicker3.Location = new System.Drawing.Point(84, 135);
-            this.ctDatePicker3.MinimumSize = new System.Drawing.Size(4, 43);
-            this.ctDatePicker3.Name = "ctDatePicker3";
-            this.ctDatePicker3.Size = new System.Drawing.Size(219, 43);
-            this.ctDatePicker3.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctDatePicker3.TabIndex = 55;
-            this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
+            this.datePN.BackColor = System.Drawing.Color.White;
+            this.datePN.BorderColor = System.Drawing.Color.PaleGoldenrod;
+            this.datePN.BorderRadius = 15;
+            this.datePN.BorderSize = 0;
+            this.datePN.CalendarFont = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datePN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.datePN.CustomFormat = "dd/MM/yyyy";
+            this.datePN.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.datePN.ForeColor = System.Drawing.Color.Black;
+            this.datePN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datePN.Location = new System.Drawing.Point(84, 135);
+            this.datePN.MinimumSize = new System.Drawing.Size(4, 43);
+            this.datePN.Name = "datePN";
+            this.datePN.Size = new System.Drawing.Size(219, 43);
+            this.datePN.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.datePN.TabIndex = 55;
+            this.datePN.TextColor = System.Drawing.Color.Black;
             // 
             // txtGhichu
             // 
@@ -623,6 +626,10 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "NHẬP KHO";
             // 
+            // formHoaDonBindingSource
+            // 
+            this.formHoaDonBindingSource.DataSource = typeof(NTSF.GUI.FormHoaDon);
+            // 
             // FormTaoPhieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -652,6 +659,7 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.formHoaDonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -662,7 +670,7 @@ namespace NTSF.GUI
         private CTuserControl.AdvancedPanel advancedPanel5;
         private CTuserControl.AdvancedPanel advancedPanel7;
         private FontAwesome.Sharp.IconButton btnThemHang;
-        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label lblCountPN;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
         private CTuserControl.AdvancedPanel advancedPanel1;
@@ -675,7 +683,7 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconButton btnLuu;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTroVe;
-        private CTuserControl.CTDatePicker ctDatePicker3;
+        private CTuserControl.CTDatePicker datePN;
         private HotelManagement.CTControls.CTTextBox txtGhichu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -695,5 +703,6 @@ namespace NTSF.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn tongchietkhau;
         private System.Windows.Forms.DataGridViewTextBoxColumn vat;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
+        private System.Windows.Forms.BindingSource formHoaDonBindingSource;
     }
 }

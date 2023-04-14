@@ -115,7 +115,7 @@ namespace NTSF.GUI
             formTaoPhieu.PN = PN;
             formTaoPhieu.DVT = dvt;
             formTaoPhieu.CTPN = CTPN;
-
+            formTaoPhieu.lblCountPN.Text = formTaoPhieu.dataCTphieunhap.Rows.Count.ToString();
             Luu(true);
 
         }

@@ -193,7 +193,7 @@ BEGIN
 	insert into GIA_VON values (@Masp,@Solo,@gia_von)
 END
 
-
+select * from PHIEU_NHAP
 
 -------INSERT
 

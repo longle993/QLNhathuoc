@@ -425,6 +425,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\NTSF.GUI.FormHoaDon.datasource" />
+    <None Include="Properties\DataSources\NTSF.GUI.FormTaoPhieu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
