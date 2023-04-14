@@ -74,7 +74,7 @@ namespace NTSF.GUI
                 {
                     decimal loiNhuan = nhap.Value.First - nhap.Value.Second;
                     //if()
-                    this.dataBaoCao.Rows.Add(nhap.Key.ToString("dd/MM/yyyy"), nhap.Value.First, nhap.Value.Second, loiNhuan);
+                    this.dataBaoCao.Rows.Add(nhap.Key.ToString("dd/MM/yyyy"), nhap.Value.First.ToString("#,#;0"), nhap.Value.Second.ToString("#,#;0"), loiNhuan.ToString("#,#"));
                 }
                 lblCountBC.Text = dataBaoCao.Rows.Count.ToString();
                 SumBaoCao(dataBaoCao);

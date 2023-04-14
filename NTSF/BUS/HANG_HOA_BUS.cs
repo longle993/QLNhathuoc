@@ -31,6 +31,10 @@ namespace NTSF.BUS
             return HANG_HOA_DAO.Instance.FindByLoaiSP(loaisp);
         }
 
+        public List<HANG_HOA> FindByQCDG(string qcdg)
+        {
+            return HANG_HOA_DAO.Instance.FindByQCDG(qcdg);
+        }
         public void AddUpdateDMSP(HANG_HOA dmsp)
         {
             HANG_HOA_DAO.Instance.AddUpdateDMSP(dmsp);
@@ -39,6 +43,10 @@ namespace NTSF.BUS
         public HANG_HOA GetTenSP(string masp)
         {
             return HANG_HOA_DAO.Instance.GetTenSP(masp);
+        }
+        public List<HANG_HOA> GetDVTCB()
+        {
+            return HANG_HOA_DAO.Instance.GetDVTCB();
         }
     }
 }

@@ -37,7 +37,6 @@ namespace NTSF.DAO
                 {
                     db.PHIEU_NHAP.Remove(existingPN);
                     db.PHIEU_NHAP.Add(pn);
-
                 }
 
                 db.SaveChanges();

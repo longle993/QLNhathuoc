@@ -35,7 +35,6 @@ namespace NTSF.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -58,11 +57,25 @@ namespace NTSF.GUI
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.lblCountDVT = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
+            this.cbDVT = new System.Windows.Forms.ComboBox();
             this.advancedPanel15 = new NTSF.CTuserControl.AdvancedPanel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.txtGiaban = new HotelManagement.CTControls.CTTextBox();
+            this.txtQuydoi = new HotelManagement.CTControls.CTTextBox();
+            this.txtGiaDVT = new HotelManagement.CTControls.CTTextBox();
             this.txtVAT = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox9 = new HotelManagement.CTControls.CTTextBox();
+            this.txtGiaban = new HotelManagement.CTControls.CTTextBox();
             this.ctTextBox8 = new HotelManagement.CTControls.CTTextBox();
             this.txtTongGiamgia = new HotelManagement.CTControls.CTTextBox();
             this.txtDongia = new HotelManagement.CTControls.CTTextBox();
@@ -79,8 +92,6 @@ namespace NTSF.GUI
             this.advancedPanel11 = new NTSF.CTuserControl.AdvancedPanel();
             this.lblTRIGIA = new System.Windows.Forms.Label();
             this.datepickerHSD = new NTSF.CTuserControl.CTDatePicker();
-            this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
-            this.cbDVN = new System.Windows.Forms.ComboBox();
             this.advancedPanel4 = new NTSF.CTuserControl.AdvancedPanel();
             this.cbNCC = new System.Windows.Forms.ComboBox();
             this.advancedPanel3 = new NTSF.CTuserControl.AdvancedPanel();
@@ -91,13 +102,14 @@ namespace NTSF.GUI
             this.txtSolo = new HotelManagement.CTControls.CTTextBox();
             this.txtHamluong = new HotelManagement.CTControls.CTTextBox();
             this.txtHanghoa = new HotelManagement.CTControls.CTTextBox();
+            this.txtDVN = new HotelManagement.CTControls.CTTextBox();
+            this.advancedPanel1.SuspendLayout();
             this.advancedPanel15.SuspendLayout();
             this.advancedPanel16.SuspendLayout();
             this.advancedPanel14.SuspendLayout();
             this.advancedPanel13.SuspendLayout();
             this.advancedPanel12.SuspendLayout();
             this.advancedPanel11.SuspendLayout();
-            this.advancedPanel5.SuspendLayout();
             this.advancedPanel4.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
@@ -175,18 +187,6 @@ namespace NTSF.GUI
             this.label5.TabIndex = 52;
             this.label5.Text = "Quy cách đóng gói";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(63, 249);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 25);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "Đơn vị tính cơ bản";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -207,9 +207,9 @@ namespace NTSF.GUI
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(27, 340);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(215, 30);
+            this.label9.Size = new System.Drawing.Size(171, 30);
             this.label9.TabIndex = 52;
-            this.label9.Text = "Thông tin hàng hoá";
+            this.label9.Text = "Thông tin nhập";
             // 
             // label10
             // 
@@ -443,6 +443,166 @@ namespace NTSF.GUI
             this.label30.TabIndex = 88;
             this.label30.Text = "*";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(29, 626);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(237, 30);
+            this.label26.TabIndex = 52;
+            this.label26.Text = "Danh sách đơn vị tính";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.White;
+            this.label31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(272, 626);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(195, 30);
+            this.label31.TabIndex = 52;
+            this.label31.Text = "(         đơn vị tính)";
+            // 
+            // lblCountDVT
+            // 
+            this.lblCountDVT.AutoSize = true;
+            this.lblCountDVT.BackColor = System.Drawing.Color.White;
+            this.lblCountDVT.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblCountDVT.ForeColor = System.Drawing.Color.Black;
+            this.lblCountDVT.Location = new System.Drawing.Point(295, 626);
+            this.lblCountDVT.Name = "lblCountDVT";
+            this.lblCountDVT.Size = new System.Drawing.Size(25, 30);
+            this.lblCountDVT.TabIndex = 52;
+            this.lblCountDVT.Text = "x";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(63, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 25);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Đơn vị tính cơ bản";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.White;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(633, 625);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(100, 25);
+            this.label32.TabIndex = 89;
+            this.label32.Text = "Tên đơn vị";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.White;
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(1126, 624);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(77, 25);
+            this.label33.TabIndex = 52;
+            this.label33.Text = "Giá bán";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(1203, 624);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(20, 25);
+            this.label34.TabIndex = 86;
+            this.label34.Text = "*";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.White;
+            this.label35.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label35.ForeColor = System.Drawing.Color.Black;
+            this.label35.Location = new System.Drawing.Point(916, 624);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(79, 25);
+            this.label35.TabIndex = 52;
+            this.label35.Text = "Quy đổi";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Red;
+            this.label36.Location = new System.Drawing.Point(993, 624);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(20, 25);
+            this.label36.TabIndex = 86;
+            this.label36.Text = "*";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.White;
+            this.label37.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.label37.ForeColor = System.Drawing.Color.Black;
+            this.label37.Location = new System.Drawing.Point(633, 715);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(175, 25);
+            this.label37.TabIndex = 89;
+            this.label37.Text = "+ Thêm đơn vị tính";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.Red;
+            this.label38.Location = new System.Drawing.Point(739, 624);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(20, 25);
+            this.label38.TabIndex = 86;
+            this.label38.Text = "*";
+            // 
+            // advancedPanel1
+            // 
+            this.advancedPanel1.BackColor = System.Drawing.Color.White;
+            this.advancedPanel1.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel1.Controls.Add(this.cbDVT);
+            this.advancedPanel1.EdgeWidth = 1;
+            this.advancedPanel1.EndColor = System.Drawing.Color.White;
+            this.advancedPanel1.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.advancedPanel1.Location = new System.Drawing.Point(638, 653);
+            this.advancedPanel1.Name = "advancedPanel1";
+            this.advancedPanel1.RectRadius = 5;
+            this.advancedPanel1.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel1.ShadowShift = 2;
+            this.advancedPanel1.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel1.Size = new System.Drawing.Size(212, 45);
+            this.advancedPanel1.StartColor = System.Drawing.Color.White;
+            this.advancedPanel1.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel1.TabIndex = 90;
+            // 
+            // cbDVT
+            // 
+            this.cbDVT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbDVT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbDVT.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDVT.FormattingEnabled = true;
+            this.cbDVT.ItemHeight = 28;
+            this.cbDVT.Location = new System.Drawing.Point(0, 3);
+            this.cbDVT.Name = "cbDVT";
+            this.cbDVT.Size = new System.Drawing.Size(212, 36);
+            this.cbDVT.TabIndex = 61;
+            // 
             // advancedPanel15
             // 
             this.advancedPanel15.BackColor = System.Drawing.Color.White;
@@ -478,30 +638,55 @@ namespace NTSF.GUI
             this.iconButton1.TabIndex = 74;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
-            // txtGiaban
+            // txtQuydoi
             // 
-            this.txtGiaban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtGiaban.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.txtGiaban.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtGiaban.BorderRadius = 5;
-            this.txtGiaban.BorderSize = 1;
-            this.txtGiaban.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaban.ForeColor = System.Drawing.Color.Black;
-            this.txtGiaban.IsFocused = false;
-            this.txtGiaban.Location = new System.Drawing.Point(1363, 451);
-            this.txtGiaban.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGiaban.Multiline = false;
-            this.txtGiaban.Name = "txtGiaban";
-            this.txtGiaban.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
-            this.txtGiaban.PasswordChar = false;
-            this.txtGiaban.PlaceholderColor = System.Drawing.Color.Black;
-            this.txtGiaban.PlaceholderText = "0.00";
-            this.txtGiaban.ReadOnly = false;
-            this.txtGiaban.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtGiaban.Size = new System.Drawing.Size(208, 45);
-            this.txtGiaban.TabIndex = 80;
-            this.txtGiaban.Texts = "";
-            this.txtGiaban.UnderlineedStyle = false;
+            this.txtQuydoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtQuydoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.txtQuydoi.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtQuydoi.BorderRadius = 5;
+            this.txtQuydoi.BorderSize = 1;
+            this.txtQuydoi.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuydoi.ForeColor = System.Drawing.Color.Black;
+            this.txtQuydoi.IsFocused = false;
+            this.txtQuydoi.Location = new System.Drawing.Point(921, 653);
+            this.txtQuydoi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuydoi.Multiline = false;
+            this.txtQuydoi.Name = "txtQuydoi";
+            this.txtQuydoi.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.txtQuydoi.PasswordChar = false;
+            this.txtQuydoi.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtQuydoi.PlaceholderText = "0";
+            this.txtQuydoi.ReadOnly = false;
+            this.txtQuydoi.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtQuydoi.Size = new System.Drawing.Size(123, 45);
+            this.txtQuydoi.TabIndex = 80;
+            this.txtQuydoi.Texts = "";
+            this.txtQuydoi.UnderlineedStyle = false;
+            // 
+            // txtGiaDVT
+            // 
+            this.txtGiaDVT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGiaDVT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.txtGiaDVT.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtGiaDVT.BorderRadius = 5;
+            this.txtGiaDVT.BorderSize = 1;
+            this.txtGiaDVT.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaDVT.ForeColor = System.Drawing.Color.Black;
+            this.txtGiaDVT.IsFocused = false;
+            this.txtGiaDVT.Location = new System.Drawing.Point(1131, 653);
+            this.txtGiaDVT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiaDVT.Multiline = false;
+            this.txtGiaDVT.Name = "txtGiaDVT";
+            this.txtGiaDVT.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.txtGiaDVT.PasswordChar = false;
+            this.txtGiaDVT.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtGiaDVT.PlaceholderText = "0.00";
+            this.txtGiaDVT.ReadOnly = false;
+            this.txtGiaDVT.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGiaDVT.Size = new System.Drawing.Size(208, 45);
+            this.txtGiaDVT.TabIndex = 80;
+            this.txtGiaDVT.Texts = "";
+            this.txtGiaDVT.UnderlineedStyle = false;
             // 
             // txtVAT
             // 
@@ -527,31 +712,35 @@ namespace NTSF.GUI
             this.txtVAT.TabIndex = 79;
             this.txtVAT.Texts = "";
             this.txtVAT.UnderlineedStyle = false;
+            this.txtVAT._TextChanged += new System.EventHandler(this.txtVAT__TextChanged);
+            this.txtVAT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVAT_KeyPress);
             // 
-            // ctTextBox9
+            // txtGiaban
             // 
-            this.ctTextBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.ctTextBox9.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox9.BorderRadius = 5;
-            this.ctTextBox9.BorderSize = 1;
-            this.ctTextBox9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctTextBox9.ForeColor = System.Drawing.Color.Black;
-            this.ctTextBox9.IsFocused = false;
-            this.ctTextBox9.Location = new System.Drawing.Point(1363, 449);
-            this.ctTextBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox9.Multiline = false;
-            this.ctTextBox9.Name = "ctTextBox9";
-            this.ctTextBox9.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
-            this.ctTextBox9.PasswordChar = false;
-            this.ctTextBox9.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.ctTextBox9.PlaceholderText = "0.00";
-            this.ctTextBox9.ReadOnly = false;
-            this.ctTextBox9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ctTextBox9.Size = new System.Drawing.Size(208, 45);
-            this.ctTextBox9.TabIndex = 80;
-            this.ctTextBox9.Texts = "";
-            this.ctTextBox9.UnderlineedStyle = false;
+            this.txtGiaban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGiaban.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.txtGiaban.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtGiaban.BorderRadius = 5;
+            this.txtGiaban.BorderSize = 1;
+            this.txtGiaban.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaban.ForeColor = System.Drawing.Color.Black;
+            this.txtGiaban.IsFocused = false;
+            this.txtGiaban.Location = new System.Drawing.Point(1363, 449);
+            this.txtGiaban.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiaban.Multiline = false;
+            this.txtGiaban.Name = "txtGiaban";
+            this.txtGiaban.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.txtGiaban.PasswordChar = false;
+            this.txtGiaban.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtGiaban.PlaceholderText = "0.00";
+            this.txtGiaban.ReadOnly = false;
+            this.txtGiaban.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGiaban.Size = new System.Drawing.Size(208, 45);
+            this.txtGiaban.TabIndex = 80;
+            this.txtGiaban.Texts = "";
+            this.txtGiaban.UnderlineedStyle = false;
+            this.txtGiaban._TextChanged += new System.EventHandler(this.txtGiaban__TextChanged);
+            this.txtGiaban.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaban_KeyPress);
             // 
             // ctTextBox8
             // 
@@ -602,6 +791,8 @@ namespace NTSF.GUI
             this.txtTongGiamgia.TabIndex = 78;
             this.txtTongGiamgia.Texts = "";
             this.txtTongGiamgia.UnderlineedStyle = false;
+            this.txtTongGiamgia._TextChanged += new System.EventHandler(this.txtTongGiamgia__TextChanged);
+            this.txtTongGiamgia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTongGiamgia_KeyPress);
             // 
             // txtDongia
             // 
@@ -627,6 +818,8 @@ namespace NTSF.GUI
             this.txtDongia.TabIndex = 77;
             this.txtDongia.Texts = "";
             this.txtDongia.UnderlineedStyle = false;
+            this.txtDongia._TextChanged += new System.EventHandler(this.txtDongia__TextChanged);
+            this.txtDongia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDongia_KeyPress);
             // 
             // txtSLNhap
             // 
@@ -652,6 +845,8 @@ namespace NTSF.GUI
             this.txtSLNhap.TabIndex = 76;
             this.txtSLNhap.Texts = "";
             this.txtSLNhap.UnderlineedStyle = false;
+            this.txtSLNhap._TextChanged += new System.EventHandler(this.txtSLNhap__TextChanged);
+            this.txtSLNhap.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSLNhap_KeyPress);
             // 
             // txtVATBan
             // 
@@ -675,7 +870,6 @@ namespace NTSF.GUI
             this.txtVATBan.TabIndex = 75;
             this.txtVATBan.Texts = "";
             this.txtVATBan.UnderlineedStyle = false;
-            this.txtVATBan._TextChanged += new System.EventHandler(this.txtVATBan__TextChanged);
             this.txtVATBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtVATBan_KeyPress);
             // 
             // advancedPanel16
@@ -712,6 +906,7 @@ namespace NTSF.GUI
             this.btnPlusNCC.Size = new System.Drawing.Size(49, 43);
             this.btnPlusNCC.TabIndex = 74;
             this.btnPlusNCC.UseVisualStyleBackColor = false;
+            this.btnPlusNCC.Click += new System.EventHandler(this.btnPlusNCC_Click);
             // 
             // advancedPanel14
             // 
@@ -891,37 +1086,6 @@ namespace NTSF.GUI
             this.datepickerHSD.TabIndex = 61;
             this.datepickerHSD.TextColor = System.Drawing.Color.Black;
             // 
-            // advancedPanel5
-            // 
-            this.advancedPanel5.BackColor = System.Drawing.Color.White;
-            this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel5.Controls.Add(this.cbDVN);
-            this.advancedPanel5.EdgeWidth = 1;
-            this.advancedPanel5.EndColor = System.Drawing.Color.White;
-            this.advancedPanel5.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
-            this.advancedPanel5.Location = new System.Drawing.Point(504, 451);
-            this.advancedPanel5.Name = "advancedPanel5";
-            this.advancedPanel5.RectRadius = 5;
-            this.advancedPanel5.ShadowColor = System.Drawing.Color.DimGray;
-            this.advancedPanel5.ShadowShift = 2;
-            this.advancedPanel5.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
-            this.advancedPanel5.Size = new System.Drawing.Size(212, 45);
-            this.advancedPanel5.StartColor = System.Drawing.Color.White;
-            this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
-            this.advancedPanel5.TabIndex = 64;
-            // 
-            // cbDVN
-            // 
-            this.cbDVN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbDVN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbDVN.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDVN.FormattingEnabled = true;
-            this.cbDVN.ItemHeight = 28;
-            this.cbDVN.Location = new System.Drawing.Point(0, 3);
-            this.cbDVN.Name = "cbDVN";
-            this.cbDVN.Size = new System.Drawing.Size(212, 36);
-            this.cbDVN.TabIndex = 58;
-            // 
             // advancedPanel4
             // 
             this.advancedPanel4.BackColor = System.Drawing.Color.White;
@@ -952,6 +1116,7 @@ namespace NTSF.GUI
             this.cbNCC.Name = "cbNCC";
             this.cbNCC.Size = new System.Drawing.Size(287, 36);
             this.cbNCC.TabIndex = 58;
+            this.cbNCC.TextChanged += new System.EventHandler(this.cbNCC_TextChanged);
             // 
             // advancedPanel3
             // 
@@ -1011,10 +1176,15 @@ namespace NTSF.GUI
             this.cbboxNhomhang.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbboxNhomhang.FormattingEnabled = true;
             this.cbboxNhomhang.ItemHeight = 28;
+            this.cbboxNhomhang.Items.AddRange(new object[] {
+            "Thuốc kê đơn",
+            "Thuốc không kê đơn",
+            "Mỹ phẩm"});
             this.cbboxNhomhang.Location = new System.Drawing.Point(0, 3);
             this.cbboxNhomhang.Name = "cbboxNhomhang";
             this.cbboxNhomhang.Size = new System.Drawing.Size(212, 36);
             this.cbboxNhomhang.TabIndex = 58;
+            this.cbboxNhomhang.SelectedValueChanged += new System.EventHandler(this.cbboxNhomhang_SelectedValueChanged);
             // 
             // txtQCDG
             // 
@@ -1107,6 +1277,30 @@ namespace NTSF.GUI
             this.txtHanghoa.TabIndex = 55;
             this.txtHanghoa.Texts = "";
             this.txtHanghoa.UnderlineedStyle = false;
+            this.txtHanghoa._TextChanged += new System.EventHandler(this.txtHanghoa__TextChanged);
+            // 
+            // txtDVN
+            // 
+            this.txtDVN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtDVN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.txtDVN.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtDVN.BorderRadius = 5;
+            this.txtDVN.BorderSize = 1;
+            this.txtDVN.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtDVN.IsFocused = false;
+            this.txtDVN.Location = new System.Drawing.Point(504, 451);
+            this.txtDVN.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDVN.Multiline = false;
+            this.txtDVN.Name = "txtDVN";
+            this.txtDVN.Padding = new System.Windows.Forms.Padding(7, 9, 7, 7);
+            this.txtDVN.PasswordChar = false;
+            this.txtDVN.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDVN.PlaceholderText = "";
+            this.txtDVN.ReadOnly = false;
+            this.txtDVN.Size = new System.Drawing.Size(208, 45);
+            this.txtDVN.TabIndex = 55;
+            this.txtDVN.Texts = "";
+            this.txtDVN.UnderlineedStyle = false;
             // 
             // FormThemHang
             // 
@@ -1114,8 +1308,14 @@ namespace NTSF.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1661, 925);
+            this.Controls.Add(this.advancedPanel1);
+            this.Controls.Add(this.label37);
+            this.Controls.Add(this.label32);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label29);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.label36);
+            this.Controls.Add(this.label34);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label25);
@@ -1125,9 +1325,10 @@ namespace NTSF.GUI
             this.Controls.Add(this.advancedPanel15);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.txtGiaban);
+            this.Controls.Add(this.txtQuydoi);
+            this.Controls.Add(this.txtGiaDVT);
             this.Controls.Add(this.txtVAT);
-            this.Controls.Add(this.ctTextBox9);
+            this.Controls.Add(this.txtGiaban);
             this.Controls.Add(this.ctTextBox8);
             this.Controls.Add(this.txtTongGiamgia);
             this.Controls.Add(this.txtDongia);
@@ -1139,15 +1340,17 @@ namespace NTSF.GUI
             this.Controls.Add(this.advancedPanel12);
             this.Controls.Add(this.advancedPanel11);
             this.Controls.Add(this.datepickerHSD);
-            this.Controls.Add(this.advancedPanel5);
             this.Controls.Add(this.advancedPanel4);
             this.Controls.Add(this.advancedPanel3);
             this.Controls.Add(this.advancedPanel2);
             this.Controls.Add(this.txtQCDG);
+            this.Controls.Add(this.txtDVN);
             this.Controls.Add(this.txtSolo);
             this.Controls.Add(this.txtHamluong);
             this.Controls.Add(this.txtHanghoa);
+            this.Controls.Add(this.label35);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
@@ -1162,6 +1365,9 @@ namespace NTSF.GUI
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblCountDVT);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -1172,6 +1378,7 @@ namespace NTSF.GUI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThemHang";
             this.Load += new System.EventHandler(this.FormThemHang_Load);
+            this.advancedPanel1.ResumeLayout(false);
             this.advancedPanel15.ResumeLayout(false);
             this.advancedPanel16.ResumeLayout(false);
             this.advancedPanel14.ResumeLayout(false);
@@ -1182,7 +1389,6 @@ namespace NTSF.GUI
             this.advancedPanel12.PerformLayout();
             this.advancedPanel11.ResumeLayout(false);
             this.advancedPanel11.PerformLayout();
-            this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel4.ResumeLayout(false);
             this.advancedPanel3.ResumeLayout(false);
             this.advancedPanel2.ResumeLayout(false);
@@ -1199,7 +1405,6 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -1217,12 +1422,9 @@ namespace NTSF.GUI
         private HotelManagement.CTControls.CTTextBox txtQCDG;
         private CTuserControl.AdvancedPanel advancedPanel2;
         private System.Windows.Forms.ComboBox cbboxNhomhang;
-        private System.Windows.Forms.ComboBox cbboxDVTCB;
         private CTuserControl.AdvancedPanel advancedPanel3;
         private CTuserControl.AdvancedPanel advancedPanel4;
         private System.Windows.Forms.ComboBox cbNCC;
-        private CTuserControl.AdvancedPanel advancedPanel5;
-        private System.Windows.Forms.ComboBox cbDVN;
         private HotelManagement.CTControls.CTTextBox txtSolo;
         private CTuserControl.CTDatePicker datepickerHSD;
         private CTuserControl.AdvancedPanel advancedPanel11;
@@ -1242,9 +1444,9 @@ namespace NTSF.GUI
         private HotelManagement.CTControls.CTTextBox txtDongia;
         private HotelManagement.CTControls.CTTextBox txtTongGiamgia;
         private HotelManagement.CTControls.CTTextBox ctTextBox8;
-        private HotelManagement.CTControls.CTTextBox ctTextBox9;
-        private HotelManagement.CTControls.CTTextBox txtVAT;
         private HotelManagement.CTControls.CTTextBox txtGiaban;
+        private HotelManagement.CTControls.CTTextBox txtVAT;
+        private HotelManagement.CTControls.CTTextBox txtGiaDVT;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
@@ -1255,5 +1457,21 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ComboBox cbboxDVTCB;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label lblCountDVT;
+        private System.Windows.Forms.Label label7;
+        private CTuserControl.AdvancedPanel advancedPanel1;
+        private System.Windows.Forms.ComboBox cbDVT;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private HotelManagement.CTControls.CTTextBox txtQuydoi;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private HotelManagement.CTControls.CTTextBox txtDVN;
     }
 }

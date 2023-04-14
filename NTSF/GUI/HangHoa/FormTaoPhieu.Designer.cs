@@ -29,8 +29,21 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTaoPhieuThem = new System.Windows.Forms.Panel();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
+            this.dataCTphieunhap = new System.Windows.Forms.DataGridView();
+            this.mahh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hsd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongchietkhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel7 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnThemHang = new FontAwesome.Sharp.IconButton();
             this.label8 = new System.Windows.Forms.Label();
@@ -39,7 +52,7 @@ namespace NTSF.GUI
             this.advancedPanel1 = new NTSF.CTuserControl.AdvancedPanel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbThanhTien = new System.Windows.Forms.Label();
             this.advancedPanel4 = new NTSF.CTuserControl.AdvancedPanel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.lblHour = new System.Windows.Forms.Label();
@@ -48,7 +61,7 @@ namespace NTSF.GUI
             this.advancedPanel2 = new NTSF.CTuserControl.AdvancedPanel();
             this.btnTroVe = new FontAwesome.Sharp.IconButton();
             this.ctDatePicker3 = new NTSF.CTuserControl.CTDatePicker();
-            this.txtTKPNNhapKho = new HotelManagement.CTControls.CTTextBox();
+            this.txtGhichu = new HotelManagement.CTControls.CTTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,6 +70,7 @@ namespace NTSF.GUI
             this.label6 = new System.Windows.Forms.Label();
             this.panelTaoPhieuThem.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCTphieunhap)).BeginInit();
             this.advancedPanel7.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
@@ -79,6 +93,7 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.dataCTphieunhap);
             this.advancedPanel5.Controls.Add(this.advancedPanel7);
             this.advancedPanel5.Controls.Add(this.label8);
             this.advancedPanel5.Controls.Add(this.label7);
@@ -96,6 +111,121 @@ namespace NTSF.GUI
             this.advancedPanel5.StartColor = System.Drawing.Color.White;
             this.advancedPanel5.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel5.TabIndex = 7;
+            // 
+            // dataCTphieunhap
+            // 
+            this.dataCTphieunhap.AllowUserToAddRows = false;
+            this.dataCTphieunhap.AllowUserToDeleteRows = false;
+            this.dataCTphieunhap.AllowUserToResizeColumns = false;
+            this.dataCTphieunhap.AllowUserToResizeRows = false;
+            this.dataCTphieunhap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataCTphieunhap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataCTphieunhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCTphieunhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahh,
+            this.tenhang,
+            this.solo,
+            this.hsd,
+            this.dvt,
+            this.soluong,
+            this.dongia,
+            this.tongchietkhau,
+            this.vat,
+            this.thanhtien});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataCTphieunhap.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataCTphieunhap.GridColor = System.Drawing.Color.Silver;
+            this.dataCTphieunhap.Location = new System.Drawing.Point(31, 150);
+            this.dataCTphieunhap.Name = "dataCTphieunhap";
+            this.dataCTphieunhap.RowHeadersVisible = false;
+            this.dataCTphieunhap.RowHeadersWidth = 62;
+            this.dataCTphieunhap.RowTemplate.Height = 50;
+            this.dataCTphieunhap.Size = new System.Drawing.Size(1559, 499);
+            this.dataCTphieunhap.TabIndex = 69;
+            // 
+            // mahh
+            // 
+            this.mahh.HeaderText = "Mã hàng hoá";
+            this.mahh.MinimumWidth = 8;
+            this.mahh.Name = "mahh";
+            this.mahh.Width = 170;
+            // 
+            // tenhang
+            // 
+            this.tenhang.HeaderText = "Tên hàng hoá";
+            this.tenhang.MinimumWidth = 8;
+            this.tenhang.Name = "tenhang";
+            this.tenhang.Width = 200;
+            // 
+            // solo
+            // 
+            this.solo.HeaderText = "Số lô";
+            this.solo.MinimumWidth = 8;
+            this.solo.Name = "solo";
+            this.solo.Width = 150;
+            // 
+            // hsd
+            // 
+            this.hsd.HeaderText = "HSD";
+            this.hsd.MinimumWidth = 8;
+            this.hsd.Name = "hsd";
+            this.hsd.Width = 170;
+            // 
+            // dvt
+            // 
+            this.dvt.HeaderText = "ĐVT";
+            this.dvt.MinimumWidth = 8;
+            this.dvt.Name = "dvt";
+            this.dvt.Width = 130;
+            // 
+            // soluong
+            // 
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 8;
+            this.soluong.Name = "soluong";
+            this.soluong.Width = 130;
+            // 
+            // dongia
+            // 
+            this.dongia.HeaderText = "Đơn giá";
+            this.dongia.MinimumWidth = 8;
+            this.dongia.Name = "dongia";
+            this.dongia.Width = 130;
+            // 
+            // tongchietkhau
+            // 
+            this.tongchietkhau.HeaderText = "Tổng chiết khấu";
+            this.tongchietkhau.MinimumWidth = 8;
+            this.tongchietkhau.Name = "tongchietkhau";
+            this.tongchietkhau.Width = 200;
+            // 
+            // vat
+            // 
+            this.vat.HeaderText = "VAT (%)";
+            this.vat.MinimumWidth = 8;
+            this.vat.Name = "vat";
+            this.vat.Width = 120;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.HeaderText = "Thành tiền";
+            this.thanhtien.MinimumWidth = 8;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.Width = 150;
             // 
             // advancedPanel7
             // 
@@ -187,7 +317,7 @@ namespace NTSF.GUI
             this.advancedPanel1.Controls.Add(this.advancedPanel3);
             this.advancedPanel1.Controls.Add(this.advancedPanel2);
             this.advancedPanel1.Controls.Add(this.ctDatePicker3);
-            this.advancedPanel1.Controls.Add(this.txtTKPNNhapKho);
+            this.advancedPanel1.Controls.Add(this.txtGhichu);
             this.advancedPanel1.Controls.Add(this.label4);
             this.advancedPanel1.Controls.Add(this.label3);
             this.advancedPanel1.Controls.Add(this.label2);
@@ -225,7 +355,7 @@ namespace NTSF.GUI
             // advancedPanel6
             // 
             this.advancedPanel6.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel6.Controls.Add(this.label9);
+            this.advancedPanel6.Controls.Add(this.lbThanhTien);
             this.advancedPanel6.EdgeWidth = 2;
             this.advancedPanel6.EndColor = System.Drawing.Color.White;
             this.advancedPanel6.FlatBorderColor = System.Drawing.Color.White;
@@ -240,15 +370,15 @@ namespace NTSF.GUI
             this.advancedPanel6.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel6.TabIndex = 61;
             // 
-            // label9
+            // lbThanhTien
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 10);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 25);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "0.00";
+            this.lbThanhTien.AutoSize = true;
+            this.lbThanhTien.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThanhTien.Location = new System.Drawing.Point(3, 10);
+            this.lbThanhTien.Name = "lbThanhTien";
+            this.lbThanhTien.Size = new System.Drawing.Size(46, 25);
+            this.lbThanhTien.TabIndex = 0;
+            this.lbThanhTien.Text = "0.00";
             // 
             // advancedPanel4
             // 
@@ -402,28 +532,28 @@ namespace NTSF.GUI
             this.ctDatePicker3.TabIndex = 55;
             this.ctDatePicker3.TextColor = System.Drawing.Color.Black;
             // 
-            // txtTKPNNhapKho
+            // txtGhichu
             // 
-            this.txtTKPNNhapKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKPNNhapKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.txtTKPNNhapKho.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtTKPNNhapKho.BorderRadius = 5;
-            this.txtTKPNNhapKho.BorderSize = 1;
-            this.txtTKPNNhapKho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtTKPNNhapKho.IsFocused = false;
-            this.txtTKPNNhapKho.Location = new System.Drawing.Point(875, 135);
-            this.txtTKPNNhapKho.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTKPNNhapKho.Multiline = false;
-            this.txtTKPNNhapKho.Name = "txtTKPNNhapKho";
-            this.txtTKPNNhapKho.Padding = new System.Windows.Forms.Padding(7);
-            this.txtTKPNNhapKho.PasswordChar = false;
-            this.txtTKPNNhapKho.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTKPNNhapKho.PlaceholderText = "Tìm kiếm theo mã phiếu";
-            this.txtTKPNNhapKho.ReadOnly = false;
-            this.txtTKPNNhapKho.Size = new System.Drawing.Size(333, 43);
-            this.txtTKPNNhapKho.TabIndex = 54;
-            this.txtTKPNNhapKho.Texts = "";
-            this.txtTKPNNhapKho.UnderlineedStyle = false;
+            this.txtGhichu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGhichu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGhichu.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtGhichu.BorderRadius = 5;
+            this.txtGhichu.BorderSize = 1;
+            this.txtGhichu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtGhichu.IsFocused = false;
+            this.txtGhichu.Location = new System.Drawing.Point(875, 135);
+            this.txtGhichu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGhichu.Multiline = false;
+            this.txtGhichu.Name = "txtGhichu";
+            this.txtGhichu.Padding = new System.Windows.Forms.Padding(7);
+            this.txtGhichu.PasswordChar = false;
+            this.txtGhichu.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtGhichu.PlaceholderText = "Nhập ghi chú";
+            this.txtGhichu.ReadOnly = false;
+            this.txtGhichu.Size = new System.Drawing.Size(333, 43);
+            this.txtGhichu.TabIndex = 54;
+            this.txtGhichu.Texts = "";
+            this.txtGhichu.UnderlineedStyle = false;
             // 
             // label4
             // 
@@ -507,6 +637,7 @@ namespace NTSF.GUI
             this.panelTaoPhieuThem.ResumeLayout(false);
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCTphieunhap)).EndInit();
             this.advancedPanel7.ResumeLayout(false);
             this.advancedPanel7.PerformLayout();
             this.advancedPanel1.ResumeLayout(false);
@@ -536,7 +667,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label5;
         private CTuserControl.AdvancedPanel advancedPanel1;
         private CTuserControl.AdvancedPanel advancedPanel6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbThanhTien;
         private CTuserControl.AdvancedPanel advancedPanel4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Label lblHour;
@@ -545,7 +676,7 @@ namespace NTSF.GUI
         private CTuserControl.AdvancedPanel advancedPanel2;
         private FontAwesome.Sharp.IconButton btnTroVe;
         private CTuserControl.CTDatePicker ctDatePicker3;
-        private HotelManagement.CTControls.CTTextBox txtTKPNNhapKho;
+        private HotelManagement.CTControls.CTTextBox txtGhichu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -553,5 +684,16 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.DataGridView dataCTphieunhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mahh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenhang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hsd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dongia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongchietkhau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
     }
 }

@@ -26,10 +26,10 @@ namespace NTSF.GUI
             AutoCompleteStringCollection autoload = new AutoCompleteStringCollection();
             foreach (HANG_HOA hanghoa in this.SPBan)
             {
-                autoload.Add(hanghoa.TEN_SP);
+                autoload.Add($"{hanghoa.TEN_SP}");
             }
             txtHangBan.TextBoxControl.AutoCompleteCustomSource = autoload;
-
         }
+
     }
 }

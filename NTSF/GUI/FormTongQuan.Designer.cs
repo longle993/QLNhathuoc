@@ -55,6 +55,10 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
@@ -89,6 +93,7 @@ namespace NTSF.GUI
             this.lblDSBaocao = new System.Windows.Forms.Label();
             this.lblHoadonBC = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -102,7 +107,8 @@ namespace NTSF.GUI
             this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
@@ -123,6 +129,8 @@ namespace NTSF.GUI
             this.advancedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -153,6 +161,7 @@ namespace NTSF.GUI
             // advancedPanel5
             // 
             this.advancedPanel5.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel5.Controls.Add(this.panel8);
             this.advancedPanel5.Controls.Add(this.label4);
             this.advancedPanel5.EdgeWidth = 0;
             this.advancedPanel5.EndColor = System.Drawing.Color.White;
@@ -563,6 +572,17 @@ namespace NTSF.GUI
             this.label11.TabIndex = 60;
             this.label11.Text = "Hoá đơn:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(270, 71);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 21);
+            this.label5.TabIndex = 63;
+            this.label5.Text = "đơn";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -735,16 +755,36 @@ namespace NTSF.GUI
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1744, 178);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label5
+            // panel8
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(270, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 21);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "đơn";
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.Controls.Add(this.chartRevenue);
+            this.panel8.Location = new System.Drawing.Point(3, 58);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(762, 358);
+            this.panel8.TabIndex = 53;
+            // 
+            // chartRevenue
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea1);
+            this.chartRevenue.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend1);
+            this.chartRevenue.Location = new System.Drawing.Point(0, 0);
+            this.chartRevenue.Name = "chartRevenue";
+            series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Legend = "Legend1";
+            series1.Name = "Tháng trước";
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.Legend = "Legend1";
+            series2.Name = "Tháng này";
+            this.chartRevenue.Series.Add(series1);
+            this.chartRevenue.Series.Add(series2);
+            this.chartRevenue.Size = new System.Drawing.Size(762, 358);
+            this.chartRevenue.TabIndex = 54;
             // 
             // FormTongQuan
             // 
@@ -785,6 +825,8 @@ namespace NTSF.GUI
             this.advancedPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -840,5 +882,7 @@ namespace NTSF.GUI
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private TableLayoutPanel tableLayoutPanel1;
         private Label label5;
+        private Panel panel8;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
     }
 }

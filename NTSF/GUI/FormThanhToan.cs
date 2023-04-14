@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using NTSF.BUS;
+﻿using NTSF.BUS;
 using NTSF.DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace NTSF.GUI
 {
@@ -34,11 +28,11 @@ namespace NTSF.GUI
         {
             this.cbboxNV.Items.Clear();
             List<NHAN_VIEN> DanhSachNV = NHAN_VIEN_BUS.Instance.GetNHAN_VIENs();
-            foreach(NHAN_VIEN nv in DanhSachNV)
+            foreach (NHAN_VIEN nv in DanhSachNV)
             {
                 if (this.cbboxNV.Items.Contains(nv.TEN_NV))
 
-                continue;
+                    continue;
                 cbboxNV.Items.Add(nv.TEN_NV);
             }
         }
@@ -55,7 +49,7 @@ namespace NTSF.GUI
                 cbboxPTTT.Items.Add(pttt.TEN_PTTT);
             }
         }
-        
+
         private void FormThanhToan_Load(object sender, EventArgs e)
         {
             LoadNV();
@@ -91,7 +85,7 @@ namespace NTSF.GUI
         private void txtTenKH__TextChanged(object sender, EventArgs e)
         {
             this.KHBan = KHACH_HANG_BUS.Instance.GetKHACH_HANGs();
-            
+
             AutoCompleteStringCollection autoload = new AutoCompleteStringCollection();
             foreach (KHACH_HANG kh in this.KHBan)
             {
@@ -106,5 +100,5 @@ namespace NTSF.GUI
             formThemKH.ShowDialog();
         }
     }
-    }
+}
 

@@ -26,7 +26,7 @@ namespace NTSF.DAO
             try
             {
                 // Kiểm tra xem nhân viên đã tồn tại trong cơ sở dữ liệu chưa
-                CT_PHIEU_NHAP existingCTPN = db.CT_PHIEU_NHAP.AsNoTracking().SingleOrDefault(p => p.MA_PHIEU == ctpn.MA_PHIEU);
+                CT_PHIEU_NHAP existingCTPN = db.CT_PHIEU_NHAP.AsNoTracking().SingleOrDefault(p => p.MA_PHIEU == ctpn.MA_PHIEU && p.MA_SP == ctpn.MA_SP && p.SO_LO == ctpn.SO_LO);
 
                 if (existingCTPN is null)
                 {
@@ -36,7 +36,6 @@ namespace NTSF.DAO
                 {
                     db.CT_PHIEU_NHAP.Remove(existingCTPN);
                     db.CT_PHIEU_NHAP.Add(ctpn);
-
                 }
 
                 db.SaveChanges();

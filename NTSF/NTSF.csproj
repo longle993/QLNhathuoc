@@ -254,10 +254,10 @@
     <Compile Include="GUI\FormQuenMK.Designer.cs">
       <DependentUpon>FormQuenMK.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormTaoPhieu.cs">
+    <Compile Include="GUI\HangHoa\FormTaoPhieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormTaoPhieu.Designer.cs">
+    <Compile Include="GUI\HangHoa\FormTaoPhieu.Designer.cs">
       <DependentUpon>FormTaoPhieu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormThanhToan.cs">
@@ -290,10 +290,10 @@
     <Compile Include="GUI\FormTongQuan.Designer.cs">
       <DependentUpon>FormTongQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormNhapKho.cs">
+    <Compile Include="GUI\HangHoa\FormNhapKho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormNhapKho.Designer.cs">
+    <Compile Include="GUI\HangHoa\FormNhapKho.Designer.cs">
       <DependentUpon>FormNhapKho.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FormTonKho.cs">
@@ -385,7 +385,7 @@
     <EmbeddedResource Include="GUI\FormQuenMK.resx">
       <DependentUpon>FormQuenMK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormTaoPhieu.resx">
+    <EmbeddedResource Include="GUI\HangHoa\FormTaoPhieu.resx">
       <DependentUpon>FormTaoPhieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormThanhToan.resx">
@@ -403,7 +403,7 @@
     <EmbeddedResource Include="GUI\FormTongQuan.resx">
       <DependentUpon>FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormNhapKho.resx">
+    <EmbeddedResource Include="GUI\HangHoa\FormNhapKho.resx">
       <DependentUpon>FormNhapKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormTonKho.resx">

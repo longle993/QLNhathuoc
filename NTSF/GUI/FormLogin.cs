@@ -26,7 +26,7 @@ namespace NTSF.GUI
 
         private void ctButton1_Click(object sender, EventArgs e)
         {
-            string encodedPass = this.ConvertToMD5(this.txtPassword.Texts);
+            string encodedPass = this.ConvertToMD5(this.txtPassword.Texts.ToUpper());
             if (TAI_KHOAN_BUS.Instance.checkTaiKhoan(txtEmail.Texts, encodedPass)==null)
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);

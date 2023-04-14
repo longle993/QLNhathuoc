@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace NTSF.CTuserControl
 {
     
-    internal class CTDatePicker: DateTimePicker
+    public class CTDatePicker: DateTimePicker
     {
         //Fields
         //->Appearance

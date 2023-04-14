@@ -59,6 +59,10 @@ namespace NTSF.GUI
 
         }
 
+        private void LoadChart()
+        {
+            
+        }
 
     }
 }
