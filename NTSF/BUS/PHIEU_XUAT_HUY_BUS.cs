@@ -21,5 +21,9 @@ namespace NTSF.BUS
         {
             return PHIEU_XUAT_HUY_DAO.Instance.GetPHIEU_XUAT_HUYs();
         }
+        public void AddPXH(PHIEU_XUAT_HUY pxh)
+        {
+            PHIEU_XUAT_HUY_DAO.Instance.AddPXH(pxh);
+        }
     }
 }

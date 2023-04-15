@@ -1,9 +1,6 @@
-﻿using System;
+﻿using NTSF.DTO;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NTSF.DTO;
 
 namespace NTSF.DAO
 {
@@ -20,6 +17,13 @@ namespace NTSF.DAO
         public List<PHIEU_XUAT_HUY> GetPHIEU_XUAT_HUYs()
         {
             return db.PHIEU_XUAT_HUY.ToList();
+        }
+
+        public void AddPXH(PHIEU_XUAT_HUY pxh)
+        {
+                db.PHIEU_XUAT_HUY.Add(pxh);
+            db.SaveChanges();
+
         }
     }
 }

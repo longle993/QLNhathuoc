@@ -302,16 +302,16 @@
     <Compile Include="GUI\FormTonKho.Designer.cs">
       <DependentUpon>FormTonKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormXuatHuy.cs">
+    <Compile Include="GUI\HangHoa\FormXuatHuy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormXuatHuy.Designer.cs">
+    <Compile Include="GUI\HangHoa\FormXuatHuy.Designer.cs">
       <DependentUpon>FormXuatHuy.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormXuatKho.cs">
+    <Compile Include="GUI\HangHoa\FormXuatKho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormXuatKho.Designer.cs">
+    <Compile Include="GUI\HangHoa\FormXuatKho.Designer.cs">
       <DependentUpon>FormXuatKho.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\NhanVien\FormThemNV.cs">
@@ -409,10 +409,10 @@
     <EmbeddedResource Include="GUI\FormTonKho.resx">
       <DependentUpon>FormTonKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormXuatHuy.resx">
+    <EmbeddedResource Include="GUI\HangHoa\FormXuatHuy.resx">
       <DependentUpon>FormXuatHuy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormXuatKho.resx">
+    <EmbeddedResource Include="GUI\HangHoa\FormXuatKho.resx">
       <DependentUpon>FormXuatKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\NhanVien\FormThemNV.resx">
