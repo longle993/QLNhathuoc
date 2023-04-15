@@ -29,7 +29,8 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataTonKho = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@ namespace NTSF.GUI
             this.hsd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dvt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tondau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toncuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.advancedPanel5.SuspendLayout();
@@ -96,14 +98,14 @@ namespace NTSF.GUI
             this.dataTonKho.AllowUserToResizeColumns = false;
             this.dataTonKho.AllowUserToResizeRows = false;
             this.dataTonKho.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTonKho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTonKho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTonKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataTonKho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahang,
@@ -113,16 +115,27 @@ namespace NTSF.GUI
             this.hsd,
             this.dgia,
             this.dvt,
+            this.tondau,
             this.xuat,
             this.toncuoi});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTonKho.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataTonKho.GridColor = System.Drawing.Color.Silver;
             this.dataTonKho.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataTonKho.Location = new System.Drawing.Point(48, 97);
             this.dataTonKho.Name = "dataTonKho";
             this.dataTonKho.ReadOnly = true;
             this.dataTonKho.RowHeadersVisible = false;
             this.dataTonKho.RowHeadersWidth = 62;
-            this.dataTonKho.RowTemplate.Height = 28;
-            this.dataTonKho.Size = new System.Drawing.Size(1559, 499);
+            this.dataTonKho.RowTemplate.Height = 50;
+            this.dataTonKho.Size = new System.Drawing.Size(1567, 499);
             this.dataTonKho.TabIndex = 54;
             // 
             // label8
@@ -292,6 +305,7 @@ namespace NTSF.GUI
             this.btnTimKiemTonKho.TabIndex = 63;
             this.btnTimKiemTonKho.Text = "      TÌM KIẾM";
             this.btnTimKiemTonKho.UseVisualStyleBackColor = false;
+            this.btnTimKiemTonKho.Click += new System.EventHandler(this.btnTimKiemTonKho_Click);
             // 
             // ctTimeTo
             // 
@@ -481,6 +495,14 @@ namespace NTSF.GUI
             this.dvt.ReadOnly = true;
             this.dvt.Width = 110;
             // 
+            // tondau
+            // 
+            this.tondau.HeaderText = "Tồn đầu";
+            this.tondau.MinimumWidth = 8;
+            this.tondau.Name = "tondau";
+            this.tondau.ReadOnly = true;
+            this.tondau.Width = 150;
+            // 
             // xuat
             // 
             this.xuat.HeaderText = "Xuất";
@@ -552,6 +574,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn hsd;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgia;
         private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tondau;
         private System.Windows.Forms.DataGridViewTextBoxColumn xuat;
         private System.Windows.Forms.DataGridViewTextBoxColumn toncuoi;
     }

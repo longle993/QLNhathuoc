@@ -34,15 +34,17 @@ namespace NTSF.GUI
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtHangBan = new HotelManagement.CTControls.CTTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataHangBan = new System.Windows.Forms.DataGridView();
             this.Tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DVTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.advancedPanel16 = new NTSF.CTuserControl.AdvancedPanel();
+            this.btnAddHH = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHangBan)).BeginInit();
+            this.advancedPanel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -88,54 +90,51 @@ namespace NTSF.GUI
             this.txtHangBan.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtHangBan.PlaceholderText = "Nhập mã sản phẩm hoặc tên sản phẩm để tìm kiếm";
             this.txtHangBan.ReadOnly = false;
-            this.txtHangBan.Size = new System.Drawing.Size(888, 40);
+            this.txtHangBan.Size = new System.Drawing.Size(843, 40);
             this.txtHangBan.TabIndex = 55;
             this.txtHangBan.Texts = "";
             this.txtHangBan.UnderlineedStyle = false;
             this.txtHangBan._TextChanged += new System.EventHandler(this.txtHangBan__TextChanged);
             // 
-            // dataGridView1
+            // dataHangBan
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataHangBan.AllowUserToAddRows = false;
+            this.dataHangBan.AllowUserToDeleteRows = false;
+            this.dataHangBan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
+            this.dataHangBan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataHangBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataHangBan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Tenhang,
             this.DVTinh,
             this.SL,
             this.Giaban,
             this.Thanhtien,
-            this.Note});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 204);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(910, 123);
-            this.dataGridView1.TabIndex = 56;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "#";
-            this.STT.MinimumWidth = 8;
-            this.STT.Name = "STT";
-            this.STT.Width = 40;
+            this.delete});
+            this.dataHangBan.EnableHeadersVisualStyles = false;
+            this.dataHangBan.Location = new System.Drawing.Point(23, 204);
+            this.dataHangBan.Name = "dataHangBan";
+            this.dataHangBan.RowHeadersVisible = false;
+            this.dataHangBan.RowHeadersWidth = 62;
+            this.dataHangBan.RowTemplate.Height = 28;
+            this.dataHangBan.Size = new System.Drawing.Size(910, 123);
+            this.dataHangBan.TabIndex = 56;
+            this.dataHangBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangBan_CellClick);
+            this.dataHangBan.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataHangBan_CellFormatting);
+            this.dataHangBan.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataHangBan_CellValueChanged);
             // 
             // Tenhang
             // 
             this.Tenhang.HeaderText = "Tên hàng";
             this.Tenhang.MinimumWidth = 8;
             this.Tenhang.Name = "Tenhang";
-            this.Tenhang.Width = 330;
+            this.Tenhang.Width = 300;
             // 
             // DVTinh
             // 
@@ -144,21 +143,21 @@ namespace NTSF.GUI
             this.DVTinh.HeaderText = "Đơn vị tính";
             this.DVTinh.MinimumWidth = 8;
             this.DVTinh.Name = "DVTinh";
-            this.DVTinh.Width = 105;
+            this.DVTinh.Width = 125;
             // 
             // SL
             // 
             this.SL.HeaderText = "Số lượng";
             this.SL.MinimumWidth = 8;
             this.SL.Name = "SL";
-            this.SL.Width = 103;
+            this.SL.Width = 115;
             // 
             // Giaban
             // 
             this.Giaban.HeaderText = "Giá bán";
             this.Giaban.MinimumWidth = 8;
             this.Giaban.Name = "Giaban";
-            this.Giaban.Width = 131;
+            this.Giaban.Width = 120;
             // 
             // Thanhtien
             // 
@@ -167,12 +166,51 @@ namespace NTSF.GUI
             this.Thanhtien.Name = "Thanhtien";
             this.Thanhtien.Width = 139;
             // 
-            // Note
+            // delete
             // 
-            this.Note.HeaderText = "";
-            this.Note.MinimumWidth = 8;
-            this.Note.Name = "Note";
-            this.Note.Width = 59;
+            this.delete.HeaderText = "";
+            this.delete.MinimumWidth = 8;
+            this.delete.Name = "delete";
+            this.delete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.delete.Text = "Xoá hàng";
+            this.delete.Width = 90;
+            // 
+            // advancedPanel16
+            // 
+            this.advancedPanel16.BackColor = System.Drawing.Color.White;
+            this.advancedPanel16.BackgroundGradientMode = NTSF.CTuserControl.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel16.Controls.Add(this.btnAddHH);
+            this.advancedPanel16.EdgeWidth = 1;
+            this.advancedPanel16.EndColor = System.Drawing.Color.White;
+            this.advancedPanel16.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.advancedPanel16.Location = new System.Drawing.Point(884, 84);
+            this.advancedPanel16.Name = "advancedPanel16";
+            this.advancedPanel16.RectRadius = 5;
+            this.advancedPanel16.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel16.ShadowShift = 2;
+            this.advancedPanel16.ShadowStyle = NTSF.CTuserControl.AdvancedPanel.ShadowMode.Dropped;
+            this.advancedPanel16.Size = new System.Drawing.Size(49, 45);
+            this.advancedPanel16.StartColor = System.Drawing.Color.White;
+            this.advancedPanel16.Style = NTSF.CTuserControl.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel16.TabIndex = 76;
+            // 
+            // btnAddHH
+            // 
+            this.btnAddHH.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddHH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddHH.FlatAppearance.BorderSize = 0;
+            this.btnAddHH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddHH.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.btnAddHH.IconColor = System.Drawing.Color.Black;
+            this.btnAddHH.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAddHH.IconSize = 30;
+            this.btnAddHH.Location = new System.Drawing.Point(0, 0);
+            this.btnAddHH.Name = "btnAddHH";
+            this.btnAddHH.Size = new System.Drawing.Size(49, 43);
+            this.btnAddHH.TabIndex = 74;
+            this.btnAddHH.UseVisualStyleBackColor = false;
+            this.btnAddHH.Click += new System.EventHandler(this.btnAddHH_Click);
             // 
             // FormListHangbanhang
             // 
@@ -180,7 +218,8 @@ namespace NTSF.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(950, 411);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.advancedPanel16);
+            this.Controls.Add(this.dataHangBan);
             this.Controls.Add(this.txtHangBan);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -188,7 +227,8 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormListHangbanhang";
             this.Text = "FormListHangbanhang";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataHangBan)).EndInit();
+            this.advancedPanel16.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,13 +239,14 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private HotelManagement.CTControls.CTTextBox txtHangBan;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        public System.Windows.Forms.DataGridView dataHangBan;
+        private CTuserControl.AdvancedPanel advancedPanel16;
+        private FontAwesome.Sharp.IconButton btnAddHH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tenhang;
         private System.Windows.Forms.DataGridViewTextBoxColumn DVTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn SL;
         private System.Windows.Forms.DataGridViewTextBoxColumn Giaban;
         private System.Windows.Forms.DataGridViewTextBoxColumn Thanhtien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Note;
+        private System.Windows.Forms.DataGridViewButtonColumn delete;
     }
 }

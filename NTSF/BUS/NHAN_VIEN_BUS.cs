@@ -33,7 +33,10 @@ namespace NTSF.BUS
         {
             NHAN_VIEN_DAO.Instance.RemoveNV(nv);
         }
-
+        public List<NHAN_VIEN> FindBySDT(string sdt)
+        {
+            return NHAN_VIEN_DAO.Instance.FindBySDT(sdt);
+        }
 
     }
 }

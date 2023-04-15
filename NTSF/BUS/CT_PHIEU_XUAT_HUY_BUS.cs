@@ -22,6 +22,10 @@ namespace NTSF.BUS
         {
             CT_PHIEU_XUAT_HUY_DAO.Instance.AddCTXH(ctp);
         }
+        public List<CT_PHIEU_XUAT_HUY> GetCT_PHIEU_XUAT_HUYs()
+        {
+            return CT_PHIEU_XUAT_HUY_DAO.Instance.GetCT_PHIEU_XUAT_HUYs();
+        }
 
     }
 }

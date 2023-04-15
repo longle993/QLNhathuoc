@@ -21,7 +21,7 @@ namespace NTSF.DAO
 
         public void AddPXH(PHIEU_XUAT_HUY pxh)
         {
-                db.PHIEU_XUAT_HUY.Add(pxh);
+            db.PHIEU_XUAT_HUY.Add(pxh);
             db.SaveChanges();
 
         }

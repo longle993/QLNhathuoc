@@ -1,5 +1,9 @@
-﻿using NTSF.DTO;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using NTSF.DTO;
 
 namespace NTSF.DAO
 {
@@ -20,6 +24,11 @@ namespace NTSF.DAO
             ctp.PHIEU_XUAT_HUY = db.PHIEU_XUAT_HUY.Find(ctp.MA_PHIEU);
             db.CT_PHIEU_XUAT_HUY.Add(ctp);
             db.SaveChanges();
+        }
+
+        public List<CT_PHIEU_XUAT_HUY> GetCT_PHIEU_XUAT_HUYs()
+        {
+            return db.CT_PHIEU_XUAT_HUY.ToList();
         }
     }
 }

@@ -27,6 +27,12 @@ namespace NTSF.DAO
              return db.NHAN_VIEN.Where(p => p.TEN_NV.StartsWith(TENNV)).ToList();
         }
 
+        public List<NHAN_VIEN> FindBySDT(string sdt)
+        {
+            return db.NHAN_VIEN.Where(p => p.SDT == sdt).ToList();
+
+        }
+
         public void AddUpdateNV(NHAN_VIEN nv)
         {
             try

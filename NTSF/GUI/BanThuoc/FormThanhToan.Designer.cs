@@ -42,7 +42,7 @@ namespace NTSF.GUI
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblTong = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -61,9 +61,9 @@ namespace NTSF.GUI
             this.cbboxNV = new System.Windows.Forms.ComboBox();
             this.advancedPanel6 = new NTSF.CTuserControl.AdvancedPanel();
             this.cbboxPTTT = new System.Windows.Forms.ComboBox();
-            this.ctTextBox2 = new HotelManagement.CTControls.CTTextBox();
+            this.txtGiamgia = new HotelManagement.CTControls.CTTextBox();
             this.ctTextBox3 = new HotelManagement.CTControls.CTTextBox();
-            this.ctTextBox4 = new HotelManagement.CTControls.CTTextBox();
+            this.txtKhachtra = new HotelManagement.CTControls.CTTextBox();
             this.advancedPanel2.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
@@ -205,16 +205,17 @@ namespace NTSF.GUI
             this.label11.TabIndex = 4;
             this.label11.Text = "Giảm giá";
             // 
-            // label12
+            // lblTong
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.label12.Location = new System.Drawing.Point(50, 452);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "1,000,000.00";
+            this.lblTong.AutoSize = true;
+            this.lblTong.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.lblTong.Location = new System.Drawing.Point(50, 452);
+            this.lblTong.Name = "lblTong";
+            this.lblTong.Size = new System.Drawing.Size(22, 25);
+            this.lblTong.TabIndex = 4;
+            this.lblTong.Text = "0";
+            this.lblTong.TextChanged += new System.EventHandler(this.lblTong_TextChanged);
             // 
             // label13
             // 
@@ -261,22 +262,23 @@ namespace NTSF.GUI
             this.lblKhachcantra.AutoSize = true;
             this.lblKhachcantra.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKhachcantra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblKhachcantra.Location = new System.Drawing.Point(377, 497);
+            this.lblKhachcantra.Location = new System.Drawing.Point(370, 493);
             this.lblKhachcantra.Name = "lblKhachcantra";
-            this.lblKhachcantra.Size = new System.Drawing.Size(100, 25);
+            this.lblKhachcantra.Size = new System.Drawing.Size(22, 25);
             this.lblKhachcantra.TabIndex = 4;
-            this.lblKhachcantra.Text = "999,000.00";
+            this.lblKhachcantra.Text = "0";
+            this.lblKhachcantra.TextChanged += new System.EventHandler(this.lblKhachcantra_TextChanged);
             // 
             // lblTienthua
             // 
             this.lblTienthua.AutoSize = true;
             this.lblTienthua.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTienthua.ForeColor = System.Drawing.Color.Black;
-            this.lblTienthua.Location = new System.Drawing.Point(377, 594);
+            this.lblTienthua.Location = new System.Drawing.Point(370, 594);
             this.lblTienthua.Name = "lblTienthua";
-            this.lblTienthua.Size = new System.Drawing.Size(77, 25);
+            this.lblTienthua.Size = new System.Drawing.Size(22, 25);
             this.lblTienthua.TabIndex = 4;
-            this.lblTienthua.Text = "1,000.00";
+            this.lblTienthua.Text = "0";
             // 
             // btnQuayve
             // 
@@ -338,6 +340,7 @@ namespace NTSF.GUI
             this.btnThanhToan.Text = "THANH TOÁN (F9)";
             this.btnThanhToan.TextColor = System.Drawing.Color.White;
             this.btnThanhToan.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // advancedPanel2
             // 
@@ -507,30 +510,32 @@ namespace NTSF.GUI
             this.cbboxPTTT.Size = new System.Drawing.Size(587, 33);
             this.cbboxPTTT.TabIndex = 58;
             this.cbboxPTTT.Text = " --Chọn phương thức thanh toán--";
+            this.cbboxPTTT.SelectedValueChanged += new System.EventHandler(this.cbboxPTTT_SelectedValueChanged);
             // 
-            // ctTextBox2
+            // txtGiamgia
             // 
-            this.ctTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.ctTextBox2.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox2.BorderRadius = 5;
-            this.ctTextBox2.BorderSize = 1;
-            this.ctTextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctTextBox2.ForeColor = System.Drawing.Color.Black;
-            this.ctTextBox2.IsFocused = false;
-            this.ctTextBox2.Location = new System.Drawing.Point(369, 444);
-            this.ctTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox2.Multiline = false;
-            this.ctTextBox2.Name = "ctTextBox2";
-            this.ctTextBox2.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox2.PasswordChar = false;
-            this.ctTextBox2.PlaceholderColor = System.Drawing.Color.Black;
-            this.ctTextBox2.PlaceholderText = "0";
-            this.ctTextBox2.ReadOnly = false;
-            this.ctTextBox2.Size = new System.Drawing.Size(252, 36);
-            this.ctTextBox2.TabIndex = 6;
-            this.ctTextBox2.Texts = "";
-            this.ctTextBox2.UnderlineedStyle = false;
+            this.txtGiamgia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtGiamgia.BorderColor = System.Drawing.Color.Transparent;
+            this.txtGiamgia.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtGiamgia.BorderRadius = 5;
+            this.txtGiamgia.BorderSize = 1;
+            this.txtGiamgia.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiamgia.ForeColor = System.Drawing.Color.Black;
+            this.txtGiamgia.IsFocused = false;
+            this.txtGiamgia.Location = new System.Drawing.Point(369, 444);
+            this.txtGiamgia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiamgia.Multiline = false;
+            this.txtGiamgia.Name = "txtGiamgia";
+            this.txtGiamgia.Padding = new System.Windows.Forms.Padding(7);
+            this.txtGiamgia.PasswordChar = false;
+            this.txtGiamgia.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtGiamgia.PlaceholderText = "0";
+            this.txtGiamgia.ReadOnly = false;
+            this.txtGiamgia.Size = new System.Drawing.Size(252, 36);
+            this.txtGiamgia.TabIndex = 6;
+            this.txtGiamgia.Texts = "";
+            this.txtGiamgia.UnderlineedStyle = false;
+            this.txtGiamgia._TextChanged += new System.EventHandler(this.txtGiamgia__TextChanged);
             // 
             // ctTextBox3
             // 
@@ -556,29 +561,30 @@ namespace NTSF.GUI
             this.ctTextBox3.Texts = "";
             this.ctTextBox3.UnderlineedStyle = false;
             // 
-            // ctTextBox4
+            // txtKhachtra
             // 
-            this.ctTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ctTextBox4.BorderColor = System.Drawing.Color.Transparent;
-            this.ctTextBox4.BorderFocusColor = System.Drawing.Color.Black;
-            this.ctTextBox4.BorderRadius = 5;
-            this.ctTextBox4.BorderSize = 1;
-            this.ctTextBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ctTextBox4.ForeColor = System.Drawing.Color.Black;
-            this.ctTextBox4.IsFocused = false;
-            this.ctTextBox4.Location = new System.Drawing.Point(369, 525);
-            this.ctTextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.ctTextBox4.Multiline = false;
-            this.ctTextBox4.Name = "ctTextBox4";
-            this.ctTextBox4.Padding = new System.Windows.Forms.Padding(7);
-            this.ctTextBox4.PasswordChar = false;
-            this.ctTextBox4.PlaceholderColor = System.Drawing.Color.Black;
-            this.ctTextBox4.PlaceholderText = "0";
-            this.ctTextBox4.ReadOnly = false;
-            this.ctTextBox4.Size = new System.Drawing.Size(252, 36);
-            this.ctTextBox4.TabIndex = 6;
-            this.ctTextBox4.Texts = "";
-            this.ctTextBox4.UnderlineedStyle = false;
+            this.txtKhachtra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.txtKhachtra.BorderColor = System.Drawing.Color.Transparent;
+            this.txtKhachtra.BorderFocusColor = System.Drawing.Color.Black;
+            this.txtKhachtra.BorderRadius = 5;
+            this.txtKhachtra.BorderSize = 1;
+            this.txtKhachtra.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKhachtra.ForeColor = System.Drawing.Color.Black;
+            this.txtKhachtra.IsFocused = false;
+            this.txtKhachtra.Location = new System.Drawing.Point(369, 525);
+            this.txtKhachtra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKhachtra.Multiline = false;
+            this.txtKhachtra.Name = "txtKhachtra";
+            this.txtKhachtra.Padding = new System.Windows.Forms.Padding(7);
+            this.txtKhachtra.PasswordChar = false;
+            this.txtKhachtra.PlaceholderColor = System.Drawing.Color.Black;
+            this.txtKhachtra.PlaceholderText = "0";
+            this.txtKhachtra.ReadOnly = false;
+            this.txtKhachtra.Size = new System.Drawing.Size(252, 36);
+            this.txtKhachtra.TabIndex = 6;
+            this.txtKhachtra.Texts = "";
+            this.txtKhachtra.UnderlineedStyle = false;
+            this.txtKhachtra._TextChanged += new System.EventHandler(this.txtKhachtra__TextChanged);
             // 
             // FormThanhToan
             // 
@@ -593,9 +599,9 @@ namespace NTSF.GUI
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.advancedPanel2);
             this.Controls.Add(this.advancedPanel1);
-            this.Controls.Add(this.ctTextBox4);
+            this.Controls.Add(this.txtKhachtra);
             this.Controls.Add(this.ctTextBox3);
-            this.Controls.Add(this.ctTextBox2);
+            this.Controls.Add(this.txtGiamgia);
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.lblHour);
             this.Controls.Add(this.lblTime);
@@ -605,7 +611,7 @@ namespace NTSF.GUI
             this.Controls.Add(this.lblmaHDAuto);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblTong);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -648,7 +654,7 @@ namespace NTSF.GUI
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTong;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -664,8 +670,8 @@ namespace NTSF.GUI
         private System.Windows.Forms.ComboBox cbboxNV;
         private CTuserControl.AdvancedPanel advancedPanel6;
         private System.Windows.Forms.ComboBox cbboxPTTT;
-        private HotelManagement.CTControls.CTTextBox ctTextBox2;
+        private HotelManagement.CTControls.CTTextBox txtGiamgia;
         private HotelManagement.CTControls.CTTextBox ctTextBox3;
-        private HotelManagement.CTControls.CTTextBox ctTextBox4;
+        private HotelManagement.CTControls.CTTextBox txtKhachtra;
     }
 }

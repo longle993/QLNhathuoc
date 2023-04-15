@@ -25,7 +25,13 @@ namespace NTSF.BUS
         {
             CT_HOA_DON_DAO.Instance.RemoveCTHD(mahoadon);
         }
-        
-
+        public List<CT_HOA_DON> GetAll()
+        {
+            return CT_HOA_DON_DAO.Instance.GetAll();
+        }
+        public void AddOrUpdateCHTD(CT_HOA_DON cthd)
+        {
+            CT_HOA_DON_DAO.Instance.AddOrUpdateCHTD(cthd);
+        }
     }
 }

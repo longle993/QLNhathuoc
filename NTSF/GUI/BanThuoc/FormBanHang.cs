@@ -13,11 +13,13 @@ namespace NTSF.GUI
     public partial class FormBanHang : Form
     {
         private Form currentChildForm;
+        FormListHangbanhang listHangbanhang = new FormListHangbanhang();
         public FormBanHang()
         {
+            
             InitializeComponent();
-            OpenChildForm(new FormThanhToan(), panelTTTT);
-            OpenChildForm(new FormListHangbanhang(), panelDSHH);
+            OpenChildForm(listHangbanhang, panelDSHH);
+            OpenChildForm(new FormThanhToan(listHangbanhang), panelTTTT);
         }
 
         private void OpenChildForm(Form childForm, Panel panel)
