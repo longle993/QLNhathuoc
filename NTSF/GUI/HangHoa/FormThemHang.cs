@@ -83,7 +83,6 @@ namespace NTSF.GUI
             PN.NGAY_NHAP = DateTime.Now;
             PN.TRI_GIA = Convert.ToDecimal(lblTRIGIA.Text);
             PN.GHI_CHU = "";
-            PHIEU_NHAP_BUS.Instance.AddUpdatePN(PN);
 
             //Thêm thông tin Đơn vị tính
             DON_VI_TINH dvt = new DON_VI_TINH();
@@ -92,29 +91,27 @@ namespace NTSF.GUI
             dvt.DVT_KHAC = cbDVT.Text;
             dvt.QUY_DOI = 1;
             dvt.GIA_BAN = decimal.Parse(txtGiaDVT.Texts);
-            DON_VI_TINH_BUS.Instance.AddOrUpdateDVT(dvt);
 
             //Thêm thông tin CT phiết nhập
-            CT_PHIEU_NHAP CTPN = new CT_PHIEU_NHAP();
-            CTPN.MA_PHIEU = PN.MA_PHIEU;
-            CTPN.MA_SP = sP.MA_SP;
-            CTPN.SO_LO = sP.SO_LO;
-            CTPN.MA_NCC = NHA_CUNG_CAP_BUS.Instance.FindByName(cbNCC.Text).SingleOrDefault().MA_NCC;
-            CTPN.HSD = datepickerHSD.Value;
-            CTPN.DON_VI_NHAP = txtDVN.Texts;
-            CTPN.QUY_DOI = 1;
-            CTPN.SO_LUONG = Convert.ToInt32(txtSLNhap.Texts);
-            CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Texts);
-            CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Texts);
-            CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Texts);
-            CT_PHIEU_NHAP_BUS.Instance.AddUpdateCTPN(CTPN);
-
-            formTaoPhieu.dataCTphieunhap.Rows.Add(sP.MA_SP,sP.TEN_SP,sP.SO_LO,CTPN.HSD,sP.DVT_CO_BAN,sP.TONG_TON,CTPN.DON_GIA,CTPN.VAT_NHAP,PN.TRI_GIA);
+            formTaoPhieu.CTPN = new CT_PHIEU_NHAP();
+            formTaoPhieu.CTPN.MA_PHIEU = PN.MA_PHIEU;
+            formTaoPhieu.CTPN.MA_SP = sP.MA_SP;
+            formTaoPhieu.CTPN.SO_LO = sP.SO_LO;
+            formTaoPhieu.CTPN.MA_NCC = NHA_CUNG_CAP_BUS.Instance.FindByName(cbNCC.Text).SingleOrDefault().MA_NCC;
+            formTaoPhieu.CTPN.HSD = datepickerHSD.Value;
+            formTaoPhieu.CTPN.DON_VI_NHAP = txtDVN.Texts;
+            formTaoPhieu.CTPN.QUY_DOI = 1;
+            formTaoPhieu.CTPN.SO_LUONG = Convert.ToInt32(txtSLNhap.Texts);
+            formTaoPhieu.CTPN.DON_GIA = Convert.ToDecimal(txtDongia.Texts);
+            formTaoPhieu.CTPN.CHIET_KHAU = Convert.ToDecimal(txtTongGiamgia.Texts);
+            formTaoPhieu.CTPN.VAT_NHAP = Convert.ToByte(txtVAT.Texts);
+            
+            formTaoPhieu.dataCTphieunhap.Rows.Add(sP.MA_SP,sP.TEN_SP,sP.SO_LO, formTaoPhieu.CTPN.HSD,sP.DVT_CO_BAN,sP.TONG_TON, formTaoPhieu.CTPN.DON_GIA,txtTongGiamgia.Texts, formTaoPhieu.CTPN.VAT_NHAP,PN.TRI_GIA);
 
             formTaoPhieu.sP = sP;
             formTaoPhieu.PN = PN;
             formTaoPhieu.DVT = dvt;
-            formTaoPhieu.CTPN = CTPN;
+            formTaoPhieu.dsPN.Add(formTaoPhieu.CTPN);
             formTaoPhieu.lblCountPN.Text = formTaoPhieu.dataCTphieunhap.Rows.Count.ToString();
             Luu(true);
 

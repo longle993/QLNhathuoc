@@ -29,9 +29,8 @@ namespace NTSF.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTaoPhieuThem = new System.Windows.Forms.Panel();
             this.advancedPanel5 = new NTSF.CTuserControl.AdvancedPanel();
             this.dataCTphieunhap = new System.Windows.Forms.DataGridView();
@@ -69,7 +68,6 @@ namespace NTSF.GUI
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.formHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelTaoPhieuThem.SuspendLayout();
             this.advancedPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCTphieunhap)).BeginInit();
@@ -81,7 +79,6 @@ namespace NTSF.GUI
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.formHoaDonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTaoPhieuThem
@@ -122,14 +119,14 @@ namespace NTSF.GUI
             this.dataCTphieunhap.AllowUserToResizeColumns = false;
             this.dataCTphieunhap.AllowUserToResizeRows = false;
             this.dataCTphieunhap.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(235)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataCTphieunhap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataCTphieunhap.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataCTphieunhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCTphieunhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahh,
@@ -142,15 +139,15 @@ namespace NTSF.GUI
             this.tongchietkhau,
             this.vat,
             this.thanhtien});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataCTphieunhap.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataCTphieunhap.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataCTphieunhap.GridColor = System.Drawing.Color.Silver;
             this.dataCTphieunhap.Location = new System.Drawing.Point(31, 150);
             this.dataCTphieunhap.Name = "dataCTphieunhap";
@@ -534,6 +531,7 @@ namespace NTSF.GUI
             this.datePN.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.datePN.TabIndex = 55;
             this.datePN.TextColor = System.Drawing.Color.Black;
+            this.datePN.ValueChanged += new System.EventHandler(this.datePN_ValueChanged);
             // 
             // txtGhichu
             // 
@@ -626,10 +624,6 @@ namespace NTSF.GUI
             this.label6.TabIndex = 51;
             this.label6.Text = "NHẬP KHO";
             // 
-            // formHoaDonBindingSource
-            // 
-            this.formHoaDonBindingSource.DataSource = typeof(NTSF.GUI.FormHoaDon);
-            // 
             // FormTaoPhieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -641,6 +635,7 @@ namespace NTSF.GUI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTaoPhieu";
             this.Text = "FormTaoPhieu";
+            this.Load += new System.EventHandler(this.FormTaoPhieu_Load);
             this.panelTaoPhieuThem.ResumeLayout(false);
             this.advancedPanel5.ResumeLayout(false);
             this.advancedPanel5.PerformLayout();
@@ -659,7 +654,6 @@ namespace NTSF.GUI
             this.advancedPanel3.PerformLayout();
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.formHoaDonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -697,12 +691,12 @@ namespace NTSF.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn tenhang;
         private System.Windows.Forms.DataGridViewTextBoxColumn solo;
         private System.Windows.Forms.DataGridViewTextBoxColumn hsd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donvitinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn dongia;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongchietkhau;
         private System.Windows.Forms.DataGridViewTextBoxColumn vat;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
-        private System.Windows.Forms.BindingSource formHoaDonBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvt;
     }
 }
