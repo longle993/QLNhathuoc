@@ -43,7 +43,10 @@ Phát triển phần mềm:
 * B2: Tại thanh Solution Explorer tìm kiếm file có tên App.Config và thực hiện mở file
 * B3: Tìm kiếm đoạn có tên: **data source=DESKTOP-JSUCTMT** thay DESKTOP-JSUCTMT thành sever name được lấy ở bước 1
 
-3. Hoàn tất cài đặt, bạn đã có thể sử dụng và chạy chương trình như thông thường
+3. Hoàn tất cài đặt, bạn đã có thể sử dụng và chạy chương trình như thông thường:
+* Sử dụng tài khoản sau để đăng nhập vào ứng dụng:
+* ID: le.duclong0909@gmail.com
+* Password: 123456
 
 
 ### Lưu ý
