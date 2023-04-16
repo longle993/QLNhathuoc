@@ -83,6 +83,16 @@ namespace NTSF.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap comingsoon {
+            get {
+                object obj = ResourceManager.GetObject("comingsoon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoginBackgr {
             get {
                 object obj = ResourceManager.GetObject("LoginBackgr", resourceCulture);

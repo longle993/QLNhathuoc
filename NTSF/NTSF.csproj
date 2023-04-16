@@ -170,12 +170,6 @@
     <Compile Include="GUI\CaiDatChung\FormCaiDat.Designer.cs">
       <DependentUpon>FormCaiDat.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DangNhap\FormDangKy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\DangNhap\FormDangKy.Designer.cs">
-      <DependentUpon>FormDangKy.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\HangHoa\FormHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,9 +337,6 @@
     <EmbeddedResource Include="GUI\CaiDatChung\FormCaiDat.resx">
       <DependentUpon>FormCaiDat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DangNhap\FormDangKy.resx">
-      <DependentUpon>FormDangKy.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\HangHoa\FormHangHoa.resx">
       <DependentUpon>FormHangHoa.cs</DependentUpon>
     </EmbeddedResource>
@@ -446,6 +437,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Calendar.png" />
+    <None Include="Resources\comingsoon.jpg" />
     <Content Include="Resources\minius.png" />
     <None Include="Resources\ADMIN %281%29.png" />
     <None Include="Resources\Xmark.png" />

@@ -39,16 +39,7 @@ namespace NTSF.GUI
             this.formbackgr.Close();
         }
 
-        private void iconButton1_MouseHover(object sender, EventArgs e)
-        {
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, ((byte)(0)));
-        }
 
-        private void iconButton1_MouseLeave(object sender, EventArgs e)
-        {
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
-
-        }
 
         private void btnHidepass_Click(object sender, EventArgs e)
         {
@@ -65,11 +56,6 @@ namespace NTSF.GUI
             }
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            FormDangKy formDangKy = new FormDangKy();
-            formDangKy.ShowDialog();
-        }
 
         private void label4_Click(object sender, EventArgs e)
         {
